@@ -89,7 +89,15 @@ nav{position:fixed;bottom:0;left:0;right:0;height:var(--nav-h);background:rgba(8
 .card-img-col{width:70px;min-width:70px;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);border-right:1px solid rgba(255,255,255,.06);flex-shrink:0;overflow:hidden;position:relative}
 .card-img{width:66px;height:74px;object-fit:contain;transition:transform .25s}
 .content-card:hover .card-img{transform:scale(1.06)}
-.card-img-fb{width:66px;height:74px;display:flex;align-items:center;justify-content:center;font-size:28px}
+/* Fallback uniforme : cercle coloré + emoji centré */
+.card-img-fb{width:66px;height:74px;display:flex;align-items:center;justify-content:center;font-size:26px;position:relative;border-radius:6px;background:rgba(255,255,255,.04)}
+.card-img-fb::before{content:'';position:absolute;inset:0;border-radius:6px;border:1px solid rgba(255,255,255,.08)}
+/* Fallback SBC */
+.card-img-fb.fb-sbc{background:radial-gradient(circle at 50% 30%,rgba(0,212,255,.15),rgba(0,0,0,0) 70%)}
+/* Fallback Objectif */
+.card-img-fb.fb-obj{background:radial-gradient(circle at 50% 30%,rgba(168,85,247,.15),rgba(0,0,0,0) 70%)}
+/* Fallback Évolution */
+.card-img-fb.fb-evo{background:radial-gradient(circle at 50% 30%,rgba(249,115,22,.18),rgba(0,0,0,0) 70%)}
 .card-body{flex:1;padding:10px 12px 8px;min-width:0}
 .card-camp{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:2px}
 .card-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:var(--text);line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -184,6 +192,39 @@ nav{position:fixed;bottom:0;left:0;right:0;height:var(--nav-h);background:rgba(8
 .empty-state h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:var(--text2);margin-bottom:6px}
 .spinner{width:26px;height:26px;border:2.5px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 10px}
 .loading-msg{padding:28px;text-align:center;color:var(--text3);font-size:13px}
+
+/* ── Micro-animations Live ────────────────────────────── */
+/* Filtres pills */
+.fp{transition:all .18s cubic-bezier(.23,1,.32,1)}
+.fp:active{transform:scale(.92)}
+/* Onglets */
+.tab{transition:color .18s,border-color .18s}
+/* Chips bas de carte */
+.chip{transition:background .15s,border-color .15s}
+/* Verdict badge */
+.verdict{transition:opacity .15s}
+/* Détail — apparition des sections */
+.det-sec{animation:fadeUp .25s cubic-bezier(.23,1,.32,1) both}
+.det-sec:nth-child(2){animation-delay:.05s}
+.det-sec:nth-child(3){animation-delay:.09s}
+.det-sec:nth-child(n+4){animation-delay:.13s}
+/* Boost items */
+.boost-item{transition:border-color .15s,background .15s}
+.boost-item:hover{background:var(--bg4);border-color:var(--border2)}
+/* Reward items */
+.reward-item{transition:background .15s,border-color .15s}
+.reward-item:hover{background:var(--bg4)}
+/* Seg items */
+.seg-item:hover{border-color:rgba(0,212,255,.2)}
+/* Task items */
+.task-item{transition:border-color .15s}
+.task-item:hover{border-color:rgba(0,212,255,.2)}
+/* Module stats — pop entrée */
+.ms{transition:border-color .15s,transform .12s}
+.ms:hover{transform:scale(1.02);border-color:var(--border2)}
+/* Action link */
+.action-link{transition:background .18s,transform .12s}
+.action-link:active{transform:scale(.98)}
 </style>
 </head>
 <body>
@@ -246,59 +287,152 @@ var sbcs=[],objectifs=[],evolutions=[],currentTab='sbc',activeFilter='all';
 // TRADUCTIONS
 // ═══════════════════════════════════════════════════
 var TR={
-  'FOF: Answer the Call':'Festival of Football','Answer the Call':'Festival of Football',
-  'Festival of Football':'Festival of Football',
+  // ── Campagnes / Événements ──────────────────────────────
+  'FOF: Answer the Call':'Festival du Football','Answer the Call':'Festival du Football',
+  'Festival of Football':'Festival du Football',
   'FUT Birthday':'FUT Anniversaire','Birthday':'Anniversaire',
   'TOTW':'Équipe de la semaine','Team of the Week':'Équipe de la semaine',
   'TOTY':'Équipe de l\'année','Team of the Year':'Équipe de l\'année',
   'Showdown':'Confrontation',
   'World Tour':'Tournée Mondiale','Silver Stars':'Étoiles Argent',
   'Road to':'Route vers','Challengers':'Challengers',
+  'Fantasy FC':'Fantasy FC','FUTTIES':'FUTTIES',
+  'Team of the Tournament':'Équipe du Tournoi','TOTT':'Équipe du Tournoi',
+  'Path to Glory':'Gloire Ultime','Rulebreakers':'Briseurs de Règles',
+  'Headliners':'Têtes d\'Affiche','Future Stars':'Étoiles de Demain',
+  'Team of the Season':'Équipe de la Saison','TOTS':'Équipe de la Saison',
+  'Hero':'Héros','Heroes':'Héros',
+  'Record Breakers':'Briseurs de Records',
+  'Versus':'Versus','Marquee Matchups':'Duel Phare',
+  'Live FC':'FC Live','UEFA Champions League':'Ligue des Champions',
+  'UEFA Europa League':'Ligue Europa','Carabao Cup':'Coupe de la Ligue',
+  'FC 26':'EA Sports FC 26','EA FC 26':'EA Sports FC 26',
+
+  // ── Modes de jeu ───────────────────────────────────────
   'Squad Battles':'Clashs d\'équipes','Squad Battle':'Clash d\'équipes',
-  'Rivals':'Rivals','Champions':'FUT Champions','Rush':'Rush',
-  'Live Events':'Événements Live','Live Friendly':'Match amical Live',
-  'Flash Rush':'Rush Flash','Gauntlet':'Gauntlet',
-  'Seasonal':'Saisonnier','Milestones':'Jalons','Milestone':'Jalons',
+  'Division Rivals':'Division Rivals','Rivals':'Rivals',
+  'FUT Champions':'FUT Champions','Champions':'FUT Champions',
+  'Rush':'Rush','Live Events':'Événements Live',
+  'Live Friendly':'Match amical Live','Flash Rush':'Rush Flash',
+  'Gauntlet':'Gauntlet','Co-Op':'Coop',
+  'Online':'En ligne','Offline':'Hors ligne',
+  'Single Player':'Solo','Multiplayer':'Multijoueur',
+
+  // ── Types de contenu ───────────────────────────────────
+  'Seasonal':'Saisonnier','Milestones':'Jalons','Milestone':'Jalon',
   'Foundations':'Fondations','Foundation':'Fondations',
   'Upgrades':'Mises à niveau','Upgrade':'Mise à niveau',
   'Icons':'Icônes','Icon':'Icône',
   'Challenges':'Défis','Challenge':'Défi',
   'Segments':'Équipes','Segment':'Équipe',
+  'Campaign':'Campagne','Campaigns':'Campagnes',
+  'Event':'Événement','Events':'Événements','event':'événement',
+  'Objective':'Objectif','Objectives':'Objectifs',
+  'Evolution':'Évolution','Evolutions':'Évolutions',
+
+  // ── Contraintes SBC ────────────────────────────────────
   'Chemistry':'Collectif','Min. Team Rating':'Note d\'équipe min.',
-  'Team Rating':'Note d\'équipe',
-  'Repeatable':'Répétable','Non-Repeatable':'Non répétable',
-  'Repeatable-':'Non répétable',
-  'Tradeable':'Échangeable','Untradeable':'Non échangeable',
-  'Expires in':'Expire dans','days':'jours','day':'jour',
-  'Refreshes Every':'Réinitialisation tous les',
-  'Exchange a squad featuring players from':'Échangez une équipe de joueurs de',
-  'Exchange a squad featuring a TOTW player':'Échangez une équipe avec un joueur TOTW',
-  'Earn a special':'Gagnez une carte spéciale',
-  'Earn a Moments':'Gagnez une carte Moments de',
-  'Earn a Showdown':'Gagnez une carte Confrontation de',
-  'Earn 1 of':'Gagnez 1 parmi',
-  'Complete this challenge to earn a reward':'Complétez ce défi pour obtenir une récompense',
-  'Join the':'Rejoignez le','Event':'Événement','event':'événement',
-  'Complete':'Complétez','to earn':'pour obtenir','rewards':'récompenses',
-  'All rewards are untradeable':'Toutes les récompenses sont non échangeables',
-  'Small Gold Players Pack':'Pack petits joueurs or',
-  'Gold Players Pack':'Pack de joueurs or',
-  'Gold Pack':'Pack or','Silver Pack':'Pack argent','Bronze Pack':'Pack bronze',
-  'Rare Gold Players Pack':'Pack de joueurs or rare',
-  'Electrum Players Pack':'Pack de joueurs Electrum',
-  'Premium Gold Pack':'Pack or premium',
-  'Players Pack':'Pack joueurs','Player Pick':'Choix joueur',
-  'Evo Unlock':'Déverrouillage Évolution',
-  'Season Points':'Points de saison',
+  'Team Rating':'Note d\'équipe','Min. Overall Rating':'Note globale min.',
+  'Max. Overall Rating':'Note globale max.','Max Overall Rating':'Note globale max.',
+  'Overall':'Note globale','Max. ':'Max. ','Min. ':'Min. ',
   'Min. 1 Players from: ':'Min. 1 joueur de ',
   'Min. 1 Players:':'Min. 1 joueur :',
   'Min. 1 Players from':'Min. 1 joueur de',
+  'Min. 2 Players from':'Min. 2 joueurs de',
+  'Min. 3 Players from':'Min. 3 joueurs de',
+  'Exactly ':'Exactement ','At least ':'Au moins ',
   'Excluded Rarity':'Rareté exclue','Excluded Position':'Poste exclu',
-  'Overall':'Note globale','Max. ':'Max. ',
-  'Easy':'Facile','Medium':'Moyen','Hard':'Difficile',
-  'Online Required':'En ligne requis','Play':'Jouez','Win':'Gagnez','Score':'Marquez',
+  'Excluded Nationality':'Nationalité exclue','Excluded League':'Ligue exclue',
+  'Excluded Club':'Club exclu','Excluded':'Exclu',
+  'Max Pos':'Postes max.','Max PS':'PS max.','Max PS+':'PS+ max.',
+  'Max. OVR':'Note max.','Max OVR':'Note max.',
+  'Min. OVR':'Note min.','Min OVR':'Note min.',
+  'Same League':'Même ligue','Same Nation':'Même nation','Same Club':'Même club',
+  'from the same nation':'de même nation','from the same league':'de même ligue',
+  'Nationalities':'Nationalités','Leagues':'Ligues','Clubs':'Clubs',
+  'League':'Ligue','Nation':'Nation','Club':'Club','Nationality':'Nationalité',
+  'Position':'Poste','Rarity':'Rareté',
+
+  // ── Rarétés ─────────────────────────────────────────────
+  'Gold Rare':'Or Rare','Gold Common':'Or Commun',
+  'Silver Rare':'Argent Rare','Silver Common':'Argent Commun',
+  'Bronze Rare':'Bronze Rare','Bronze Common':'Bronze Commun',
+  'World Tour Silver Stars':'Étoiles Argent Tournée Mondiale',
+  'Special':'Spéciale','Inform':'TOTW',
+
+  // ── Répétable / Échangeable ─────────────────────────────
+  'Repeatable':'Répétable','Non-Repeatable':'Non répétable',
+  'Repeatable-':'Non répétable','Tradeable':'Échangeable',
+  'Untradeable':'Non échangeable',
+  'Refreshes Every':'Réinitialisation tous les',
+  'Refreshes Daily':'Réinitialisation quotidienne',
+  'Refreshes Weekly':'Réinitialisation hebdomadaire',
+  'Daily':'Quotidien','Weekly':'Hebdomadaire','Once':'Une fois',
+
+  // ── Expirations ─────────────────────────────────────────
+  'Expires in':'Expire dans','Expiring Soon':'Expire bientôt',
+  'Submit in':'Soumettre dans','Submit within':'Soumettre sous',
+  'days':'jours','day':'jour','hours':'heures','hour':'heure',
+  'minutes':'minutes','minute':'minute',
+
+  // ── Actions tâches ──────────────────────────────────────
+  'Exchange a squad featuring players from':'Échangez une équipe de joueurs de',
+  'Exchange a squad featuring a TOTW player':'Échangez une équipe avec un joueur TOTW',
+  'Exchange a squad featuring':'Échangez une équipe avec',
+  'Earn a special':'Gagnez une carte spéciale',
+  'Earn a Moments':'Gagnez une carte Moments de',
+  'Earn a Showdown':'Gagnez une carte Confrontation de',
+  'Earn 1 of':'Gagnez 1 parmi','Earn':'Gagnez',
+  'Complete this challenge to earn a reward':'Complétez ce défi pour obtenir une récompense',
+  'Complete this objective':'Complétez cet objectif',
+  'Complete all objectives':'Complétez tous les objectifs',
+  'Complete':'Complétez','to earn':'pour obtenir',
+  'rewards':'récompenses','reward':'récompense',
+  'All rewards are untradeable':'Toutes les récompenses sont non échangeables',
+  'Join the':'Rejoignez le',
+  'Play':'Jouez','Win':'Gagnez','Score':'Marquez',
+  'Assist':'Faites des passes décisives','Keep a clean sheet':'Gardez le zéro',
   'matches in':'matchs en','match in':'match en',
   'goals in':'buts en','goal in':'but en',
+  'assists in':'passes dés. en','assist in':'passe dés. en',
+  'using a':'en utilisant un','with a':'avec un',
+  'in a single match':'en un seul match','in a single game':'en un seul match',
+
+  // ── Packs & Récompenses ─────────────────────────────────
+  'Small Gold Players Pack':'Pack de joueurs or petit',
+  'Gold Players Pack':'Pack de joueurs or',
+  'Gold Pack':'Pack or','Silver Pack':'Pack argent','Bronze Pack':'Pack bronze',
+  'Rare Gold Players Pack':'Pack de joueurs or rare',
+  'Rare Gold Pack':'Pack or rare',
+  'Electrum Players Pack':'Pack de joueurs Electrum',
+  'Premium Gold Players Pack':'Pack de joueurs or premium',
+  'Premium Gold Pack':'Pack or premium',
+  'Premium Electrum Pack':'Pack Electrum premium',
+  'Ultimate Pack':'Pack Ultime','Mega Pack':'Méga Pack',
+  'Prime Electrum Players Pack':'Pack de joueurs Electrum Prime',
+  'Players Pack':'Pack joueurs','Player Pack':'Pack joueur',
+  'Player Pick':'Choix joueur','Players Pick':'Choix joueurs',
+  'Jumbo Premium Gold Players Pack':'Pack de joueurs or premium Jumbo',
+  'Rare Players Pack':'Pack de joueurs rare',
+  'Icon Picks':'Choix Icônes','Icon Pick':'Choix Icône',
+  'Hero Pick':'Choix Héros','Hero Item':'Carte Héros',
+  'Evo Unlock':'Déverrouillage Évolution','Evo Token':'Jeton Évolution',
+  'Season Points':'Points de saison','Season XP':'XP de saison',
+  'Coins':'Crédits','FC Points':'Points FC',
+  'Sticker':'Autocollant','Stickers':'Autocollants',
+  'Stadium Item':'Élément de stade','Kit':'Maillot',
+  'Consumable':'Consommable','Attribute Boost':'Boost d\'attribut',
+
+  // ── Difficultés (FUT.GG format brut) ──────────────────
+  'EasyNumber':'Facile','Easy Number':'Facile',
+  'MediumNumber':'Moyen','Medium Number':'Moyen',
+  'HardNumber':'Difficile','Hard Number':'Difficile',
+  'VeryHardNumber':'Très difficile','Very Hard Number':'Très difficile',
+  'ExpertNumber':'Expert','Expert Number':'Expert',
+  'Easy':'Facile','Medium':'Moyen','Hard':'Difficile',
+  'Very Hard':'Très difficile','Expert':'Expert',
+
+  // ── PlayStyles ──────────────────────────────────────────
   'Finesse Shot+':'Tir en finesse+','Finesse Shot':'Tir en finesse',
   'Technical+':'Technique+','Technical':'Technique',
   'Rapid+':'Rapide+','Rapid':'Rapide',
@@ -328,7 +462,30 @@ var TR={
   'Cross+':'Centre+','Cross':'Centre',
   'Power Header+':'Tête puissante+','Power Header':'Tête puissante',
   'Chip Shot+':'Lob+','Chip Shot':'Lob',
-  'Flair+':'Technique+','Flair':'Flair',
+  'Flair+':'Flair+','Flair':'Flair',
+  'Long Throw+':'Longue touche+','Long Throw':'Longue touche',
+  'Sweeper Keeper+':'Gardien balayeur+','Sweeper Keeper':'Gardien balayeur',
+  'Far Reach+':'Grande envergure+','Far Reach':'Grande envergure',
+  'Save+':'Arrêt+','Save':'Arrêt',
+
+  // ── Boosts Évolutions ───────────────────────────────────
+  'SHO':'Tir','PAC':'Vitesse','PAS':'Passes','DRI':'Dribble',
+  'DEF':'Défense','PHY':'Physique','OVR':'Note globale',
+  'GKD':'Plongeon GK','GKH':'Prise de balle GK','GKK':'Dégagement GK',
+  'GKP':'Placement GK','GKR':'Réflexes GK',
+
+  // ── Positions ───────────────────────────────────────────
+  'GK':'GB','CB':'DC','LB':'DG','RB':'DD',
+  'LWB':'PDG','RWB':'PDD','CDM':'MDC','CM':'MC',
+  'LM':'MG','RM':'MD','CAM':'MOC','LW':'AG','RW':'AD',
+  'CF':'SA','ST':'ATT','FW':'ATT',
+
+  // ── Conditions éligibilité (Évolutions) ─────────────────
+  'Max. OVR:':'Note max. :','Min. OVR:':'Note min. :',
+  'Max Pos:':'Postes max. :','Max PS:':'PS max. :','Max PS+:':'PS+ max. :',
+  'Excluded:':'Exclu :','Required:':'Requis :',
+  'Only eligible with':'Éligible uniquement avec',
+  'players only':'joueurs uniquement',
 };
 
 function tr(txt){
@@ -555,29 +712,52 @@ function rewardEmoji(txt){
 var FILTERS={
   sbc:[
     {id:'all',label:'Tout',cls:''},
-    {id:'haute',label:'✅ Priorité haute',cls:'fp-g'},
+    // Priorité & urgence
+    {id:'haute',label:'✅ Prioritaire',cls:'fp-g'},
     {id:'urgent',label:'⏰ Expire bientôt',cls:'fp-o'},
+    {id:'rentable',label:'💰 Rentable',cls:'fp-g'},
+    // Type d'effort
     {id:'repeatable',label:'♾️ Répétable',cls:'fp-p'},
-    {id:'non-repeatable',label:'1× Non répétable',cls:'fp-r'},
-    {id:'tradeable',label:'Échangeable',cls:''},
-    {id:'rentable',label:'Rentable',cls:'fp-g'},
+    {id:'non-repeatable',label:'1× Unique',cls:'fp-r'},
+    // Type de récompense
+    {id:'player-reward',label:'👤 Carte joueur',cls:'fp-p'},
+    {id:'tradeable',label:'⇄ Échangeable',cls:''},
+    // Difficulté
+    {id:'facile',label:'🟢 Facile',cls:'fp-g'},
+    {id:'difficile',label:'🔴 Difficile',cls:'fp-r'},
   ],
   obj:[
     {id:'all',label:'Tout',cls:''},
-    {id:'haute',label:'✅ Priorité haute',cls:'fp-g'},
+    // Priorité & urgence
+    {id:'haute',label:'✅ Prioritaire',cls:'fp-g'},
     {id:'urgent',label:'⏰ Expire bientôt',cls:'fp-o'},
+    {id:'rentable',label:'💰 Rentable',cls:'fp-g'},
+    // Mode de jeu
     {id:'solo',label:'🤖 Solo OK',cls:'fp-p'},
-    {id:'online',label:'🌐 En ligne requis',cls:'fp-r'},
+    {id:'online',label:'🌐 En ligne',cls:'fp-r'},
+    // Type de récompense
     {id:'xp',label:'⚡ XP élevé',cls:'fp-p'},
-    {id:'rentable',label:'Rentable',cls:'fp-g'},
+    {id:'pack-reward',label:'📦 Pack',cls:''},
+    // Catégorie
+    {id:'campagne',label:'📋 Campagne',cls:'fp-p'},
+    {id:'jalon',label:'🎯 Jalon',cls:''},
   ],
   evo:[
     {id:'all',label:'Tout',cls:''},
-    {id:'haute',label:'✅ Priorité haute',cls:'fp-g'},
+    // Priorité & urgence
+    {id:'haute',label:'✅ Prioritaire',cls:'fp-g'},
     {id:'urgent',label:'⏰ Expire bientôt',cls:'fp-o'},
-    {id:'meta',label:'🔥 Méta',cls:'fp-r'},
-    {id:'easy',label:'Facile',cls:'fp-g'},
-    {id:'rentable',label:'Rentable',cls:'fp-g'},
+    {id:'rentable',label:'💰 Rentable',cls:'fp-g'},
+    // Coût
+    {id:'gratuit',label:'🆓 Gratuit',cls:'fp-g'},
+    {id:'credits',label:'💳 Crédits',cls:'fp-o'},
+    // Méta & difficulté
+    {id:'meta',label:'🔥 Méta (PS+)',cls:'fp-r'},
+    {id:'easy',label:'🟢 Facile',cls:'fp-g'},
+    // Type de boost
+    {id:'boost-ovr',label:'📈 +Note',cls:'fp-p'},
+    {id:'boost-sho',label:'⚽ +Tir',cls:'fp-r'},
+    {id:'boost-pac',label:'⚡ +Vitesse',cls:'fp-o'},
   ],
 };
 
@@ -599,20 +779,43 @@ function setFilter(fid,el,type){
 function matchFilter(item,type){
   if(activeFilter==='all') return true;
   var v=autoV(item,type);
+  var diff=(item.difficulte_communaute||'').toLowerCase();
+  var recompTxt=([item.recompense_principale||'']).concat(item.recompenses||[]).join(' ').toLowerCase();
+  var boostsTxt=(item.boosts||[]).map(function(b){return(b.stat||'')+(b.valeur||'');}).join(' ').toLowerCase();
+  var allTxt=(item.titre||'')+' '+(item.description_courte||'')+' '+recompTxt;
+  // Priorité & urgence
   if(activeFilter==='haute') return v.p==='haute';
   if(activeFilter==='urgent') return isUrgent(item);
+  if(activeFilter==='rentable') return v.v==='rentable';
+  // SBC — type d'effort
   if(activeFilter==='repeatable') return item.repeatable===true;
   if(activeFilter==='non-repeatable') return item.repeatable!==true;
   if(activeFilter==='tradeable') return item.tradeable===true;
+  // SBC — difficulté
+  if(activeFilter==='facile') return diff==='facile'||diff==='easy';
+  if(activeFilter==='difficile') return diff==='difficile'||diff==='hard'||diff==='très difficile'||diff==='veryhardnumber';
+  // SBC — type récompense
+  if(activeFilter==='player-reward'){
+    return /player|joueur|icon|icône|hero|héros/i.test(recompTxt);
+  }
+  // Objectifs
   if(activeFilter==='solo') return item.solo_friendly===true;
   if(activeFilter==='online') return item.online_required===true;
   if(activeFilter==='xp') return(item.xp_total||0)>=500;
+  if(activeFilter==='pack-reward') return/pack/i.test(recompTxt);
+  if(activeFilter==='campagne') return(item.categorie||'').toLowerCase()==='campagne';
+  if(activeFilter==='jalon') return(item.categorie||'').toLowerCase()==='jalon';
+  // Évolutions
   if(activeFilter==='meta'){
-    var txt=[item.titre||'',(item.boosts||[]).map(function(b){return b.valeur||b.stat||'';}).join(' ')].join(' ').toLowerCase();
+    var txt=[item.titre||'',boostsTxt].join(' ').toLowerCase();
     return PSPLUS.some(function(ps){return txt.indexOf(ps)>=0;});
   }
-  if(activeFilter==='easy') return(item.difficulte_communaute||'').toLowerCase()==='easy'||(item.difficulte_communaute||'').toLowerCase()==='facile';
-  if(activeFilter==='rentable') return v.v==='rentable';
+  if(activeFilter==='easy') return diff==='facile'||diff==='easy';
+  if(activeFilter==='gratuit') return item.gratuit===true||(item.cout_credits===0&&item.cout_points===0&&type==='evo');
+  if(activeFilter==='credits') return(item.cout_credits||0)>0;
+  if(activeFilter==='boost-ovr') return/ovr|note globale/i.test(boostsTxt);
+  if(activeFilter==='boost-sho') return/sho|tir/i.test(boostsTxt);
+  if(activeFilter==='boost-pac') return/pac|vitesse/i.test(boostsTxt);
   return true;
 }
 
@@ -721,8 +924,8 @@ function cardHTML(item,type,idx){
     '<div class="card-inner" style="border-radius:12px">'+
     '<div class="card-top">'+
     '<div class="card-img-col">'+(img
-      ?'<img class="card-img" src="'+img+'" alt="" onerror="this.outerHTML=\'<div class=&quot;card-img-fb&quot;>'+emoji+'</div>\'">'
-      :'<div class="card-img-fb">'+emoji+'</div>')+
+      ?'<img class="card-img" src="'+img+'" alt="" onerror="this.outerHTML=\'<div class=&quot;card-img-fb fb-'+type+'&quot;>'+emoji+'</div>\'">'
+      :'<div class="card-img-fb fb-'+type+'">'+emoji+'</div>')+
     '</div>'+
     '<div class="card-body">'+
     '<div class="card-camp">'+camp+'</div>'+
@@ -807,8 +1010,8 @@ function showDetail(type,idEnc){
   var h='<div class="detail-hero slide-in">'+
     (grad?'<div class="dhero-bg" style="background:'+grad+'"></div>':'')+
     '<div class="dhero-inner">'+
-    (img?'<img class="d-card-img" src="'+img+'" alt="" onerror="this.outerHTML=\'<div class=&quot;d-card-fb&quot;>'+emoji+'</div>\'">'
-        :'<div class="d-card-fb">'+emoji+'</div>')+
+    (img?'<img class="d-card-img" src="'+img+'" alt="" onerror="this.outerHTML=\'<div class=&quot;d-card-fb fb-'+type+'&quot; style=&quot;font-size:44px&quot;>'+emoji+'</div>\'">'
+        :'<div class="d-card-fb fb-'+type+'" style="font-size:44px">'+emoji+'</div>')+
     '<div class="d-info">'+
     '<div class="d-camp">'+camp+'</div>'+
     '<div class="d-title">'+tr(item.titre||'—')+'</div>'+
