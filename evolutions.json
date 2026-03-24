@@ -1,0 +1,943 @@
+[
+  {
+    "id": "evo_1841",
+    "slug": "1841-o-maestro-da-copa",
+    "titre": "O Maestro da Copa",
+    "description_courte": "Glide through opponents with grace, see the assist no one sees, score in style and champion the attack! Your CAM will humbly tell the world: \"I belong to Football\".",
+    "url_futgg": "https://www.fut.gg/evolutions/1841-o-maestro-da-copa",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": false,
+    "difficulte_communaute": "MediumNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 80",
+      "Max OVR: 88",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsMax Pos"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+20"
+      },
+      {
+        "stat": "SHO",
+        "valeur": "+20"
+      },
+      {
+        "stat": "PAC",
+        "valeur": "+20"
+      },
+      {
+        "stat": "Dribbling",
+        "valeur": "+25"
+      },
+      {
+        "stat": "Composure",
+        "valeur": "+20"
+      },
+      {
+        "stat": "Vision",
+        "valeur": "+25"
+      },
+      {
+        "stat": "Curve",
+        "valeur": "+25"
+      },
+      {
+        "stat": "Fk Accuracy",
+        "valeur": "+20"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 17 jours",
+    "date_expiration": "Expire dans 17 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:05Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1838",
+    "slug": "1838-build-your-own-fut-birthday",
+    "titre": "Build your own FUT Birthday",
+    "description_courte": "Want to check eligibility for your already evolved players? Sync them now on GG Club",
+    "url_futgg": "https://www.fut.gg/evolutions/1838-build-your-own-fut-birthday",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": false,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 89",
+      "Max OVR: 89",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [],
+    "taches": [],
+    "date_soumission": "Submit dans 9 jours",
+    "date_expiration": "Expire dans 9 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:07Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1837",
+    "slug": "1837-high-speed-action",
+    "titre": "High-Speed Action",
+    "description_courte": "Put your running shoes on! Sprint to find that pocket of space, or breeze to close down the opposition. Lightning is still faster, but you're closing the gap.",
+    "url_futgg": "https://www.fut.gg/evolutions/1837-high-speed-action",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax",
+      "Position exclus: CBM"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+1"
+      },
+      {
+        "stat": "Acceleration",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Sprint Speed",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Agility",
+        "valeur": "+10"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 16 jours",
+    "date_expiration": "Expire dans 16 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:08Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1836",
+    "slug": "1836-south-american-stars",
+    "titre": "South American Stars",
+    "description_courte": "Channel the magic of South American football flair and show off creativity, skill, and passion on the pitch.",
+    "url_futgg": "https://www.fut.gg/evolutions/1836-south-american-stars",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsNationArgentina"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+2"
+      },
+      {
+        "stat": "PAC",
+        "valeur": "+7"
+      },
+      {
+        "stat": "SHO",
+        "valeur": "+5"
+      },
+      {
+        "stat": "DRI",
+        "valeur": "+5"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 15 jours",
+    "date_expiration": "Expire dans 15 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:10Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1829",
+    "slug": "1829-national-captain",
+    "titre": "National Captain",
+    "description_courte": "Lead your nation to glory. Unleash your leadership and showcase your skills as the heart of your national team.",
+    "url_futgg": "https://www.fut.gg/evolutions/1829-national-captain",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": false,
+    "difficulte_communaute": "MediumNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 89",
+      "Max OVR: 89",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+46"
+      },
+      {
+        "stat": "Sprint Speed",
+        "valeur": "+45"
+      },
+      {
+        "stat": "Vision",
+        "valeur": "+45"
+      },
+      {
+        "stat": "Long Pass",
+        "valeur": "+45"
+      },
+      {
+        "stat": "Dribbling",
+        "valeur": "+40"
+      },
+      {
+        "stat": "Acceleration",
+        "valeur": "+45"
+      },
+      {
+        "stat": "Positioning",
+        "valeur": "+40"
+      },
+      {
+        "stat": "Shot Power",
+        "valeur": "+70"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 5 jours",
+    "date_expiration": "Expire dans 5 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:12Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1828",
+    "slug": "1828-national-captain-final-touch",
+    "titre": "National Captain: Final Touch",
+    "description_courte": "Provide a Final touch to your National Captain Evolution! Add Roles and base PlayStyles to Player Items who have already completed the “National Captain\" Evolution.",
+    "url_futgg": "https://www.fut.gg/evolutions/1828-national-captain-final-touch",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 93",
+      "Max OVR: 93",
+      "Max PS: 10"
+    ],
+    "boosts": [],
+    "taches": [],
+    "date_soumission": "Submit dans 5 jours",
+    "date_expiration": "Expire dans 5 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:13Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1827",
+    "slug": "1827-euro-trio",
+    "titre": "Euro Trio",
+    "description_courte": "Highlight the finest talents from three of Europe's largest football nations.",
+    "url_futgg": "https://www.fut.gg/evolutions/1827-euro-trio",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsNationItaly"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+2"
+      },
+      {
+        "stat": "SHO",
+        "valeur": "+7"
+      },
+      {
+        "stat": "DEF",
+        "valeur": "+5"
+      },
+      {
+        "stat": "PHY",
+        "valeur": "+5"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 15 jours",
+    "date_expiration": "Expire dans 15 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:15Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1826",
+    "slug": "1826-euro-minitrip",
+    "titre": "Euro Minitrip",
+    "description_courte": "Take a stroll through three of Europe's largest football nations to choose talent deserving signature boosts and PlayStyles.",
+    "url_futgg": "https://www.fut.gg/evolutions/1826-euro-minitrip",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsNationSpain"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+2"
+      },
+      {
+        "stat": "PAC",
+        "valeur": "+6"
+      },
+      {
+        "stat": "PAS",
+        "valeur": "+7"
+      },
+      {
+        "stat": "DRI",
+        "valeur": "+5"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 15 jours",
+    "date_expiration": "Expire dans 15 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:16Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1825",
+    "slug": "1825-party-exit",
+    "titre": "Party Exit",
+    "description_courte": "Say Goodbye! to the party with a shot of Dribbling and be on your way with some take-away goodies: Technical, Quick Step & Trickster PlayStyles.",
+    "url_futgg": "https://www.fut.gg/evolutions/1825-party-exit",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "Dribbling",
+        "valeur": "+3"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 14 jours",
+    "date_expiration": "Expire dans 14 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:18Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1824",
+    "slug": "1824-party-at-the-back",
+    "titre": "Party at the Back",
+    "description_courte": "Where do you play in defense? Anywhere! Get the LB & RB positions, along with the necessary boosts, to turn your CB into an all-purpose defender, covering everything at the back.",
+    "url_futgg": "https://www.fut.gg/evolutions/1824-party-at-the-back",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": false,
+    "difficulte_communaute": "MediumNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 89",
+      "Max OVR: 88",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsMax Pos"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+20"
+      },
+      {
+        "stat": "Composure",
+        "valeur": "+15"
+      },
+      {
+        "stat": "Defensive Awareness",
+        "valeur": "+20"
+      },
+      {
+        "stat": "Interceptions",
+        "valeur": "+20"
+      },
+      {
+        "stat": "Acceleration",
+        "valeur": "+25"
+      },
+      {
+        "stat": "Vision",
+        "valeur": "+30"
+      },
+      {
+        "stat": "Short Pass",
+        "valeur": "+30"
+      },
+      {
+        "stat": "Agility",
+        "valeur": "+15"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 13 jours",
+    "date_expiration": "Expire dans 13 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:19Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1823",
+    "slug": "1823-ucl-specialist",
+    "titre": "UCL Specialist",
+    "description_courte": "Deliver unforgettable moments during UCL Nights, from Lisbon to Madrid, from Manchester to Paris, get ready to score spectacular goals when it matters most.",
+    "url_futgg": "https://www.fut.gg/evolutions/1823-ucl-specialist",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+2"
+      },
+      {
+        "stat": "DRI",
+        "valeur": "+3"
+      },
+      {
+        "stat": "PAS",
+        "valeur": "+2"
+      },
+      {
+        "stat": "SHO",
+        "valeur": "+2"
+      },
+      {
+        "stat": "Acceleration",
+        "valeur": "+3"
+      },
+      {
+        "stat": "Sprint Speed",
+        "valeur": "+3"
+      },
+      {
+        "stat": "Stamina",
+        "valeur": "+3"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 12 jours",
+    "date_expiration": "Expire dans 12 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:21Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1819",
+    "slug": "1819-party-in-the-middle",
+    "titre": "Party in the Middle",
+    "description_courte": "Dress to impress! Get the stats, PlayStyles, boosts, everything you need to turn your CM into a box-to-box beast and the life of the party!",
+    "url_futgg": "https://www.fut.gg/evolutions/1819-party-in-the-middle",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": false,
+    "difficulte_communaute": "MediumNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 89",
+      "Max OVR: 88",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+20"
+      },
+      {
+        "stat": "SHO",
+        "valeur": "+15"
+      },
+      {
+        "stat": "DEF",
+        "valeur": "+15"
+      },
+      {
+        "stat": "Acceleration",
+        "valeur": "+15"
+      },
+      {
+        "stat": "Sprint Speed",
+        "valeur": "+15"
+      },
+      {
+        "stat": "Ball Control",
+        "valeur": "+20"
+      },
+      {
+        "stat": "Agility",
+        "valeur": "+30"
+      },
+      {
+        "stat": "Balance",
+        "valeur": "+20"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 11 jours",
+    "date_expiration": "Expire dans 11 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:23Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1817",
+    "slug": "1817-birthday-brunch",
+    "titre": "Birthday Brunch",
+    "description_courte": "It's time for a birthday brunch! Soak up the good times and leave with a boost in style and skill.",
+    "url_futgg": "https://www.fut.gg/evolutions/1817-birthday-brunch",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+5"
+      },
+      {
+        "stat": "Acceleration",
+        "valeur": "+8"
+      },
+      {
+        "stat": "Sprint Speed",
+        "valeur": "+8"
+      },
+      {
+        "stat": "Positioning",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Finishing",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Shot Power",
+        "valeur": "+5"
+      },
+      {
+        "stat": "Long Shots",
+        "valeur": "+5"
+      },
+      {
+        "stat": "Curve",
+        "valeur": "+10"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 10 jours",
+    "date_expiration": "Expire dans 10 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:24Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1814",
+    "slug": "1814-brilliant-dribbler",
+    "titre": "Brilliant Dribbler",
+    "description_courte": "Elevate your player into a dribbling master! Gain Dribbling Stats and PlayStyles and dazzle opponent defenders on the pitch.",
+    "url_futgg": "https://www.fut.gg/evolutions/1814-brilliant-dribbler",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": false,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 94",
+      "Max OVR: 88",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax",
+      "Position exclus: CBM"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+2"
+      },
+      {
+        "stat": "Ball Control",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Reactions",
+        "valeur": "+5"
+      },
+      {
+        "stat": "Balance",
+        "valeur": "+5"
+      },
+      {
+        "stat": "Agility",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Dribbling",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Composure",
+        "valeur": "+5"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 9 jours",
+    "date_expiration": "Expire dans 9 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:26Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1811",
+    "slug": "1811-birthday-bonito",
+    "titre": "Birthday Bonito",
+    "description_courte": "Celebrate FUT Birthday with some Brazilian mischief. Give your LW silky dribbles, juiced stats, flashy PlayStyles+, and CAM duties. The prince of flair wants the keys to the midfield too.",
+    "url_futgg": "https://www.fut.gg/evolutions/1811-birthday-bonito",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": false,
+    "difficulte_communaute": "MediumNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 93",
+      "Max OVR: 89",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsMax Pos"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+40"
+      },
+      {
+        "stat": "PAS",
+        "valeur": "+30"
+      },
+      {
+        "stat": "PAC",
+        "valeur": "+40"
+      },
+      {
+        "stat": "Ball Control",
+        "valeur": "+40"
+      },
+      {
+        "stat": "Positioning",
+        "valeur": "+25"
+      },
+      {
+        "stat": "Penalties",
+        "valeur": "+25"
+      },
+      {
+        "stat": "Agility",
+        "valeur": "+40"
+      },
+      {
+        "stat": "Volleys",
+        "valeur": "+25"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 8 jours",
+    "date_expiration": "Expire dans 8 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:27Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1810",
+    "slug": "1810-old-school-midfielder",
+    "titre": "Old School Midfielder",
+    "description_courte": "See the play before it happens. Upgrade your CDM to a playmaker who locks down possession and dictates tempo on the pitch.",
+    "url_futgg": "https://www.fut.gg/evolutions/1810-old-school-midfielder",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "HardNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 87",
+      "Max OVR: 87",
+      "Max PS: 10",
+      "Max PS+: 2",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+6"
+      },
+      {
+        "stat": "DEF",
+        "valeur": "+5"
+      },
+      {
+        "stat": "PHY",
+        "valeur": "+5"
+      },
+      {
+        "stat": "Composure",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Reactions",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Ball Control",
+        "valeur": "+15"
+      },
+      {
+        "stat": "Acceleration",
+        "valeur": "+6"
+      },
+      {
+        "stat": "Balance",
+        "valeur": "+15"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "Submit dans 8 jours",
+    "date_expiration": "Expire dans 8 jours",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:29Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1280",
+    "slug": "1280-star-in-motion",
+    "titre": "Star in Motion",
+    "description_courte": "Celebrate Jamal Musiala’s rise to football’s elite. Step into the spotlight with enhanced creativity, flair, and precision that define the face of the game’s new generation.",
+    "url_futgg": "https://www.fut.gg/evolutions/1280-star-in-motion",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "HardNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 85",
+      "Max OVR: 85",
+      "Max PS: 10",
+      "Max PS+: 1",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+10"
+      },
+      {
+        "stat": "PAC",
+        "valeur": "+25"
+      },
+      {
+        "stat": "SHO",
+        "valeur": "+10"
+      },
+      {
+        "stat": "DRI",
+        "valeur": "+10"
+      },
+      {
+        "stat": "DEF",
+        "valeur": "+5"
+      },
+      {
+        "stat": "PAS",
+        "valeur": "+10"
+      },
+      {
+        "stat": "Jumping",
+        "valeur": "+15"
+      },
+      {
+        "stat": "Stamina",
+        "valeur": "+20"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "",
+    "date_expiration": "",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:31Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1213",
+    "slug": "1213-intro-to-training-camp-evos-i",
+    "titre": "Intro to Training Camp EVOs I",
+    "description_courte": "Assign a GK to Training Camp Evolutions through the Companion App. When the training session concludes, collect their earned upgrades.",
+    "url_futgg": "https://www.fut.gg/evolutions/1213-intro-to-training-camp-evos-i",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 82",
+      "Max OVR: 82",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [],
+    "taches": [],
+    "date_soumission": "",
+    "date_expiration": "",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:32Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1212",
+    "slug": "1212-intro-to-training-camp-evos-ii",
+    "titre": "Intro to Training Camp EVOs II",
+    "description_courte": "Assign a Player to Training Camp Evolutions through the Companion App. When the training session concludes, collect their earned upgrades.",
+    "url_futgg": "https://www.fut.gg/evolutions/1212-intro-to-training-camp-evos-ii",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 82",
+      "Max OVR: 82",
+      "Max PS: 3",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [],
+    "taches": [],
+    "date_soumission": "",
+    "date_expiration": "",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:34Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "evo_1211",
+    "slug": "1211-intro-to-evolutions",
+    "titre": "Intro to Evolutions",
+    "description_courte": "Welcome to FC 26! Kick things off by exploring Evolutions, where you can upgrade Players over time until they reach their stated maximum.",
+    "url_futgg": "https://www.fut.gg/evolutions/1211-intro-to-evolutions",
+    "cout_credits": 0,
+    "cout_points": 0,
+    "gratuit": true,
+    "difficulte_communaute": "EasyNumber",
+    "conditions_eligibilite": [
+      "Max. OVR: 81",
+      "Max OVR: 81",
+      "Excluded: RarityWorld Tour Silver StarsOverallMax"
+    ],
+    "boosts": [
+      {
+        "stat": "OVR",
+        "valeur": "+1"
+      },
+      {
+        "stat": "PAC",
+        "valeur": "+1"
+      },
+      {
+        "stat": "SHO",
+        "valeur": "+1"
+      }
+    ],
+    "taches": [],
+    "date_soumission": "",
+    "date_expiration": "",
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:35Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  }
+]

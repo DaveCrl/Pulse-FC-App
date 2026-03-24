@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>FC Pulse — Live</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#080c10;--bg2:#0d1219;--bg3:#131b24;--bg4:#1a2535;
+  --border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.14);
+  --text:#e8edf2;--text2:#8a9bb0;--text3:#4a5a6e;
+  --gold:#c8a84b;--gold2:#f0cc70;--accent:#00d4ff;
+  --green:#22c55e;--red:#ef4444;--orange:#f97316;--purple:#a855f7;
+  --nav-h:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;font-size:15px;min-height:100vh;overflow-x:hidden}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideIn{from{transform:translateX(18px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes tick{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
+.fade-up{animation:fadeUp .3s cubic-bezier(.23,1,.32,1) both}
+.slide-in{animation:slideIn .28s cubic-bezier(.23,1,.32,1) both}
+
+/* ── NAV ── */
+nav{position:fixed;bottom:0;left:0;right:0;height:var(--nav-h);background:rgba(8,12,16,.97);backdrop-filter:blur(20px);border-top:1px solid var(--border);display:flex;z-index:999}
+.nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:var(--text3);background:none;border:none;font-family:'Barlow',sans-serif;font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;-webkit-tap-highlight-color:transparent;transition:color .2s}
+.nav-btn.active{color:var(--accent)}
+.nav-btn svg{width:22px;height:22px}
+.nav-dot{width:4px;height:4px;border-radius:50%;background:var(--accent);opacity:0;margin-top:-2px;transition:opacity .2s}
+.nav-btn.active .nav-dot{opacity:1}
+
+/* ── PAGES ── */
+.page{display:none;min-height:100vh;padding-bottom:calc(var(--nav-h)+20px)}
+.page.active{display:block}
+.page-header{padding:17px 16px 11px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(8,12,16,.95);backdrop-filter:blur(16px);z-index:100}
+.logo{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;letter-spacing:2px;color:var(--accent)}
+.logo span{color:var(--gold)}
+.back-btn{background:none;border:none;color:var(--text2);cursor:pointer;display:flex;align-items:center;padding:4px;transition:color .2s}
+.back-btn:hover{color:var(--text)}
+.back-btn svg{width:20px;height:20px}
+
+/* ── ONGLETS ── */
+.tab-bar{display:flex;border-bottom:1px solid var(--border);position:sticky;top:60px;background:rgba(8,12,16,.95);backdrop-filter:blur(12px);z-index:99}
+.tab{flex:1;padding:12px 4px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:.5px;text-transform:uppercase;cursor:pointer;color:var(--text3);border-bottom:2px solid transparent;transition:all .2s}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab-badge{background:var(--red);color:#fff;border-radius:10px;padding:1px 5px;font-size:9px;font-weight:700;margin-left:3px;vertical-align:top}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* ── FILTRES PAR ONGLET ── */
+.filter-bar{display:flex;gap:6px;padding:9px 16px;overflow-x:auto;scrollbar-width:none;background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:97px;z-index:98}
+.filter-bar::-webkit-scrollbar{display:none}
+.fp{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;font-weight:600;color:var(--text2);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .18s;-webkit-tap-highlight-color:transparent}
+.fp:hover{border-color:var(--border2);color:var(--text)}
+.fp.on{background:rgba(0,212,255,.12);border-color:rgba(0,212,255,.35);color:var(--accent)}
+.fp.fp-g{border-color:rgba(34,197,94,.25);color:#4ade80}.fp.fp-g.on{background:rgba(34,197,94,.1)}
+.fp.fp-o{border-color:rgba(249,115,22,.25);color:#fb923c}.fp.fp-o.on{background:rgba(249,115,22,.1)}
+.fp.fp-p{border-color:rgba(168,85,247,.25);color:#c084fc}.fp.fp-p.on{background:rgba(168,85,247,.1)}
+.fp.fp-r{border-color:rgba(239,68,68,.25);color:#f87171}.fp.fp-r.on{background:rgba(239,68,68,.1)}
+
+/* ── STATS ── */
+.module-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:11px 16px;border-bottom:1px solid var(--border)}
+.ms{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center}
+.ms-v{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;line-height:1}
+.ms-l{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-top:2px}
+
+/* ── CARTES ── */
+.content-list{padding:10px 16px;display:flex;flex-direction:column;gap:10px}
+.content-card{border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .18s,box-shadow .18s;position:relative}
+.content-card:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.45)}
+.content-card:active{transform:scale(.985)}
+.content-card:nth-child(1){animation:fadeUp .3s .03s both}
+.content-card:nth-child(2){animation:fadeUp .3s .06s both}
+.content-card:nth-child(3){animation:fadeUp .3s .09s both}
+.content-card:nth-child(4){animation:fadeUp .3s .12s both}
+.content-card:nth-child(n+5){animation:fadeUp .3s .15s both}
+
+/* Fond campaign */
+.card-bg{position:absolute;inset:0;opacity:.18;pointer-events:none}
+.card-inner{position:relative;background:rgba(13,18,25,.88);border:1px solid var(--border)}
+.content-card:hover .card-inner{border-color:var(--border2)}
+
+/* Zone haut */
+.card-top{display:flex;align-items:stretch;border-bottom:1px solid rgba(255,255,255,.06)}
+.card-img-col{width:70px;min-width:70px;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);border-right:1px solid rgba(255,255,255,.06);flex-shrink:0;overflow:hidden;position:relative}
+.card-img{width:66px;height:74px;object-fit:contain;transition:transform .25s}
+.content-card:hover .card-img{transform:scale(1.06)}
+.card-img-fb{width:66px;height:74px;display:flex;align-items:center;justify-content:center;font-size:28px}
+.card-body{flex:1;padding:10px 12px 8px;min-width:0}
+.card-camp{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:2px}
+.card-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:var(--text);line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-desc{font-size:12px;color:var(--text2);margin-top:3px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* Verdict + timer */
+.card-mid{padding:7px 12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.05)}
+.verdict{border-radius:5px;padding:3px 9px;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;white-space:nowrap}
+.vr{background:rgba(34,197,94,.14);color:#4ade80;border:1px solid rgba(34,197,94,.28)}
+.vi{background:rgba(0,212,255,.11);color:var(--accent);border:1px solid rgba(0,212,255,.22)}
+.vs{background:rgba(249,115,22,.11);color:#fb923c;border:1px solid rgba(249,115,22,.22)}
+.vd{background:rgba(239,68,68,.11);color:#f87171;border:1px solid rgba(239,68,68,.22)}
+.verdict-auto{opacity:.72}
+.timer{margin-left:auto;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;display:flex;align-items:center;gap:4px}
+.t-urgent{color:var(--red);animation:pulse 1.3s ease-in-out infinite}
+.t-soon{color:var(--orange)}
+.t-ok{color:var(--text3)}
+
+/* Tags bas */
+.card-bot{padding:7px 12px 10px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.chip{background:var(--bg4);border:1px solid var(--border);border-radius:5px;padding:3px 8px;font-size:11px;font-weight:600;color:var(--text2);white-space:nowrap;display:flex;align-items:center;gap:3px}
+.cg{background:rgba(200,168,75,.11);border-color:rgba(200,168,75,.28);color:var(--gold2)}
+.cgr{background:rgba(34,197,94,.09);border-color:rgba(34,197,94,.22);color:#4ade80}
+.cr{background:rgba(239,68,68,.09);border-color:rgba(239,68,68,.22);color:#f87171}
+.ca{background:rgba(0,212,255,.09);border-color:rgba(0,212,255,.18);color:var(--accent)}
+.co{background:rgba(249,115,22,.09);border-color:rgba(249,115,22,.22);color:#fb923c}
+.cp{background:rgba(168,85,247,.09);border-color:rgba(168,85,247,.22);color:#c084fc}
+
+/* Difficulté SBC — dégradé froid→chaud */
+.diff-bar{display:flex;align-items:center;gap:5px;margin-left:auto}
+.diff-label{font-size:10px;font-weight:600;color:var(--text3);white-space:nowrap}
+.diff-dots{display:flex;gap:3px}
+.dd{width:7px;height:7px;border-radius:50%;background:var(--bg4);border:1px solid var(--border)}
+.dd.on-1{background:#3b82f6;border-color:#3b82f6}
+.dd.on-2{background:#22c55e;border-color:#22c55e}
+.dd.on-3{background:#f0cc70;border-color:#f0cc70}
+.dd.on-4{background:#f97316;border-color:#f97316}
+.dd.on-5{background:#ef4444;border-color:#ef4444}
+
+/* ── DETAIL ── */
+.detail-hero{border-bottom:1px solid var(--border);overflow:hidden;position:relative}
+.dhero-bg{position:absolute;inset:0;opacity:.22;pointer-events:none}
+.dhero-inner{position:relative;display:flex;gap:14px;padding:17px 16px 15px;align-items:flex-start}
+.d-card-img{width:90px;min-width:90px;height:112px;object-fit:contain;border-radius:10px;background:var(--bg3);border:1px solid var(--border2)}
+.d-card-fb{width:90px;min-width:90px;height:112px;border-radius:10px;background:var(--bg3);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:38px}
+.d-info{flex:1;min-width:0}
+.d-camp{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+.d-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;line-height:1.1;margin-bottom:8px}
+.d-badges{display:flex;flex-wrap:wrap;gap:5px}
+.badge{border-radius:5px;padding:3px 9px;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}
+.ba{background:rgba(0,212,255,.11);color:var(--accent);border:1px solid rgba(0,212,255,.22)}
+.bgr{background:rgba(34,197,94,.11);color:#4ade80;border:1px solid rgba(34,197,94,.22)}
+.br{background:rgba(239,68,68,.11);color:#f87171;border:1px solid rgba(239,68,68,.22)}
+.bo{background:rgba(249,115,22,.11);color:#fb923c;border:1px solid rgba(249,115,22,.22)}
+.bg{background:rgba(200,168,75,.15);color:var(--gold2);border:1px solid rgba(200,168,75,.28)}
+.bp{background:rgba(168,85,247,.11);color:#c084fc;border:1px solid rgba(168,85,247,.22)}
+
+/* Timer détail */
+.d-timer{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;margin-top:8px;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:6px}
+
+.pulse-block{margin:12px 16px 0;background:var(--bg3);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:12px 14px}
+.pulse-label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:5px}
+.pulse-txt{font-size:14px;color:var(--text);line-height:1.55}
+.pulse-auto{font-size:11px;color:var(--text3);margin-top:5px;font-style:italic}
+
+.det-sec{padding:13px 16px 0}
+.sec-title{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-bottom:9px;padding-bottom:5px;border-bottom:1px solid var(--border)}
+.seg-item,.task-item,.boost-item,.reward-item{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:8px;transition:border-color .15s}
+.seg-item:hover,.task-item:hover{border-color:var(--border2)}
+.seg-head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.seg-nom{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;flex:1}
+.note-b{background:rgba(200,168,75,.13);color:var(--gold2);border-radius:5px;padding:2px 8px;font-size:12px;font-weight:700}
+.cons{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.con{background:var(--bg4);color:var(--text3);border-radius:4px;padding:2px 7px;font-size:11px}
+.task-num{width:24px;height:24px;border-radius:50%;background:rgba(0,212,255,.13);border:1px solid rgba(0,212,255,.22);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--accent);flex-shrink:0}
+.boost-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.boost-item{display:flex;align-items:center;gap:8px}
+.bv{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;color:var(--green);min-width:36px;text-align:center}
+.bvps{font-size:11px;color:var(--gold2);background:rgba(200,168,75,.11);border:1px solid rgba(200,168,75,.22);border-radius:4px;padding:3px 7px;white-space:nowrap}
+.meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.mc{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.mc-l{font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--text3);margin-bottom:2px}
+.mc-v{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:var(--text)}
+.reward-item{display:flex;align-items:center;gap:10px;border-color:rgba(200,168,75,.18)}
+.r-icon{font-size:20px;width:30px;text-align:center;flex-shrink:0}
+.r-name{font-weight:600;font-size:14px;color:var(--gold2)}
+.r-meta{font-size:11px;color:var(--text3);margin-top:1px}
+
+.action-link{display:block;background:rgba(0,212,255,.07);border:1px solid rgba(0,212,255,.16);border-radius:8px;padding:11px 14px;text-align:center;text-decoration:none;color:var(--accent);font-weight:600;font-size:13px;margin:12px 16px;transition:background .18s}
+.action-link:hover{background:rgba(0,212,255,.13)}
+.empty-state{padding:40px 16px;text-align:center;color:var(--text3)}
+.empty-state h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:var(--text2);margin-bottom:6px}
+.spinner{width:26px;height:26px;border:2.5px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 10px}
+.loading-msg{padding:28px;text-align:center;color:var(--text3);font-size:13px}
+</style>
+</head>
+<body>
+
+<nav>
+  <button class="nav-btn" onclick="location.href='fcpulse_v1.html'">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    Joueurs<div class="nav-dot"></div>
+  </button>
+  <button class="nav-btn active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    Live<div class="nav-dot"></div>
+  </button>
+  <button class="nav-btn" onclick="location.href='fcpulse_v1.html'">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M8 21H3v-5M21 3l-7 7M3 21l7-7"/></svg>
+    Comparer<div class="nav-dot"></div>
+  </button>
+</nav>
+
+<!-- LISTE -->
+<div class="page active" id="page-list">
+  <div class="page-header">
+    <span class="logo">FC<span>Pulse</span></span>
+    <span style="font-size:11px;color:var(--text3);margin-left:auto;font-weight:700;letter-spacing:1.5px">LIVE</span>
+  </div>
+  <div class="module-stats" id="module-stats">
+    <div class="ms"><div class="spinner" style="margin:4px auto 0"></div></div>
+    <div class="ms"><div class="spinner" style="margin:4px auto 0"></div></div>
+    <div class="ms"><div class="spinner" style="margin:4px auto 0"></div></div>
+  </div>
+  <div class="tab-bar">
+    <div class="tab active" onclick="switchTab('sbc',this)">SBC <span class="tab-badge" id="badge-sbc">…</span></div>
+    <div class="tab" onclick="switchTab('obj',this)">Objectifs <span class="tab-badge" id="badge-obj">…</span></div>
+    <div class="tab" onclick="switchTab('evo',this)">Évolutions <span class="tab-badge" id="badge-evo">…</span></div>
+  </div>
+  <div class="filter-bar" id="filter-bar"></div>
+  <div class="tab-content active" id="tab-sbc"><div class="loading-msg"><div class="spinner"></div>Chargement…</div></div>
+  <div class="tab-content" id="tab-obj"><div class="loading-msg"><div class="spinner"></div>Chargement…</div></div>
+  <div class="tab-content" id="tab-evo"><div class="loading-msg"><div class="spinner"></div>Chargement…</div></div>
+</div>
+
+<!-- DETAIL -->
+<div class="page" id="page-detail">
+  <div class="page-header">
+    <button class="back-btn" onclick="goBack()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+    </button>
+    <span id="dhdr" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px"></span>
+  </div>
+  <div id="detail-body"></div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════
+// DONNÉES
+// ═══════════════════════════════════════════════════
+var sbcs=[],objectifs=[],evolutions=[],currentTab='sbc',activeFilter='all';
+
+// ═══════════════════════════════════════════════════
+// TRADUCTIONS
+// ═══════════════════════════════════════════════════
+var TR={
+  'FOF: Answer the Call':'Festival of Football','Answer the Call':'Festival of Football',
+  'Festival of Football':'Festival of Football',
+  'FUT Birthday':'FUT Anniversaire','Birthday':'Anniversaire',
+  'TOTW':'Équipe de la semaine','Team of the Week':'Équipe de la semaine',
+  'TOTY':'Équipe de l\'année','Team of the Year':'Équipe de l\'année',
+  'Showdown':'Confrontation',
+  'World Tour':'Tournée Mondiale','Silver Stars':'Étoiles Argent',
+  'Road to':'Route vers','Challengers':'Challengers',
+  'Squad Battles':'Clashs d\'équipes','Squad Battle':'Clash d\'équipes',
+  'Rivals':'Rivals','Champions':'FUT Champions','Rush':'Rush',
+  'Live Events':'Événements Live','Live Friendly':'Match amical Live',
+  'Flash Rush':'Rush Flash','Gauntlet':'Gauntlet',
+  'Seasonal':'Saisonnier','Milestones':'Jalons','Milestone':'Jalons',
+  'Foundations':'Fondations','Foundation':'Fondations',
+  'Upgrades':'Mises à niveau','Upgrade':'Mise à niveau',
+  'Icons':'Icônes','Icon':'Icône',
+  'Challenges':'Défis','Challenge':'Défi',
+  'Segments':'Équipes','Segment':'Équipe',
+  'Chemistry':'Collectif','Min. Team Rating':'Note d\'équipe min.',
+  'Team Rating':'Note d\'équipe',
+  'Repeatable':'Répétable','Non-Repeatable':'Non répétable',
+  'Repeatable-':'Non répétable',
+  'Tradeable':'Échangeable','Untradeable':'Non échangeable',
+  'Expires in':'Expire dans','days':'jours','day':'jour',
+  'Refreshes Every':'Réinitialisation tous les',
+  'Exchange a squad featuring players from':'Échangez une équipe de joueurs de',
+  'Exchange a squad featuring a TOTW player':'Échangez une équipe avec un joueur TOTW',
+  'Earn a special':'Gagnez une carte spéciale',
+  'Earn a Moments':'Gagnez une carte Moments de',
+  'Earn a Showdown':'Gagnez une carte Confrontation de',
+  'Earn 1 of':'Gagnez 1 parmi',
+  'Complete this challenge to earn a reward':'Complétez ce défi pour obtenir une récompense',
+  'Join the':'Rejoignez le','Event':'Événement','event':'événement',
+  'Complete':'Complétez','to earn':'pour obtenir','rewards':'récompenses',
+  'All rewards are untradeable':'Toutes les récompenses sont non échangeables',
+  'Small Gold Players Pack':'Pack petits joueurs or',
+  'Gold Players Pack':'Pack de joueurs or',
+  'Gold Pack':'Pack or','Silver Pack':'Pack argent','Bronze Pack':'Pack bronze',
+  'Rare Gold Players Pack':'Pack de joueurs or rare',
+  'Electrum Players Pack':'Pack de joueurs Electrum',
+  'Premium Gold Pack':'Pack or premium',
+  'Players Pack':'Pack joueurs','Player Pick':'Choix joueur',
+  'Evo Unlock':'Déverrouillage Évolution',
+  'Season Points':'Points de saison',
+  'Min. 1 Players from: ':'Min. 1 joueur de ',
+  'Min. 1 Players:':'Min. 1 joueur :',
+  'Min. 1 Players from':'Min. 1 joueur de',
+  'Excluded Rarity':'Rareté exclue','Excluded Position':'Poste exclu',
+  'Overall':'Note globale','Max. ':'Max. ',
+  'Easy':'Facile','Medium':'Moyen','Hard':'Difficile',
+  'Online Required':'En ligne requis','Play':'Jouez','Win':'Gagnez','Score':'Marquez',
+  'matches in':'matchs en','match in':'match en',
+  'goals in':'buts en','goal in':'but en',
+  'Finesse Shot+':'Tir en finesse+','Finesse Shot':'Tir en finesse',
+  'Technical+':'Technique+','Technical':'Technique',
+  'Rapid+':'Rapide+','Rapid':'Rapide',
+  'Quick Step+':'Pas rapide+','Quick Step':'Pas rapide',
+  'First Touch+':'Premier contact+','First Touch':'Premier contact',
+  'Gamechanger+':'Décisif+','Gamechanger':'Décisif',
+  'Incisive Pass+':'Passe incisive+','Incisive Pass':'Passe incisive',
+  'Intercept+':'Interception+','Intercept':'Interception',
+  'Low Driven Shot+':'Tir rasant+','Low Driven Shot':'Tir rasant',
+  'Power Shot+':'Tir puissant+','Power Shot':'Tir puissant',
+  'Whipped Pass+':'Passe fouettée+','Whipped Pass':'Passe fouettée',
+  'Long Ball Pass+':'Longue passe+','Long Ball Pass':'Longue passe',
+  'Aerial Fortress+':'Forteresse aérienne+','Aerial Fortress':'Forteresse aérienne',
+  'Tiki Taka+':'Tiki Taka+','Tiki Taka':'Tiki Taka',
+  'Dead Ball+':'Coup de pied arrêté+','Dead Ball':'Coup de pied arrêté',
+  'Rush Out+':'Sortie rapide+','Rush Out':'Sortie rapide',
+  'Speed Dribbler+':'Dribble rapide+','Speed Dribbler':'Dribble rapide',
+  'Relentless+':'Infatigable+','Relentless':'Infatigable',
+  'Press Proven+':'Pressing éprouvé+','Press Proven':'Pressing éprouvé',
+  'Pinged Pass+':'Passe directe+','Pinged Pass':'Passe directe',
+  'Acrobatic+':'Acrobatique+','Acrobatic':'Acrobatique',
+  'Aerial+':'Aérien+','Aerial':'Aérien',
+  'Block+':'Blocage+','Block':'Blocage',
+  'Bruiser+':'Imposant+','Bruiser':'Imposant',
+  'Slide Tackle+':'Tacle glissé+','Slide Tackle':'Tacle glissé',
+  'Jockey+':'Marquage+','Jockey':'Marquage',
+  'Cross+':'Centre+','Cross':'Centre',
+  'Power Header+':'Tête puissante+','Power Header':'Tête puissante',
+  'Chip Shot+':'Lob+','Chip Shot':'Lob',
+  'Flair+':'Technique+','Flair':'Flair',
+};
+
+function tr(txt){
+  if(!txt) return'';
+  var r=String(txt);
+  Object.keys(TR).sort(function(a,b){return b.length-a.length;}).forEach(function(k){
+    r=r.replace(new RegExp(k.replace(/[-.*+?^${}()|[\]\\]/g,'\\$&'),'g'),TR[k]);
+  });
+  return r;
+}
+
+// ═══════════════════════════════════════════════════
+// COULEURS CAMPAGNE
+// ═══════════════════════════════════════════════════
+var CAMP_COLORS={
+  'FUT Anniversaire':['#8B5CF6','#EC4899'],
+  'FUT Birthday':['#8B5CF6','#EC4899'],
+  'Anniversaire':['#8B5CF6','#EC4899'],
+  'Festival of Football':['#EF4444','#3B82F6'],
+  'Confrontation':['#F97316','#EF4444'],
+  'Moments Joueur':['#1E3A8A','#7C3AED'],
+  'Moments':['#1E3A8A','#7C3AED'],
+  'Équipe de la semaine':['#0D9488','#1E293B'],
+  'Équipe de l\'année':['#C8A84B','#1a1000'],
+  'Fantasy FC':['#7C3AED','#A78BFA'],
+  'Tournée Mondiale':['#0369A1','#0891B2'],
+  'Rush':['#DC2626','#F59E0B'],
+  'Partenariat':['#166534','#15803D'],
+  'Challengers':['#9333EA','#6366F1'],
+  'Route vers':['#0EA5E9','#6366F1'],
+};
+
+function campGrad(camp){
+  var c=CAMP_COLORS[camp];
+  if(!c) return null;
+  return'linear-gradient(135deg,'+c[0]+','+c[1]+')';
+}
+
+function campEmoji(camp,titre,type){
+  var t=((camp||'')+(titre||'')).toLowerCase();
+  if(type==='evo') return'⚡';
+  if(/anniversary|birthday|anniversaire/.test(t)) return'🎂';
+  if(/festival|answer.the.call/.test(t)) return'🌍';
+  if(/showdown|confrontation/.test(t)) return'⚔️';
+  if(/moments/.test(t)) return'🎬';
+  if(/totw|semaine/.test(t)) return'📋';
+  if(/toty|année/.test(t)) return'🏆';
+  if(/rush/.test(t)) return'🏃';
+  if(/gauntlet/.test(t)) return'🗡️';
+  if(/squad.battle|clash/.test(t)) return'🤖';
+  if(/rivals/.test(t)) return'⚔️';
+  if(/milestone|jalon/.test(t)) return'🎯';
+  if(/foundation/.test(t)) return'🏗️';
+  if(/icon|icône/.test(t)) return'👑';
+  if(/hero|héros/.test(t)) return'⭐';
+  if(type==='sbc') return'⚽';
+  if(type==='obj') return'🎯';
+  return'⚡';
+}
+
+// ═══════════════════════════════════════════════════
+// DIFFICULTÉ SBC (froid→chaud)
+// ═══════════════════════════════════════════════════
+function sbcDifficulty(item){
+  var score=0;
+  var nb=item.nb_segments||0;
+  if(nb<=2) score+=1;
+  else if(nb<=3) score+=2;
+  else if(nb<=5) score+=3;
+  else score+=4;
+  var segs=item.segments||[];
+  segs.forEach(function(s){
+    if((s.note_requise||0)>=88) score+=1;
+    else if((s.note_requise||0)>=86) score+=0.5;
+    var cons=(s.contraintes||[]).join(' ').toLowerCase();
+    if(/totw|team.of.the.week|semaine/.test(cons)) score+=1.5;
+    if(/même ligue|même nation|same/.test(cons)) score+=0.5;
+  });
+  var d=Math.min(Math.round(score),5);
+  if(d<1) d=1;
+  var labels=['','Facile','Simple','Moyen','Difficile','Très difficile'];
+  var colors=['','#3b82f6','#22c55e','#f0cc70','#f97316','#ef4444'];
+  return{level:d,label:labels[d],color:colors[d]};
+}
+
+function diffDotsHTML(diff){
+  var h='<div class="diff-bar"><span class="diff-label" style="color:'+diff.color+'">'+diff.label+'</span><div class="diff-dots">';
+  for(var i=1;i<=5;i++){
+    h+='<div class="dd'+(i<=diff.level?' on-'+i:'')+'"></div>';
+  }
+  return h+'</div></div>';
+}
+
+// ═══════════════════════════════════════════════════
+// VERDICTS AUTO
+// ═══════════════════════════════════════════════════
+var KH=['icon','icône','88+','89+','90+','91+','92+','93+','94+','95+','hero','héros','toty','totw','gratuit','weekly','répétable','repeatable','birthday','anniversaire','milestone','guarantee','garanti','icône','garantie'];
+var KM=['85+','86+','87+','player pick','choix joueur','moments','showdown','confrontation','rivals','gauntlet','challengers','84+','83+'];
+var KD=['bronze','silver','argent','kit','stadium','stade','badge','common'];
+var PSPLUS=['finesse shot+','tir en finesse+','technical+','technique+','rapid+','rapide+','quick step+','incisive pass+','passe incisive+','low driven shot+','tir rasant+','gamechanger+','intercept+','interception+','first touch+'];
+
+function autoV(item,type){
+  if(item.verdict_fc_pulse&&item.verdict_fc_pulse.trim()) return{v:item.verdict_fc_pulse,p:item.priorite_fc_pulse,r:item.resume_fc_pulse,auto:false};
+  var txt=[item.titre||'',item.description_courte||'',item.recompense_principale||'',(item.recompenses||[]).join(' '),(item.boosts||[]).map(function(b){return(b.stat||b.valeur||'')}).join(' ')].join(' ').toLowerCase();
+  var rep=item.repeatable===true,hasMeta=PSPLUS.some(function(ps){return txt.indexOf(ps)>=0});
+  var score=0;
+  if(KH.some(function(k){return txt.indexOf(k)>=0})) score+=3;
+  if(KM.some(function(k){return txt.indexOf(k)>=0})) score+=1;
+  if(KD.some(function(k){return txt.indexOf(k)>=0})) score-=2;
+  if(rep) score+=1;
+  if(hasMeta) score+=2;
+  if(isUrgent(item)) score+=1;
+  var v,p;
+  if(score>=4){v='rentable';p='haute';}
+  else if(score>=2){v='interessant';p='moyenne';}
+  else if(score>=0){v='situationnel';p='moyenne';}
+  else{v='dispensable';p='basse';}
+  return{v:v,p:p,r:autoResume(item,type,v,hasMeta,rep),auto:true};
+}
+
+function autoResume(item,type,v,hasMeta,isRep){
+  var rc=tr(item.recompense_principale||(item.recompenses||[])[0]||'');
+  var cout='';
+  if(type==='evo') cout=item.cout_credits>0?(item.cout_credits.toLocaleString('fr-FR')+' crédits'):item.cout_points>0?(item.cout_points+' pts FC'):'Gratuite';
+  if(type==='sbc'){
+    if(v==='rentable'){
+      if(isRep) return'SBC répétable avec une bonne récompense. À enchaîner si ton club est riche en fodder — surveille le coût réel par cycle.';
+      return'Très bon SBC à compléter en priorité.'+(rc?' Récompense : '+rc+'.':'');
+    }
+    if(v==='interessant') return'SBC intéressant si tu as les joueurs en stock. Vérifie le coût total avant de te lancer.';
+    if(v==='situationnel') return'À faire uniquement si la récompense correspond à ton besoin actuel ou si tu as du fodder disponible.';
+    return'Récompense peu impactante. À ignorer sauf si tu as du surplus à recycler.';
+  }
+  if(type==='obj'){
+    var solo=item.solo_friendly?'Faisable en solo (Clashs d\'équipes). ':'Nécessite du jeu en ligne. ';
+    var xp=item.xp_total?'Rapporte '+item.xp_total+' points de saison. ':'';
+    if(v==='rentable') return solo+xp+'À faire absolument — excellent rapport temps/récompense.';
+    if(v==='interessant') return solo+xp+'Bon objectif si tu joues déjà les modes demandés.';
+    if(v==='situationnel') return solo+'Intéressant seulement si le mode fait partie de tes sessions habituelles.';
+    return'Effort disproportionné par rapport à la récompense.';
+  }
+  if(type==='evo'){
+    if(hasMeta) return(cout?cout+'. ':'')+'Évolution avec un PlayStyle+ fort en méta. Investissement excellent pour le bon profil.';
+    if(v==='rentable') return(cout?cout+'. ':'')+'Boosts significatifs et conditions accessibles. Cherche un joueur Or sous-coté.';
+    if(v==='interessant') return(cout?cout+'. ':'')+'Utile si tu as un joueur éligible en stock.';
+    if(v==='situationnel') return(cout?cout+'. ':'')+'À considérer seulement si le joueur idéal est déjà dans ton club.';
+    return(cout?cout+'. ':'')+'Impact limité sur la méta actuelle.';
+  }
+  return'';
+}
+
+// ═══════════════════════════════════════════════════
+// TIMERS
+// ═══════════════════════════════════════════════════
+var timers={};
+
+function parseExpiry(item){
+  var raw=item.expiration_texte||item.date_soumission||item.date_expiration||'';
+  if(!raw) return null;
+  var m=raw.match(/in\s+(\d+)\s+day/i);
+  if(m){
+    var d=parseInt(m[1]);
+    var now=new Date();
+    return new Date(now.getTime()+d*86400000);
+  }
+  var mh=raw.match(/in\s+(\d+)\s+hour/i);
+  if(mh){
+    var h=parseInt(mh[1]);
+    return new Date(new Date().getTime()+h*3600000);
+  }
+  return null;
+}
+
+function isUrgent(item){
+  var raw=item.expiration_texte||item.date_soumission||item.date_expiration||'';
+  var m=raw.match(/in\s+(\d+)\s+day/i);
+  if(m) return parseInt(m[1])<=2;
+  if(/hour|heure/i.test(raw)) return true;
+  return item.expires_soon===true;
+}
+
+function formatTimer(ms){
+  if(ms<=0) return{txt:'Expiré',cls:'t-urgent'};
+  var s=Math.floor(ms/1000),m=Math.floor(s/60),h=Math.floor(m/60),d=Math.floor(h/24);
+  var cls=d<=1?'t-urgent':d<=3?'t-soon':'t-ok';
+  if(d>0) return{txt:d+'j '+pad(h%24)+'h '+pad(m%60)+'m',cls:cls};
+  return{txt:pad(h)+'h '+pad(m%60)+'m '+pad(s%60)+'s',cls:cls};
+}
+function pad(n){return String(n).padStart(2,'0');}
+
+function startTimers(){
+  clearInterval(window._timerInterval);
+  window._timerInterval=setInterval(function(){
+    document.querySelectorAll('[data-expiry]').forEach(function(el){
+      var ts=parseInt(el.getAttribute('data-expiry'));
+      var ms=ts-Date.now();
+      var r=formatTimer(ms);
+      el.textContent=r.txt;
+      el.className='timer '+r.cls;
+    });
+  },1000);
+}
+
+// ═══════════════════════════════════════════════════
+// RÉCOMPENSES — emoji
+// ═══════════════════════════════════════════════════
+function rewardEmoji(txt){
+  var t=(txt||'').toLowerCase();
+  if(/icon|icône/.test(t)) return'👑';
+  if(/hero|héros/.test(t)) return'⭐';
+  if(/player pick|choix/.test(t)) return'🎰';
+  if(/evo|évolution/.test(t)) return'⚡';
+  if(/player|joueur/.test(t)) return'👤';
+  if(/pack/.test(t)) return'📦';
+  if(/point|xp|sp|saison/.test(t)) return'🔹';
+  if(/coin|crédit/.test(t)) return'💰';
+  if(/kit|maillot/.test(t)) return'👕';
+  return'🎁';
+}
+
+// ═══════════════════════════════════════════════════
+// FILTRES PAR ONGLET
+// ═══════════════════════════════════════════════════
+var FILTERS={
+  sbc:[
+    {id:'all',label:'Tout',cls:''},
+    {id:'haute',label:'✅ Priorité haute',cls:'fp-g'},
+    {id:'urgent',label:'⏰ Expire bientôt',cls:'fp-o'},
+    {id:'repeatable',label:'♾️ Répétable',cls:'fp-p'},
+    {id:'non-repeatable',label:'1× Non répétable',cls:'fp-r'},
+    {id:'tradeable',label:'Échangeable',cls:''},
+    {id:'rentable',label:'Rentable',cls:'fp-g'},
+  ],
+  obj:[
+    {id:'all',label:'Tout',cls:''},
+    {id:'haute',label:'✅ Priorité haute',cls:'fp-g'},
+    {id:'urgent',label:'⏰ Expire bientôt',cls:'fp-o'},
+    {id:'solo',label:'🤖 Solo OK',cls:'fp-p'},
+    {id:'online',label:'🌐 En ligne requis',cls:'fp-r'},
+    {id:'xp',label:'⚡ XP élevé',cls:'fp-p'},
+    {id:'rentable',label:'Rentable',cls:'fp-g'},
+  ],
+  evo:[
+    {id:'all',label:'Tout',cls:''},
+    {id:'haute',label:'✅ Priorité haute',cls:'fp-g'},
+    {id:'urgent',label:'⏰ Expire bientôt',cls:'fp-o'},
+    {id:'meta',label:'🔥 Méta',cls:'fp-r'},
+    {id:'easy',label:'Facile',cls:'fp-g'},
+    {id:'rentable',label:'Rentable',cls:'fp-g'},
+  ],
+};
+
+function buildFilterBar(type){
+  var fb=document.getElementById('filter-bar');
+  var filters=FILTERS[type]||FILTERS.sbc;
+  fb.innerHTML=filters.map(function(f){
+    return'<div class="fp '+f.cls+(f.id==='all'?' on':'')+'" onclick="setFilter(\''+f.id+'\',this,\''+type+'\')">'+f.label+'</div>';
+  }).join('');
+}
+
+function setFilter(fid,el,type){
+  activeFilter=fid;
+  document.querySelectorAll('.fp').forEach(function(p){p.classList.remove('on');});
+  el.classList.add('on');
+  renderTab(type);
+}
+
+function matchFilter(item,type){
+  if(activeFilter==='all') return true;
+  var v=autoV(item,type);
+  if(activeFilter==='haute') return v.p==='haute';
+  if(activeFilter==='urgent') return isUrgent(item);
+  if(activeFilter==='repeatable') return item.repeatable===true;
+  if(activeFilter==='non-repeatable') return item.repeatable!==true;
+  if(activeFilter==='tradeable') return item.tradeable===true;
+  if(activeFilter==='solo') return item.solo_friendly===true;
+  if(activeFilter==='online') return item.online_required===true;
+  if(activeFilter==='xp') return(item.xp_total||0)>=500;
+  if(activeFilter==='meta'){
+    var txt=[item.titre||'',(item.boosts||[]).map(function(b){return b.valeur||b.stat||'';}).join(' ')].join(' ').toLowerCase();
+    return PSPLUS.some(function(ps){return txt.indexOf(ps)>=0;});
+  }
+  if(activeFilter==='easy') return(item.difficulte_communaute||'').toLowerCase()==='easy'||(item.difficulte_communaute||'').toLowerCase()==='facile';
+  if(activeFilter==='rentable') return v.v==='rentable';
+  return true;
+}
+
+// ═══════════════════════════════════════════════════
+// CHARGEMENT
+// ═══════════════════════════════════════════════════
+async function loadAll(){
+  try{
+    var[r1,r2,r3]=await Promise.all([fetch('sbcs.json'),fetch('objectifs.json'),fetch('evolutions.json')]);
+    sbcs=r1.ok?await r1.json():[];
+    objectifs=r2.ok?await r2.json():[];
+    evolutions=r3.ok?await r3.json():[];
+  }catch(e){console.warn('Chargement:',e);}
+  function sf(t){return function(a,b){var po={haute:0,moyenne:1,basse:2};return(po[autoV(a,t).p]||1)-(po[autoV(b,t).p]||1);}}
+  sbcs.sort(sf('sbc'));objectifs.sort(sf('obj'));evolutions.sort(sf('evo'));
+  var all=[].concat(sbcs,objectifs,evolutions);
+  var hautes=all.filter(function(x){return autoV(x,'x').p==='haute';}).length;
+  var urgent=all.filter(function(x){return isUrgent(x);}).length;
+  document.getElementById('module-stats').innerHTML=
+    '<div class="ms fade-up"><div class="ms-v" style="color:var(--accent)">'+all.length+'</div><div class="ms-l">Actifs</div></div>'+
+    '<div class="ms fade-up" style="animation-delay:.05s"><div class="ms-v" style="color:var(--green)">'+hautes+'</div><div class="ms-l">Priorité haute</div></div>'+
+    '<div class="ms fade-up" style="animation-delay:.1s"><div class="ms-v" style="color:var(--orange)">'+urgent+'</div><div class="ms-l">Expirent bientôt</div></div>';
+  document.getElementById('badge-sbc').textContent=sbcs.length;
+  document.getElementById('badge-obj').textContent=objectifs.length;
+  document.getElementById('badge-evo').textContent=evolutions.length;
+  buildFilterBar('sbc');
+  renderTab('sbc');renderTab('obj');renderTab('evo');
+  startTimers();
+}
+
+// ═══════════════════════════════════════════════════
+// RENDU
+// ═══════════════════════════════════════════════════
+function detectCamp(t,d){
+  var txt=((t||'')+(d||'')).toLowerCase();
+  if(/fof|festival.of.football|answer.the.call/.test(txt)) return'Festival of Football';
+  if(/birthday|anniversaire/.test(txt)) return'FUT Anniversaire';
+  if(/showdown|confrontation/.test(txt)) return'Confrontation';
+  if(/moments/.test(txt)) return'Moments Joueur';
+  if(/totw|team.of.the.week/.test(txt)) return'Équipe de la semaine';
+  if(/weekly|hebdo/.test(txt)) return'Hebdomadaire';
+  if(/milestone|jalon/.test(txt)) return'Jalons';
+  if(/foundation|fondation/.test(txt)) return'Fondations';
+  if(/rush/.test(txt)) return'Rush';
+  if(/squad.battle|clash/.test(txt)) return'Clashs d\'équipes';
+  if(/racism|racisme|bundesliga|laliga|together/.test(txt)) return'Partenariat';
+  if(/world.tour|silver.star/.test(txt)) return'Tournée Mondiale';
+  if(/road.to/.test(txt)) return'Route vers';
+  if(/fantasy/.test(txt)) return'Fantasy FC';
+  if(/challenger/.test(txt)) return'Challengers';
+  return'Live Content';
+}
+
+function cardHTML(item,type,idx){
+  var v=autoV(item,type);
+  var camp=item.campagne||detectCamp(item.titre,item.description_courte);
+  var grad=campGrad(camp);
+  var isPermament=!item.expiration_texte&&!item.date_soumission&&!item.date_expiration&&!item.expires_soon;
+  var emoji=campEmoji(camp,item.titre,type);
+  var img=item.image_carte||'';
+  var expTS=parseExpiry(item);
+  var timerAttr=expTS?'data-expiry="'+expTS.getTime()+'"':'';
+  var timerHTML='';
+  if(isPermament){
+    timerHTML='<span style="font-size:11px;color:var(--text3);margin-left:auto">Permanent</span>';
+  } else if(expTS){
+    var tf=formatTimer(expTS-Date.now());
+    timerHTML='<span class="timer '+tf.cls+'" '+timerAttr+'>⏱ '+tf.txt+'</span>';
+  }
+  // Tags répétable / échangeable
+  var repTag=item.repeatable===true
+    ?'<span class="chip cgr" title="Se réinitialise">♾️ Répétable'+(item.refreshes&&item.refreshes!=='-'?' · '+tr(item.refreshes):'')+' </span>'
+    :'<span class="chip cr">1× Non répétable</span>';
+  var tradeTag=item.tradeable===true
+    ?'<span class="chip ca" title="Récompense échangeable">⇄ Échangeable</span>'
+    :item.tradeable===false?'<span class="chip" style="color:var(--text3)">🔒 Non échangeable</span>':'';
+  // Chips selon type
+  var chips='';
+  var diff=null;
+  if(type==='sbc'){
+    diff=sbcDifficulty(item);
+    var nb=item.nb_segments||0;
+    chips=repTag+(tradeTag||'');
+    if(item.recompense_principale||(item.recompenses||[])[0]){
+      var rc=item.recompense_principale||(item.recompenses||[])[0]||'';
+      chips='<span class="chip cg">'+rewardEmoji(rc)+' '+(tr(rc).length>24?tr(rc).slice(0,22)+'…':tr(rc))+'</span>'+chips;
+    }
+    chips+='<span class="chip">'+nb+' équipe'+(nb>1?'s':'')+'</span>';
+  }
+  if(type==='obj'){
+    var nb=item.nb_taches||(item.taches&&item.taches.length)||0;
+    chips='<span class="chip">'+nb+' tâche'+(nb>1?'s':'')+'</span>';
+    if(item.xp_total) chips+='<span class="chip cp">⚡ '+item.xp_total+' PS</span>';
+    chips+=item.solo_friendly?'<span class="chip cgr">🤖 Solo OK</span>':item.online_required?'<span class="chip co">🌐 En ligne</span>':'';
+    if(item.categorie) chips+='<span class="chip">'+tr(item.categorie)+'</span>';
+  }
+  if(type==='evo'){
+    var cout=item.cout_credits>0?((item.cout_credits/1000).toFixed(0)+'k cr'):item.cout_points>0?(item.cout_points+' pts'):'Gratuit';
+    chips='<span class="chip cg">'+cout+'</span>';
+    if(item.boosts&&item.boosts.length) chips+='<span class="chip">'+item.boosts.length+' boost'+(item.boosts.length>1?'s':'')+'</span>';
+    if(item.difficulte_communaute) chips+='<span class="chip">'+tr(item.difficulte_communaute)+'</span>';
+  }
+  var iid=encodeURIComponent(item.id||idx);
+  return'<div class="content-card" onclick="showDetail(\''+type+'\',\''+iid+'\')" style="border-radius:12px;overflow:hidden">'+
+    (grad?'<div class="card-bg" style="background:'+grad+'"></div>':'')+
+    '<div class="card-inner" style="border-radius:12px">'+
+    '<div class="card-top">'+
+    '<div class="card-img-col">'+(img
+      ?'<img class="card-img" src="'+img+'" alt="" onerror="this.outerHTML=\'<div class=&quot;card-img-fb&quot;>'+emoji+'</div>\'">'
+      :'<div class="card-img-fb">'+emoji+'</div>')+
+    '</div>'+
+    '<div class="card-body">'+
+    '<div class="card-camp">'+camp+'</div>'+
+    '<div class="card-title">'+tr(item.titre||'—')+'</div>'+
+    '<div class="card-desc">'+tr(item.description_courte||'')+'</div>'+
+    '</div></div>'+
+    '<div class="card-mid">'+
+    '<div class="verdict '+vClass(v.v)+(v.auto?' verdict-auto':'')+'">'+vLabel(v.v)+'</div>'+
+    (diff?diffDotsHTML(diff):'')+
+    (timerHTML&&!diff?timerHTML:'')+(diff&&timerHTML?'<span class="timer '+(isUrgent(item)?'t-urgent':'t-ok')+'" data-expiry="'+(expTS?expTS.getTime():0)+'">'+(!expTS?'Permanent':(formatTimer(expTS-Date.now())).txt)+'</span>':'')+
+    '</div>'+
+    '<div class="card-bot">'+chips+'</div>'+
+    '</div></div>';
+}
+
+function vClass(v){return{rentable:'vr',interessant:'vi',interessante:'vi',situationnel:'vs',dispensable:'vd'}[v]||'vi';}
+function vLabel(v){return{rentable:'✅ Rentable',interessant:'💡 Intéressant',interessante:'💡 Intéressant',situationnel:'⚡ Situationnel',dispensable:'⬇ Dispensable'}[v]||v;}
+
+function renderTab(type){
+  var ids={sbc:'tab-sbc',obj:'tab-obj',evo:'tab-evo'};
+  var data={sbc:sbcs,obj:objectifs,evo:evolutions}[type]||[];
+  var el=document.getElementById(ids[type]);
+  if(!data.length){
+    el.innerHTML='<div class="empty-state"><h3>Aucun contenu</h3><p>Lance <code>python3 futgg_scraper.py</code></p></div>';
+    return;
+  }
+  var filtered=data.filter(function(item){return matchFilter(item,type);});
+  if(!filtered.length){
+    el.innerHTML='<div class="empty-state"><h3>Aucun résultat</h3><p>Retire le filtre actif.</p></div>';
+    return;
+  }
+  el.innerHTML='<div class="content-list">'+filtered.map(function(item,i){return cardHTML(item,type,i);}).join('')+'</div>';
+  startTimers();
+}
+
+// ═══════════════════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════════════════
+function switchTab(name,el){
+  currentTab=name;activeFilter='all';
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+  document.querySelectorAll('.tab-content').forEach(function(t){t.classList.remove('active');});
+  el.classList.add('active');
+  document.getElementById('tab-'+name).classList.add('active');
+  buildFilterBar(name);
+  renderTab(name);
+}
+function goBack(){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
+  document.getElementById('page-list').classList.add('active');
+  window.scrollTo(0,0);
+  startTimers();
+}
+
+// ═══════════════════════════════════════════════════
+// DETAIL
+// ═══════════════════════════════════════════════════
+function showDetail(type,idEnc){
+  var id=decodeURIComponent(idEnc);
+  var list={sbc:sbcs,obj:objectifs,evo:evolutions}[type]||[];
+  var item=list.find(function(x){return x.id===id;})||list[parseInt(id)]||null;
+  if(!item) return;
+  var v=autoV(item,type);
+  var camp=item.campagne||detectCamp(item.titre,item.description_courte);
+  var grad=campGrad(camp);
+  var img=item.image_carte||'';
+  var emoji=campEmoji(camp,item.titre,type);
+  var expTS=parseExpiry(item);
+  document.getElementById('dhdr').textContent={sbc:'SBC',obj:'Objectif',evo:'Évolution'}[type];
+
+  // Timer détail
+  var timerDetailHTML='';
+  if(expTS){
+    var tf=formatTimer(expTS-Date.now());
+    timerDetailHTML='<div class="d-timer '+tf.cls+'" data-expiry="'+expTS.getTime()+'">⏱ '+tf.txt+'</div>';
+  }
+
+  var isRep=item.repeatable===true;
+  var repBadge=isRep?'<span class="badge bgr">♾️ Répétable</span>':'<span class="badge br">1× Non répétable</span>';
+  var tradeBadge=item.tradeable===true?'<span class="badge ba">⇄ Échangeable</span>':item.tradeable===false?'<span class="badge" style="color:var(--text3);border-color:var(--border)">🔒 Non échangeable</span>':'';
+
+  var h='<div class="detail-hero slide-in">'+
+    (grad?'<div class="dhero-bg" style="background:'+grad+'"></div>':'')+
+    '<div class="dhero-inner">'+
+    (img?'<img class="d-card-img" src="'+img+'" alt="" onerror="this.outerHTML=\'<div class=&quot;d-card-fb&quot;>'+emoji+'</div>\'">'
+        :'<div class="d-card-fb">'+emoji+'</div>')+
+    '<div class="d-info">'+
+    '<div class="d-camp">'+camp+'</div>'+
+    '<div class="d-title">'+tr(item.titre||'—')+'</div>'+
+    '<div class="d-badges">'+
+    '<span class="badge '+vClass(v.v)+'">'+vLabel(v.v)+'</span>'+
+    repBadge+tradeBadge+
+    (item.solo_friendly?'<span class="badge bgr">🤖 Solo OK</span>':'')+
+    (item.online_required?'<span class="badge bo">🌐 En ligne</span>':'')+
+    (item.difficulte_communaute?'<span class="badge ba">'+tr(item.difficulte_communaute)+'</span>':'')+
+    '</div>'+
+    timerDetailHTML+
+    '</div></div></div>';
+
+  h+='<div class="pulse-block fade-up"><div class="pulse-label">⚡ Lecture FC Pulse</div>'+
+    '<div class="pulse-txt">'+(v.r||item.resume_fc_pulse||'Analyse en cours…')+'</div>'+
+    (v.auto?'<div class="pulse-auto">↻ Analyse auto — affine dans le JSON si besoin</div>':'')+
+    '</div>';
+
+  if(type==='sbc') h+=dSBC(item);
+  if(type==='obj') h+=dObj(item);
+  if(type==='evo') h+=dEvo(item);
+
+  if(item.url_futgg) h+='<a href="'+item.url_futgg+'" target="_blank" class="action-link">↗ Voir sur FUT.GG</a>';
+  h+='<div style="height:20px"></div>';
+
+  document.getElementById('detail-body').innerHTML=h;
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
+  document.getElementById('page-detail').classList.add('active');
+  window.scrollTo(0,0);
+  startTimers();
+}
+
+function dSBC(s){
+  var h='';
+  var diff=sbcDifficulty(s);
+  h+='<div class="det-sec"><div class="sec-title">Difficulté estimée</div>'+
+    '<div style="display:flex;align-items:center;gap:10px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px">'+
+    '<div class="diff-dots" style="gap:5px">';
+  for(var i=1;i<=5;i++) h+='<div class="dd" style="width:10px;height:10px;'+(i<=diff.level?'background:'+diff.color+';border-color:'+diff.color+';':'')+'""></div>';
+  h+='</div><span style="font-family:\'Barlow Condensed\',sans-serif;font-weight:700;font-size:18px;color:'+diff.color+'">'+diff.label+'</span></div></div>';
+
+  var rlist=[s.recompense_principale].concat(s.recompenses||[]).filter(Boolean).filter(function(v,i,a){return a.indexOf(v)===i;});
+  if(rlist.length){
+    h+='<div class="det-sec"><div class="sec-title">Récompenses</div>';
+    rlist.forEach(function(r){
+      h+='<div class="reward-item"><span class="r-icon">'+rewardEmoji(r)+'</span><div><div class="r-name">'+tr(r)+'</div><div class="r-meta">'+(s.repeatable?'Répétable '+(s.refreshes&&s.refreshes!=='-'?'· '+tr(s.refreshes):''):'Non répétable')+' '+(s.tradeable===true?'· Échangeable':s.tradeable===false?'· Non échangeable':'')+' </div></div></div>';
+    });
+    h+='</div>';
+  }
+  if(s.segments&&s.segments.length){
+    h+='<div class="det-sec"><div class="sec-title">Équipes à constituer ('+s.segments.length+')</div>';
+    s.segments.forEach(function(seg){
+      h+='<div class="seg-item"><div class="seg-head"><span class="seg-nom">'+tr(seg.nom)+'</span>';
+      if(seg.note_requise>0) h+='<span class="note-b">Note min. '+seg.note_requise+'</span>';
+      h+='</div>';
+      if(seg.contraintes&&seg.contraintes.length) h+='<div class="cons">'+seg.contraintes.map(function(c){return'<span class="con">'+tr(c)+'</span>';}).join('')+'</div>';
+      h+='</div>';
+    });
+    h+='</div>';
+  }
+  return h;
+}
+
+function dObj(o){
+  var h='<div class="det-sec"><div class="sec-title">Vue rapide</div><div class="meta-grid">'+
+    '<div class="mc"><div class="mc-l">Tâches</div><div class="mc-v">'+(o.nb_taches||o.taches&&o.taches.length||0)+'</div></div>'+
+    '<div class="mc"><div class="mc-l">Points saison</div><div class="mc-v" style="color:#c084fc">⚡ '+(o.xp_total||0)+'</div></div>';
+  if(o.mode_requis&&o.mode_requis.length) h+='<div class="mc" style="grid-column:span 2"><div class="mc-l">Mode requis</div><div class="mc-v" style="font-size:13px">'+o.mode_requis.map(tr).join(', ')+'</div></div>';
+  h+='</div></div>';
+  if(o.taches&&o.taches.length){
+    h+='<div class="det-sec"><div class="sec-title">Tâches ('+o.taches.length+')</div>';
+    o.taches.forEach(function(t,i){
+      var titre=t.titre||t.titre_tache||('Tâche '+(i+1));
+      var desc=t.description||t.desc||'';
+      var rc=t.recompense||(t.recompenses||[])[0]||'';
+      h+='<div class="task-item" style="display:flex;gap:10px;align-items:flex-start">'+
+        '<div class="task-num">'+(i+1)+'</div>'+
+        '<div style="flex:1"><div style="font-weight:600;font-size:14px">'+tr(titre)+'</div>'+
+        (desc?'<div style="font-size:12px;color:var(--text2);margin-top:3px;line-height:1.4">'+tr(desc)+'</div>':'')+
+        (rc?'<div style="font-size:11px;margin-top:4px">'+rewardEmoji(rc)+' <span style="color:var(--gold2)">'+tr(rc)+'</span></div>':'')+
+        '</div></div>';
+    });
+    h+='</div>';
+  }
+  var rlist=o.recompenses_finales||o.recompenses||[];
+  if(rlist.length){
+    h+='<div class="det-sec"><div class="sec-title">Récompenses finales</div>';
+    rlist.forEach(function(r){
+      var nom=typeof r==='string'?r:(r.nom||r);
+      h+='<div class="reward-item"><span class="r-icon">'+rewardEmoji(nom)+'</span><div><div class="r-name">'+tr(nom)+'</div></div></div>';
+    });
+    h+='</div>';
+  }
+  return h;
+}
+
+function dEvo(e){
+  var cout=e.cout_credits>0?(e.cout_credits.toLocaleString('fr-FR')+' crédits'):e.cout_points>0?(e.cout_points+' pts FC'):'Gratuit';
+  var h='<div class="det-sec"><div class="sec-title">Détails</div><div class="meta-grid">'+
+    '<div class="mc"><div class="mc-l">Coût</div><div class="mc-v" style="color:var(--gold2)">'+cout+'</div></div>';
+  if(e.difficulte_communaute) h+='<div class="mc"><div class="mc-l">Difficulté</div><div class="mc-v">'+tr(e.difficulte_communaute)+'</div></div>';
+  if(e.date_soumission) h+='<div class="mc"><div class="mc-l">Soumission</div><div class="mc-v" style="font-size:13px">'+e.date_soumission+'</div></div>';
+  if(e.date_expiration) h+='<div class="mc"><div class="mc-l">Expiration</div><div class="mc-v" style="font-size:13px">'+e.date_expiration+'</div></div>';
+  h+='</div></div>';
+  if(e.conditions_eligibilite&&e.conditions_eligibilite.length){
+    h+='<div class="det-sec"><div class="sec-title">Conditions d\'éligibilité</div>'+
+      '<div style="display:flex;flex-wrap:wrap;gap:6px;padding-bottom:4px">'+
+      e.conditions_eligibilite.map(function(c){return'<span class="chip">'+tr(c)+'</span>';}).join('')+
+      '</div></div>';
+  }
+  if(e.boosts&&e.boosts.length){
+    h+='<div class="det-sec"><div class="sec-title">Boosts</div><div class="boost-grid">';
+    e.boosts.forEach(function(b){
+      var stat=b.stat||b.champ||'';var val=b.valeur||'';
+      var isPS=/playstyle|play.style/i.test(stat)||(/\+$/.test(val)&&/[a-z]/i.test(stat));
+      h+='<div class="boost-item"><span class="'+(isPS?'bvps':'bv')+'">'+val+'</span><span style="font-size:13px;color:var(--text2)">'+tr(stat)+'</span></div>';
+    });
+    h+='</div></div>';
+  }
+  if(e.taches&&e.taches.length){
+    h+='<div class="det-sec"><div class="sec-title">Tâches</div>';
+    e.taches.forEach(function(t,i){
+      h+='<div class="task-item" style="display:flex;gap:10px;align-items:flex-start">'+
+        '<div class="task-num">'+(t.niveau||i+1)+'</div>'+
+        '<div style="flex:1;font-size:13px;color:var(--text2);line-height:1.45">'+tr(t.description||t.desc||'')+'</div></div>';
+    });
+    h+='</div>';
+  }
+  return h;
+}
+
+loadAll();
+</script>
+</body>
+</html>

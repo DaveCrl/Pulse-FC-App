@@ -1,0 +1,1231 @@
+[
+  {
+    "id": "sbc_26-698-rasmus-hojlund",
+    "slug": "26-698-rasmus-hojlund",
+    "titre": "Rasmus Højlund",
+    "description_courte": "Earn a special FOF: Answer the Call Rasmus Højlund.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-698-rasmus-hojlund/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-117699911.ec1b5d0a4c731814f04ef84ca25da0923b58f3b93167e750c31cad60e341eaec.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "Serie A",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Rasmus HøjlundRewards1x Small Gold Players Pack1x Electrum Players PackSerie AExchange a squad featuring players from Serie A.Min. 1 Players from: Serie A EniliveMin. 1 Players: Team of the WeekMin. Team Rating: 851x Small Gold Players PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 861x Electrum Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:28Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-687-victor-lindelof",
+    "slug": "26-687-victor-lindelof",
+    "titre": "Victor Lindelöf",
+    "description_courte": "Earn a Showdown Victor Lindelöf from the Playoffs qualifier match between Ukraine and Sweden.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-687-victor-lindelof/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-50553308.51c366bf49625e78d9a2a69cdbb938c5acfa1503418cbb052826f11c0f5fa028.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Premier League",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Victor LindelöfRewards1x Gold Pack1x Jumbo Gold PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 851x Gold PackPremier LeagueExchange a squad featuring Players from the Premier League.Min. 1 Players from: Premier LeagueMin. Team Rating: 861x Jumbo Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:29Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-686-viktor-tsygankov",
+    "slug": "26-686-viktor-tsygankov",
+    "titre": "Viktor Tsygankov",
+    "description_courte": "Earn a Showdown Viktor Tsygankov from the Playoffs qualifier match between Ukraine and Sweden.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-686-viktor-tsygankov/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-67353233.3c17060914a845355e7577b36325d6769ee1f641c305a7b38ee4c048bff9d82d.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "LALIGA",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Viktor TsygankovRewards1x Gold Pack1x Jumbo Gold PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 851x Gold PackLALIGAExchange a squad featuring players from LALIGA.Min. 1 Players from: LALIGA EA SPORTSMin. 1 Players: Team of the WeekMin. Team Rating: 861x Jumbo Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:31Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-702-1-of-3-88-encore-icon-player-pick",
+    "slug": "26-702-1-of-3-88-encore-icon-player-pick",
+    "titre": "1 of 3 88+ Encore Icon Player Pick",
+    "description_courte": "Earn 1 of 3 Winter Wildcards, Champion ICON, Time Warp, TOTY or Future Stars Icon Player Items, rated 88 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-702-1-of-3-88-encore-icon-player-pick/",
+    "image_carte": "",
+    "recompense_principale": "1 of 3 88+ Encore Icon Player Pick",
+    "recompenses": [
+      "1 of 3 88+ Encore Icon Player Pick",
+      "1 of 3 88+ Encore Icon Player Pick",
+      "Pack"
+    ],
+    "nb_segments": 7,
+    "segments": [
+      {
+        "nom": "86-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "88-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "89-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "2 daysView RewardsRewards3x Jumbo Gold Pack1 of 3 88+ Encore Icon Player Pick1x Premium Gold Pack1x Premium Electrum Players Pack1x Jumbo Premium Gold Pack1x Mega Pack86-Rated SquadExchange an 86-Rated Squad.Min. Team Rating: 86Min. 1 Players: Team of the Week1x Premium Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 871x Jumbo Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 871x Jumbo Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 871x Jumbo Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 87Min. 1 Players: Team of the Week1x Premium Electrum Players Pack88-Rated SquadExchange an 88-Rated Squad.Min. Team Rating: 881x Jumbo Premium Gold Pack89-Rated SquadExchange an 89-Rated Squad.Min. Team Rating: 891x Mega Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:32Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-691-fof-answer-the-call-challenge-2",
+    "slug": "26-691-fof-answer-the-call-challenge-2",
+    "titre": "FOF: Answer the Call Challenge 2",
+    "description_courte": "Complete this challenge to earn a reward.",
+    "url_futgg": "https://www.fut.gg/sbc/challenges/26-691-fof-answer-the-call-challenge-2/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "FOF: Answer the Call Challenge 2",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-1x Premium Electrum Players PackRewards1x Premium Electrum Players PackFOF: Answer the Call Challenge 2Complete this challenge to earn a reward.Max. Nationalities in Squad: 5Min. 6 Players from the same LeagueMin. 9 Players: RareMin. 2 Players: GoldMin. Team Rating: 74Min. Squad Total Chemistry Points: 22© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:34Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-699-trent-alexander-arnold",
+    "slug": "26-699-trent-alexander-arnold",
+    "titre": "Trent Alexander-Arnold",
+    "description_courte": "Earn a special FOF: Answer the Call Trent Alexander-Arnold.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-699-trent-alexander-arnold/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-67340145.a701e31f38208ec90b94b52b31968faec6b2c978efb981b5fc3759a56cf74804.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 4,
+    "segments": [
+      {
+        "nom": "Real Madrid",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "England",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "LALIGA",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Trent Alexander-ArnoldRewards1x Premium Gold Pack1x Jumbo Gold Pack1x Gold Players Pack1x Small Rare Mixed Players PackReal MadridExchange a squad featuring players from Real MadridMin. 1 Players from: Real MadridMin. 1 Players: Team of the WeekMin. Team Rating: 851x Premium Gold PackEnglandExchange a squad featuring Players from England.Min. 1 Players from: EnglandMin. Team Rating: 871x Jumbo Gold PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 871x Gold Players PackLALIGAExchange a squad featuring players from LALIGA.Min. 1 Players from: LALIGA EA SPORTSMin. Team Rating: 881x Small Rare Mixed Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:36Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-685-conor-bradley",
+    "slug": "26-685-conor-bradley",
+    "titre": "Conor Bradley",
+    "description_courte": "Earn a Showdown Conor Bradley from the Playoffs qualifier match between Italy and Northern Ireland.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-685-conor-bradley/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-50595946.2e75cb06f0a6eb84e88decb0f1eb41aa7438bc3e03291386a10ca14764efef1a.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 3,
+    "segments": [
+      {
+        "nom": "85-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Premier League",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Conor BradleyRewards1x Small Electrum Players Pack1x Gold Pack1x Jumbo Gold Pack85-Rated SquadExchange an 85-Rated Squad.Min. Team Rating: 851x Small Electrum Players PackPremier LeagueExchange a squad featuring Players from the Premier League.Min. 1 Players from: Premier LeagueMin. Team Rating: 861x Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 871x Jumbo Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:37Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-684-davide-frattesi",
+    "slug": "26-684-davide-frattesi",
+    "titre": "Davide Frattesi",
+    "description_courte": "Earn a Showdown Davide Frattesi from the Playoffs qualifier match between Italy and Northern Ireland.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-684-davide-frattesi/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-50571455.86b5ad5862938cd893ed5a3d355be086a549e2d4c3e81ed45b877a56dfcf57a3.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 3,
+    "segments": [
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Italy",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Serie A",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Davide FrattesiRewards1x Small Prime Electrum Players Pack1x Gold Pack1x Jumbo Gold PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 841x Small Prime Electrum Players PackItalyExchange a squad featuring players from Italy.Min. 1 Players from: ItalyMin. Team Rating: 861x Gold PackSerie AExchange a squad featuring players from Serie A.Min. 1 Players from: Serie A EniliveMin. Team Rating: 861x Jumbo Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:39Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-704-88-mixed-heroes-upgrade",
+    "slug": "26-704-88-mixed-heroes-upgrade",
+    "titre": "88+ Mixed Heroes Upgrade",
+    "description_courte": "Earn a pack containing 1 Winter Wildcards, Fantasy FC, Future Stars or Knockout Royalty Hero rated 88 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-704-88-mixed-heroes-upgrade/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "84-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "86-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "2 daysView RewardsRewards1x 88+ Mixed Hero Player Pack1x Small Electrum Players Pack1x Small Prime Mixed Players Pack84-Rated SquadExchange an 84-Rated Squad.Min. 1 Players: Team of the WeekMin. Team Rating: 841x Small Electrum Players Pack86-Rated SquadExchange an 86-Rated Squad.Min. Team Rating: 861x Small Prime Mixed Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:40Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-697-rayan-cherki",
+    "slug": "26-697-rayan-cherki",
+    "titre": "Rayan Cherki",
+    "description_courte": "Earn a special FOF: Answer the Call Rayan Cherki.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-697-rayan-cherki/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-84137650.37e7e6f1abc785784be8467c4e3baed9f24b6c7eea31f41b4605079b4275a1fc.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 5,
+    "segments": [
+      {
+        "nom": "Manchester City",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "France",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Premier League",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Rayan CherkiRewards2x Gold Players Pack1x Premium Gold Pack1x Small Gold Players Pack1x Electrum Players PackManchester CityExchange a squad featuring players from Manchester City.Min. 1 Players from: Manchester CityMin. 1 Players: Team of the WeekMin. Team Rating: 851x Premium Gold PackFranceExchange a squad featuring players from France.Min. 1 Players from: FranceMin. Team Rating: 861x Small Gold Players PackPremier LeagueExchange a squad featuring Players from the Premier League.Min. 1 Players from: Premier LeagueMin. 1 Players: Team of the WeekMin. Team Rating: 861x Electrum Players Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 87Min. 1 Players: Team of the Week1x Gold Players PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 871x Gold Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:42Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-703-1-of-3-85-player-pick",
+    "slug": "26-703-1-of-3-85-player-pick",
+    "titre": "1 of 3 85+ Player Pick",
+    "description_courte": "Earn 1 of 3 Rare Gold Player Items, rated 85 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-703-1-of-3-85-player-pick/",
+    "image_carte": "",
+    "recompense_principale": "1 of 3 85+ Player Pick",
+    "recompenses": [
+      "1 of 3 85+ Player Pick",
+      "1 of 3 85+ Player Pick",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "1 of 3 85+ Player Pick",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "1 day1 of 3 85+ Rare Gold PlayersRewards1 of 3 85+ Rare Gold Players1 of 3 85+ Player PickEarn 1 of 3 Rare Gold Player Items, rated 85 or higher.Exactly 11 Players: RareExactly Gold Players© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:44Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-701-84-totw-upgrade",
+    "slug": "26-701-84-totw-upgrade",
+    "titre": "84+ TOTW Upgrade",
+    "description_courte": "Earn a pack containing a TOTW Player Item from TOTW 1 to 27, rated 84 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-701-84-totw-upgrade/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "84+ TOTW Upgrade",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "-1x 84+ TOTW 1-27 Player PackRewards1x 84+ TOTW 1-27 Player Pack84+ TOTW UpgradeEarn a pack containing a TOTW Player Item from TOTW 1 to 27, rated 84 or higher.Min. Team Rating: 84© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:45Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-700-provisions-upgrade",
+    "slug": "26-700-provisions-upgrade",
+    "titre": "Provisions Upgrade",
+    "description_courte": "Earn a pack containing 15 Common Gold Player Items and 25 Rare Gold Player items, rated 80 or lower.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-700-provisions-upgrade/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "Provisions Upgrade",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "1 day1x Provisions PackRewards1x Provisions PackProvisions UpgradeEarn a pack containing 15 Common Gold Player Items and 25 Rare Gold Player items, rated 80 or lower. Min. 3 player with minimum OVR of 85Number of players: 3© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:47Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-693-max-89-fof-answer-the-call-guarantee",
+    "slug": "26-693-max-89-fof-answer-the-call-guarantee",
+    "titre": "Max 89 FOF: Answer the Call Guarantee",
+    "description_courte": "Earn a pack containing 1 Player Item from FOF: Answer the Call, rated 89 or lower.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-693-max-89-fof-answer-the-call-guarantee/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "83-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "83-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "1 day1x Max. 89 FOF: Answer the Call Player PackRewards2x x2 Players Pack1x Max. 89 FOF: Answer the Call Player Pack83-Rated SquadExchange an 83-Rated Squad.Min. Team Rating: 831x x2 Players Pack83-Rated SquadExchange an 83-Rated Squad.Min. Team Rating: 831x x2 Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:48Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-682-14x-83-upgrade",
+    "slug": "26-682-14x-83-upgrade",
+    "titre": "14x 83+ Upgrade",
+    "description_courte": "Earn a pack containing 14 Rare Gold Player Items, rated 83 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-682-14x-83-upgrade/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "14x 83+ Upgrade",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "1 day1x 14x 83+ Rare Gold Players PackRewards1x 14x 83+ Rare Gold Players Pack14x 83+ UpgradeEarn a pack containing 14 Rare Gold Player Items, rated 83 or higher.Min. 1 Players: Team of the WeekMin. Team Rating: 84© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:50Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-690-fof-answer-the-call-challenge-1",
+    "slug": "26-690-fof-answer-the-call-challenge-1",
+    "titre": "FOF: Answer the Call Challenge 1",
+    "description_courte": "Complete this challenge to earn a reward.",
+    "url_futgg": "https://www.fut.gg/sbc/challenges/26-690-fof-answer-the-call-challenge-1/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "FOF: Answer the Call Challenge 1",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-1x Prime Mixed Players PackRewards1x Prime Mixed Players PackFOF: Answer the Call Challenge 1Complete this challenge to earn a reward.Min. Clubs in Squad: 3Min. 3 Players from the same NationMin. 2 Players: RareMin. 5 Players: GoldMin. Team Rating: 70Min. Squad Total Chemistry Points: 22© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:52Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-680-johan-cruyff",
+    "slug": "26-680-johan-cruyff",
+    "titre": "Johan Cruyff",
+    "description_courte": "Earn a special Winter Wildcards Icon Johan Cruyff, including a 5-match Loan!",
+    "url_futgg": "https://www.fut.gg/sbc/icons/26-680-johan-cruyff/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-67298909.8c39b87268edbdf5626d79cbf9ed2d1e2629dce9449d5ca3ee21a04b43c71537.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 10,
+    "segments": [
+      {
+        "nom": "On a Loan",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "El Salvador",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Jopie",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top-notch",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "League Legend",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "88-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "88-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "88-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Johan CruyffRewards3x Jumbo Gold Pack2x Gold Pack2x Premium Electrum Players Pack1x Small Electrum Players Pack1x Rare Gold PackOn a LoanComplete this challenge to earn the 5-match Loan version of WW Icon Johan Cruyff.Min. Team Rating: 83View Johan CruyffEl SalvadorComplete this challenge themed around Johan Cruyff's days at Barcelona.Min. 1 Players from: FC BarcelonaMin. Team Rating: 851x Small Electrum Players PackJopieComplete this challenge themed around Johan Cruyff's time with his national team.Min. 1 Players from: NetherlandsMin. 1 Players: Team of the WeekMin. Team Rating: 861x Gold PackTop-notchExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 861x Gold PackLeague LegendComplete this challenge themed around Johan Cruyff's days in LALIGA.Min. 1 Players from: LALIGA EA SPORTSMin. Team Rating: 871x Jumbo Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. 1 Players: Team of the WeekMin. Team Rating: 871x Jumbo Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 871x Jumbo Gold Pack88-Rated SquadExchange an 88-Rated Squad.Min. Team Rating: 881x Premium Electrum Players Pack88-Rated SquadExchange an 88-Rated Squad.Min. Team Rating: 881x Premium Electrum Players Pack88-Rated SquadExchange an 88-Rated Squad.Min. 1 Players: Team of the WeekMin. Team Rating: 881x Rare Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:53Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-677-kaoru-mitoma",
+    "slug": "26-677-kaoru-mitoma",
+    "titre": "Kaoru Mitoma",
+    "description_courte": "Earn a special World Tour Kaoru Mitoma.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-677-kaoru-mitoma/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-50587213.b8380fc21ec55dcc76b3997f8ffd7d1283d7ffb6af0b3f59eadd95bc60f2bf5a.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "Premier League",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Kaoru MitomaRewards1x x2 Players Pack1x Small Prime Electrum Players PackPremier LeagueExchange a squad featuring Players from the Premier League.Min. 1 Players from: Premier LeagueMin. 1 Players: Team of the WeekMin. Team Rating: 851x x2 Players PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 861x Small Prime Electrum Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:55Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-683-1-of-3-89-fut-birthday-team-2-player-pick",
+    "slug": "26-683-1-of-3-89-fut-birthday-team-2-player-pick",
+    "titre": "1 of 3 89+ FUT Birthday Team 2 Player Pick",
+    "description_courte": "Earn 1 of 3 FUT Birthday Team 2 Player Item rated 89 or higher (not including Heroes or Icons).",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-683-1-of-3-89-fut-birthday-team-2-player-pick/",
+    "image_carte": "",
+    "recompense_principale": "1 of 3 89+ FUT Birthday Team 2 Player Pick",
+    "recompenses": [
+      "1 of 3 89+ FUT Birthday Team 2 Player Pick",
+      "1 of 3 89+ FUT Birthday Team 2 Player Pick",
+      "Pack"
+    ],
+    "nb_segments": 3,
+    "segments": [
+      {
+        "nom": "85-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "86-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "3 daysView RewardsRewards1 of 3 89+ FUT Birthday Team 2 Player Pick1x Small Electrum Players Pack1x Gold Pack1x Jumbo Gold Pack85-Rated SquadExchange an 85-Rated Squad.Min. 1 Players: Team of the WeekMin. Team Rating: 851x Small Electrum Players Pack86-Rated SquadExchange an 86-Rated Squad.Min. Team Rating: 861x Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 871x Jumbo Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:56Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-676-fof-answer-the-call-crafting-upgrade",
+    "slug": "26-676-fof-answer-the-call-crafting-upgrade",
+    "titre": "FOF: Answer The Call Crafting Upgrade",
+    "description_courte": "Complete this challenge to progress towards earning the FOF: Answer The Call Crafting Objective group reward.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-676-fof-answer-the-call-crafting-upgrade/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "FOF: Answer The Call Crafting Upgrade",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "-1x 3x 79+ Rare Gold Players PackRewards1x 3x 79+ Rare Gold Players PackFOF: Answer The Call Crafting UpgradeComplete this challenge to progress towards earning the FOF: Answer The Call Crafting Objective group reward.Min. 1 Players: RareExactly Gold PlayersNumber of players: 6© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:07:58Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-688-marquee-matchups",
+    "slug": "26-688-marquee-matchups",
+    "titre": "Marquee Matchups",
+    "description_courte": "Complete challenges themed around this week's key matchups.",
+    "url_futgg": "https://www.fut.gg/sbc/challenges/26-688-marquee-matchups/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 4,
+    "segments": [
+      {
+        "nom": "Feyenoord v Ajax",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Tottenham Hotspur v Nottingham Forest",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Fiorentina v Lombardia FC",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Real Madrid v Atlético Madrid",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-1x Rare Electrum Players PackRewards1x Rare Electrum Players Pack1x Gold Players Pack1x Jumbo Premium Gold Pack1x Prime Electrum Players Pack1x Rare Mixed Players PackFeyenoord v AjaxExchange a squad themed around Feyenoord and Ajax.Min. 1 Players from: NetherlandsMax. 3 Players from the same LeagueMin. 1 Players: GoldPlayer quality: Min. SilverMin. Squad Total Chemistry Points: 141x Gold Players PackTottenham Hotspur v Nottingham ForestExchange a squad themed around Tottenham Hotspur and Nottingham Forest.Min. 2 Players from: Premier LeagueMin. 4 Players from the same NationMax. Leagues in Squad: 4Min. Nationalities in Squad: 3Min. Team Rating: 75Min. Squad Total Chemistry Points: 181x Jumbo Premium Gold PackFiorentina v Lombardia FCExchange a squad themed around Fiorentina and Lombardia FC.Min. 1 Players from: Fiorentina OR Lombardia FCMin. 2 Players from: ItalyMax. 4 Players from the same ClubMin. 3 Players: RareMin. Team Rating: 77Min. Squad Total Chemistry Points: 221x Prime Electrum Players PackReal Madrid v Atlético MadridExchange a squad themed around Real Madrid and Atlético Madrid.Min. 2 Players from: Real Madrid OR Atlético de MadridMin. 3 Players from: SpainMax. Clubs in Squad: 5Min. 3 Players: RareMin. Team Rating: 78Min. Squad Total Chemistry Points: 261x Rare Mixed Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:00Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-679-goncalo-ramos",
+    "slug": "26-679-goncalo-ramos",
+    "titre": "Gonçalo Ramos",
+    "description_courte": "Earn a Moments Gonçalo Ramos celebrating his brilliant two-goal, one-assist display against Club Brugge in the 2023 UEFA Champions League round of 16.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-679-goncalo-ramos/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-50588551.e7753e90ebb5cea453974b30b5dfa9a1b1bbb2a29f6a4b7dbcbfcaa9fb1fc9dc.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "PSG",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Portugal",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Gonçalo RamosRewards2x Small Electrum Players PackPSGExchange a squad featuring players from PSGMin. 1 Players from: Paris SGMin. Team Rating: 851x Small Electrum Players PackPortugalExchange a squad featuring players from Portugal.Min. 1 Players from: PortugalMin. Team Rating: 851x Small Electrum Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:01Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-678-1-of-4-88-campaign-mix-player-pick",
+    "slug": "26-678-1-of-4-88-campaign-mix-player-pick",
+    "titre": "1 of 4 88+ Campaign Mix Player Pick",
+    "description_courte": "Earn 1 of 4 Winter Wildcards, Time Warp, TOTY HM or Future Stars Player Item, rated 88 or higher (not including Icons or Heroes).",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-678-1-of-4-88-campaign-mix-player-pick/",
+    "image_carte": "",
+    "recompense_principale": "1 of 4 88+ Campaign Mix Player Pick",
+    "recompenses": [
+      "1 of 4 88+ Campaign Mix Player Pick",
+      "1 of 4 88+ Campaign Mix Player Pick",
+      "Pack"
+    ],
+    "nb_segments": 3,
+    "segments": [
+      {
+        "nom": "85-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "86-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "2 days1 of 4 88+ Campaign Mix Player PickRewards1 of 4 88+ Campaign Mix Player Pick1x Small Prime Electrum Players Pack1x Gold Pack1x Jumbo Gold Pack85-Rated SquadExchange an 85-Rated Squad.Min. Team Rating: 85Min. 1 Players: Team of the Week1x Small Prime Electrum Players Pack86-Rated SquadExchange an 86-Rated Squad.Min. Team Rating: 861x Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. Team Rating: 871x Jumbo Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:03Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-665-kingsley-coman",
+    "slug": "26-665-kingsley-coman",
+    "titre": "Kingsley Coman",
+    "description_courte": "Earn a special FUT Birthday Kingsley Coman.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-665-kingsley-coman/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-67322209.860276249c342eff394833f747b2fdb1028f66c09ea056c10e65aaa1cb17cd0d.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "France",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Kingsley ComanRewards1x Gold Pack1x Small Prime Electrum Players PackFranceExchange a squad featuring players from France.Min. 1 Players from: FranceMin. Team Rating: 861x Gold PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 861x Small Prime Electrum Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:04Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-674-89-fut-birthday-team-2-guarantee",
+    "slug": "26-674-89-fut-birthday-team-2-guarantee",
+    "titre": "89+ FUT Birthday Team 2 Guarantee",
+    "description_courte": "Earn a pack containing 1 Player Item from the FUT Birthday Team 2 (not including Heroes or Icons), rated 89 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-674-89-fut-birthday-team-2-guarantee/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "89+ FUT Birthday Team 2 Guarantee",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "2 daysView RewardsRewards1x 89+ FUT Birthday Team 2 Guarantee Pack89+ FUT Birthday Team 2 GuaranteeEarn a pack containing 1 Player Item from the FUT Birthday Team 2 (not including Heroes or Icons), rated 89 or higher.Min. Team Rating: 86© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:06Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-675-ligue-1-potm-february",
+    "slug": "26-675-ligue-1-potm-february",
+    "titre": "Ligue 1 POTM February",
+    "description_courte": "Earn the Ligue 1 Player of the Month for February.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-675-ligue-1-potm-february/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-67328597.480eb87e5a33fa8abcb8d3fdea8b53f037296d1789a41398076ab5b20b5caf69.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "France",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Ligue 1",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Ludovic AjorqueRewards2x Small Electrum Players PackFranceExchange a squad featuring players from France.Min. 1 Players from: FranceMin. 1 Players: Team of the WeekMin. Team Rating: 821x Small Electrum Players PackLigue 1Exchange a squad featuring players from Ligue 1.Min. 1 Players from: Ligue 1 McDonald'sMin. Team Rating: 851x Small Electrum Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:08Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-671-five-star-baller-evo-2",
+    "slug": "26-671-five-star-baller-evo-2",
+    "titre": "Five Star Baller EVO 2",
+    "description_courte": "Earn an EVO Consumable, boosting a max 88 OVR Player Item to 5* Skill Moves & Weak Foot.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-671-five-star-baller-evo-2/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "85-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "86-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-AcademySlotEVORewards2x x3 Common Gold Players PackAcademySlotEVO85-Rated SquadExchange an 85-Rated Squad.Min. 1 Players: Team of the WeekMin. Team Rating: 851x x3 Common Gold Players Pack86-Rated SquadExchange an 86-Rated Squad.Min. Team Rating: 861x x3 Common Gold Players Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:09Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-651-1-of-4-80-player-pick",
+    "slug": "26-651-1-of-4-80-player-pick",
+    "titre": "1 of 4 80+ Player Pick",
+    "description_courte": "Earn 1 of 4 Rare Gold Player Items, rated 80 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-651-1-of-4-80-player-pick/",
+    "image_carte": "",
+    "recompense_principale": "1 of 4 80+ Player Pick",
+    "recompenses": [
+      "1 of 4 80+ Player Pick",
+      "1 of 4 80+ Player Pick",
+      "Pack"
+    ],
+    "nb_segments": 1,
+    "segments": [
+      {
+        "nom": "1 of 4 80+ Player Pick",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "-1 of 4 80+ Rare Gold PlayersRewards1 of 4 80+ Rare Gold Players1 of 4 80+ Player PickEarn 1 of 4 Rare Gold Player Items, rated 80 or higher.Min. 3 Players: RareExactly Gold PlayersNumber of players: 6© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:11Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-642-5-of-10-79-player-pick",
+    "slug": "26-642-5-of-10-79-player-pick",
+    "titre": "5 of 10 79+ Player Pick",
+    "description_courte": "Earn 5 of 10 Rare Gold Player Items, rated 79 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-642-5-of-10-79-player-pick/",
+    "image_carte": "",
+    "recompense_principale": "5 of 10 79+ Player Pick",
+    "recompenses": [
+      "5 of 10 79+ Player Pick",
+      "5 of 10 79+ Player Pick",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "Gold Challenge",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Gold Challenge",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "1 day5 of 10 79+ Player PickRewards2x Silver Pack5 of 10 79+ Player PickGold ChallengeExchange a Squad featuring Gold Players.Min. 3 Players: RareExactly Gold Players1x Silver PackGold ChallengeExchange a Squad featuring Gold Players.Min. 3 Players: RareExactly Gold Players1x Silver Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:12Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-663-cha-bum-kun",
+    "slug": "26-663-cha-bum-kun",
+    "titre": "Cha Bum-kun",
+    "description_courte": "Earn a special FUT Birthday Icon Cha Bum-kun, including a 5-match Loan!",
+    "url_futgg": "https://www.fut.gg/sbc/icons/26-663-cha-bum-kun/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-67300072.d2ce1dccaa865362abd2cfb380e79824ed95f809abf67f9a9e384302d326d339.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 10,
+    "segments": [
+      {
+        "nom": "On a Loan",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "85-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top-notch",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "86-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "87-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "88-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "88-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "88-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "89-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "89-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Cha Bum KunRewards3x Premium Mixed Players Pack2x Rare Gold Pack1x x2 Players Pack1x Small Prime Electrum Players Pack1x Gold Pack1x Premium Electrum Players PackOn a LoanComplete this challenge to earn the 5-match Loan version of FUT Birthday Icon Cha Bum-kun.Min. Team Rating: 83View Cha Bum Kun85-Rated SquadExchange an 85-Rated Squad.Min. Team Rating: 851x x2 Players PackTop-notchExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 861x Small Prime Electrum Players Pack86-Rated SquadExchange an 86-Rated Squad.Min. Team Rating: 861x Gold Pack87-Rated SquadExchange an 87-Rated Squad.Min. 1 Players: Team of the WeekMin. Team Rating: 871x Premium Electrum Players Pack88-Rated SquadExchange an 88-Rated Squad.Min. Team Rating: 881x Premium Mixed Players Pack88-Rated SquadExchange an 88-Rated Squad.Min. Team Rating: 881x Premium Mixed Players Pack88-Rated SquadExchange an 88-Rated Squad.Min. Team Rating: 881x Premium Mixed Players Pack89-Rated SquadExchange an 89-Rated Squad.Min. Team Rating: 891x Rare Gold Pack89-Rated SquadExchange an 89-Rated Squad.Min. Team Rating: 891x Rare Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:14Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "sbc_26-609-laliga-potm-february",
+    "slug": "26-609-laliga-potm-february",
+    "titre": "LALIGA POTM February",
+    "description_courte": "Earn the LALIGA Player of the Month for February.",
+    "url_futgg": "https://www.fut.gg/sbc/players/26-609-laliga-potm-february/",
+    "image_carte": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=300/2026/futgg-player-item-card/26-67363415.43f1e4838e514ef2870605a40e0f938dc427ea636fd02f9de2c6df50e7768f98.webp",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "LALIGA",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "Top Form",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": false,
+    "refreshes": "-View Georges MikautadzeRewards1x x2 Players Pack1x Gold PackLALIGAExchange a squad featuring players from LALIGA.Min. 1 Players from: LALIGA EA SPORTSMin. Team Rating: 841x x2 Players PackTop FormExchange a squad featuring a TOTW player.Min. 1 Players: Team of the WeekMin. Team Rating: 851x Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:18Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": "",
+    "expires_soon": true
+  },
+  {
+    "id": "sbc_26-644-89-fut-birthday-team-1-guarantee",
+    "slug": "26-644-89-fut-birthday-team-1-guarantee",
+    "titre": "89+ FUT Birthday Team 1 Guarantee",
+    "description_courte": "Earn a pack containing 1 Player Item from the FUT Birthday Team 1 (not including Heroes or Icons), rated 89 or higher.",
+    "url_futgg": "https://www.fut.gg/sbc/upgrades/26-644-89-fut-birthday-team-1-guarantee/",
+    "image_carte": "",
+    "recompense_principale": "Pack",
+    "recompenses": [
+      "Pack",
+      "Pack",
+      "Pack"
+    ],
+    "nb_segments": 2,
+    "segments": [
+      {
+        "nom": "85-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      },
+      {
+        "nom": "86-Rated Squad",
+        "note_requise": 0,
+        "contraintes": []
+      }
+    ],
+    "repeatable": true,
+    "refreshes": "2 daysView RewardsRewards1x 89+ FUT Birthday Team 1 Guarantee1x Gold Pack1x Premium Gold Pack85-Rated SquadExchange an 85-Rated Squad.Min. 1 Players: Team of the WeekMin. Team Rating: 851x Gold Pack86-Rated SquadExchange an 86-Rated Squad.Min. Team Rating: 861x Premium Gold Pack© 2025 Stormstrike Inc. All rights reserved. Privacy Policy|Terms & Conditions|Business Inquiries|FIFAINDEX.COM|MUT.GG",
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:19Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": "",
+    "expires_soon": true
+  }
+]

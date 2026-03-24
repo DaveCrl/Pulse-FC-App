@@ -1,0 +1,1221 @@
+[
+  {
+    "id": "obj_742-laliga-vs-racism",
+    "slug": "742-laliga-vs-racism",
+    "titre": "LALIGA VS Racism",
+    "categorie": "Campagne",
+    "description_courte": "Complete this objective and earn exclusive LALIGA VS Racism stadium items. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/742-laliga-vs-racism",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 6,
+    "taches": [
+      {
+        "titre": "Play 1",
+        "description": "Play 1 match in any Ultimate Team game mode while using Min. 1 LALIGA player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Play 2",
+        "description": "Play 2 matches in any Ultimate Team game mode while using Min. 1 LALIGA player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Play 3",
+        "description": "Play 3 matches in any Ultimate Team game mode while using Min. 1 LALIGA player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Score 2",
+        "description": "Score 2 goals in any Ultimate Team game mode using a LALIGA player.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Score 4",
+        "description": "Score 4 goals in any Ultimate Team game mode using a LALIGA player.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Score 6",
+        "description": "Score 6 goals in any Ultimate Team game mode using a LALIGA player.",
+        "recompense": "Item"
+      }
+    ],
+    "recompenses": [
+      "Gold Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:24Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_746-together-bundesliga",
+    "slug": "746-together-bundesliga",
+    "titre": "TOGETHER! Bundesliga",
+    "categorie": "Campagne",
+    "description_courte": "Complete this objective and earn an exclusive TOGETHER! Bundesliga Kit. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/746-together-bundesliga",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 1,
+    "taches": [
+      {
+        "titre": "Score in 3",
+        "description": "Score at least 1 goal in 3 separate matches using a player from Bundesliga in any Ultimate Team game mode.",
+        "recompense": "Item"
+      }
+    ],
+    "recompenses": [
+      "Gold Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:26Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_745-ons-voetbal-is-van-iedereen",
+    "slug": "745-ons-voetbal-is-van-iedereen",
+    "titre": "Ons Voetbal Is Van Iedereen",
+    "categorie": "Campagne",
+    "description_courte": "Complete this objective and earn exclusive Ons Voetbal Is Van Iedereen stadium items. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/745-ons-voetbal-is-van-iedereen",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 5,
+    "taches": [
+      {
+        "titre": "Play 1",
+        "description": "Play 1 match in any Ultimate Team game mode while using Min. 1 Eredivisie player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Play 2",
+        "description": "Play 2 matches in any Ultimate Team game mode while using Min. 1 Eredivisie player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Play 3",
+        "description": "Play 3 matches in any Ultimate Team game mode while using Min. 1 Eredivisie player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Score 3",
+        "description": "Score 3 goals in any Ultimate Team game mode using an Eredivisie player.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Score 6",
+        "description": "Score 6 goals in any Ultimate Team game mode using an Eredivisie player.",
+        "recompense": "Item"
+      }
+    ],
+    "recompenses": [
+      "Gold Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:27Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_744-non-au-racisme",
+    "slug": "744-non-au-racisme",
+    "titre": "Non au Racisme",
+    "categorie": "Campagne",
+    "description_courte": "Complete this objective and earn an exclusive Non au Racisme Kit. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/744-non-au-racisme",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 1,
+    "taches": [
+      {
+        "titre": "Score in 3",
+        "description": "Score at least 1 goal in 3 separate matches using a player from Ligue 1 in any Ultimate Team game mode.",
+        "recompense": "Item"
+      }
+    ],
+    "recompenses": [
+      "Gold Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:29Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_743-keep-racism-out",
+    "slug": "743-keep-racism-out",
+    "titre": "Keep Racism Out",
+    "categorie": "Campagne",
+    "description_courte": "Complete this objective and earn exclusive Keep Racism Out stadium items. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/743-keep-racism-out",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 5,
+    "taches": [
+      {
+        "titre": "Play 1",
+        "description": "Play 1 match in any Ultimate Team game mode while using Min. 1 Serie A player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Play 2",
+        "description": "Play 2 matches in any Ultimate Team game mode while using Min. 1 Serie A player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Play 3",
+        "description": "Play 3 matches in any Ultimate Team game mode while using Min. 1 Serie A player in your starting 11.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Score 3",
+        "description": "Score 3 goals in any Ultimate Team game mode using a Serie A player.",
+        "recompense": "Item"
+      },
+      {
+        "titre": "Score 6",
+        "description": "Score 6 goals in any Ultimate Team game mode using a Serie A player.",
+        "recompense": "Item"
+      }
+    ],
+    "recompenses": [
+      "Gold Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:30Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_749-road-to-the-americas",
+    "slug": "749-road-to-the-americas",
+    "titre": "Road to the Americas",
+    "categorie": "Campagne",
+    "description_courte": "Join the Road to the Americas Flash Rush Event and complete 4 of 5 challenges to earn pack rewards. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/749-road-to-the-americas",
+    "mode_requis": [
+      "Rush",
+      "Flash Rush"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 5,
+    "taches": [
+      {
+        "titre": "Play 5",
+        "description": "Play 5 matches in the Road to the Americas Flash Rush Event.",
+        "recompense": "2x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 3",
+        "description": "Win 3 matches in the Road to the Americas Flash Rush Event.",
+        "recompense": "2x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Assist in 5",
+        "description": "Assist at least 1 goal in 5 separate matches in the Road to the Americas Flash Rush Event.",
+        "recompense": "2x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Scorer",
+        "description": "Score 5 goals in the Road to the Americas Flash Rush Event using a FOF: Answer the Call Player.",
+        "recompense": "2x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Rush Points",
+        "description": "Earn 40,000 Rush Points.",
+        "recompense": "2x 81+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "2x 84+ Rare Gold Players Pack",
+      "SP",
+      "Pack",
+      "2x 81+ Rare Gold Players Pack"
+    ],
+    "xp_total": 300,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:32Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_740-fof-answer-the-call-giovanni-reyna",
+    "slug": "740-fof-answer-the-call-giovanni-reyna",
+    "titre": "FOF: Answer the Call Giovanni Reyna",
+    "categorie": "Campagne",
+    "description_courte": "Complete all the challenges to earn FOF: Answer the Call Giovanni Reyna and pack rewards. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/740-fof-answer-the-call-giovanni-reyna",
+    "mode_requis": [
+      "Squad Battles",
+      "Rush",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 5,
+    "taches": [
+      {
+        "titre": "Play 5",
+        "description": "Play 5 matches in any Ultimate Team game mode while having Min. 1 player from USA in your starting 11.",
+        "recompense": "3x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Assist 3",
+        "description": "Assist 3 goals in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events/Rush).",
+        "recompense": "4x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Score 6",
+        "description": "Score 6 goals in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events/Rush) using a player from Bundesliga.",
+        "recompense": "3x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 4",
+        "description": "Win 4 matches in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events) while having Min. 4 players from USA in your starting 11.",
+        "recompense": "4x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 8",
+        "description": "Win 8 matches in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events) while having Min. 4 players from Bundesliga in your starting 11.",
+        "recompense": "5x 83+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "SP",
+      "Pack",
+      "3x 82+ Rare Gold Players Pack",
+      "4x 82+ Rare Gold Players Pack",
+      "3x 83+ Rare Gold Players Pack"
+    ],
+    "xp_total": 300,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:33Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_734-fof-answer-the-call-crafting-upgrade",
+    "slug": "734-fof-answer-the-call-crafting-upgrade",
+    "titre": "FOF: Answer the Call Crafting Upgrade",
+    "categorie": "Campagne",
+    "description_courte": "Complete the FOF: Answer the Call Crafting Upgrade SBC to earn additional pack rewards! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/734-fof-answer-the-call-crafting-upgrade",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 15,
+    "taches": [
+      {
+        "titre": "10 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 10 times.",
+        "recompense": "3x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "15 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 15 times.",
+        "recompense": "3x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "20 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 20 times.",
+        "recompense": "5x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "25 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 25 times.",
+        "recompense": "3x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "30 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 30 times.",
+        "recompense": "5x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "35 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 35 times.",
+        "recompense": "2x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "40 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 40 times.",
+        "recompense": "2x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "45 Completions",
+        "description": "Complete the FOF: Answer the Call Crafting Upgrade SBC 45 times.",
+        "recompense": "3x 83+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "5x 86+ Rare Gold Players Pack",
+      "Pack",
+      "3x 81+ Rare Gold Players Pack",
+      "5x 81+ Rare Gold Players Pack",
+      "3x 82+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:35Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_673-weekly-rush-points",
+    "slug": "673-weekly-rush-points",
+    "titre": "Weekly Rush Points",
+    "categorie": "Campagne",
+    "description_courte": "Complete Rush Bonuses alongside your teammates to earn Rush Points!",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/673-weekly-rush-points",
+    "mode_requis": [
+      "Rush"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 5,
+    "taches": [
+      {
+        "titre": "2,500 Rush Points",
+        "description": "Earn 2,500 points by completing bonuses in Rush.",
+        "recompense": "2x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "10,000 Rush Points",
+        "description": "Earn 10,000 points by completing bonuses in Rush.",
+        "recompense": "2x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "25,000 Rush Points",
+        "description": "Earn 25,000 points by completing bonuses in Rush.",
+        "recompense": "2x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "35,000 Rush Points",
+        "description": "Earn 35,000 points by completing bonuses in Rush.",
+        "recompense": "2x 84+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "45,000 Rush Points",
+        "description": "Earn 45,000 points by completing bonuses in Rush.",
+        "recompense": "2x 85+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "3x 86+ Rare Gold Players Pack",
+      "Pack",
+      "2x 81+ Rare Gold Players Pack",
+      "2x 82+ Rare Gold Players Pack",
+      "2x 83+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:36Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_736-adidas-uclf-pro",
+    "slug": "736-adidas-uclf-pro",
+    "titre": "adidas UCLF Pro",
+    "categorie": "Campagne",
+    "description_courte": "Complete this challenge and earn an exclusive adidas UCLF Pro Kit. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/campaigns/736-adidas-uclf-pro",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 1,
+    "taches": [
+      {
+        "titre": "Play 5",
+        "description": "Play 5 matches in any Ultimate Team game mode.",
+        "recompense": "Item"
+      }
+    ],
+    "recompenses": [],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:38Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_738-south-american-league",
+    "slug": "738-south-american-league",
+    "titre": "South American League",
+    "categorie": "Événement Live",
+    "description_courte": "Compete in the South American League Event to earn packs and Evolution items! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/live-events/738-south-american-league",
+    "mode_requis": [
+      "Live Events"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 10,
+    "taches": [
+      {
+        "titre": "Play 5",
+        "description": "Play 5 matches in the South American League Event.",
+        "recompense": "3x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Play 10",
+        "description": "Play 10 matches in the South American League Event.",
+        "recompense": "2x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 3",
+        "description": "Win 3 matches in the South American League Event.",
+        "recompense": "3x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 5",
+        "description": "Win 5 matches in the South American League Event.",
+        "recompense": "5x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 12",
+        "description": "Win 12 matches in the South American League Event.",
+        "recompense": "2x 85+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Score 3 in 1",
+        "description": "Score at least 3 goals in a match in the South American League Event. Reward includes an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Assist in 5",
+        "description": "Assist at least 1 goal in 5 separate matches using a Colombian player with min. 75 PAC in the South American League Event.",
+        "recompense": "2x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Score in 5",
+        "description": "Score at least 1 goal in 5 separate matches using a Brazilian player with min. 82 DRI in the South American League Event.",
+        "recompense": "3x 83+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "3x 86+ Rare Gold Players Pack",
+      "Evo Unlock",
+      "Pack",
+      "3x 81+ Rare Gold Players Pack",
+      "2x 82+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:40Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_737-fof-answer-the-call-leagues-completionist",
+    "slug": "737-fof-answer-the-call-leagues-completionist",
+    "titre": "FOF: Answer the Call Leagues Completionist",
+    "categorie": "Événement Live",
+    "description_courte": "Complete the Nations Live Event Objectives to earn Pack and Evolution rewards! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/live-events/737-fof-answer-the-call-leagues-completionist",
+    "mode_requis": [
+      "Live Events"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 2,
+    "taches": [
+      {
+        "titre": "South American League",
+        "description": "Complete the South American League Live Event Objective. Reward includes a previewable EVO Consumable.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "European League",
+        "description": "Complete the European League Live Event Objective. Reward includes a previewable EVO Consumable.",
+        "recompense": "Evo Unlock"
+      }
+    ],
+    "recompenses": [
+      "89+ FOF: Answer the Call Guarantee Pack",
+      "Evo Unlock",
+      "Pack",
+      "3x 83+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:41Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_741-european-league",
+    "slug": "741-european-league",
+    "titre": "European League",
+    "categorie": "Événement Live",
+    "description_courte": "Compete in the European League Event to earn packs and Evolution items! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/live-events/741-european-league",
+    "mode_requis": [
+      "Live Events"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 10,
+    "taches": [
+      {
+        "titre": "Play 5",
+        "description": "Play 5 matches in the European League Event.",
+        "recompense": "3x 81+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Play 10",
+        "description": "Play 10 matches in the European League Event.",
+        "recompense": "2x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 3",
+        "description": "Win 3 matches in the European League Event.",
+        "recompense": "3x 82+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 5",
+        "description": "Win 5 matches in the European League Event.",
+        "recompense": "5x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 12",
+        "description": "Win 12 matches in the European League Event.",
+        "recompense": "2x 85+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Score 3 in 1",
+        "description": "Score 3 goals in one match in the European League Event. Reward includes an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Assist in 5",
+        "description": "Assist 1 goal in 5 separate matches using a Spanish player with min. 80 PAS in the European League Event.",
+        "recompense": "2x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Score in 5",
+        "description": "Score 1 goal in 5 separate matches using an Italian player with min. 75 DEF in the European League Event.",
+        "recompense": "3x 83+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "3x 86+ Rare Gold Players Pack",
+      "Evo Unlock",
+      "Pack",
+      "3x 81+ Rare Gold Players Pack",
+      "2x 82+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:43Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_709-ultimate-gauntlet-13",
+    "slug": "709-ultimate-gauntlet-13",
+    "titre": "Ultimate Gauntlet 13",
+    "categorie": "Événement Live",
+    "description_courte": "Complete 9 of 10 challenges in the Ultimate Gauntlet 13 to earn exclusive rewards! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/live-events/709-ultimate-gauntlet-13",
+    "mode_requis": [
+      "Live Events",
+      "Gauntlet"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 10,
+    "taches": [
+      {
+        "titre": "Play 1",
+        "description": "Play 1 match in Ultimate Gauntlet 13.",
+        "recompense": "5x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Play 2",
+        "description": "Play 2 matches in Ultimate Gauntlet 13.",
+        "recompense": "6x 83+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Play 3",
+        "description": "Play 3 matches in Ultimate Gauntlet 13.",
+        "recompense": "5x 84+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Score in 3",
+        "description": "Score at least 1 goal in 3 separate matches in Ultimate Gauntlet 13 to earn an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Score in 5",
+        "description": "Score at least 1 goal in 5 separate matches in Ultimate Gauntlet 13.",
+        "recompense": "5x 85+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Score in 6",
+        "description": "Score at least 1 goal in 6 separate matches in Ultimate Gauntlet 13.",
+        "recompense": "Jack Grealish"
+      },
+      {
+        "titre": "Win 3",
+        "description": "Win 3 matches in Ultimate Gauntlet 13.",
+        "recompense": "5x 85+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 4",
+        "description": "Win 4 matches in Ultimate Gauntlet 13 to earn an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      }
+    ],
+    "recompenses": [
+      "10x 86+ Rare Gold Players Pack",
+      "Evo Unlock",
+      "Pack",
+      "5x 83+ Rare Gold Players Pack",
+      "6x 83+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:44Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_733-ultimate-gauntlet-13-bonus",
+    "slug": "733-ultimate-gauntlet-13-bonus",
+    "titre": "Ultimate Gauntlet 13 Bonus",
+    "categorie": "Événement Live",
+    "description_courte": "Compete in the Ultimate Gauntlet 13 to earn bonus rewards! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/live-events/733-ultimate-gauntlet-13-bonus",
+    "mode_requis": [
+      "Live Events",
+      "Gauntlet"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 3,
+    "taches": [
+      {
+        "titre": "Win 1",
+        "description": "Win 1 match in a round of Ultimate Gauntlet 13.",
+        "recompense": "10x 84+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Win 2",
+        "description": "Win 2 matches in a round of Ultimate Gauntlet 13.",
+        "recompense": "Player Pick"
+      },
+      {
+        "titre": "Perfect Round",
+        "description": "Win all matches in a round of Ultimate Gauntlet 13.",
+        "recompense": "7x 86+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "5x 87+ Rare Gold Players Pack",
+      "Pack",
+      "10x 84+ Rare Gold Players Pack",
+      "Player Pick",
+      "7x 86+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:46Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_721-triple-threat-league",
+    "slug": "721-triple-threat-league",
+    "titre": "Triple Threat League",
+    "categorie": "Événement Live",
+    "description_courte": "Compete in the Season 6 Triple Threat League event to earn exclusive rewards and a FUT Birthday Player Pick item (not including Heroes or Icons)! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/live-events/721-triple-threat-league",
+    "mode_requis": [
+      "Live Events"
+    ],
+    "solo_friendly": false,
+    "online_required": true,
+    "nb_taches": 7,
+    "taches": [
+      {
+        "titre": "Play 5",
+        "description": "Play 5 matches in the Season 6 Triple Threat League.",
+        "recompense": "3x 84+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Play 10",
+        "description": "Play 10 matches in the Season 6 Triple Threat League.",
+        "recompense": "2x 86+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Play 20",
+        "description": "Play 20 matches in the Season 6 Triple Threat League.",
+        "recompense": "2x 87+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Assist in 20",
+        "description": "Assist at least 1 goal in 20 separate matches using a player with 5* Skill Moves in the Season 6 Triple Threat League. Reward includes an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Score in 20",
+        "description": "Score at least 1 goal in 20 separate matches using a player with 5* Weak Foot in the Season 6 Triple Threat League. Reward includes an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Score in 25",
+        "description": "Score at least 1 goal in 25 separate matches in the Season 6 Triple Threat League. Reward includes an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Score in 30",
+        "description": "Score at least 1 goal in 30 separate matches in the Season 6 Triple Threat League. Reward includes an EVO Consumable. All EVO details can be previewed.",
+        "recompense": "Evo Unlock"
+      }
+    ],
+    "recompenses": [
+      "Player Pick",
+      "Evo Unlock",
+      "Pack",
+      "3x 84+ Rare Gold Players Pack",
+      "2x 86+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:47Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_735-low-driven-shot-milestone",
+    "slug": "735-low-driven-shot-milestone",
+    "titre": "Low Driven Shot+ Milestone",
+    "categorie": "Jalon",
+    "description_courte": "Pick your corner and find victory to earn a Low Driven Shot+ Evolution applicable to any player (excluding WTSS) with Max. 90 OVR.",
+    "url_futgg": "https://www.fut.gg/objectives/milestones/735-low-driven-shot-milestone",
+    "mode_requis": [
+      "Squad Battles",
+      "Rush",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 1,
+    "taches": [
+      {
+        "titre": "Win 50",
+        "description": "Win in 50 matches in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events/Rush).",
+        "recompense": "Coins"
+      }
+    ],
+    "recompenses": [
+      "Evo Unlock"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:49Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_706-intercept-milestone",
+    "slug": "706-intercept-milestone",
+    "titre": "Intercept+ Milestone",
+    "categorie": "Jalon",
+    "description_courte": "Hold a strong defensive backline to earn an Intercept+ Evolution applicable to any player (excluding WTSS) with Max. 90 OVR.",
+    "url_futgg": "https://www.fut.gg/objectives/milestones/706-intercept-milestone",
+    "mode_requis": [
+      "Squad Battles",
+      "Rush",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 1,
+    "taches": [
+      {
+        "titre": "Strong Backline",
+        "description": "Concede 2 goals or less in 50 separate matches in Squad Battles on Min. Semi-Pro difficulty (or Rush/Rivals/Champions/Live Events).",
+        "recompense": "Coins"
+      }
+    ],
+    "recompenses": [
+      "Evo Unlock"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:51Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_667-weekly-objectives",
+    "slug": "667-weekly-objectives",
+    "titre": "Weekly Objectives",
+    "categorie": "Saisonnier",
+    "description_courte": "Play 10 matches in Squad Battles on Min. Semi-Pro difficulty (or Rush/Rivals/Champions/Live Events).",
+    "url_futgg": "https://www.fut.gg/objectives/seasonal/667-weekly-objectives",
+    "mode_requis": [
+      "Squad Battles",
+      "Rush",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 5,
+    "taches": [
+      {
+        "titre": "List 10",
+        "description": "List 10 Player Items on the Transfer Market.",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Buy 10",
+        "description": "Buy 10 Player Items on the Transfer Market.",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Play 10",
+        "description": "Play 10 matches in Squad Battles on Min. Semi-Pro difficulty (or Rush/Rivals/Champions/Live Events).",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Win 10",
+        "description": "Win 10 matches in Squad Battles on Min. Semi-Pro difficulty (or Rush/Rivals/Champions/Live Events).",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Score 10",
+        "description": "Score 10 goals in any Ultimate Team game mode using a Brazilian player.",
+        "recompense": "Season Points"
+      }
+    ],
+    "recompenses": [
+      "SP"
+    ],
+    "xp_total": 250,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:52Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_683-season-6-weekly-play-2",
+    "slug": "683-season-6-weekly-play-2",
+    "titre": "Season 6 Weekly Play 2",
+    "categorie": "Saisonnier",
+    "description_courte": "Play 5 Squad Battles matches on Min. Semi-Pro difficulty.",
+    "url_futgg": "https://www.fut.gg/objectives/seasonal/683-season-6-weekly-play-2",
+    "mode_requis": [
+      "Squad Battles",
+      "Rush",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 5,
+    "taches": [
+      {
+        "titre": "Play 5 Squad Battles",
+        "description": "Play 5 Squad Battles matches on Min. Semi-Pro difficulty.",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Play 5 Rivals",
+        "description": "Play 5 matches in Rivals.",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Play 5 Champions",
+        "description": "Play 5 matches in Champions.",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Play 5 Rush",
+        "description": "Play 5 Ultimate Team Rush matches.",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Play 5 Live Events",
+        "description": "Play 5 matches in any Ultimate Team Live Event.",
+        "recompense": "Season Points"
+      }
+    ],
+    "recompenses": [
+      "SP"
+    ],
+    "xp_total": 300,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:54Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_729-o-fenomeno",
+    "slug": "729-o-fenomeno",
+    "titre": "O Fenômeno",
+    "categorie": "Saisonnier",
+    "description_courte": "Complete 1 of 2 challenges to earn World Tour Silver Superstars Ronaldo. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/seasonal/729-o-fenomeno",
+    "mode_requis": [
+      "Squad Battles",
+      "Rush",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 2,
+    "taches": [
+      {
+        "titre": "Pure Finisher",
+        "description": "Score in 70 separate matches using a Brazilian ST (only Preferred Position) in Squad Battles on Min. Semi-Pro difficulty (or Rush/Rivals/Champions/Live Events).",
+        "recompense": "3x 75+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Brazilian 50",
+        "description": "Win 50 matches in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events) while having at least 6 Brazilian players in your starting 11.",
+        "recompense": "3x 75+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "3x 75+ Rare Gold Players Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:55Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_726-the-invisible-wall",
+    "slug": "726-the-invisible-wall",
+    "titre": "The Invisible Wall",
+    "categorie": "Saisonnier",
+    "description_courte": "Complete 1 of 2 challenges to earn World Tour Silver Superstars Gilberto Silva. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/seasonal/726-the-invisible-wall",
+    "mode_requis": [
+      "Squad Battles",
+      "Rush",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 2,
+    "taches": [
+      {
+        "titre": "Rock Solid",
+        "description": "Concede 1 goal or less in 20 separate matches in Squad Battles on Min. Semi-Pro difficulty (or Rush/Rivals/Champions/Live Events) while having Min. 1 Brazilian player in your starting squad.",
+        "recompense": "3x 75+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Midfield Magic",
+        "description": "Win 15 matches in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events) while having Min. 2 Brazilian Midfielders in your starting 11.",
+        "recompense": "3x 75+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "3x 75+ Rare Gold Players Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:57Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_728-triple-threat-league-weekly-completionist-objective",
+    "slug": "728-triple-threat-league-weekly-completionist-objective",
+    "titre": "Triple Threat League Weekly Completionist Objective",
+    "categorie": "Saisonnier",
+    "description_courte": "Compete in the Season 6 Triple Threat League Event to earn exclusive rewards! All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/seasonal/728-triple-threat-league-weekly-completionist-objective",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 6,
+    "taches": [
+      {
+        "titre": "Week 1",
+        "description": "Complete the Triple Threat League Weekly Play Objective 1 time.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Week 2",
+        "description": "Complete the Triple Threat League Weekly Play Objective 2 times.",
+        "recompense": "Evo Unlock"
+      },
+      {
+        "titre": "Week 3",
+        "description": "Complete the Triple Threat League Weekly Play Objective 3 times.",
+        "recompense": "7x 87+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Week 4",
+        "description": "Complete the Triple Threat League Weekly Play Objective 4 times.",
+        "recompense": "10x 86+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Week 5",
+        "description": "Complete the Triple Threat League Weekly Play Objective 5 times.",
+        "recompense": "15x 85+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Week 6",
+        "description": "Complete the Triple Threat League Weekly Play Objective 6 times.",
+        "recompense": "Evo Unlock"
+      }
+    ],
+    "recompenses": [
+      "FOF: Answer the Call Guarantee Pack",
+      "Evo Unlock",
+      "Pack",
+      "7x 87+ Rare Gold Players Pack",
+      "10x 86+ Rare Gold Players Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:08:59Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_704-the-wizard",
+    "slug": "704-the-wizard",
+    "titre": "The Wizard",
+    "categorie": "Saisonnier",
+    "description_courte": "Complete 1 of 2 challenges to earn World Tour Silver Superstars Ronaldinho. All rewards are untradeable.",
+    "url_futgg": "https://www.fut.gg/objectives/seasonal/704-the-wizard",
+    "mode_requis": [
+      "Squad Battles",
+      "Champions",
+      "Live Events"
+    ],
+    "solo_friendly": true,
+    "online_required": false,
+    "nb_taches": 2,
+    "taches": [
+      {
+        "titre": "Brazilian Duo",
+        "description": "Play 40 matches in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events) while having min. 2 Brazilian Attackers (LW,ST,RW) in your starting 11.",
+        "recompense": "3x 75+ Rare Gold Players Pack"
+      },
+      {
+        "titre": "Skiller from Brazil",
+        "description": "Score in 30 matches in Squad Battles on Min. Semi-Pro difficulty (or Rivals/Champions/Live Events) using a player with 5* Skill Moves.",
+        "recompense": "3x 75+ Rare Gold Players Pack"
+      }
+    ],
+    "recompenses": [
+      "3x 75+ Rare Gold Players Pack",
+      "Pack"
+    ],
+    "xp_total": 0,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:00Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  },
+  {
+    "id": "obj_662-daily-objectives",
+    "slug": "662-daily-objectives",
+    "titre": "Daily Objectives",
+    "categorie": "Saisonnier",
+    "description_courte": "Play, complete, and earn SP from the daily Objective every 24 hours!",
+    "url_futgg": "https://www.fut.gg/objectives/seasonal/662-daily-objectives",
+    "mode_requis": [],
+    "solo_friendly": false,
+    "online_required": false,
+    "nb_taches": 2,
+    "taches": [
+      {
+        "titre": "Play 1",
+        "description": "Play 1 match in any Ultimate Team game mode and earn SP!",
+        "recompense": "Season Points"
+      },
+      {
+        "titre": "Score 2 goals",
+        "description": "Score 2 goals in any Ultimate Team game mode.",
+        "recompense": "Season Points"
+      }
+    ],
+    "recompenses": [
+      "SP"
+    ],
+    "xp_total": 150,
+    "expiration_texte": null,
+    "statut": "actif",
+    "date_scrape": "2026-03-22T22:09:02Z",
+    "priorite_fc_pulse": "",
+    "verdict_fc_pulse": "",
+    "resume_fc_pulse": ""
+  }
+]
