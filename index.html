@@ -389,13 +389,15 @@ nav {
   flex-wrap: wrap;
 }
 .player-poste {
-  background: rgba(0,212,255,0.12);
+  background: rgba(0,212,255,0.1);
   color: var(--accent);
+  border: 1px solid rgba(0,212,255,0.2);
   border-radius: 4px;
   padding: 1px 6px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 .player-club {
   font-size: 12px;
@@ -1432,22 +1434,16 @@ nav {
   <div class="quick-filters" id="quick-filters-leagues" style="top:auto;border-top:none;padding-top:0">
     <span style="font-size:10px;font-weight:700;letter-spacing:1px;color:var(--text3);text-transform:uppercase;flex-shrink:0;padding-right:4px">Ligues</span>
     <div class="qf-pill" onclick="setTopLigue('Premier League',this)" title="Premier League" style="background:rgba(98,0,238,.1);border-color:rgba(98,0,238,.25);color:#a78bfa">PL</div>
-    <div class="qf-pill" onclick="setTopLigue('La Liga',this)" title="La Liga" style="background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.25);color:#f87171">LaLiga</div>
+    <div class="qf-pill" onclick="setTopLigue('LALIGA EA SPORTS',this)" title="LALIGA EA SPORTS" style="background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.25);color:#f87171">LaLiga</div>
     <div class="qf-pill" onclick="setTopLigue('Bundesliga',this)" title="Bundesliga" style="background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.25);color:#fb923c">BL</div>
-    <div class="qf-pill" onclick="setTopLigue('Serie A',this)" title="Serie A" style="background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.25);color:#93c5fd">SerieA</div>
-    <div class="qf-pill" onclick="setTopLigue('Ligue 1',this)" title="Ligue 1" style="background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.25);color:#4ade80">L1</div>
+    <div class="qf-pill" onclick="setTopLigue('Serie A Enilive',this)" title="Serie A Enilive" style="background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.25);color:#93c5fd">SerieA</div>
+    <div class="qf-pill" onclick="setTopLigue('Ligue 1 McDonald\'s',this)" title="Ligue 1 McDonald's" style="background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.25);color:#4ade80">L1</div>
     <div class="qf-pill" onclick="setTopLigue('Eredivisie',this)" title="Eredivisie">ERE</div>
     <div class="qf-pill" onclick="setTopLigue('Liga Portugal',this)" title="Liga Portugal">LPT</div>
-    <div class="qf-pill" onclick="setTopLigue('Saudi Pro League',this)" title="Saudi Pro League">SAU</div>
+    <div class="qf-pill" onclick="setTopLigue('ROSHN Saudi League',this)" title="ROSHN Saudi League">SAU</div>
   </div>
   <div class="sort-row">
     <div class="sort-chip active" onclick="setSort('note', this)" data-key="note" data-dir="desc">Note ↓</div>
-    <div class="sort-chip" onclick="setSort('vitesse', this)" data-key="vitesse" data-dir="desc">Vitesse</div>
-    <div class="sort-chip" onclick="setSort('tir', this)" data-key="tir" data-dir="desc">Tir</div>
-    <div class="sort-chip" onclick="setSort('passes', this)" data-key="passes" data-dir="desc">Passes</div>
-    <div class="sort-chip" onclick="setSort('dribble', this)" data-key="dribble" data-dir="desc">Dribble</div>
-    <div class="sort-chip" onclick="setSort('defense', this)" data-key="defense" data-dir="desc">Défense</div>
-    <div class="sort-chip" onclick="setSort('physique', this)" data-key="physique" data-dir="desc">Physique</div>
     <div class="sort-chip" onclick="setSort('age', this)" data-key="age" data-dir="asc">Âge ↑</div>
   </div>
 
@@ -1888,6 +1884,58 @@ function renderNextBatch() {
   isLoadingMore = false;
 }
 
+// ════════════════════════════════════════════════════════
+// HELPERS — POSTE COLOR + NATIONALITY FLAGS
+// ════════════════════════════════════════════════════════
+function posteStyle(poste) {
+  const att = ['ATT','SA','AG','AD'];
+  const mid = ['MC','MDC','MOC','MG','MD'];
+  const def = ['DC','DG','DD','PDG','PDD'];
+  if (att.includes(poste)) return 'background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);color:#f87171';
+  if (mid.includes(poste)) return 'background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);color:#fbbf24';
+  if (def.includes(poste)) return 'background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.3);color:#93c5fd';
+  if (poste === 'GB') return 'background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.3);color:#c084fc';
+  return '';
+}
+
+const FLAG_MAP = {
+  'Afghanistan':'🇦🇫','Afrique du Sud':'🇿🇦','Albanie':'🇦🇱','Algérie':'🇩🇿','Allemagne':'🇩🇪',
+  'Andorre':'🇦🇩','Angleterre':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Angola':'🇦🇴','Antigua-et-Barbuda':'🇦🇬',
+  'Arabie Saoudite':'🇸🇦','Argentine':'🇦🇷','Arménie':'🇦🇲','Australie':'🇦🇺','Autriche':'🇦🇹',
+  'Azerbaïdjan':'🇦🇿','Bangladesh':'🇧🇩','Barbade':'🇧🇧','Belgique':'🇧🇪','Bermuda':'🇧🇲',
+  'Biélorussie':'🇧🇾','Bolivie':'🇧🇴','Bosnie-Herzégovine':'🇧🇦','Brésil':'🇧🇷',
+  'Bulgarie':'🇧🇬','Burkina Faso':'🇧🇫','Burundi':'🇧🇮','Bénin':'🇧🇯','Cameroun':'🇨🇲',
+  'Canada':'🇨🇦','Cape Verde Islands':'🇨🇻','Centrafrique':'🇨🇫','Chili':'🇨🇱',
+  'China PR':'🇨🇳','Chinese Taipei':'🇹🇼','Chypre':'🇨🇾','Colombie':'🇨🇴','Comores':'🇰🇲',
+  'Congo':'🇨🇬','Congo DR':'🇨🇩','Costa Rica':'🇨🇷','Croatie':'🇭🇷','Cuba':'🇨🇺',
+  'Curaçao':'🇨🇼',"Côte d'Ivoire":'🇨🇮','Danemark':'🇩🇰','El Salvador':'🇸🇻',
+  'Espagne':'🇪🇸','Estonie':'🇪🇪','Finlande':'🇫🇮','France':'🇫🇷','Gabon':'🇬🇦',
+  'Gambie':'🇬🇲','Ghana':'🇬🇭','Gibraltar':'🇬🇮','Grenade':'🇬🇩','Grèce':'🇬🇷',
+  'Guatemala':'🇬🇹','Guinée':'🇬🇳','Guinée Équatoriale':'🇬🇶','Guinée-Bissau':'🇬🇼',
+  'Guyane':'🇬🇾','Géorgie':'🇬🇪','Haïti':'🇭🇹','Honduras':'🇭🇳','Hong Kong':'🇭🇰',
+  'Hongrie':'🇭🇺','Inde':'🇮🇳','Indonésie':'🇮🇩','Irak':'🇮🇶','Iran':'🇮🇷',
+  'Irlande':'🇮🇪','Irlande du Nord':'🇬🇧','Islande':'🇮🇸','Israël':'🇮🇱','Italie':'🇮🇹',
+  'Jamaïque':'🇯🇲','Japon':'🇯🇵','Jordanie':'🇯🇴','Kenya':'🇰🇪','Korea Republic':'🇰🇷',
+  'Kosovo':'🇽🇰','Lettonie':'🇱🇻','Liban':'🇱🇧','Liberia':'🇱🇷','Libye':'🇱🇾',
+  'Liechtenstein':'🇱🇮','Lituanie':'🇱🇹','Luxembourg':'🇱🇺','Macédoine du Nord':'🇲🇰',
+  'Madagascar':'🇲🇬','Malaisie':'🇲🇾','Malawi':'🇲🇼','Mali':'🇲🇱','Malte':'🇲🇹',
+  'Maroc':'🇲🇦','Mauritanie':'🇲🇷','Mexique':'🇲🇽','Moldova':'🇲🇩','Montserrat':'🇲🇸',
+  'Monténégro':'🇲🇪','Mozambique':'🇲🇿','Namibie':'🇳🇦','Niger':'🇳🇪','Nigeria':'🇳🇬',
+  'Norvège':'🇳🇴','Nouvelle-Zélande':'🇳🇿','Ouganda':'🇺🇬','Ouzbékistan':'🇺🇿',
+  'Pakistan':'🇵🇰','Palestine':'🇵🇸','Panama':'🇵🇦','Paraguay':'🇵🇾','Pays de Galles':'🏴󠁧󠁢󠁷󠁬󠁳󠁿',
+  'Pays-Bas':'🇳🇱','Philippines':'🇵🇭','Pologne':'🇵🇱','Portugal':'🇵🇹','Puerto Rico':'🇵🇷',
+  'Pérou':'🇵🇪','Roumanie':'🇷🇴','Russie':'🇷🇺','Rwanda':'🇷🇼',"Rép. Dominicaine":'🇩🇴',
+  'Serbie':'🇷🇸','Sierra Leone':'🇸🇱','Slovaquie':'🇸🇰','Slovénie':'🇸🇮','Somalie':'🇸🇴',
+  'Sri Lanka':'🇱🇰','St. Kitts and Nevis':'🇰🇳','St. Lucia':'🇱🇨','Suisse':'🇨🇭',
+  'Suriname':'🇸🇷','Suède':'🇸🇪','Syrie':'🇸🇾','Sénégal':'🇸🇳','Tajikistan':'🇹🇯',
+  'Tanzanie':'🇹🇿','Tchad':'🇹🇩','Tchéquie':'🇨🇿','Thailand':'🇹🇭','Togo':'🇹🇬',
+  'Trinité-et-Tobago':'🇹🇹','Tunisie':'🇹🇳','Turquie':'🇹🇷','Ukraine':'🇺🇦','Uruguay':'🇺🇾',
+  'Vanuatu':'🇻🇺','Venezuela':'🇻🇪','Zambie':'🇿🇲','Zimbabwe':'🇿🇼','Écosse':'🏴󠁧󠁢󠁳󠁣󠁴󠁿',
+  'Égypte':'🇪🇬','Émirats Arabes Unis':'🇦🇪','Équateur':'🇪🇨','États-Unis':'🇺🇸',
+  'Îles Féroé':'🇫🇴'
+};
+function getNatFlag(nat) { return FLAG_MAP[nat] ? FLAG_MAP[nat]+'\u00A0' : ''; }
+
 function buildPlayerRowHTML(p) {
   const rareteBg = p.rarete_couleur?.bg || '#666';
   const statsKeys = ['vitesse','tir','passes','dribble','defense','physique'];
@@ -1919,9 +1967,9 @@ function buildPlayerRowHTML(p) {
     <div class="player-info">
       <div class="player-name">${p.nom}</div>
       <div class="player-meta">
-        <span class="player-poste">${p.poste}</span>
+        <span class="player-poste" style="${posteStyle(p.poste)}">${p.poste}</span>
         <span class="player-club">${p.club || '—'}</span>
-        <span class="player-nat">${p.nationalite || ''}</span>
+        <span class="player-nat">${getNatFlag(p.nationalite)}${p.nationalite || ''}</span>
       </div>
       <div class="player-stats-mini">${statsHtml}</div>
     </div>
