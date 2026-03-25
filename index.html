@@ -1661,12 +1661,12 @@ function buildProfilBlock(p) {
     else desc += 'Ailier polyvalent capable de centrer comme de tirer. ';
   } else if (['MC','MOC'].includes(poste)) {
     if (s.passes >= 87 && sd.vista >= 82) desc += 'Milieu créatif, véritable cerveau du jeu offensif. ';
-    else if (s.defense >= 78 && s.passes >= 82) desc += 'Milieu box-to-box capable d'abattre un énorme volume de travail. ';
+    else if (s.defense >= 78 && s.passes >= 82) desc += "Milieu box-to-box capable d'abattre un énorme volume de travail. ";
     else desc += 'Milieu équilibré entre construction et participation offensive. ';
   } else if (poste === 'MDC') {
     desc += 'Sentinelle devant la défense, priorité à la récupération et à la distribution courte. ';
   } else if (['DC','DG','DD'].includes(poste)) {
-    if (s.vitesse >= 80 && s.defense >= 82) desc += 'Défenseur mobile, à l'aise dans les duels et en phase de transition. ';
+    if (s.vitesse >= 80 && s.defense >= 82) desc += "Défenseur mobile, à l'aise dans les duels et en phase de transition. ";
     else if (s.physique >= 88 && s.defense >= 85) desc += 'Défenseur physique dominant dans les duels aériens et au sol. ';
     else desc += 'Défenseur solide, fiable en couverture et en marquage. ';
   } else if (poste === 'GB') {
@@ -2199,7 +2199,7 @@ function generateCompareSummary(a, b) {
   let txt = '';
   if (aWins.length) txt += `<strong>${a.nom}</strong> domine ${aWins.slice(0,2).join(' et ')}. `;
   if (bWins.length) txt += `<strong>${b.nom}</strong> prend l'avantage ${bWins.slice(0,2).join(' et ')}. `;
-  if (!txt) txt = 'Les deux joueurs sont très proches sur l'ensemble des stats principales. ';
+  if (!txt) txt = "Les deux joueurs sont très proches sur l'ensemble des stats principales. ";
   if (a.profil && b.profil && a.profil !== b.profil) {
     txt += `Profils différents : ${a.nom} joue plutôt comme ${a.profil.toLowerCase()}, ${b.nom} comme ${b.profil.toLowerCase()}.`;
   }
@@ -2276,7 +2276,12 @@ function compareFromFavorites() {
 // INIT
 // ════════════════════════════════════════════════════════
 renderCompareSlots();
-loadData();
+loadData().then(() => {
+  // Navigation depuis URL param (?page=compare ou ?page=favorites)
+  const params = new URLSearchParams(window.location.search);
+  const page = params.get('page');
+  if (page && ['compare','favorites'].includes(page)) showPage(page);
+});
 </script>
 </body>
 </html>
