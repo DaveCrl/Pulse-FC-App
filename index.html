@@ -632,8 +632,57 @@ nav {
   color: #f87171; border-radius: 5px; padding: 3px 8px; font-size: 11px; font-weight: 600;
 }
 .profil-role-tag {
-  background: rgba(168,85,247,.1); border: 1px solid rgba(168,85,247,.22);
-  color: #c084fc; border-radius: 5px; padding: 3px 8px; font-size: 11px; font-weight: 600;
+  background: rgba(6,182,212,.1); border: 1px solid rgba(6,182,212,.25);
+  color: #22d3ee; border-radius: 5px; padding: 3px 8px; font-size: 11px; font-weight: 600;
+}
+
+/* ── Détail hero — éléments supplémentaires ── */
+.detail-nat-line {
+  font-size: 12px; color: var(--text3); margin-top: 4px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
+}
+.detail-postes-row {
+  display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px;
+}
+.detail-pos-main {
+  border-radius: 6px; padding: 4px 10px; font-size: 13px; font-weight: 700; letter-spacing: .3px;
+}
+.detail-pos-alt {
+  border-radius: 5px; padding: 3px 8px; font-size: 11px; font-weight: 600; opacity: .85;
+}
+.detail-meta-inline {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; font-size: 12px;
+}
+.detail-meta-lbl {
+  color: var(--text3); font-size: 11px;
+}
+.detail-meta-val {
+  color: var(--text2); font-weight: 600; margin-left: -4px;
+}
+.detail-meta-val.stars {
+  color: #f0cc70; letter-spacing: 1px;
+}
+.detail-playstyles-top {
+  padding: 12px 16px 4px; border-bottom: 1px solid var(--border1);
+}
+/* ── Joueurs similaires ── */
+.sugg-row {
+  display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px;
+}
+.sugg-card {
+  flex: 0 0 auto; width: 90px; display: flex; flex-direction: column; align-items: center;
+  gap: 5px; background: var(--bg3); border: 1px solid var(--border1);
+  border-radius: 10px; padding: 10px 6px 8px; cursor: pointer; transition: border-color .15s, background .15s;
+}
+.sugg-card:hover { background: var(--bg4); border-color: var(--border2); }
+.sugg-img {
+  width: 52px; height: 52px; border-radius: 50%; object-fit: cover; background: var(--bg4);
+}
+.sugg-name {
+  font-size: 11px; font-weight: 600; color: var(--text1); text-align: center;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80px;
+}
+.sugg-meta {
+  display: flex; align-items: center; gap: 4px;
 }
 
 /* ── Stats améliorées ── */
@@ -1444,7 +1493,7 @@ nav {
   </div>
   <div class="sort-row">
     <div class="sort-chip active" onclick="setSort('note', this)" data-key="note" data-dir="desc">Note ↓</div>
-    <div class="sort-chip" onclick="setSort('age', this)" data-key="age" data-dir="asc">Âge ↑</div>
+    <div class="sort-chip" onclick="setSort('age', this)" data-key="age" data-dir="desc">Âge ↓</div>
   </div>
 
   <div id="players-list" class="players-list">
@@ -1797,26 +1846,16 @@ const SORT_LABELS = {note:'Note',vitesse:'Vitesse',tir:'Tir',passes:'Passes',dri
 const SORT_DEFAULT_DIR = {age:'asc'};
 
 function setSort(key, el) {
-  if (currentSort === key) {
-    // Même colonne → toggle direction
-    sortDir = sortDir === 'desc' ? 'asc' : 'desc';
-  } else {
-    // Nouvelle colonne → direction par défaut
-    currentSort = key;
-    sortDir = SORT_DEFAULT_DIR[key] || 'desc';
-  }
-  // Réinitialiser tous les chips
+  currentSort = key;
+  sortDir = 'desc';
   document.querySelectorAll('.sort-chip').forEach(c => {
     c.classList.remove('active');
     const k = c.dataset.key;
-    const defaultDir = SORT_DEFAULT_DIR[k] || 'desc';
-    c.textContent = SORT_LABELS[k] + (defaultDir === 'asc' ? ' ↑' : '');
+    c.textContent = (SORT_LABELS[k] || k) + ' ↓';
   });
-  // Activer le chip courant avec flèche
-  const arrow = sortDir === 'asc' ? ' ↑' : ' ↓';
   el.classList.add('active');
-  el.dataset.dir = sortDir;
-  el.textContent = (SORT_LABELS[key] || key) + arrow;
+  el.dataset.dir = 'desc';
+  el.textContent = (SORT_LABELS[key] || key) + ' ↓';
   applyFilters();
 }
 
@@ -1990,6 +2029,38 @@ function setupIntersectionObserver() {
 }
 
 // ════════════════════════════════════════════════════════
+// JOUEURS SIMILAIRES
+// ════════════════════════════════════════════════════════
+function buildSuggestionsBlock(p) {
+  if (!allPlayers || !allPlayers.length) return '';
+  const family = pos => {
+    const att = ['ATT','SA','AG','AD'], mid = ['MC','MDC','MOC','MG','MD'], def = ['DC','DG','DD','PDG','PDD'];
+    if (att.includes(pos)) return 'att'; if (mid.includes(pos)) return 'mid';
+    if (def.includes(pos)) return 'def'; if (pos === 'GB') return 'gk'; return 'other';
+  };
+  const myFamily = family(p.poste);
+  const similar = allPlayers
+    .filter(x => x.id !== p.id && family(x.poste) === myFamily && Math.abs((x.note||0)-(p.note||0)) <= 5)
+    .sort((a,b) => Math.abs((a.note||0)-(p.note||0)) - Math.abs((b.note||0)-(p.note||0)))
+    .slice(0,4);
+  if (!similar.length) return '';
+  const noteColor = n => n>=85?'#22c55e':n>=75?'#86efac':n>=65?'#f0cc70':n>=55?'#f97316':'#ef4444';
+  const cards = similar.map(x => {
+    const nc = noteColor(x.note||0);
+    const imgSrc = x.image_visage || x.image_carte || '';
+    return `<div class="sugg-card" onclick="showDetail(${x.id})">
+      ${imgSrc ? `<img src="${imgSrc}" alt="${x.nom}" class="sugg-img" onerror="this.onerror=null;this.style.opacity='0'">` : '<div class="sugg-img"></div>'}
+      <div class="sugg-name">${x.nom}</div>
+      <div class="sugg-meta">
+        <span style="${posteStyle(x.poste)};border-radius:4px;padding:1px 5px;font-size:10px;font-weight:700">${x.poste}</span>
+        <span style="color:${nc};font-weight:700;font-size:13px">${x.note}</span>
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="detail-section"><div class="detail-section-title">Joueurs similaires</div><div class="sugg-row">${cards}</div></div><div style="height:12px"></div>`;
+}
+
+// ════════════════════════════════════════════════════════
 // PAGE DETAIL
 // ════════════════════════════════════════════════════════
 function buildDetailHTML(p) {
@@ -1997,21 +2068,6 @@ function buildDetailHTML(p) {
                    p.rarete === 'Argent Rare' ? 'linear-gradient(135deg,#1a1a22,#4a4a5a,#8a8aa0,#4a4a5a,#1a1a22)' :
                    'linear-gradient(135deg,#2a1a0a,#5a3010,#a06030,#5a3010,#2a1a0a)';
   const rClass = p.rarete === 'Or Rare' ? 'rarete-badge-gold' : p.rarete === 'Argent Rare' ? 'rarete-badge-silver' : 'rarete-badge-bronze';
-
-  // Stats principales
-  // Stats principales : grille de cartes colorées
-  const statColor = v => v>=85?'#22c55e':v>=75?'#86efac':v>=65?'#f0cc70':v>=55?'#f97316':'#ef4444';
-  const statsMainHtml = [
-    ['VIT','vitesse'],['TIR','tir'],['PAS','passes'],
-    ['DRI','dribble'],['DEF','defense'],['PHY','physique']
-  ].map(([lbl,k]) => {
-    const v = p.stats?.[k] || 0;
-    const col = statColor(v);
-    return `<div class="stat-main-card" style="--stat-color:${col}">
-      <div class="stat-main-val" style="color:${col}">${v}</div>
-      <div class="stat-main-lbl">${lbl}</div>
-    </div>`;
-  }).join('');
 
   // Stats détaillées selon poste
   let statsDetailHtml = '';
@@ -2053,8 +2109,15 @@ function buildDetailHTML(p) {
     return `<span class="playstyle-chip ${isPlus?'plus':''}">${ps}</span>`;
   }).join('');
 
-  // Postes alternatifs
-  const altPosHtml = (p.postes_alt||[]).map(pos => `<span class="badge badge-accent">${pos}</span>`).join('');
+  // Postes dans le hero
+  const mainPosteSt = posteStyle(p.poste);
+  const altPostesHtml = (p.postes_alt||[]).map(pos =>
+    `<span class="detail-pos-alt" style="${posteStyle(pos)}">${pos}</span>`
+  ).join('');
+
+  // Étoiles pied / gestes
+  const stars = n => '★'.repeat(n||0)+'☆'.repeat(5-(n||0));
+  const mp = p.meta?.mauvais_pied||0, gt = p.meta?.gestes_techniques||0;
 
   return `
     <div class="detail-hero">
@@ -2074,38 +2137,30 @@ function buildDetailHTML(p) {
       <div class="detail-hero-info">
         <div class="detail-nom">${p.nom}</div>
         <div class="detail-club-line">${p.club || '—'} · ${p.ligue || '—'}</div>
-        <div class="detail-badges" style="margin-top:8px">
+        <div class="detail-nat-line">${getNatFlag(p.nationalite)}${p.nationalite || ''}${p.meta?.age ? ' · '+p.meta.age+' ans' : ''}${p.meta?.taille_cm ? ' · '+p.meta.taille_cm+'cm' : ''}</div>
+        <div class="detail-postes-row">
+          <span class="detail-pos-main" style="${mainPosteSt}">${p.poste_fr || p.poste}</span>
+          ${altPostesHtml}
+        </div>
+        <div class="detail-badges" style="margin-top:6px">
           <span class="badge ${rClass}">${p.rarete}</span>
-          <span class="badge badge-accent">${p.poste_fr || p.poste}</span>
-          ${altPosHtml}
           <span class="badge badge-green">${p.tier}</span>
         </div>
-        <div style="margin-top:6px;font-size:12px;color:var(--text3)">${p.nationalite || ''}</div>
+        <div class="detail-meta-inline">
+          <span class="detail-meta-lbl">Pied</span><span class="detail-meta-val">${p.meta?.pied_fort || '—'}</span>
+          ${mp ? `<span class="detail-meta-lbl">MP</span><span class="detail-meta-val stars">${stars(mp)}</span>` : ''}
+          ${gt ? `<span class="detail-meta-lbl">GT</span><span class="detail-meta-val stars">${stars(gt)}</span>` : ''}
+        </div>
       </div>
     </div>
+
+    ${psHtml ? `<div class="detail-playstyles-top"><div class="playstyles-grid">${psHtml}</div></div>` : ''}
 
     ${buildProfilBlock(p)}
 
-    <div class="detail-section" style="padding-top:16px">
-      <div class="detail-section-title">Stats principales</div>
-      <div class="stats-main-grid">${statsMainHtml}</div>
-    </div>
-
     ${statsDetailHtml}
 
-    ${psHtml ? `<div class="detail-section"><div class="detail-section-title">Play Styles</div><div class="playstyles-grid">${psHtml}</div></div><div style="height:16px"></div>` : ''}
-
-    <div class="detail-section">
-      <div class="detail-section-title">Profil joueur</div>
-      <div class="meta-grid">
-        <div class="meta-item"><div class="meta-item-label">Âge</div><div class="meta-item-value">${p.meta?.age || '—'} ans</div></div>
-        <div class="meta-item"><div class="meta-item-label">Taille</div><div class="meta-item-value">${p.meta?.taille_cm ? p.meta.taille_cm+'cm' : '—'}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Pied fort</div><div class="meta-item-value">${p.meta?.pied_fort || '—'}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Mauvais pied</div><div class="meta-item-value">${'★'.repeat(p.meta?.mauvais_pied||0)+'☆'.repeat(5-(p.meta?.mauvais_pied||0))}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Gestes tech.</div><div class="meta-item-value">${'★'.repeat(p.meta?.gestes_techniques||0)+'☆'.repeat(5-(p.meta?.gestes_techniques||0))}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Poids</div><div class="meta-item-value">${p.meta?.poids_kg ? p.meta.poids_kg+'kg' : '—'}</div></div>
-      </div>
-    </div>
+    ${buildSuggestionsBlock(p)}
 
     <div class="action-row">
       <button class="btn-primary" onclick="addToCompare(${p.id})">
