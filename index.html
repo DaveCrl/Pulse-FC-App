@@ -1281,16 +1281,23 @@ nav {
     <div class="qf-pill" onclick="setRarete('Argent Rare',this)">🥈 Argent</div>
     <div class="qf-pill" onclick="setRarete('Bronze Rare',this)">🥉 Bronze</div>
   </div>
-  <div class="sort-row">
-    <div class="sort-chip active" onclick="setSort('note', this)" data-key="note" data-dir="desc">Note ↓</div>
-    <div class="sort-chip" onclick="setSort('vitesse', this)" data-key="vitesse" data-dir="desc">Vitesse</div>
-    <div class="sort-chip" onclick="setSort('tir', this)" data-key="tir" data-dir="desc">Tir</div>
-    <div class="sort-chip" onclick="setSort('passes', this)" data-key="passes" data-dir="desc">Passes</div>
-    <div class="sort-chip" onclick="setSort('dribble', this)" data-key="dribble" data-dir="desc">Dribble</div>
-    <div class="sort-chip" onclick="setSort('defense', this)" data-key="defense" data-dir="desc">Défense</div>
-    <div class="sort-chip" onclick="setSort('physique', this)" data-key="physique" data-dir="desc">Physique</div>
-    <div class="sort-chip" onclick="setSortDir(this)" data-key="age" data-dir="asc">Âge ↑</div>
-  </div>
+     <div class="sort-row">
+     <!-- AGE -->
+     <div class="sort-chip" onclick="setSort('age', 'asc', this)" data-key="age" data-dir="asc">Âge ↑</div>
+     <div class="sort-chip" onclick="setSort('age', 'desc', this)" data-key="age" data-dir="desc">Âge ↓</div>
+     
+     <!-- NOTE -->
+     <div class="sort-chip active" onclick="setSort('note', 'asc', this)" data-key="note" data-dir="asc">Note ↑</div>
+     <div class="sort-chip active" onclick="setSort('note', 'desc', this)" data-key="note" data-dir="desc">Note ↓</div>
+     
+     <!-- STATS SEULES (descroissant uniquement) -->
+     <div class="sort-chip" onclick="setSort('vitesse', 'desc', this)" data-key="vitesse" data-dir="desc">Vitesse</div>
+     <div class="sort-chip" onclick="setSort('tir', 'desc', this)" data-key="tir" data-dir="desc">Tir</div>
+     <div class="sort-chip" onclick="setSort('passes', 'desc', this)" data-key="passes" data-dir="desc">Passe</div>
+     <div class="sort-chip" onclick="setSort('dribble', 'desc', this)" data-key="dribble" data-dir="desc">Dribble</div>
+     <div class="sort-chip" onclick="setSort('defense', 'desc', this)" data-key="defense" data-dir="desc">Défense</div>
+     <div class="sort-chip" onclick="setSort('physique', 'desc', this)" data-key="physique" data-dir="desc">Physique</div>
+   </div>
 
   <div id="players-list" class="players-list">
     <div class="loading-msg">
@@ -1634,21 +1641,37 @@ let sortDir = 'desc';
 let quickPostFilter = 'all';
 let quickRareteFilter = '';
 
-function setSort(key, el) {
-  if (currentSort === key) {
-    // Toggle direction
-    sortDir = sortDir === 'desc' ? 'asc' : 'desc';
-  } else {
-    currentSort = key;
-    sortDir = el.dataset.dir || 'desc';
+function setSort(key, direction, el) {
+  // Si on clique deux fois sur le même chip Note/Âge, toggle la direction
+  if (currentSort === key && ['note', 'age'].includes(key)) {
+    const newDir = direction === 'asc' ? 'desc' : 'asc';
+    setSort(key, newDir, el);
+    return;
   }
-  el.dataset.dir = sortDir;
-  const arrow = key === 'age' ? (sortDir==='asc'?'↑':'↓') : (sortDir==='desc'?'↓':'↑');
-  const labels = {note:'Note',vitesse:'Vitesse',tir:'Tir',passes:'Passes',dribble:'Dribble',defense:'Défense',physique:'Physique',age:'Âge'};
-  document.querySelectorAll('.sort-chip').forEach(c=>{c.classList.remove('active');c.textContent=labels[c.dataset.key]+(c.dataset.key==='age'?' ↑':'');});
-  el.classList.add('active');
-  el.textContent = (labels[key]||key) + ' ' + arrow;
+  
+  currentSort = key;
+  sortDir = direction || 'desc';
+  
+  // Réinitialise tous les chips (sauf Note/Âge)
+  document.querySelectorAll('.sort-chip').forEach(c => {
+    c.classList.remove('active');
+  });
+  
+  // Active le chip cliqué (ou ses deux variantes pour Note/Âge)
+  if (['note', 'age'].includes(key)) {
+    document.querySelectorAll(`.sort-chip[data-key="${key}"]`).forEach(c => {
+      if (c.dataset.dir === sortDir) c.classList.add('active');
+    });
+  } else {
+    el.classList.add('active');
+  }
+  
   applyFilters();
+}
+
+function setSortDir(el) { 
+  // Compatibilité legacy si encore utilisé
+  setSort(el.dataset.key, el.dataset.dir || 'asc', el);
 }
 
 function setSortDir(el) { setSort(el.dataset.key, el); }
@@ -1671,11 +1694,27 @@ function setRarete(val, el) {
 }
 
 function sortPlayers() {
-  filteredPlayers.sort((a,b) => {
+  // Pour tris de stats : exclure les gardiens en haut de liste
+  const isStatSort = ['vitesse', 'tir', 'passes', 'dribble', 'defense', 'physique'].includes(currentSort);
+  
+  filteredPlayers.sort((a, b) => {
     let va, vb;
-    if (currentSort === 'age') { va = a.meta?.age||99; vb = b.meta?.age||99; }
-    else if (currentSort === 'note') { va = a.note; vb = b.note; }
-    else { va = a.stats?.[currentSort]||0; vb = b.stats?.[currentSort]||0; }
+    
+    if (currentSort === 'age') { 
+      va = a.meta?.age || 99; 
+      vb = b.meta?.age || 99; 
+    } else if (currentSort === 'note') { 
+      va = a.note; 
+      vb = b.note; 
+    } else {
+      // Pour les stats, les gardiens (GB) remontent mal — les pénaliser
+      const aIsGK = a.poste === 'GB';
+      const bIsGK = b.poste === 'GB';
+      
+      va = aIsGK ? -999 : (a.stats?.[currentSort] || 0);
+      vb = bIsGK ? -999 : (b.stats?.[currentSort] || 0);
+    }
+    
     return sortDir === 'asc' ? va - vb : vb - va;
   });
 }
