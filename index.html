@@ -1,1697 +1,2321 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>FC Pulse — EA FC 26</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-/* ════════════════════════════════════════════════════════
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>FC Pulse — EA FC 26</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Barlow:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ════════════════════════════════════════════════════════
    DESIGN SYSTEM
 ════════════════════════════════════════════════════════ */
-:root {
-  --bg:        #080c10;
-  --bg2:       #0d1219;
-  --bg3:       #131b24;
-  --bg4:       #1a2535;
-  --border:    rgba(255,255,255,0.07);
-  --border2:   rgba(255,255,255,0.14);
-  --text:      #e8edf2;
-  --text2:     #8a9bb0;
-  --text3:     #4a5a6e;
-  --gold:      #c8a84b;
-  --gold2:     #f0cc70;
-  --silver:    #909090;
-  --bronze:    #a06030;
-  --accent:    #00d4ff;
-  --accent2:   #0099bb;
-  --green:     #22c55e;
-  --red:       #ef4444;
-  --radius:    10px;
-  --radius-lg: 16px;
-  --nav-h:     56px;
-  --glow:      rgba(0,212,255,0.12);
-}
+    :root {
+      --bg: #080c10;
+      --bg2: #0d1219;
+      --bg3: #131b24;
+      --bg4: #1a2535;
+      --border: rgba(255, 255, 255, 0.07);
+      --border2: rgba(255, 255, 255, 0.14);
+      --text: #e8edf2;
+      --text2: #8a9bb0;
+      --text3: #4a5a6e;
+      --gold: #c8a84b;
+      --gold2: #f0cc70;
+      --silver: #909090;
+      --bronze: #a06030;
+      --accent: #00d4ff;
+      --accent2: #0099bb;
+      --green: #22c55e;
+      --red: #ef4444;
+      --radius: 10px;
+      --radius-lg: 16px;
+      --nav-h: 56px;
+      --glow: rgba(0, 212, 255, 0.12);
+    }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body {
-  background: var(--bg);
-  background-image: radial-gradient(ellipse 80% 50% at 50% -5%, rgba(0,180,255,.06), transparent);
-  color: var(--text);
-  font-family: 'Barlow', sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
+    body {
+      background: var(--bg);
+      background-image: radial-gradient(ellipse 80% 50% at 50% -5%, rgba(0, 180, 255, .06), transparent);
+      color: var(--text);
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
 
-/* ════════════════════════════════════════════════════════
+    /* ════════════════════════════════════════════════════════
    NAV
 ════════════════════════════════════════════════════════ */
-nav {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  height: var(--nav-h);
-  background: rgba(8,12,16,0.97);
-  backdrop-filter: blur(16px);
-  border-top: 1px solid var(--border);
-  display: flex;
-  z-index: 999;
-}
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-h);
+      background: rgba(8, 12, 16, 0.97);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border);
+      display: flex;
+      z-index: 999;
+    }
 
-.nav-btn {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  cursor: pointer;
-  color: var(--text3);
-  transition: color 0.2s;
-  background: none;
-  border: none;
-  font-family: 'Barlow', sans-serif;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-}
-.nav-btn.active { color: var(--accent); }
-.nav-btn.active::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 28%; right: 28%;
-  height: 2px;
-  background: var(--accent);
-  border-radius: 0 0 3px 3px;
-  box-shadow: 0 0 8px var(--accent);
-}
-.nav-btn svg { width: 22px; height: 22px; }
-.nav-dot {
-  width: 4px; height: 4px;
-  border-radius: 50%;
-  background: var(--accent);
-  opacity: 0;
-  margin-top: -2px;
-}
-.nav-btn.active .nav-dot { opacity: 0; }
+    .nav-btn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      cursor: pointer;
+      color: var(--text3);
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      font-family: 'Barlow', sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    }
 
-/* ════════════════════════════════════════════════════════
+    .nav-btn.active {
+      color: var(--accent);
+    }
+
+    .nav-btn.active::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 28%;
+      right: 28%;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 0 0 3px 3px;
+      box-shadow: 0 0 8px var(--accent);
+    }
+
+    .nav-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .nav-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0;
+      margin-top: -2px;
+    }
+
+    .nav-btn.active .nav-dot {
+      opacity: 0;
+    }
+
+    /* ════════════════════════════════════════════════════════
    PAGES
 ════════════════════════════════════════════════════════ */
-.page {
-  display: none;
-  min-height: 100vh;
-  padding-bottom: calc(var(--nav-h) + 16px);
-}
-.page.active { display: block; }
+    .page {
+      display: none;
+      min-height: 100vh;
+      padding-bottom: calc(var(--nav-h) + 16px);
+    }
 
-/* ════════════════════════════════════════════════════════
+    .page.active {
+      display: block;
+    }
+
+    /* ════════════════════════════════════════════════════════
    HEADER GLOBAL
 ════════════════════════════════════════════════════════ */
-.page-header {
-  padding: 18px 16px 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  background: rgba(8,12,16,0.96);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  z-index: 100;
-  box-shadow: 0 1px 0 var(--border), 0 4px 20px rgba(0,0,0,.2);
-}
+    .page-header {
+      padding: 18px 16px 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(8, 12, 16, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 100;
+      box-shadow: 0 1px 0 var(--border), 0 4px 20px rgba(0, 0, 0, .2);
+    }
 
-.logo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, var(--accent) 0%, #7dd3fc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.logo span {
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+    .logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--accent) 0%, #7dd3fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-.header-count {
-  margin-left: auto;
-  font-size: 12px;
-  color: var(--text3);
-  font-weight: 600;
-}
+    .logo span {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-/* ════════════════════════════════════════════════════════
+    .header-count {
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--text3);
+      font-weight: 600;
+    }
+
+    /* ════════════════════════════════════════════════════════
    BARRE DE RECHERCHE + FILTRES
 ════════════════════════════════════════════════════════ */
-.search-block {
-  padding: 12px 16px;
-  display: flex;
-  gap: 8px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg);
-  position: sticky;
-  top: 61px;
-  z-index: 99;
-}
+    .search-block {
+      padding: 12px 16px;
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 61px;
+      z-index: 99;
+    }
 
-.search-input {
-  flex: 1;
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px 14px;
-  color: var(--text);
-  font-family: 'Barlow', sans-serif;
-  font-size: 15px;
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-.search-input::placeholder { color: var(--text3); }
-.search-input:focus {
-  border-color: rgba(0,212,255,.4);
-  box-shadow: 0 0 0 3px rgba(0,212,255,.06);
-}
+    .search-input {
+      flex: 1;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      color: var(--text);
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
 
-.filter-btn {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px 14px;
-  color: var(--text2);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: border-color 0.2s, color 0.2s;
-}
-.filter-btn:hover, .filter-btn.active {
-  border-color: var(--accent2);
-  color: var(--accent);
-}
-.filter-btn svg { width: 16px; height: 16px; }
+    .search-input::placeholder {
+      color: var(--text3);
+    }
 
-/* Panneau filtres */
-.filters-panel {
-  display: none;
-  background: var(--bg2);
-  border-bottom: 1px solid var(--border);
-  padding: 12px 16px;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.filters-panel.open { display: flex; }
+    .search-input:focus {
+      border-color: rgba(0, 212, 255, .4);
+      box-shadow: 0 0 0 3px rgba(0, 212, 255, .06);
+    }
 
-.filter-select {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 8px 12px;
-  color: var(--text);
-  font-family: 'Barlow', sans-serif;
-  font-size: 13px;
-  outline: none;
-  cursor: pointer;
-  flex: 1;
-  min-width: 140px;
-}
-.filter-select:focus { border-color: var(--accent2); }
+    .filter-btn {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      color: var(--text2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: border-color 0.2s, color 0.2s;
+    }
 
-.filter-row-label {
-  width: 100%;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--text3);
-  padding-top: 4px;
-}
+    .filter-btn:hover,
+    .filter-btn.active {
+      border-color: var(--accent2);
+      color: var(--accent);
+    }
 
-.filter-note-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-}
-.filter-note-row label { font-size: 12px; color: var(--text2); white-space: nowrap; }
-.filter-range {
-  flex: 1;
-  accent-color: var(--accent);
-}
-.filter-note-val {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--gold);
-  min-width: 28px;
-  text-align: right;
-}
+    .filter-btn svg {
+      width: 16px;
+      height: 16px;
+    }
 
-/* Tri */
-.sort-row {
-  display: flex;
-  gap: 6px;
-  padding: 10px 16px;
-  overflow-x: auto;
-  border-bottom: 1px solid var(--border);
-  scrollbar-width: none;
-}
-.sort-row::-webkit-scrollbar { display: none; }
+    /* Panneau filtres */
+    .filters-panel {
+      display: none;
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-.sort-chip {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 5px 13px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text2);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.15s;
-  flex-shrink: 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  letter-spacing: .5px;
-}
-.sort-chip.active {
-  background: rgba(0,212,255,.1);
-  border-color: rgba(0,212,255,.4);
-  color: var(--accent);
-  box-shadow: 0 0 10px -3px rgba(0,212,255,.3);
-}
+    .filters-panel.open {
+      display: flex;
+    }
 
-/* ════════════════════════════════════════════════════════
+    .filter-select {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 8px 12px;
+      color: var(--text);
+      font-family: 'Barlow', sans-serif;
+      font-size: 13px;
+      outline: none;
+      cursor: pointer;
+      flex: 1;
+      min-width: 140px;
+    }
+
+    .filter-select:focus {
+      border-color: var(--accent2);
+    }
+
+    .filter-row-label {
+      width: 100%;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text3);
+      padding-top: 4px;
+    }
+
+    .filter-note-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .filter-note-row label {
+      font-size: 12px;
+      color: var(--text2);
+      white-space: nowrap;
+    }
+
+    .filter-range {
+      flex: 1;
+      accent-color: var(--accent);
+    }
+
+    .filter-note-val {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--gold);
+      min-width: 28px;
+      text-align: right;
+    }
+
+    /* Tri */
+    .sort-row {
+      display: flex;
+      gap: 6px;
+      padding: 10px 16px;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--border);
+      scrollbar-width: none;
+    }
+
+    .sort-row::-webkit-scrollbar {
+      display: none;
+    }
+
+    .sort-chip {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 13px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text2);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+      flex-shrink: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: .5px;
+    }
+
+    .sort-chip.active {
+      background: rgba(0, 212, 255, .1);
+      border-color: rgba(0, 212, 255, .4);
+      color: var(--accent);
+      box-shadow: 0 0 10px -3px rgba(0, 212, 255, .3);
+    }
+
+    /* ════════════════════════════════════════════════════════
    LISTE JOUEURS
 ════════════════════════════════════════════════════════ */
-.players-list {
-  padding: 4px 0;
-}
+    .players-list {
+      padding: 4px 0;
+    }
 
-.player-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--border);
-  cursor: pointer;
-  transition: background 0.15s, transform .1s;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-}
-.player-row::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0; width: 2px;
-  background: transparent;
-  transition: background .15s;
-}
-.player-row:hover { background: rgba(0,212,255,.03); }
-.player-row:hover::before { background: var(--accent); }
-.player-row:active { background: var(--bg3); transform: scale(.992); }
+    .player-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: background 0.15s, transform .1s;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    }
 
-/* Carte miniature */
-.player-card-mini {
-  width: 58px;
-  height: 78px;
-  border-radius: 8px;
-  position: relative;
-  flex-shrink: 0;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.15);
-  box-shadow: 0 4px 14px rgba(0,0,0,.5);
-}
-.player-card-mini img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-}
-.card-mini-fallback {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 22px;
-  color: rgba(255,255,255,0.6);
-}
+    .player-row::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: transparent;
+      transition: background .15s;
+    }
 
-/* Badge OVR sur la miniature */
-.card-mini-ovr {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 15px;
-  line-height: 1;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-}
+    .player-row:hover {
+      background: rgba(0, 212, 255, .03);
+    }
 
-/* Infos joueur */
-.player-info { flex: 1; min-width: 0; }
+    .player-row:hover::before {
+      background: var(--accent);
+    }
 
-.player-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 19px;
-  letter-spacing: 0.3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--text);
-  line-height: 1.1;
-}
+    .player-row:active {
+      background: var(--bg3);
+      transform: scale(.992);
+    }
 
-.player-meta {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 2px;
-  flex-wrap: wrap;
-}
-.player-poste {
-  background: rgba(0,212,255,0.12);
-  color: var(--accent);
-  border-radius: 4px;
-  padding: 1px 6px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-.player-club {
-  font-size: 12px;
-  color: var(--text2);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 120px;
-}
-.player-nat {
-  font-size: 12px;
-  color: var(--text3);
-}
+    /* Carte miniature */
+    .player-card-mini {
+      width: 58px;
+      height: 78px;
+      border-radius: 8px;
+      position: relative;
+      flex-shrink: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .5);
+    }
 
-/* 6 stats mini */
-.player-stats-mini {
-  display: flex;
-  gap: 3px;
-  margin-top: 5px;
-}
-.stat-mini {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  background: rgba(255,255,255,.04);
-  border-radius: 4px;
-  padding: 2px 3px;
-  min-width: 22px;
-}
-.stat-mini-val {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 1;
-}
-.stat-mini-lbl {
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  color: var(--text3);
-  text-transform: uppercase;
-}
+    .player-card-mini img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
 
-/* Rareté sur la droite */
-.player-rarete-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
+    .card-mini-fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.6);
+    }
 
-/* Colonne droite : OVR + dot rareté */
-.player-right-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  flex-shrink: 0;
-  margin-left: 2px;
-}
-.player-ovr {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1;
-}
+    /* Badge OVR sur la miniature */
+    .card-mini-ovr {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 1;
+      color: #fff;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    }
 
-/* Chargement */
-.loading-msg {
-  text-align: center;
-  padding: 40px 20px;
-  color: var(--text3);
-  font-size: 14px;
-}
-.loading-spinner {
-  width: 32px;
-  height: 32px;
-  border: 3px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  margin: 0 auto 12px;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
+    /* Infos joueur */
+    .player-info {
+      flex: 1;
+      min-width: 0;
+    }
 
-/* ════════════════════════════════════════════════════════
+    .player-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .player-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 2px;
+      flex-wrap: wrap;
+    }
+
+    .player-poste {
+      background: rgba(0, 212, 255, 0.12);
+      color: var(--accent);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .player-club {
+      font-size: 12px;
+      color: var(--text2);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 120px;
+    }
+
+    .player-nat {
+      font-size: 12px;
+      color: var(--text3);
+    }
+
+    /* 6 stats mini */
+    .player-stats-mini {
+      display: flex;
+      gap: 3px;
+      margin-top: 5px;
+    }
+
+    .stat-mini {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      background: rgba(255, 255, 255, .04);
+      border-radius: 4px;
+      padding: 2px 3px;
+      min-width: 22px;
+    }
+
+    .stat-mini-val {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .stat-mini-lbl {
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--text3);
+      text-transform: uppercase;
+    }
+
+    /* Rareté sur la droite */
+    .player-rarete-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Colonne droite : OVR + dot rareté */
+    .player-right-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+      margin-left: 2px;
+    }
+
+    .player-ovr {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    /* Chargement */
+    .loading-msg {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text3);
+      font-size: 14px;
+    }
+
+    .loading-spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 12px;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ════════════════════════════════════════════════════════
    PAGE DETAIL JOUEUR
 ════════════════════════════════════════════════════════ */
-#page-detail .page-header {
-  gap: 8px;
-}
+    #page-detail .page-header {
+      gap: 8px;
+    }
 
-.back-btn {
-  background: none;
-  border: none;
-  color: var(--text2);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 4px;
-}
-.back-btn svg { width: 20px; height: 20px; }
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 4px;
+    }
 
-/* Header joueur */
-.detail-hero {
-  padding: 22px 16px 20px;
-  display: flex;
-  gap: 16px;
-  border-bottom: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
-  position: relative;
-  overflow: hidden;
-}
-.detail-hero::before {
-  content: '';
-  position: absolute;
-  top: -40px; right: -40px;
-  width: 200px; height: 200px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,212,255,.07), transparent 70%);
-  pointer-events: none;
-}
+    .back-btn svg {
+      width: 20px;
+      height: 20px;
+    }
 
-.detail-card-img {
-  width: 100px;
-  height: 134px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: top;
-  border: 1px solid var(--border2);
-  flex-shrink: 0;
-  background: var(--bg3);
-}
-.detail-card-fallback {
-  width: 100px;
-  height: 134px;
-  border-radius: 10px;
-  background: var(--bg3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--border2);
-  flex-shrink: 0;
-}
-.detail-card-fallback .ovr-big {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  color: var(--gold);
-  line-height: 1;
-}
-.detail-card-fallback .pos-big {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--text2);
-}.detail-card-fallback .pos-big {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--text2);
-}
+    /* Header joueur */
+    .detail-hero {
+      padding: 22px 16px 20px;
+      display: flex;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+      position: relative;
+      overflow: hidden;
+    }
 
-/* ── Wrapper image détail ── */
-.detail-card-img-wrap {
-  width: 110px; min-width: 110px; height: 148px; flex-shrink: 0; position: relative;
-}
-.detail-card-img-wrap .detail-card-img {
-  width: 100%; height: 100%; border-radius: 10px; object-fit: contain;
-  object-position: top center; border: 1px solid var(--border2); background: var(--bg3);
-  box-shadow: 0 6px 24px rgba(0,0,0,.5);
-}
-.detail-card-img-wrap .detail-card-fallback {
-  position: absolute; inset: 0; border-radius: 10px;
-  box-shadow: 0 6px 24px rgba(0,0,0,.5);
-}
+    .detail-hero::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 212, 255, .07), transparent 70%);
+      pointer-events: none;
+    }
 
-/* ── Quick filters ── */
-.quick-filters {
-  display: flex; gap: 6px; padding: 8px 16px; overflow-x: auto;
-  scrollbar-width: none; border-bottom: 1px solid var(--border);
-  background: var(--bg);
-}
-.quick-filters::-webkit-scrollbar { display: none; }
-.qf-pill {
-  background: var(--bg3); border: 1px solid var(--border);
-  border-radius: 16px; padding: 5px 13px; font-size: 12px; font-weight: 700;
-  color: var(--text3); cursor: pointer; white-space: nowrap; flex-shrink: 0;
-  transition: all 0.18s; font-family: 'Barlow Condensed', sans-serif; letter-spacing: .6px;
-  -webkit-tap-highlight-color: transparent;
-}
-.qf-pill:hover { border-color: var(--border2); color: var(--text); background: var(--bg4); }
-.qf-pill.on { background: rgba(0,212,255,.1); border-color: rgba(0,212,255,.4); color: var(--accent); box-shadow: 0 0 10px -3px rgba(0,212,255,.3); }
-.qf-pill.qf-sep { margin-left: 8px; border-left: 1px solid var(--border2); }
+    .detail-card-img {
+      width: 100px;
+      height: 134px;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: top;
+      border: 1px solid var(--border2);
+      flex-shrink: 0;
+      background: var(--bg3);
+    }
 
-/* ── Profil bloc enrichi ── */
-.profil-block {
-  margin: 14px 16px 0;
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 10px;
-  padding: 12px 14px;
-}
-.profil-block-header {
-  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
-}
-.profil-block-emoji { font-size: 22px; }
-.profil-block-name {
-  font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
-  font-size: 18px; color: var(--text);
-}
-.profil-block-role {
-  font-size: 11px; font-weight: 600; color: var(--accent);
-  background: rgba(0,212,255,.1); border: 1px solid rgba(0,212,255,.2);
-  border-radius: 4px; padding: 2px 7px; margin-left: auto;
-}
-.profil-block-desc {
-  font-size: 13px; color: var(--text2); line-height: 1.5; margin-bottom: 10px;
-}
-.profil-tags {
-  display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px;
-}
-.profil-fort {
-  background: rgba(34,197,94,.1); border: 1px solid rgba(34,197,94,.25);
-  color: #4ade80; border-radius: 5px; padding: 3px 8px; font-size: 11px; font-weight: 600;
-}
-.profil-faible {
-  background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.25);
-  color: #f87171; border-radius: 5px; padding: 3px 8px; font-size: 11px; font-weight: 600;
-}
-.profil-role-tag {
-  background: rgba(168,85,247,.1); border: 1px solid rgba(168,85,247,.22);
-  color: #c084fc; border-radius: 5px; padding: 3px 8px; font-size: 11px; font-weight: 600;
-}
+    .detail-card-fallback {
+      width: 100px;
+      height: 134px;
+      border-radius: 10px;
+      background: var(--bg3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border2);
+      flex-shrink: 0;
+    }
 
-/* ── Stats améliorées ── */
-.stat-bar-wrap {
-  display: flex; align-items: center; gap: 8px; margin-bottom: 8px;
-}
-.stat-bar-label {
-  font-size: 11px; font-weight: 700; color: var(--text3);
-  width: 32px; text-align: right; flex-shrink: 0; letter-spacing: .5px;
-}
-.stat-bar-track {
-  flex: 1; height: 6px; background: var(--bg4); border-radius: 3px; overflow: hidden;
-}
-.stat-bar-fill {
-  height: 100%; border-radius: 3px; transition: width .4s cubic-bezier(.23,1,.32,1);
-}
-.stat-bar-val {
-  font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
-  font-size: 15px; width: 28px; text-align: left; flex-shrink: 0;
-}
+    .detail-card-fallback .ovr-big {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      color: var(--gold);
+      line-height: 1;
+    }
 
-/* ── Animations premium ── */
-@keyframes fadeUpCard { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform:translateY(0); } }
-@keyframes fadeInPage { from { opacity:0; } to { opacity:1; } }
-@keyframes slideInRight { from { opacity:0; transform: translateX(18px); } to { opacity:1; transform:translateX(0); } }
-@keyframes slideInUp { from { opacity:0; transform: translateY(20px); } to { opacity:1; transform:translateY(0); } }
-@keyframes scaleIn { from { opacity:0; transform: scale(.96); } to { opacity:1; transform:scale(1); } }
-@keyframes barGrow { from { width:0 !important; } to {} }
+    .detail-card-fallback .pos-big {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text2);
+    }
 
-.page.active { animation: fadeInPage .2s ease both; }
-#page-detail.active { animation: slideInRight .25s cubic-bezier(.23,1,.32,1) both; }
-.player-row { animation: fadeUpCard .25s ease both; }
-.player-row:nth-child(1) { animation-delay:.02s }
-.player-row:nth-child(2) { animation-delay:.04s }
-.player-row:nth-child(3) { animation-delay:.06s }
-.player-row:nth-child(4) { animation-delay:.08s }
-.player-row:nth-child(5) { animation-delay:.10s }
-.player-row:nth-child(n+6) { animation-delay:.12s }
+    .detail-card-fallback .pos-big {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text2);
+    }
 
-/* Profil bloc apparition */
-.profil-block { animation: slideInUp .3s cubic-bezier(.23,1,.32,1) .1s both; }
+    /* ── Wrapper image détail ── */
+    .detail-card-img-wrap {
+      width: 110px;
+      min-width: 110px;
+      height: 148px;
+      flex-shrink: 0;
+      position: relative;
+    }
 
-/* Barres de stat animation */
-.stat-bar-fill { animation: barGrow .5s cubic-bezier(.23,1,.32,1) both; }
+    .detail-card-img-wrap .detail-card-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: contain;
+      object-position: top center;
+      border: 1px solid var(--border2);
+      background: var(--bg3);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .5);
+    }
 
-/* Hover sur player-row */
-.player-row { transition: background .15s, transform .1s; cursor: pointer; }
-.player-row:hover { background: rgba(0,212,255,.03); }
-.player-row:active { transform: scale(.992); background: var(--bg3); }
+    .detail-card-img-wrap .detail-card-fallback {
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .5);
+    }
 
-/* Sort chips hover */
-.sort-chip { transition: all .18s; }
-.sort-chip:hover:not(.active) { border-color: var(--border2); color: var(--text); }
+    /* ── Quick filters ── */
+    .quick-filters {
+      display: flex;
+      gap: 6px;
+      padding: 8px 16px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
 
-/* Quick filter pills */
-.qf-pill { transition: all .18s; }
+    .quick-filters::-webkit-scrollbar {
+      display: none;
+    }
 
-/* Boutons actions */
-.btn-primary { transition: opacity .15s, transform .12s; }
-.btn-primary:active { transform: scale(.97); }
-.btn-secondary { transition: border-color .15s, color .15s, transform .12s; }
-.btn-secondary:active { transform: scale(.97); }
+    .qf-pill {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 5px 13px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text3);
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.18s;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: .6px;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-/* Playstyle chips */
-.ps-chip { transition: background .15s; }
+    .qf-pill:hover {
+      border-color: var(--border2);
+      color: var(--text);
+      background: var(--bg4);
+    }
 
-/* Compare slot */
-.compare-slot { transition: border-color .18s, background .18s, transform .12s; }
-.compare-slot:hover { transform: scale(.99); }
+    .qf-pill.on {
+      background: rgba(0, 212, 255, .1);
+      border-color: rgba(0, 212, 255, .4);
+      color: var(--accent);
+      box-shadow: 0 0 10px -3px rgba(0, 212, 255, .3);
+    }
 
-/* Summary bloc */
-.compare-summary { animation: slideInUp .3s cubic-bezier(.23,1,.32,1) both; }
-.pulse-block, .profil-block { transition: box-shadow .2s; }
-.pulse-block:hover, .profil-block:hover { box-shadow: 0 4px 20px rgba(0,0,0,.3); }
+    .qf-pill.qf-sep {
+      margin-left: 8px;
+      border-left: 1px solid var(--border2);
+    }
 
-/* ── Micro-animations premium ───────────────────────────── */
-/* Filtres rapides — feedback au clic */
-.qf-pill { transition: all .18s cubic-bezier(.23,1,.32,1); }
-.qf-pill:active { transform: scale(.92); }
+    /* ── Profil bloc enrichi ── */
+    .profil-block {
+      margin: 14px 16px 0;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
 
-/* Chips de tri */
-.sort-chip { transition: all .18s cubic-bezier(.23,1,.32,1); }
-.sort-chip:active { transform: scale(.93); }
+    .profil-block-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
 
-/* Stat cards détail — pop au hover */
-.stat-main-card { transition: border-color .15s, transform .12s; }
-.stat-main-card:hover { transform: scale(1.03); }
+    .profil-block-emoji {
+      font-size: 22px;
+    }
 
-/* Barres de stats — animation à l'entrée (reset par re-render) */
-@keyframes barGrowFrom0 { from { width: 0 !important; } to { } }
-.stat-bar-fill { animation: barGrowFrom0 .5s cubic-bezier(.23,1,.32,1) both; }
+    .profil-block-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text);
+    }
 
-/* Meta items */
-.meta-item { transition: border-color .15s, background .15s; }
-.meta-item:hover { background: var(--bg4); border-color: var(--border2); }
+    .profil-block-role {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(0, 212, 255, .1);
+      border: 1px solid rgba(0, 212, 255, .2);
+      border-radius: 4px;
+      padding: 2px 7px;
+      margin-left: auto;
+    }
 
-/* Playstyle chips */
-.playstyle-chip { transition: background .15s, border-color .15s, transform .1s; }
-.playstyle-chip:hover { background: var(--bg4); }
-.playstyle-chip.plus:hover { background: rgba(200,168,75,.14); }
+    .profil-block-desc {
+      font-size: 13px;
+      color: var(--text2);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
 
-/* Fiche détail — apparition des sections */
-.detail-section { animation: slideInUp .25s cubic-bezier(.23,1,.32,1) both; }
-.detail-section:nth-child(2) { animation-delay: .05s; }
-.detail-section:nth-child(3) { animation-delay: .08s; }
-.detail-section:nth-child(4) { animation-delay: .11s; }
-.detail-section:nth-child(n+5) { animation-delay: .14s; }
+    .profil-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+    }
 
-/* Boutons action — feedback */
-.btn-primary:hover { opacity: .92; }
-.btn-secondary:active { transform: scale(.97); }
+    .profil-fort {
+      background: rgba(34, 197, 94, .1);
+      border: 1px solid rgba(34, 197, 94, .25);
+      color: #4ade80;
+      border-radius: 5px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 600;
+    }
 
-/* Favoris rows */
-#favorites-list .player-row { transition: background .15s, transform .12s; }
+    .profil-faible {
+      background: rgba(239, 68, 68, .1);
+      border: 1px solid rgba(239, 68, 68, .25);
+      color: #f87171;
+      border-radius: 5px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 600;
+    }
 
-/* Compare slots */
-.compare-slot { transition: border-color .18s, background .18s, box-shadow .18s; }
-.compare-slot:hover:not(.filled) { box-shadow: 0 4px 16px rgba(0,212,255,.08); }
+    .profil-role-tag {
+      background: rgba(168, 85, 247, .1);
+      border: 1px solid rgba(168, 85, 247, .22);
+      color: #c084fc;
+      border-radius: 5px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 600;
+    }
 
-/* Scroll sentinel smooth */
-.load-more-spinner { transition: opacity .2s; }
+    /* ── Stats améliorées ── */
+    .stat-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
 
-/* ── Comparateur résumé synthèse ── */
-.compare-summary {
-  margin: 12px 16px;
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--gold);
-  border-radius: 10px;
-  padding: 12px 14px;
-}
-.compare-summary-title {
-  font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
-  text-transform: uppercase; color: var(--text3); margin-bottom: 6px;
-}
-.compare-summary-txt {
-  font-size: 13px; color: var(--text); line-height: 1.55;
-}
+    .stat-bar-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text3);
+      width: 32px;
+      text-align: right;
+      flex-shrink: 0;
+      letter-spacing: .5px;
+    }
 
-.detail-hero-info { flex: 1; min-width: 0; }
+    .stat-bar-track {
+      flex: 1;
+      height: 6px;
+      background: var(--bg4);
+      border-radius: 3px;
+      overflow: hidden;
+    }
 
-.detail-nom {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 28px;
-  letter-spacing: 0.5px;
-  line-height: 1.1;
-  color: var(--text);
-  text-shadow: 0 2px 12px rgba(0,0,0,.4);
-}
-.detail-club-line {
-  font-size: 13px;
-  color: var(--text2);
-  margin-top: 4px;
-}
+    .stat-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width .4s cubic-bezier(.23, 1, .32, 1);
+    }
 
-.detail-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 10px;
-}
-.badge {
-  border-radius: 5px;
-  padding: 3px 9px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-.badge-gold   { background: rgba(200,168,75,0.18); color: var(--gold2); border: 1px solid rgba(200,168,75,0.3); }
-.badge-silver { background: rgba(144,144,144,0.15); color: #b0b0b0; border: 1px solid rgba(144,144,144,0.3); }
-.badge-bronze { background: rgba(160,96,48,0.18); color: #c87840; border: 1px solid rgba(160,96,48,0.3); }
-.badge-accent { background: rgba(0,212,255,0.12); color: var(--accent); border: 1px solid rgba(0,212,255,0.25); }
-.badge-green  { background: rgba(34,197,94,0.12); color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
+    .stat-bar-val {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      width: 28px;
+      text-align: left;
+      flex-shrink: 0;
+    }
 
-.rarete-badge-gold   { background: rgba(200,168,75,0.2); color: var(--gold2); border: 1px solid rgba(200,168,75,0.35); }
-.rarete-badge-silver { background: rgba(144,144,144,0.2); color: #c0c0c0; border: 1px solid rgba(144,144,144,0.35); }
-.rarete-badge-bronze { background: rgba(160,96,48,0.2); color: #c87840; border: 1px solid rgba(160,96,48,0.35); }
+    /* ── Animations premium ── */
+    @keyframes fadeUpCard {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
 
-/* Profil tag */
-.profil-tag {
-  margin: 14px 16px 0;
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--radius);
-  padding: 10px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.profil-tag-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--text3);
-}
-.profil-tag-value {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--text);
-}
-.profil-points {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-.profil-fort {
-  background: rgba(34,197,94,0.12);
-  border: 1px solid rgba(34,197,94,0.25);
-  color: var(--green);
-  border-radius: 5px;
-  padding: 2px 8px;
-  font-size: 11px;
-  font-weight: 600;
-}
-.profil-faible {
-  background: rgba(239,68,68,0.1);
-  border: 1px solid rgba(239,68,68,0.2);
-  color: #f87171;
-  border-radius: 5px;
-  padding: 2px 8px;
-  font-size: 11px;
-  font-weight: 600;
-}
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-/* Section stats */
-.detail-section {
-  padding: 16px 16px 0;
-}
-.detail-section-title {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--text3);
-  margin-bottom: 12px;
-}
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+      }
 
-/* Stats barres */
-.stat-bar-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 7px;
-  padding: 4px 0;
-}
-.stat-bar-row:nth-child(odd) {
-  background: rgba(255,255,255,.015);
-  border-radius: 5px;
-  padding: 4px 6px;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-.stat-bar-label {
-  font-size: 12px;
-  color: var(--text2);
-  width: 130px;
-  flex-shrink: 0;
-  font-weight: 500;
-}
-.stat-bar-track {
-  flex: 1;
-  height: 5px;
-  background: var(--bg4);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.stat-bar-fill {
-  height: 100%;
-  border-radius: 3px;
-  transition: width 0.6s cubic-bezier(0.4,0,0.2,1);
-}
-.stat-bar-val {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  width: 30px;
-  text-align: right;
-}
+      to {
+        opacity: 1;
+      }
+    }
 
-/* 6 stats principales en grille */
-.stats-main-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-bottom: 16px;
-}
-.stat-main-card {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px 8px 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  transition: border-color .2s, box-shadow .2s;
-}
-.stat-main-card:hover {
-  border-color: var(--stat-color, var(--border2));
-  box-shadow: 0 0 18px -4px var(--stat-color, transparent);
-}
-/* Barre de couleur basse selon niveau */
-.stat-main-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--stat-color, var(--border));
-  border-radius: 0 0 var(--radius) var(--radius);
-}
-.stat-main-val {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 1;
-}
-.stat-main-lbl {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--text3);
-  margin-top: 4px;
-}
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(18px);
+      }
 
-/* Infos meta */
-.meta-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-}
-.meta-item {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px 12px;
-}
-.meta-item-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: var(--text3);
-  margin-bottom: 3px;
-}
-.meta-item-value {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: var(--text);
-}
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
-/* PlayStyles */
-.playstyles-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.playstyle-chip {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text2);
-}
-.playstyle-chip.plus {
-  border-color: rgba(200,168,75,0.4);
-  color: var(--gold2);
-  background: rgba(200,168,75,0.08);
-}
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
 
-/* Boutons action */
-.action-row {
-  display: flex;
-  gap: 8px;
-  padding: 16px;
-}
-.btn-primary {
-  flex: 1;
-  background: var(--accent);
-  color: #000;
-  border: none;
-  border-radius: var(--radius);
-  padding: 12px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: opacity 0.15s;
-}
-.btn-primary:active { opacity: 0.85; }
-.btn-secondary {
-  background: var(--bg3);
-  color: var(--text2);
-  border: 1px solid var(--border2);
-  border-radius: var(--radius);
-  padding: 12px 16px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: border-color 0.15s, color 0.15s;
-}
-.btn-secondary:hover { border-color: var(--accent2); color: var(--accent); }
-.btn-secondary.fav-active { border-color: var(--gold); color: var(--gold); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-/* ════════════════════════════════════════════════════════
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(.96);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes barGrow {
+      from {
+        width: 0 !important;
+      }
+
+      to {}
+    }
+
+    .page.active {
+      animation: fadeInPage .2s ease both;
+    }
+
+    #page-detail.active {
+      animation: slideInRight .25s cubic-bezier(.23, 1, .32, 1) both;
+    }
+
+    .player-row {
+      animation: fadeUpCard .25s ease both;
+    }
+
+    .player-row:nth-child(1) {
+      animation-delay: .02s
+    }
+
+    .player-row:nth-child(2) {
+      animation-delay: .04s
+    }
+
+    .player-row:nth-child(3) {
+      animation-delay: .06s
+    }
+
+    .player-row:nth-child(4) {
+      animation-delay: .08s
+    }
+
+    .player-row:nth-child(5) {
+      animation-delay: .10s
+    }
+
+    .player-row:nth-child(n+6) {
+      animation-delay: .12s
+    }
+
+    /* Profil bloc apparition */
+    .profil-block {
+      animation: slideInUp .3s cubic-bezier(.23, 1, .32, 1) .1s both;
+    }
+
+    /* Barres de stat animation */
+    .stat-bar-fill {
+      animation: barGrow .5s cubic-bezier(.23, 1, .32, 1) both;
+    }
+
+    /* Hover sur player-row */
+    .player-row {
+      transition: background .15s, transform .1s;
+      cursor: pointer;
+    }
+
+    .player-row:hover {
+      background: rgba(0, 212, 255, .03);
+    }
+
+    .player-row:active {
+      transform: scale(.992);
+      background: var(--bg3);
+    }
+
+    /* Sort chips hover */
+    .sort-chip {
+      transition: all .18s;
+    }
+
+    .sort-chip:hover:not(.active) {
+      border-color: var(--border2);
+      color: var(--text);
+    }
+
+    /* Quick filter pills */
+    .qf-pill {
+      transition: all .18s;
+    }
+
+    /* Boutons actions */
+    .btn-primary {
+      transition: opacity .15s, transform .12s;
+    }
+
+    .btn-primary:active {
+      transform: scale(.97);
+    }
+
+    .btn-secondary {
+      transition: border-color .15s, color .15s, transform .12s;
+    }
+
+    .btn-secondary:active {
+      transform: scale(.97);
+    }
+
+    /* Playstyle chips */
+    .ps-chip {
+      transition: background .15s;
+    }
+
+    /* Compare slot */
+    .compare-slot {
+      transition: border-color .18s, background .18s, transform .12s;
+    }
+
+    .compare-slot:hover {
+      transform: scale(.99);
+    }
+
+    /* Summary bloc */
+    .compare-summary {
+      animation: slideInUp .3s cubic-bezier(.23, 1, .32, 1) both;
+    }
+
+    .pulse-block,
+    .profil-block {
+      transition: box-shadow .2s;
+    }
+
+    .pulse-block:hover,
+    .profil-block:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
+    }
+
+    /* ── Micro-animations premium ───────────────────────────── */
+    /* Filtres rapides — feedback au clic */
+    .qf-pill {
+      transition: all .18s cubic-bezier(.23, 1, .32, 1);
+    }
+
+    .qf-pill:active {
+      transform: scale(.92);
+    }
+
+    /* Chips de tri */
+    .sort-chip {
+      transition: all .18s cubic-bezier(.23, 1, .32, 1);
+    }
+
+    .sort-chip:active {
+      transform: scale(.93);
+    }
+
+    /* Stat cards détail — pop au hover */
+    .stat-main-card {
+      transition: border-color .15s, transform .12s;
+    }
+
+    .stat-main-card:hover {
+      transform: scale(1.03);
+    }
+
+    /* Barres de stats — animation à l'entrée (reset par re-render) */
+    @keyframes barGrowFrom0 {
+      from {
+        width: 0 !important;
+      }
+
+      to {}
+    }
+
+    .stat-bar-fill {
+      animation: barGrowFrom0 .5s cubic-bezier(.23, 1, .32, 1) both;
+    }
+
+    /* Meta items */
+    .meta-item {
+      transition: border-color .15s, background .15s;
+    }
+
+    .meta-item:hover {
+      background: var(--bg4);
+      border-color: var(--border2);
+    }
+
+    /* Playstyle chips */
+    .playstyle-chip {
+      transition: background .15s, border-color .15s, transform .1s;
+    }
+
+    .playstyle-chip:hover {
+      background: var(--bg4);
+    }
+
+    .playstyle-chip.plus:hover {
+      background: rgba(200, 168, 75, .14);
+    }
+
+    /* Fiche détail — apparition des sections */
+    .detail-section {
+      animation: slideInUp .25s cubic-bezier(.23, 1, .32, 1) both;
+    }
+
+    .detail-section:nth-child(2) {
+      animation-delay: .05s;
+    }
+
+    .detail-section:nth-child(3) {
+      animation-delay: .08s;
+    }
+
+    .detail-section:nth-child(4) {
+      animation-delay: .11s;
+    }
+
+    .detail-section:nth-child(n+5) {
+      animation-delay: .14s;
+    }
+
+    /* Boutons action — feedback */
+    .btn-primary:hover {
+      opacity: .92;
+    }
+
+    .btn-secondary:active {
+      transform: scale(.97);
+    }
+
+    /* Favoris rows */
+    #favorites-list .player-row {
+      transition: background .15s, transform .12s;
+    }
+
+    /* Compare slots */
+    .compare-slot {
+      transition: border-color .18s, background .18s, box-shadow .18s;
+    }
+
+    .compare-slot:hover:not(.filled) {
+      box-shadow: 0 4px 16px rgba(0, 212, 255, .08);
+    }
+
+    /* Scroll sentinel smooth */
+    .load-more-spinner {
+      transition: opacity .2s;
+    }
+
+    /* ── Comparateur résumé synthèse ── */
+    .compare-summary {
+      margin: 12px 16px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .compare-summary-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 6px;
+    }
+
+    .compare-summary-txt {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .detail-hero-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .detail-nom {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 28px;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+      color: var(--text);
+      text-shadow: 0 2px 12px rgba(0, 0, 0, .4);
+    }
+
+    .detail-club-line {
+      font-size: 13px;
+      color: var(--text2);
+      margin-top: 4px;
+    }
+
+    .detail-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .badge {
+      border-radius: 5px;
+      padding: 3px 9px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .badge-gold {
+      background: rgba(200, 168, 75, 0.18);
+      color: var(--gold2);
+      border: 1px solid rgba(200, 168, 75, 0.3);
+    }
+
+    .badge-silver {
+      background: rgba(144, 144, 144, 0.15);
+      color: #b0b0b0;
+      border: 1px solid rgba(144, 144, 144, 0.3);
+    }
+
+    .badge-bronze {
+      background: rgba(160, 96, 48, 0.18);
+      color: #c87840;
+      border: 1px solid rgba(160, 96, 48, 0.3);
+    }
+
+    .badge-accent {
+      background: rgba(0, 212, 255, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+    }
+
+    .badge-green {
+      background: rgba(34, 197, 94, 0.12);
+      color: var(--green);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+    }
+
+    .rarete-badge-gold {
+      background: rgba(200, 168, 75, 0.2);
+      color: var(--gold2);
+      border: 1px solid rgba(200, 168, 75, 0.35);
+    }
+
+    .rarete-badge-silver {
+      background: rgba(144, 144, 144, 0.2);
+      color: #c0c0c0;
+      border: 1px solid rgba(144, 144, 144, 0.35);
+    }
+
+    .rarete-badge-bronze {
+      background: rgba(160, 96, 48, 0.2);
+      color: #c87840;
+      border: 1px solid rgba(160, 96, 48, 0.35);
+    }
+
+    /* Profil tag */
+    .profil-tag {
+      margin: 14px 16px 0;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .profil-tag-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text3);
+    }
+
+    .profil-tag-value {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .profil-points {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .profil-fort {
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      color: var(--green);
+      border-radius: 5px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .profil-faible {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border-radius: 5px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* Section stats */
+    .detail-section {
+      padding: 16px 16px 0;
+    }
+
+    .detail-section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 12px;
+    }
+
+    /* Stats barres */
+    .stat-bar-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 7px;
+      padding: 4px 0;
+    }
+
+    .stat-bar-row:nth-child(odd) {
+      background: rgba(255, 255, 255, .015);
+      border-radius: 5px;
+      padding: 4px 6px;
+      margin-left: -6px;
+      margin-right: -6px;
+    }
+
+    .stat-bar-label {
+      font-size: 12px;
+      color: var(--text2);
+      width: 130px;
+      flex-shrink: 0;
+      font-weight: 500;
+    }
+
+    .stat-bar-track {
+      flex: 1;
+      height: 5px;
+      background: var(--bg4);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .stat-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .stat-bar-val {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      width: 30px;
+      text-align: right;
+    }
+
+    /* 6 stats principales en grille */
+    .stats-main-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .stat-main-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 8px 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .stat-main-card:hover {
+      border-color: var(--stat-color, var(--border2));
+      box-shadow: 0 0 18px -4px var(--stat-color, transparent);
+    }
+
+    /* Barre de couleur basse selon niveau */
+    .stat-main-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--stat-color, var(--border));
+      border-radius: 0 0 var(--radius) var(--radius);
+    }
+
+    .stat-main-val {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 1;
+    }
+
+    .stat-main-lbl {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-top: 4px;
+    }
+
+    /* Infos meta */
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .meta-item {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+    }
+
+    .meta-item-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 3px;
+    }
+
+    .meta-item-value {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--text);
+    }
+
+    /* PlayStyles */
+    .playstyles-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .playstyle-chip {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text2);
+    }
+
+    .playstyle-chip.plus {
+      border-color: rgba(200, 168, 75, 0.4);
+      color: var(--gold2);
+      background: rgba(200, 168, 75, 0.08);
+    }
+
+    /* Boutons action */
+    .action-row {
+      display: flex;
+      gap: 8px;
+      padding: 16px;
+    }
+
+    .btn-primary {
+      flex: 1;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      border-radius: var(--radius);
+      padding: 12px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: opacity 0.15s;
+    }
+
+    .btn-primary:active {
+      opacity: 0.85;
+    }
+
+    .btn-secondary {
+      background: var(--bg3);
+      color: var(--text2);
+      border: 1px solid var(--border2);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent2);
+      color: var(--accent);
+    }
+
+    .btn-secondary.fav-active {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ════════════════════════════════════════════════════════
    PAGE COMPARATEUR
 ════════════════════════════════════════════════════════ */
-.compare-slots {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding: 14px 16px;
-  border-bottom: 1px solid var(--border);
-}
+    .compare-slots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+    }
 
-.compare-slot {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px;
-  text-align: center;
-  cursor: pointer;
-  min-height: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  transition: border-color 0.15s;
-}
-.compare-slot:hover { border-color: var(--accent2); }
-.compare-slot.filled {
-  cursor: default;
-  border-color: var(--border2);
-}
-.compare-slot-add {
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  background: var(--bg4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text3);
-}
-.compare-slot-add svg { width: 18px; height: 18px; }
-.compare-slot-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  color: var(--text);
-  line-height: 1.1;
-}
-.compare-slot-note {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 26px;
-  color: var(--gold);
-  line-height: 1;
-}
-.compare-slot-poste {
-  font-size: 11px;
-  color: var(--accent);
-  font-weight: 700;
-}
-.compare-remove {
-  background: none;
-  border: none;
-  color: var(--text3);
-  cursor: pointer;
-  font-size: 11px;
-  margin-top: 2px;
-}
+    .compare-slot {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+      text-align: center;
+      cursor: pointer;
+      min-height: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: border-color 0.15s;
+    }
 
-/* Tableau comparatif */
-.compare-table {
-  padding: 0 0 8px;
-}
-.compare-table-section {
-  padding: 10px 16px 0;
-}
-.compare-table-title {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--text3);
-  padding: 8px 0 6px;
-  border-top: 1px solid var(--border);
-}
-.compare-row {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  padding: 5px 16px;
-  border-bottom: 1px solid var(--border);
-  gap: 8px;
-}
-.compare-stat-name {
-  font-size: 11px; color: var(--text3); font-weight: 700;
-  letter-spacing: .5px; text-transform: uppercase;
-  text-align: center; flex-shrink: 0; white-space: nowrap;
-}
-.compare-stat-cells {
-  flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
-}
-.compare-cell {
-  text-align: center;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 22px;
-  color: var(--text);
-  padding: 5px 8px;
-  border-radius: 7px;
-  transition: background .15s;
-}
-.compare-cell.best { background: rgba(34,197,94,0.12); color: var(--green); }
-.compare-cell.worst { color: var(--text3); }
+    .compare-slot:hover {
+      border-color: var(--accent2);
+    }
 
-/* Sélecteur joueur pour compare */
-.player-search-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  z-index: 9999;
-  flex-direction: column;
-}
-.player-search-modal.open { display: flex; }
-.modal-inner {
-  background: var(--bg2);
-  border-radius: 16px 16px 0 0;
-  margin-top: auto;
-  max-height: 75vh;
-  display: flex;
-  flex-direction: column;
-}
-.modal-header {
-  padding: 16px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.modal-header h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-}
-.modal-close {
-  margin-left: auto;
-  background: var(--bg4);
-  border: none;
-  color: var(--text2);
-  width: 30px; height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.modal-search {
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border);
-}
-.modal-search input {
-  width: 100%;
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px 14px;
-  color: var(--text);
-  font-family: 'Barlow', sans-serif;
-  font-size: 15px;
-  outline: none;
-}
-.modal-results {
-  overflow-y: auto;
-  flex: 1;
-}
-.modal-player-row {
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  border-bottom: 1px solid var(--border);
-}
-.modal-player-row:hover { background: var(--bg3); }
-.modal-player-ovr {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 22px;
-  width: 36px;
-  text-align: center;
-  color: var(--gold);
-}
-.modal-player-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-}
-.modal-player-info { font-size: 12px; color: var(--text3); }
+    .compare-slot.filled {
+      cursor: default;
+      border-color: var(--border2);
+    }
 
-/* ════════════════════════════════════════════════════════
+    .compare-slot-add {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text3);
+    }
+
+    .compare-slot-add svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .compare-slot-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .compare-slot-note {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .compare-slot-poste {
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .compare-remove {
+      background: none;
+      border: none;
+      color: var(--text3);
+      cursor: pointer;
+      font-size: 11px;
+      margin-top: 2px;
+    }
+
+    /* Tableau comparatif */
+    .compare-table {
+      padding: 0 0 8px;
+    }
+
+    .compare-table-section {
+      padding: 10px 16px 0;
+    }
+
+    .compare-table-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text3);
+      padding: 8px 0 6px;
+      border-top: 1px solid var(--border);
+    }
+
+    .compare-row {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 5px 16px;
+      border-bottom: 1px solid var(--border);
+      gap: 8px;
+    }
+
+    .compare-stat-name {
+      font-size: 11px;
+      color: var(--text3);
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      text-align: center;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .compare-stat-cells {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .compare-cell {
+      text-align: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      color: var(--text);
+      padding: 5px 8px;
+      border-radius: 7px;
+      transition: background .15s;
+    }
+
+    .compare-cell.best {
+      background: rgba(34, 197, 94, 0.12);
+      color: var(--green);
+    }
+
+    .compare-cell.worst {
+      color: var(--text3);
+    }
+
+    /* Sélecteur joueur pour compare */
+    .player-search-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 9999;
+      flex-direction: column;
+    }
+
+    .player-search-modal.open {
+      display: flex;
+    }
+
+    .modal-inner {
+      background: var(--bg2);
+      border-radius: 16px 16px 0 0;
+      margin-top: auto;
+      max-height: 75vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .modal-header h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .modal-close {
+      margin-left: auto;
+      background: var(--bg4);
+      border: none;
+      color: var(--text2);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-search {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .modal-search input {
+      width: 100%;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      color: var(--text);
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .modal-results {
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .modal-player-row {
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .modal-player-row:hover {
+      background: var(--bg3);
+    }
+
+    .modal-player-ovr {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      width: 36px;
+      text-align: center;
+      color: var(--gold);
+    }
+
+    .modal-player-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .modal-player-info {
+      font-size: 12px;
+      color: var(--text3);
+    }
+
+    /* ════════════════════════════════════════════════════════
    PAGE FAVORIS
 ════════════════════════════════════════════════════════ */
-.empty-state {
-  padding: 60px 20px;
-  text-align: center;
-  color: var(--text3);
-}
-.empty-state svg {
-  width: 48px; height: 48px;
-  margin: 0 auto 16px;
-  opacity: 0.3;
-}
-.empty-state h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text2);
-  margin-bottom: 8px;
-}
-.empty-state p { font-size: 14px; }
+    .empty-state {
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--text3);
+    }
 
-.fav-compare-bar {
-  display: none;
-  padding: 10px 16px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg2);
-}
-.fav-compare-bar.visible { display: flex; gap: 8px; align-items: center; }
-.fav-compare-bar span { font-size: 13px; color: var(--text2); flex: 1; }
+    .empty-state svg {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 16px;
+      opacity: 0.3;
+    }
 
-/* ════════════════════════════════════════════════════════
+    .empty-state h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text2);
+      margin-bottom: 8px;
+    }
+
+    .empty-state p {
+      font-size: 14px;
+    }
+
+    .fav-compare-bar {
+      display: none;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg2);
+    }
+
+    .fav-compare-bar.visible {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .fav-compare-bar span {
+      font-size: 13px;
+      color: var(--text2);
+      flex: 1;
+    }
+
+    /* ════════════════════════════════════════════════════════
    SCROLL SENTINEL (infinite scroll)
 ════════════════════════════════════════════════════════ */
-.scroll-sentinel {
-  height: 1px;
-  width: 100%;
-}
-.load-more-spinner {
-  text-align: center;
-  padding: 20px;
-  color: var(--text3);
-  font-size: 13px;
-  display: none;
-}
-.load-more-spinner.visible { display: block; }
+    .scroll-sentinel {
+      height: 1px;
+      width: 100%;
+    }
 
-/* ════════════════════════════════════════════════════════
+    .load-more-spinner {
+      text-align: center;
+      padding: 20px;
+      color: var(--text3);
+      font-size: 13px;
+      display: none;
+    }
+
+    .load-more-spinner.visible {
+      display: block;
+    }
+
+    /* ════════════════════════════════════════════════════════
    STAT COLOR HELPERS
 ════════════════════════════════════════════════════════ */
-.c-elite { color: #22c55e; }
-.c-good  { color: #86efac; }
-.c-mid   { color: var(--gold2); }
-.c-low   { color: #f97316; }
-.c-bad   { color: #ef4444; }
+    .c-elite {
+      color: #22c55e;
+    }
 
-</style>
+    .c-good {
+      color: #86efac;
+    }
+
+    .c-mid {
+      color: var(--gold2);
+    }
+
+    .c-low {
+      color: #f97316;
+    }
+
+    .c-bad {
+      color: #ef4444;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ══ NAV MOBILE ════════════════════════════════════════ -->
-<nav>
-  <button class="nav-btn active" onclick="showPage('players')" id="nav-players">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-    Joueurs
-    <div class="nav-dot"></div>
-  </button>
-  <button class="nav-btn" onclick="location.href='fcpulse_live.html'" id="nav-live">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-    Live
-    <div class="nav-dot"></div>
-  </button>
-  <button class="nav-btn" onclick="showPage('compare')" id="nav-compare">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M8 21H3v-5M21 3l-7 7M3 21l7-7"/></svg>
-    Comparer
-    <div class="nav-dot"></div>
-  </button>
-  <button class="nav-btn" onclick="showPage('favorites')" id="nav-favorites">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A5.5 5.5 0 017.5 3c1.74 0 3.41.81 4.5 2.09A5.99 5.99 0 0116.5 3 5.5 5.5 0 0122 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z"/></svg>
-    Favoris
-    <div class="nav-dot"></div>
-  </button>
-</nav>
+  <!-- ══ NAV MOBILE ════════════════════════════════════════ -->
+  <nav>
+    <button class="nav-btn active" onclick="showPage('players')" id="nav-players">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+      </svg>
+      Joueurs
+      <div class="nav-dot"></div>
+    </button>
+    <button class="nav-btn" onclick="location.href='fcpulse_live.html'" id="nav-live">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+      </svg>
+      Live
+      <div class="nav-dot"></div>
+    </button>
+    <button class="nav-btn" onclick="showPage('compare')" id="nav-compare">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M16 3h5v5M8 21H3v-5M21 3l-7 7M3 21l7-7" />
+      </svg>
+      Comparer
+      <div class="nav-dot"></div>
+    </button>
+    <button class="nav-btn" onclick="showPage('favorites')" id="nav-favorites">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path
+          d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A5.5 5.5 0 017.5 3c1.74 0 3.41.81 4.5 2.09A5.99 5.99 0 0116.5 3 5.5 5.5 0 0122 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z" />
+      </svg>
+      Favoris
+      <div class="nav-dot"></div>
+    </button>
+  </nav>
 
-<!-- ══════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════
    PAGE JOUEURS
 ══════════════════════════════════════════════════════ -->
-<div class="page active" id="page-players">
-  <div class="page-header">
-    <span class="logo">FC<span>Pulse</span></span>
-    <span id="result-count" class="header-count">— joueurs</span>
-  </div>
-
-  <div class="search-block">
-    <input class="search-input" type="text" id="search-input" placeholder="Rechercher un joueur..." autocomplete="off" oninput="onSearch()">
-    <button class="filter-btn" id="filter-toggle-btn" onclick="toggleFilters()">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M7 12h10M10 18h4"/></svg>
-      Filtres
-    </button>
-  </div>
-
-  <div class="filters-panel" id="filters-panel">
-    <div class="filter-row-label">Poste</div>
-    <select class="filter-select" id="f-poste" onchange="applyFilters()">
-      <option value="">Tous les postes</option>
-      <option value="GB">Gardien (GB)</option>
-      <option value="DC">Défenseur Central (DC)</option>
-      <option value="DG">Arrière Gauche (DG)</option>
-      <option value="DD">Arrière Droit (DD)</option>
-      <option value="PDG">Piston Gauche (PDG)</option>
-      <option value="PDD">Piston Droit (PDD)</option>
-      <option value="MDC">Milieu Défensif (MDC)</option>
-      <option value="MC">Milieu Central (MC)</option>
-      <option value="MG">Milieu Gauche (MG)</option>
-      <option value="MD">Milieu Droit (MD)</option>
-      <option value="MOC">Milieu Offensif (MOC)</option>
-      <option value="AG">Ailier Gauche (AG)</option>
-      <option value="AD">Ailier Droit (AD)</option>
-      <option value="SA">Second Attaquant (SA)</option>
-      <option value="ATT">Attaquant (ATT)</option>
-    </select>
-
-    <div class="filter-row-label">Rareté</div>
-    <select class="filter-select" id="f-rarete" onchange="applyFilters()">
-      <option value="">Toutes rarétés</option>
-      <option value="Or Rare">Or Rare</option>
-      <option value="Argent Rare">Argent Rare</option>
-      <option value="Bronze Rare">Bronze Rare</option>
-      <option value="Bronze Commun">Bronze Commun</option>
-    </select>
-
-    <div class="filter-row-label">Ligue</div>
-    <select class="filter-select" id="f-ligue" onchange="applyFilters()">
-      <option value="">Toutes les ligues</option>
-    </select>
-
-    <div class="filter-row-label">Nationalité</div>
-    <select class="filter-select" id="f-nation" onchange="applyFilters()">
-      <option value="">Toutes nationalités</option>
-    </select>
-
-    <div class="filter-row-label">Pied fort</div>
-    <select class="filter-select" id="f-pied" onchange="applyFilters()">
-      <option value="">Tous</option>
-      <option value="Gauche">Gauche</option>
-      <option value="Droit">Droit</option>
-    </select>
-
-    <div class="filter-row-label">Note globale minimum</div>
-    <div class="filter-note-row" style="width:100%">
-      <label>Note min</label>
-      <input type="range" class="filter-range" id="f-note-min" min="47" max="91" value="47" oninput="document.getElementById('note-min-val').textContent=this.value; applyFilters()">
-      <span class="filter-note-val" id="note-min-val">47</span>
+  <div class="page active" id="page-players">
+    <div class="page-header">
+      <span class="logo">FC<span>Pulse</span></span>
+      <span id="result-count" class="header-count">— joueurs</span>
     </div>
-  </div>
 
-  <!-- Filtres rapides visuels -->
-  <!-- Ligne 1 : Postes -->
-  <div class="quick-filters" id="quick-filters">
-    <div class="qf-pill on" onclick="setQuickFilter('all',this)">Tous</div>
-    <div class="qf-pill" onclick="setQuickFilter('ATT',this)">ATT</div>
-    <div class="qf-pill" onclick="setQuickFilter('AG',this)">AG</div>
-    <div class="qf-pill" onclick="setQuickFilter('AD',this)">AD</div>
-    <div class="qf-pill" onclick="setQuickFilter('MOC',this)">MOC</div>
-    <div class="qf-pill" onclick="setQuickFilter('SA',this)">SA</div>
-    <div class="qf-pill" onclick="setQuickFilter('MC',this)">MC</div>
-    <div class="qf-pill" onclick="setQuickFilter('MDC',this)">MDC</div>
-    <div class="qf-pill" onclick="setQuickFilter('DC',this)">DC</div>
-    <div class="qf-pill" onclick="setQuickFilter('DG',this)">DG</div>
-    <div class="qf-pill" onclick="setQuickFilter('DD',this)">DD</div>
-    <div class="qf-pill" onclick="setQuickFilter('PDG',this)">PDG</div>
-    <div class="qf-pill" onclick="setQuickFilter('GB',this)">GB</div>
-    <!-- Rareté -->
-    <div class="qf-pill qf-sep" onclick="setRarete('Or Rare',this)" title="Or Rare">🥇 Or</div>
-    <div class="qf-pill" onclick="setRarete('Argent Rare',this)" title="Argent Rare">🥈 Argent</div>
-    <div class="qf-pill" onclick="setRarete('Bronze Rare',this)" title="Bronze Rare">🥉 Bronze</div>
-  </div>
-  <!-- Ligne 2 : Top ligues -->
-  <div class="quick-filters" id="quick-filters-leagues" style="top:auto;border-top:none;padding-top:0">
-    <span style="font-size:10px;font-weight:700;letter-spacing:1px;color:var(--text3);text-transform:uppercase;flex-shrink:0;padding-right:4px">Ligues</span>
-    <div class="qf-pill" onclick="setTopLigue('Premier League',this)" title="Premier League" style="background:rgba(98,0,238,.1);border-color:rgba(98,0,238,.25);color:#a78bfa">PL</div>
-    <div class="qf-pill" onclick="setTopLigue('La Liga',this)" title="La Liga" style="background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.25);color:#f87171">LaLiga</div>
-    <div class="qf-pill" onclick="setTopLigue('Bundesliga',this)" title="Bundesliga" style="background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.25);color:#fb923c">BL</div>
-    <div class="qf-pill" onclick="setTopLigue('Serie A',this)" title="Serie A" style="background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.25);color:#93c5fd">SerieA</div>
-    <div class="qf-pill" onclick="setTopLigue('Ligue 1',this)" title="Ligue 1" style="background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.25);color:#4ade80">L1</div>
-    <div class="qf-pill" onclick="setTopLigue('Eredivisie',this)" title="Eredivisie">ERE</div>
-    <div class="qf-pill" onclick="setTopLigue('Liga Portugal',this)" title="Liga Portugal">LPT</div>
-    <div class="qf-pill" onclick="setTopLigue('Saudi Pro League',this)" title="Saudi Pro League">SAU</div>
-  </div>
-  <div class="sort-row">
-    <div class="sort-chip active" onclick="setSort('note', this)" data-key="note" data-dir="desc">Note ↓</div>
-    <div class="sort-chip" onclick="setSort('vitesse', this)" data-key="vitesse" data-dir="desc">Vitesse</div>
-    <div class="sort-chip" onclick="setSort('tir', this)" data-key="tir" data-dir="desc">Tir</div>
-    <div class="sort-chip" onclick="setSort('passes', this)" data-key="passes" data-dir="desc">Passes</div>
-    <div class="sort-chip" onclick="setSort('dribble', this)" data-key="dribble" data-dir="desc">Dribble</div>
-    <div class="sort-chip" onclick="setSort('defense', this)" data-key="defense" data-dir="desc">Défense</div>
-    <div class="sort-chip" onclick="setSort('physique', this)" data-key="physique" data-dir="desc">Physique</div>
-    <div class="sort-chip" onclick="setSort('age', this)" data-key="age" data-dir="asc">Âge ↑</div>
-  </div>
-
-  <div id="players-list" class="players-list">
-    <div class="loading-msg">
-      <div class="loading-spinner"></div>
-      Chargement des joueurs...
-    </div>
-  </div>
-  <div class="scroll-sentinel" id="scroll-sentinel"></div>
-  <div class="load-more-spinner" id="load-more-spinner">Chargement...</div>
-</div>
-
-
-<!-- ══════════════════════════════════════════════════════
-   PAGE DETAIL JOUEUR
-══════════════════════════════════════════════════════ -->
-<div class="page" id="page-detail">
-  <div class="page-header">
-    <button class="back-btn" onclick="goBack()">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
-    </button>
-    <span id="detail-header-nom" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;">Joueur</span>
-    <button class="btn-secondary" id="detail-fav-btn" onclick="toggleFavDetail()" style="margin-left:auto;padding:8px 12px;font-size:13px;">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A5.5 5.5 0 017.5 3c1.74 0 3.41.81 4.5 2.09A5.99 5.99 0 0116.5 3 5.5 5.5 0 0122 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z"/></svg>
-      <span id="fav-btn-label">Favoris</span>
-    </button>
-  </div>
-  <div id="detail-content"></div>
-</div>
-
-
-<!-- ══════════════════════════════════════════════════════
-   PAGE COMPARATEUR
-══════════════════════════════════════════════════════ -->
-<div class="page" id="page-compare">
-  <div class="page-header">
-    <span class="logo">FC<span>Pulse</span></span>
-    <span style="font-size:13px;color:var(--text3);margin-left:auto;font-weight:600;">COMPARATEUR</span>
-  </div>
-
-  <div class="compare-slots">
-    <div class="compare-slot" id="slot-0" onclick="openPlayerPicker(0)">
-      <div class="compare-slot-add">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-      </div>
-      <span style="font-size:12px;color:var(--text3);">Joueur 1</span>
-    </div>
-    <div class="compare-slot" id="slot-1" onclick="openPlayerPicker(1)">
-      <div class="compare-slot-add">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-      </div>
-      <span style="font-size:12px;color:var(--text3);">Joueur 2</span>
-    </div>
-  </div>
-
-  <div id="compare-summary-box"></div>
-  <div id="compare-table" class="compare-table"></div>
-</div>
-
-
-<!-- ══════════════════════════════════════════════════════
-   PAGE FAVORIS
-══════════════════════════════════════════════════════ -->
-<div class="page" id="page-favorites">
-  <div class="page-header">
-    <span class="logo">FC<span>Pulse</span></span>
-    <span style="font-size:13px;color:var(--text3);margin-left:auto;font-weight:600;">MES FAVORIS</span>
-  </div>
-  <div class="fav-compare-bar" id="fav-compare-bar">
-    <span id="fav-selected-count">0 sélectionné(s)</span>
-    <button class="btn-primary" style="flex:0;padding:8px 16px;font-size:13px;" onclick="compareFromFavorites()">Comparer</button>
-  </div>
-  <div id="favorites-list"></div>
-</div>
-
-
-<!-- Modal sélecteur joueur (pour comparateur) -->
-<div class="player-search-modal" id="player-picker-modal">
-  <div style="flex:1" onclick="closePlayerPicker()"></div>
-  <div class="modal-inner">
-    <div class="modal-header">
-      <h3>Choisir un joueur</h3>
-      <button class="modal-close" onclick="closePlayerPicker()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    <div class="search-block">
+      <input class="search-input" type="text" id="search-input" placeholder="Rechercher un joueur..." autocomplete="off"
+        oninput="onSearch()">
+      <button class="filter-btn" id="filter-toggle-btn" onclick="toggleFilters()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M7 12h10M10 18h4" />
+        </svg>
+        Filtres
       </button>
     </div>
-    <div class="modal-search">
-      <input type="text" id="modal-search-input" placeholder="Rechercher..." oninput="renderModalResults(this.value)" autocomplete="off">
+
+    <div class="filters-panel" id="filters-panel">
+      <div class="filter-row-label">Poste</div>
+      <select class="filter-select" id="f-poste" onchange="applyFilters()">
+        <option value="">Tous les postes</option>
+        <option value="GB">Gardien (GB)</option>
+        <option value="DC">Défenseur Central (DC)</option>
+        <option value="DG">Arrière Gauche (DG)</option>
+        <option value="DD">Arrière Droit (DD)</option>
+        <option value="PDG">Piston Gauche (PDG)</option>
+        <option value="PDD">Piston Droit (PDD)</option>
+        <option value="MDC">Milieu Défensif (MDC)</option>
+        <option value="MC">Milieu Central (MC)</option>
+        <option value="MG">Milieu Gauche (MG)</option>
+        <option value="MD">Milieu Droit (MD)</option>
+        <option value="MOC">Milieu Offensif (MOC)</option>
+        <option value="AG">Ailier Gauche (AG)</option>
+        <option value="AD">Ailier Droit (AD)</option>
+        <option value="SA">Second Attaquant (SA)</option>
+        <option value="ATT">Attaquant (ATT)</option>
+      </select>
+
+      <div class="filter-row-label">Rareté</div>
+      <select class="filter-select" id="f-rarete" onchange="applyFilters()">
+        <option value="">Toutes rarétés</option>
+        <option value="Or Rare">Or Rare</option>
+        <option value="Argent Rare">Argent Rare</option>
+        <option value="Bronze Rare">Bronze Rare</option>
+        <option value="Bronze Commun">Bronze Commun</option>
+      </select>
+
+      <div class="filter-row-label">Ligue</div>
+      <select class="filter-select" id="f-ligue" onchange="applyFilters()">
+        <option value="">Toutes les ligues</option>
+      </select>
+
+      <div class="filter-row-label">Nationalité</div>
+      <select class="filter-select" id="f-nation" onchange="applyFilters()">
+        <option value="">Toutes nationalités</option>
+      </select>
+
+      <div class="filter-row-label">Pied fort</div>
+      <select class="filter-select" id="f-pied" onchange="applyFilters()">
+        <option value="">Tous</option>
+        <option value="Gauche">Gauche</option>
+        <option value="Droit">Droit</option>
+      </select>
+
+      <div class="filter-row-label">Note globale minimum</div>
+      <div class="filter-note-row" style="width:100%">
+        <label>Note min</label>
+        <input type="range" class="filter-range" id="f-note-min" min="47" max="91" value="47"
+          oninput="document.getElementById('note-min-val').textContent=this.value; applyFilters()">
+        <span class="filter-note-val" id="note-min-val">47</span>
+      </div>
     </div>
-    <div class="modal-results" id="modal-results"></div>
+
+    <!-- Filtres rapides visuels -->
+    <!-- Ligne 1 : Postes -->
+    <div class="quick-filters" id="quick-filters">
+      <div class="qf-pill on" onclick="setQuickFilter('all',this)">Tous</div>
+      <div class="qf-pill" onclick="setQuickFilter('ATT',this)">ATT</div>
+      <div class="qf-pill" onclick="setQuickFilter('AG',this)">AG</div>
+      <div class="qf-pill" onclick="setQuickFilter('AD',this)">AD</div>
+      <div class="qf-pill" onclick="setQuickFilter('MOC',this)">MOC</div>
+      <div class="qf-pill" onclick="setQuickFilter('SA',this)">SA</div>
+      <div class="qf-pill" onclick="setQuickFilter('MC',this)">MC</div>
+      <div class="qf-pill" onclick="setQuickFilter('MDC',this)">MDC</div>
+      <div class="qf-pill" onclick="setQuickFilter('DC',this)">DC</div>
+      <div class="qf-pill" onclick="setQuickFilter('DG',this)">DG</div>
+      <div class="qf-pill" onclick="setQuickFilter('DD',this)">DD</div>
+      <div class="qf-pill" onclick="setQuickFilter('PDG',this)">PDG</div>
+      <div class="qf-pill" onclick="setQuickFilter('GB',this)">GB</div>
+      <!-- Rareté -->
+      <div class="qf-pill qf-sep" onclick="setRarete('Or Rare',this)" title="Or Rare">🥇 Or</div>
+      <div class="qf-pill" onclick="setRarete('Argent Rare',this)" title="Argent Rare">🥈 Argent</div>
+      <div class="qf-pill" onclick="setRarete('Bronze Rare',this)" title="Bronze Rare">🥉 Bronze</div>
+    </div>
+    <!-- Ligne 2 : Top ligues -->
+    <div class="quick-filters" id="quick-filters-leagues" style="top:auto;border-top:none;padding-top:0">
+      <span
+        style="font-size:10px;font-weight:700;letter-spacing:1px;color:var(--text3);text-transform:uppercase;flex-shrink:0;padding-right:4px">Ligues</span>
+      <div class="qf-pill" onclick="setTopLigue('Premier League',this)" title="Premier League"
+        style="background:rgba(98,0,238,.1);border-color:rgba(98,0,238,.25);color:#a78bfa">PL</div>
+      <div class="qf-pill" onclick="setTopLigue('La Liga',this)" title="La Liga"
+        style="background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.25);color:#f87171">LaLiga</div>
+      <div class="qf-pill" onclick="setTopLigue('Bundesliga',this)" title="Bundesliga"
+        style="background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.25);color:#fb923c">BL</div>
+      <div class="qf-pill" onclick="setTopLigue('Serie A',this)" title="Serie A"
+        style="background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.25);color:#93c5fd">SerieA</div>
+      <div class="qf-pill" onclick="setTopLigue('Ligue 1',this)" title="Ligue 1"
+        style="background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.25);color:#4ade80">L1</div>
+      <div class="qf-pill" onclick="setTopLigue('Eredivisie',this)" title="Eredivisie">ERE</div>
+      <div class="qf-pill" onclick="setTopLigue('Liga Portugal',this)" title="Liga Portugal">LPT</div>
+      <div class="qf-pill" onclick="setTopLigue('Saudi Pro League',this)" title="Saudi Pro League">SAU</div>
+    </div>
+    <div class="sort-row">
+      <div class="sort-chip active" onclick="setSort('note', this)" data-key="note" data-dir="desc">Note ↓</div>
+      <div class="sort-chip" onclick="setSort('vitesse', this)" data-key="vitesse" data-dir="desc">Vitesse</div>
+      <div class="sort-chip" onclick="setSort('tir', this)" data-key="tir" data-dir="desc">Tir</div>
+      <div class="sort-chip" onclick="setSort('passes', this)" data-key="passes" data-dir="desc">Passes</div>
+      <div class="sort-chip" onclick="setSort('dribble', this)" data-key="dribble" data-dir="desc">Dribble</div>
+      <div class="sort-chip" onclick="setSort('defense', this)" data-key="defense" data-dir="desc">Défense</div>
+      <div class="sort-chip" onclick="setSort('physique', this)" data-key="physique" data-dir="desc">Physique</div>
+      <div class="sort-chip" onclick="setSort('age', this)" data-key="age" data-dir="asc">Âge ↑</div>
+    </div>
+
+    <div id="players-list" class="players-list">
+      <div class="loading-msg">
+        <div class="loading-spinner"></div>
+        Chargement des joueurs...
+      </div>
+    </div>
+    <div class="scroll-sentinel" id="scroll-sentinel"></div>
+    <div class="load-more-spinner" id="load-more-spinner">Chargement...</div>
   </div>
-</div>
 
 
-<script>
-// ════════════════════════════════════════════════════════
-// ÉTAT GLOBAL
-// ════════════════════════════════════════════════════════
-let allPlayers = [];
-let filteredPlayers = [];
-let currentSort = 'note';
-let currentPage = 'players';
-let prevPage = 'players';
-let renderOffset = 0;
-const PAGE_SIZE = 40;
-let isLoadingMore = false;
-let currentDetailId = null;
-let compareSlots = [null, null];
-let currentPickerSlot = 0;
-let favorites = JSON.parse(localStorage.getItem('fcpulse_favs') || '[]');
+  <!-- ══════════════════════════════════════════════════════
+   PAGE DETAIL JOUEUR
+══════════════════════════════════════════════════════ -->
+  <div class="page" id="page-detail">
+    <div class="page-header">
+      <button class="back-btn" onclick="goBack()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M19 12H5M5 12l7-7M5 12l7 7" />
+        </svg>
+      </button>
+      <span id="detail-header-nom"
+        style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;">Joueur</span>
+      <button class="btn-secondary" id="detail-fav-btn" onclick="toggleFavDetail()"
+        style="margin-left:auto;padding:8px 12px;font-size:13px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A5.5 5.5 0 017.5 3c1.74 0 3.41.81 4.5 2.09A5.99 5.99 0 0116.5 3 5.5 5.5 0 0122 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z" />
+        </svg>
+        <span id="fav-btn-label">Favoris</span>
+      </button>
+    </div>
+    <div id="detail-content"></div>
+  </div>
 
-// ════════════════════════════════════════════════════════
-// CHARGEMENT DONNÉES
-// ════════════════════════════════════════════════════════
-async function loadData() {
-  try {
-    const res = await fetch('players_clean.json');
-    if (!res.ok) throw new Error('Fichier non trouvé');
-    allPlayers = await res.json();
-    filteredPlayers = [...allPlayers];
-    populateFilters();
-    applyFilters();
-    setupIntersectionObserver();
-  } catch(e) {
-    // Mode démo avec 10 joueurs hardcodés
-    allPlayers = getDemoPlayers();
-    filteredPlayers = [...allPlayers];
-    populateFilters();
-    applyFilters();
-    setupIntersectionObserver();
-    console.log('Mode démo activé — placer players_clean.json dans le même dossier');
-  }
-}
 
-function getDemoPlayers() {
-  return [
-    {id:209331,slug:'mohamed-salah',nom:'Mohamed Salah',genre:'Masculin',note:91,tier:'Élite',poste:'MD',poste_fr:'Milieu Droit',postes_alt:['AD'],club:'Liverpool',ligue:'Premier League',nationalite:'Égypte',rarete:'Or Rare',rarete_couleur:{bg:'#c8a84b',text:'#1a1000'},image_carte:'https://ratings-images-prod.pulse.ea.com/FC26/components/items/209331_en.webp',image_visage:'',stats:{vitesse:89,tir:88,passes:86,dribble:90,defense:45,physique:76},stats_detail:{acceleration:88,vitesse_pointe:89,finition:94,puissance_tir:83,tirs_loin:78,vista:86,passes_courtes:88,passes_longues:81,dribbles:90,agilite:86,equilibre:91,reactivite:94,controle_ballon:90,interceptions:55,conscience_def:38,tacle_debout:43,detente:79,endurance:88,force:75,gk_plongeon:null,gk_prise_balle:null,gk_degagement:null,gk_placement:null,gk_reflexes:null},meta:{age:33,taille_cm:175,poids_kg:72,pied_fort:'Gauche',mauvais_pied:3,gestes_techniques:4},playstyles:['Tir Enroulé+','Premier Contact','Décisif','Inventif','Tir Rasant','Technique','Passe Fouettée'],profil:'Ailier explosif',points_forts:['Vitesse','Dribble','Tir'],points_faibles:[],lien_ea:'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/mohamed-salah/209331',search_index:'mohamed salah liverpool premier league milieu droit égypte'},
-    {id:231747,slug:'kylian-mbappe',nom:'Kylian Mbappé',genre:'Masculin',note:91,tier:'Élite',poste:'ATT',poste_fr:'Attaquant',postes_alt:['AG','MG'],club:'Real Madrid',ligue:'La Liga',nationalite:'France',rarete:'Or Rare',rarete_couleur:{bg:'#c8a84b',text:'#1a1000'},image_carte:'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231747_en.webp',image_visage:'',stats:{vitesse:97,tir:90,passes:81,dribble:92,defense:37,physique:76},stats_detail:{acceleration:97,vitesse_pointe:97,finition:92,puissance_tir:91,tirs_loin:86,vista:78,passes_courtes:87,passes_longues:74,dribbles:92,agilite:93,equilibre:82,reactivite:91,controle_ballon:93,interceptions:38,conscience_def:26,tacle_debout:34,detente:90,endurance:83,force:77,gk_plongeon:null,gk_prise_balle:null,gk_degagement:null,gk_placement:null,gk_reflexes:null},meta:{age:26,taille_cm:182,poids_kg:75,pied_fort:'Droit',mauvais_pied:4,gestes_techniques:5},playstyles:['Pas Rapide+','Acrobatique','Tir Enroulé','Premier Contact','Décisif','Tir Rasant','Rapide'],profil:'Attaquant de pointe',points_forts:['Finition','Vitesse','Jeu en équipe'],points_faibles:['Défense'],lien_ea:'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/kylian-mbappe/231747',search_index:'kylian mbappé real madrid la liga attaquant france'},
-    {id:239085,slug:'erling-haaland',nom:'Erling Haaland',genre:'Masculin',note:90,tier:'Élite',poste:'ATT',poste_fr:'Attaquant',postes_alt:[],club:'Manchester City',ligue:'Premier League',nationalite:'Norvège',rarete:'Or Rare',rarete_couleur:{bg:'#c8a84b',text:'#1a1000'},image_carte:'https://ratings-images-prod.pulse.ea.com/FC26/components/items/239085_en.webp',image_visage:'',stats:{vitesse:86,tir:91,passes:70,dribble:80,defense:45,physique:88},stats_detail:{acceleration:85,vitesse_pointe:86,finition:94,puissance_tir:94,tirs_loin:72,vista:62,passes_courtes:63,passes_longues:55,dribbles:80,agilite:75,equilibre:70,reactivite:91,controle_ballon:79,interceptions:39,conscience_def:28,tacle_debout:36,detente:93,endurance:80,force:90,gk_plongeon:null,gk_prise_balle:null,gk_degagement:null,gk_placement:null,gk_reflexes:null},meta:{age:24,taille_cm:194,poids_kg:88,pied_fort:'Gauche',mauvais_pied:3,gestes_techniques:3},playstyles:['Forteresse Aérienne','Premier Contact','Décisif','Tir Enroulé','Tir Puissant'],profil:'Attaquant de pointe',points_forts:['Finition','Physique','Vitesse'],points_faibles:['Passes'],lien_ea:'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/erling-haaland/239085',search_index:'erling haaland manchester city premier league attaquant norvège'},
-    {id:203376,slug:'virgil-van-dijk',nom:'Virgil van Dijk',genre:'Masculin',note:90,tier:'Élite',poste:'DC',poste_fr:'Défenseur Central',postes_alt:[],club:'Liverpool',ligue:'Premier League',nationalite:'Pays-Bas',rarete:'Or Rare',rarete_couleur:{bg:'#c8a84b',text:'#1a1000'},image_carte:'https://ratings-images-prod.pulse.ea.com/FC26/components/items/203376_en.webp',image_visage:'',stats:{vitesse:73,tir:60,passes:72,dribble:72,defense:90,physique:87},stats_detail:{acceleration:70,vitesse_pointe:76,finition:55,puissance_tir:63,tirs_loin:49,vista:62,passes_courtes:74,passes_longues:70,dribbles:72,agilite:61,equilibre:70,reactivite:84,controle_ballon:71,interceptions:87,conscience_def:89,tacle_debout:86,detente:90,endurance:85,force:91,gk_plongeon:null,gk_prise_balle:null,gk_degagement:null,gk_placement:null,gk_reflexes:null},meta:{age:33,taille_cm:193,poids_kg:92,pied_fort:'Droit',mauvais_pied:3,gestes_techniques:2},playstyles:['Forteresse Aérienne','Blocage','Anticipation','Imposant'],profil:'Défenseur physique',points_forts:['Défense','Physique'],points_faibles:['Technique balle au pied'],lien_ea:'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/virgil-van-dijk/203376',search_index:'virgil van dijk liverpool premier league défenseur central pays-bas'},
-    {id:231866,slug:'rodri',nom:'Rodri',genre:'Masculin',note:90,tier:'Élite',poste:'MDC',poste_fr:'Milieu Défensif Central',postes_alt:['MC'],club:'Manchester City',ligue:'Premier League',nationalite:'Espagne',rarete:'Or Rare',rarete_couleur:{bg:'#c8a84b',text:'#1a1000'},image_carte:'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231866_en.webp',image_visage:'',stats:{vitesse:65,tir:80,passes:86,dribble:84,defense:86,physique:85},stats_detail:{acceleration:63,vitesse_pointe:67,finition:68,puissance_tir:80,tirs_loin:72,vista:80,passes_courtes:87,passes_longues:85,dribbles:80,agilite:72,equilibre:78,reactivite:87,controle_ballon:86,interceptions:90,conscience_def:88,tacle_debout:88,detente:80,endurance:89,force:85,gk_plongeon:null,gk_prise_balle:null,gk_degagement:null,gk_placement:null,gk_reflexes:null},meta:{age:28,taille_cm:191,poids_kg:82,pied_fort:'Droit',mauvais_pied:3,gestes_techniques:3},playstyles:['Pressing Éprouvé+','Interception','Anticipation','Blocage','Distribution'],profil:'Sentinelle',points_forts:['Interceptions','Défense','Distribution'],points_faibles:[],lien_ea:'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/rodri/231866',search_index:'rodri manchester city premier league milieu défensif espagne'},
-  ];
-}
+  <!-- ══════════════════════════════════════════════════════
+   PAGE COMPARATEUR
+══════════════════════════════════════════════════════ -->
+  <div class="page" id="page-compare">
+    <div class="page-header">
+      <span class="logo">FC<span>Pulse</span></span>
+      <span style="font-size:13px;color:var(--text3);margin-left:auto;font-weight:600;">COMPARATEUR</span>
+    </div>
 
-// ════════════════════════════════════════════════════════
-// NAVIGATION
-// ════════════════════════════════════════════════════════
-// ════════════════════════════════════════════════════════
-// PROMPT 4 — LECTURE FOOTBALL + USAGE
-// ════════════════════════════════════════════════════════
-function statBarColor(val) {
-  if (val >= 85) return '#22c55e';
-  if (val >= 75) return '#86efac';
-  if (val >= 65) return '#f0cc70';
-  if (val >= 55) return '#f97316';
-  return '#ef4444';
-}
+    <div class="compare-slots">
+      <div class="compare-slot" id="slot-0" onclick="openPlayerPicker(0)">
+        <div class="compare-slot-add">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14" />
+          </svg>
+        </div>
+        <span style="font-size:12px;color:var(--text3);">Joueur 1</span>
+      </div>
+      <div class="compare-slot" id="slot-1" onclick="openPlayerPicker(1)">
+        <div class="compare-slot-add">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14" />
+          </svg>
+        </div>
+        <span style="font-size:12px;color:var(--text3);">Joueur 2</span>
+      </div>
+    </div>
 
-function buildStatsBarHTML(label, val) {
-  if (!val || val === '—') return '';
-  const pct = Math.min(100, Math.round((val / 99) * 100));
-  const color = statBarColor(val);
-  return `<div class="stat-bar-wrap">
+    <div id="compare-summary-box"></div>
+    <div id="compare-table" class="compare-table"></div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+   PAGE FAVORIS
+══════════════════════════════════════════════════════ -->
+  <div class="page" id="page-favorites">
+    <div class="page-header">
+      <span class="logo">FC<span>Pulse</span></span>
+      <span style="font-size:13px;color:var(--text3);margin-left:auto;font-weight:600;">MES FAVORIS</span>
+    </div>
+    <div class="fav-compare-bar" id="fav-compare-bar">
+      <span id="fav-selected-count">0 sélectionné(s)</span>
+      <button class="btn-primary" style="flex:0;padding:8px 16px;font-size:13px;"
+        onclick="compareFromFavorites()">Comparer</button>
+    </div>
+    <div id="favorites-list"></div>
+  </div>
+
+
+  <!-- Modal sélecteur joueur (pour comparateur) -->
+  <div class="player-search-modal" id="player-picker-modal">
+    <div style="flex:1" onclick="closePlayerPicker()"></div>
+    <div class="modal-inner">
+      <div class="modal-header">
+        <h3>Choisir un joueur</h3>
+        <button class="modal-close" onclick="closePlayerPicker()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-search">
+        <input type="text" id="modal-search-input" placeholder="Rechercher..." oninput="renderModalResults(this.value)"
+          autocomplete="off">
+      </div>
+      <div class="modal-results" id="modal-results"></div>
+    </div>
+  </div>
+
+
+  <script>
+    // ════════════════════════════════════════════════════════
+    // ÉTAT GLOBAL
+    // ════════════════════════════════════════════════════════
+    let allPlayers = [];
+    let filteredPlayers = [];
+    let currentSort = 'note';
+    let currentPage = 'players';
+    let prevPage = 'players';
+    let renderOffset = 0;
+    const PAGE_SIZE = 40;
+    let isLoadingMore = false;
+    let currentDetailId = null;
+    let compareSlots = [null, null];
+    let currentPickerSlot = 0;
+    let favorites = JSON.parse(localStorage.getItem('fcpulse_favs') || '[]');
+
+    // ════════════════════════════════════════════════════════
+    // CHARGEMENT DONNÉES
+    // ════════════════════════════════════════════════════════
+    async function loadData() {
+      try {
+        const res = await fetch('players_clean.json');
+        if (!res.ok) throw new Error('Fichier non trouvé');
+        allPlayers = await res.json();
+        filteredPlayers = [...allPlayers];
+        populateFilters();
+        applyFilters();
+        setupIntersectionObserver();
+      } catch (e) {
+        // Mode démo avec 10 joueurs hardcodés
+        allPlayers = getDemoPlayers();
+        filteredPlayers = [...allPlayers];
+        populateFilters();
+        applyFilters();
+        setupIntersectionObserver();
+        console.log('Mode démo activé — placer players_clean.json dans le même dossier');
+      }
+    }
+
+    function getDemoPlayers() {
+      return [
+        { id: 209331, slug: 'mohamed-salah', nom: 'Mohamed Salah', genre: 'Masculin', note: 91, tier: 'Élite', poste: 'MD', poste_fr: 'Milieu Droit', postes_alt: ['AD'], club: 'Liverpool', ligue: 'Premier League', nationalite: 'Égypte', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/209331_en.webp', image_visage: '', stats: { vitesse: 89, tir: 88, passes: 86, dribble: 90, defense: 45, physique: 76 }, stats_detail: { acceleration: 88, vitesse_pointe: 89, finition: 94, puissance_tir: 83, tirs_loin: 78, vista: 86, passes_courtes: 88, passes_longues: 81, dribbles: 90, agilite: 86, equilibre: 91, reactivite: 94, controle_ballon: 90, interceptions: 55, conscience_def: 38, tacle_debout: 43, detente: 79, endurance: 88, force: 75, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 33, taille_cm: 175, poids_kg: 72, pied_fort: 'Gauche', mauvais_pied: 3, gestes_techniques: 4 }, playstyles: ['Tir Enroulé+', 'Premier Contact', 'Décisif', 'Inventif', 'Tir Rasant', 'Technique', 'Passe Fouettée'], profil: 'Ailier explosif', points_forts: ['Vitesse', 'Dribble', 'Tir'], points_faibles: [], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/mohamed-salah/209331', search_index: 'mohamed salah liverpool premier league milieu droit égypte' },
+        { id: 231747, slug: 'kylian-mbappe', nom: 'Kylian Mbappé', genre: 'Masculin', note: 91, tier: 'Élite', poste: 'ATT', poste_fr: 'Attaquant', postes_alt: ['AG', 'MG'], club: 'Real Madrid', ligue: 'La Liga', nationalite: 'France', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231747_en.webp', image_visage: '', stats: { vitesse: 97, tir: 90, passes: 81, dribble: 92, defense: 37, physique: 76 }, stats_detail: { acceleration: 97, vitesse_pointe: 97, finition: 92, puissance_tir: 91, tirs_loin: 86, vista: 78, passes_courtes: 87, passes_longues: 74, dribbles: 92, agilite: 93, equilibre: 82, reactivite: 91, controle_ballon: 93, interceptions: 38, conscience_def: 26, tacle_debout: 34, detente: 90, endurance: 83, force: 77, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 26, taille_cm: 182, poids_kg: 75, pied_fort: 'Droit', mauvais_pied: 4, gestes_techniques: 5 }, playstyles: ['Pas Rapide+', 'Acrobatique', 'Tir Enroulé', 'Premier Contact', 'Décisif', 'Tir Rasant', 'Rapide'], profil: 'Attaquant de pointe', points_forts: ['Finition', 'Vitesse', 'Jeu en équipe'], points_faibles: ['Défense'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/kylian-mbappe/231747', search_index: 'kylian mbappé real madrid la liga attaquant france' },
+        { id: 239085, slug: 'erling-haaland', nom: 'Erling Haaland', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'ATT', poste_fr: 'Attaquant', postes_alt: [], club: 'Manchester City', ligue: 'Premier League', nationalite: 'Norvège', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/239085_en.webp', image_visage: '', stats: { vitesse: 86, tir: 91, passes: 70, dribble: 80, defense: 45, physique: 88 }, stats_detail: { acceleration: 85, vitesse_pointe: 86, finition: 94, puissance_tir: 94, tirs_loin: 72, vista: 62, passes_courtes: 63, passes_longues: 55, dribbles: 80, agilite: 75, equilibre: 70, reactivite: 91, controle_ballon: 79, interceptions: 39, conscience_def: 28, tacle_debout: 36, detente: 93, endurance: 80, force: 90, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 24, taille_cm: 194, poids_kg: 88, pied_fort: 'Gauche', mauvais_pied: 3, gestes_techniques: 3 }, playstyles: ['Forteresse Aérienne', 'Premier Contact', 'Décisif', 'Tir Enroulé', 'Tir Puissant'], profil: 'Attaquant de pointe', points_forts: ['Finition', 'Physique', 'Vitesse'], points_faibles: ['Passes'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/erling-haaland/239085', search_index: 'erling haaland manchester city premier league attaquant norvège' },
+        { id: 203376, slug: 'virgil-van-dijk', nom: 'Virgil van Dijk', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'DC', poste_fr: 'Défenseur Central', postes_alt: [], club: 'Liverpool', ligue: 'Premier League', nationalite: 'Pays-Bas', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/203376_en.webp', image_visage: '', stats: { vitesse: 73, tir: 60, passes: 72, dribble: 72, defense: 90, physique: 87 }, stats_detail: { acceleration: 70, vitesse_pointe: 76, finition: 55, puissance_tir: 63, tirs_loin: 49, vista: 62, passes_courtes: 74, passes_longues: 70, dribbles: 72, agilite: 61, equilibre: 70, reactivite: 84, controle_ballon: 71, interceptions: 87, conscience_def: 89, tacle_debout: 86, detente: 90, endurance: 85, force: 91, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 33, taille_cm: 193, poids_kg: 92, pied_fort: 'Droit', mauvais_pied: 3, gestes_techniques: 2 }, playstyles: ['Forteresse Aérienne', 'Blocage', 'Anticipation', 'Imposant'], profil: 'Défenseur physique', points_forts: ['Défense', 'Physique'], points_faibles: ['Technique balle au pied'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/virgil-van-dijk/203376', search_index: 'virgil van dijk liverpool premier league défenseur central pays-bas' },
+        { id: 231866, slug: 'rodri', nom: 'Rodri', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'MDC', poste_fr: 'Milieu Défensif Central', postes_alt: ['MC'], club: 'Manchester City', ligue: 'Premier League', nationalite: 'Espagne', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231866_en.webp', image_visage: '', stats: { vitesse: 65, tir: 80, passes: 86, dribble: 84, defense: 86, physique: 85 }, stats_detail: { acceleration: 63, vitesse_pointe: 67, finition: 68, puissance_tir: 80, tirs_loin: 72, vista: 80, passes_courtes: 87, passes_longues: 85, dribbles: 80, agilite: 72, equilibre: 78, reactivite: 87, controle_ballon: 86, interceptions: 90, conscience_def: 88, tacle_debout: 88, detente: 80, endurance: 89, force: 85, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 28, taille_cm: 191, poids_kg: 82, pied_fort: 'Droit', mauvais_pied: 3, gestes_techniques: 3 }, playstyles: ['Pressing Éprouvé+', 'Interception', 'Anticipation', 'Blocage', 'Distribution'], profil: 'Sentinelle', points_forts: ['Interceptions', 'Défense', 'Distribution'], points_faibles: [], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/rodri/231866', search_index: 'rodri manchester city premier league milieu défensif espagne' },
+      ];
+    }
+
+    // ════════════════════════════════════════════════════════
+    // NAVIGATION
+    // ════════════════════════════════════════════════════════
+    // ════════════════════════════════════════════════════════
+    // PROMPT 4 — LECTURE FOOTBALL + USAGE
+    // ════════════════════════════════════════════════════════
+    function statBarColor(val) {
+      if (val >= 85) return '#22c55e';
+      if (val >= 75) return '#86efac';
+      if (val >= 65) return '#f0cc70';
+      if (val >= 55) return '#f97316';
+      return '#ef4444';
+    }
+
+    function buildStatsBarHTML(label, val) {
+      if (!val || val === '—') return '';
+      const pct = Math.min(100, Math.round((val / 99) * 100));
+      const color = statBarColor(val);
+      return `<div class="stat-bar-wrap">
     <span class="stat-bar-label">${label}</span>
     <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${pct}%;background:${color}"></div></div>
     <span class="stat-bar-val" style="color:${color}">${val}</span>
   </div>`;
-}
+    }
 
-function buildProfilBlock(p) {
-  const s = p.stats || {};
-  const sd = p.stats_detail || {};
-  const m = p.meta || {};
-  const ps = (p.playstyles || []).join(' ').toLowerCase();
-  const poste = p.poste;
+    function buildProfilBlock(p) {
+      const s = p.stats || {};
+      const sd = p.stats_detail || {};
+      const m = p.meta || {};
+      const ps = (p.playstyles || []).join(' ').toLowerCase();
+      const poste = p.poste;
 
-  // ── PROFIL EMOJI
-  const emojiMap = {
-    GB: '🧤', DC: '🛡️', DG: '🛡️', DD: '🛡️', PDG: '🛡️', PDD: '🛡️',
-    MDC: '⚙️', MC: '⚙️', MG: '🎯', MD: '🎯', MOC: '✨',
-    AG: '⚡', AD: '⚡', SA: '🔥', ATT: '🔥'
-  };
-  const emoji = emojiMap[poste] || '⚽';
+      // ── PROFIL EMOJI
+      const emojiMap = {
+        GB: '🧤', DC: '🛡️', DG: '🛡️', DD: '🛡️', PDG: '🛡️', PDD: '🛡️',
+        MDC: '⚙️', MC: '⚙️', MG: '🎯', MD: '🎯', MOC: '✨',
+        AG: '⚡', AD: '⚡', SA: '🔥', ATT: '🔥'
+      };
+      const emoji = emojiMap[poste] || '⚽';
 
-  // ── ROLES RECOMMANDÉS selon stats et poste
-  const roles = [];
-  if (s.vitesse >= 85 && ['AG','AD','ATT','SA'].includes(poste)) roles.push('Attaque rapide');
-  if (s.dribble >= 85 && s.vitesse >= 80) roles.push('Dribbleur');
-  if (sd.finition >= 85 || s.tir >= 85) roles.push('Finisseur');
-  if (s.passes >= 85 || sd.vista >= 80) roles.push('Distributeur');
-  if (s.defense >= 80 && ['DC','MDC','DG','DD'].includes(poste)) roles.push('Défenseur solide');
-  if (sd.interceptions >= 80 || ps.includes('interception')) roles.push('Récupérateur');
-  if (s.physique >= 85) roles.push('Physique dominant');
-  if (sd.detente >= 82 || ps.includes('forteresse')) roles.push('Jeu aérien');
-  if (ps.includes('tir en finesse') || ps.includes('finesse')) roles.push('Tir en finesse');
-  if (ps.includes('passe incisive') || ps.includes('tiki taka')) roles.push('Jeu combiné');
-  if (ps.includes('rapide') || ps.includes('pas rapide')) roles.push('Pressing intensif');
-  if (m.gestes_techniques >= 4 && s.dribble >= 80) roles.push('Dribbleur technique');
+      // ── ROLES RECOMMANDÉS selon stats et poste
+      const roles = [];
+      if (s.vitesse >= 85 && ['AG', 'AD', 'ATT', 'SA'].includes(poste)) roles.push('Attaque rapide');
+      if (s.dribble >= 85 && s.vitesse >= 80) roles.push('Dribbleur');
+      if (sd.finition >= 85 || s.tir >= 85) roles.push('Finisseur');
+      if (s.passes >= 85 || sd.vista >= 80) roles.push('Distributeur');
+      if (s.defense >= 80 && ['DC', 'MDC', 'DG', 'DD'].includes(poste)) roles.push('Défenseur solide');
+      if (sd.interceptions >= 80 || ps.includes('interception')) roles.push('Récupérateur');
+      if (s.physique >= 85) roles.push('Physique dominant');
+      if (sd.detente >= 82 || ps.includes('forteresse')) roles.push('Jeu aérien');
+      if (ps.includes('tir en finesse') || ps.includes('finesse')) roles.push('Tir en finesse');
+      if (ps.includes('passe incisive') || ps.includes('tiki taka')) roles.push('Jeu combiné');
+      if (ps.includes('rapide') || ps.includes('pas rapide')) roles.push('Pressing intensif');
+      if (m.gestes_techniques >= 4 && s.dribble >= 80) roles.push('Dribbleur technique');
 
-  // ── DESCRIPTION AUTOMATIQUE selon profil
-  let desc = p.profil ? `<em>${p.profil}</em>. ` : '';
-  if (['ATT','SA'].includes(poste)) {
-    if (s.vitesse >= 90) desc += 'Attaquant ultra-rapide capable de déborder les défenses en profondeur. ';
-    else if (sd.finition >= 90) desc += 'Attaquant de surface redoutable, efficace dans les petits espaces. ';
-    else if (s.tir >= 88 && s.physique >= 82) desc += 'Avant-centre puissant et difficile à bousculer. ';
-    else desc += 'Attaquant polyvalent qui combine finition et jeu de remise. ';
-  } else if (['AG','AD'].includes(poste)) {
-    if (s.vitesse >= 90 && s.dribble >= 85) desc += 'Ailier explosif en un-contre-un, efficace en transition rapide. ';
-    else if (s.passes >= 83 && sd.vista >= 78) desc += 'Ailier créatif qui joue beaucoup en combinaison. ';
-    else desc += 'Ailier polyvalent capable de centrer comme de tirer. ';
-  } else if (['MC','MOC'].includes(poste)) {
-    if (s.passes >= 87 && sd.vista >= 82) desc += 'Milieu créatif, véritable cerveau du jeu offensif. ';
-    else if (s.defense >= 78 && s.passes >= 82) desc += 'Milieu box-to-box capable d'abattre un énorme volume de travail. ';
-    else desc += 'Milieu équilibré entre construction et participation offensive. ';
-  } else if (poste === 'MDC') {
-    desc += 'Sentinelle devant la défense, priorité à la récupération et à la distribution courte. ';
-  } else if (['DC','DG','DD'].includes(poste)) {
-    if (s.vitesse >= 80 && s.defense >= 82) desc += 'Défenseur mobile, à l'aise dans les duels et en phase de transition. ';
-    else if (s.physique >= 88 && s.defense >= 85) desc += 'Défenseur physique dominant dans les duels aériens et au sol. ';
-    else desc += 'Défenseur solide, fiable en couverture et en marquage. ';
-  } else if (poste === 'GB') {
-    desc += 'Gardien à analyser principalement sur les stats GK (réflexes, plongeon, placement). ';
-  }
+      // ── DESCRIPTION AUTOMATIQUE selon profil
+      let desc = p.profil ? `<em>${p.profil}</em>. ` : '';
+      if (['ATT', 'SA'].includes(poste)) {
+        if (s.vitesse >= 90) desc += 'Attaquant ultra-rapide capable de déborder les défenses en profondeur. ';
+        else if (sd.finition >= 90) desc += 'Attaquant de surface redoutable, efficace dans les petits espaces. ';
+        else if (s.tir >= 88 && s.physique >= 82) desc += 'Avant-centre puissant et difficile à bousculer. ';
+        else desc += 'Attaquant polyvalent qui combine finition et jeu de remise. ';
+      } else if (['AG', 'AD'].includes(poste)) {
+        if (s.vitesse >= 90 && s.dribble >= 85) desc += 'Ailier explosif en un-contre-un, efficace en transition rapide. ';
+        else if (s.passes >= 83 && sd.vista >= 78) desc += 'Ailier créatif qui joue beaucoup en combinaison. ';
+        else desc += 'Ailier polyvalent capable de centrer comme de tirer. ';
+      } else if (['MC', 'MOC'].includes(poste)) {
+        if (s.passes >= 87 && sd.vista >= 82) desc += 'Milieu créatif, véritable cerveau du jeu offensif. ';
+        else if (s.defense >= 78 && s.passes >= 82) desc += "Milieu box-to-box capable d'abattre un énorme volume de travail. ";
+        else desc += 'Milieu équilibré entre construction et participation offensive. ';
+      } else if (poste === 'MDC') {
+        desc += 'Sentinelle devant la défense, priorité à la récupération et à la distribution courte. ';
+      } else if (['DC', 'DG', 'DD'].includes(poste)) {
+        if (s.vitesse >= 80 && s.defense >= 82) desc += "Défenseur mobile, à l'aise dans les duels et en phase de transition. ";
+        else if (s.physique >= 88 && s.defense >= 85) desc += 'Défenseur physique dominant dans les duels aériens et au sol. ';
+        else desc += 'Défenseur solide, fiable en couverture et en marquage. ';
+      } else if (poste === 'GB') {
+        desc += 'Gardien à analyser principalement sur les stats GK (réflexes, plongeon, placement). ';
+      }
 
-  // Infos complémentaires
-  if (m.pied_fort === 'Gauche' && ['AD','MD'].includes(poste)) desc += '⚠️ Pied gauche pour un côté droit — profil inverti polyvalent. ';
-  if (m.gestes_techniques >= 4) desc += `Gestes techniques ${m.gestes_techniques}★ — grande liberté balle au pied. `;
-  if (m.mauvais_pied >= 4) desc += `Mauvais pied ${m.mauvais_pied}★ — peut jouer des deux pieds efficacement. `;
+      // Infos complémentaires
+      if (m.pied_fort === 'Gauche' && ['AD', 'MD'].includes(poste)) desc += '⚠️ Pied gauche pour un côté droit — profil inverti polyvalent. ';
+      if (m.gestes_techniques >= 4) desc += `Gestes techniques ${m.gestes_techniques}★ — grande liberté balle au pied. `;
+      if (m.mauvais_pied >= 4) desc += `Mauvais pied ${m.mauvais_pied}★ — peut jouer des deux pieds efficacement. `;
 
-  // ── STATS VISUELLES CLÉS
-  const statKeys = poste === 'GB'
-    ? [['Réflexes', sd.gk_reflexes], ['Plongeon', sd.gk_plongeon], ['Placement', sd.gk_placement]]
-    : [
-        ['VIT', s.vitesse], ['TIR', s.tir], ['PAS', s.passes],
-        ['DRI', s.dribble], ['DEF', s.defense], ['PHY', s.physique]
-      ];
-  const barsHTML = statKeys.map(([lbl, val]) => buildStatsBarHTML(lbl, val)).join('');
+      // ── STATS VISUELLES CLÉS
+      const statKeys = poste === 'GB'
+        ? [['Réflexes', sd.gk_reflexes], ['Plongeon', sd.gk_plongeon], ['Placement', sd.gk_placement]]
+        : [
+          ['VIT', s.vitesse], ['TIR', s.tir], ['PAS', s.passes],
+          ['DRI', s.dribble], ['DEF', s.defense], ['PHY', s.physique]
+        ];
+      const barsHTML = statKeys.map(([lbl, val]) => buildStatsBarHTML(lbl, val)).join('');
 
-  const fortsHTML = (p.points_forts||[]).map(f=>`<span class="profil-fort">✓ ${f}</span>`).join('');
-  const faiblesHTML = (p.points_faibles||[]).map(f=>`<span class="profil-faible">↓ ${f}</span>`).join('');
-  const rolesHTML = roles.slice(0,4).map(r=>`<span class="profil-role-tag">${r}</span>`).join('');
+      const fortsHTML = (p.points_forts || []).map(f => `<span class="profil-fort">✓ ${f}</span>`).join('');
+      const faiblesHTML = (p.points_faibles || []).map(f => `<span class="profil-faible">↓ ${f}</span>`).join('');
+      const rolesHTML = roles.slice(0, 4).map(r => `<span class="profil-role-tag">${r}</span>`).join('');
 
-  return `
+      return `
     <div class="profil-block">
       <div class="profil-block-header">
         <span class="profil-block-emoji">${emoji}</span>
@@ -1704,210 +2328,210 @@ function buildProfilBlock(p) {
         ${fortsHTML}${faiblesHTML}${rolesHTML}
       </div>
     </div>`;
-}
-
-function showPage(name) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('page-'+name).classList.add('active');
-  document.getElementById('nav-'+name)?.classList.add('active');
-  if (name !== 'detail') currentPage = name;
-  if (name === 'favorites') renderFavorites();
-  if (name === 'compare') renderCompareTable();
-}
-
-function showDetail(id) {
-  prevPage = currentPage;
-  currentDetailId = id;
-  const p = allPlayers.find(x => x.id === id);
-  if (!p) return;
-  document.getElementById('detail-header-nom').textContent = p.nom;
-  document.getElementById('detail-content').innerHTML = buildDetailHTML(p);
-  updateFavBtn(p.id);
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-detail').classList.add('active');
-  window.scrollTo(0, 0);
-}
-
-function goBack() {
-  showPage(prevPage);
-}
-
-// ════════════════════════════════════════════════════════
-// FILTRES & RECHERCHE
-// ════════════════════════════════════════════════════════
-function populateFilters() {
-  const ligues = [...new Set(allPlayers.map(p=>p.ligue).filter(Boolean))].sort();
-  const nations = [...new Set(allPlayers.map(p=>p.nationalite).filter(Boolean))].sort();
-  const sel1 = document.getElementById('f-ligue');
-  const sel2 = document.getElementById('f-nation');
-  ligues.forEach(l => { const o=document.createElement('option'); o.value=l; o.textContent=l; sel1.appendChild(o); });
-  nations.forEach(n => { const o=document.createElement('option'); o.value=n; o.textContent=n; sel2.appendChild(o); });
-}
-
-function toggleFilters() {
-  const panel = document.getElementById('filters-panel');
-  const btn = document.getElementById('filter-toggle-btn');
-  panel.classList.toggle('open');
-  btn.classList.toggle('active');
-}
-
-let searchTimer;
-function onSearch() {
-  clearTimeout(searchTimer);
-  searchTimer = setTimeout(applyFilters, 150);
-}
-
-function applyFilters() {
-  const q     = document.getElementById('search-input').value.toLowerCase().trim();
-  const poste = document.getElementById('f-poste').value;
-  const rarete= document.getElementById('f-rarete').value;
-  const ligue = document.getElementById('f-ligue').value;
-  const nation= document.getElementById('f-nation').value;
-  const pied  = document.getElementById('f-pied').value;
-  const noteMin = parseInt(document.getElementById('f-note-min').value);
-
-  filteredPlayers = allPlayers.filter(p => {
-    if (q && !p.search_index?.includes(q) && !p.nom?.toLowerCase().includes(q)) return false;
-    if (poste && p.poste !== poste) return false;
-    if (rarete && p.rarete !== rarete) return false;
-    if (ligue && p.ligue !== ligue) return false;
-    if (nation && p.nationalite !== nation) return false;
-    if (pied && p.meta?.pied_fort !== pied) return false;
-    if (p.note < noteMin) return false;
-    // Quick filters
-    if (quickPostFilter && quickPostFilter !== 'all') {
-      if (p.poste !== quickPostFilter && !(p.postes_alt||[]).includes(quickPostFilter)) return false;
     }
-    if (quickRareteFilter && p.rarete !== quickRareteFilter) return false;
-    if (quickLigueFilter && p.ligue !== quickLigueFilter) return false;
-    return true;
-  });
 
-  sortPlayers();
-  renderOffset = 0;
-  document.getElementById('players-list').innerHTML = '';
-  document.getElementById('result-count').textContent = filteredPlayers.length.toLocaleString('fr-FR') + ' joueurs';
-  renderNextBatch();
-}
+    function showPage(name) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('page-' + name).classList.add('active');
+      document.getElementById('nav-' + name)?.classList.add('active');
+      if (name !== 'detail') currentPage = name;
+      if (name === 'favorites') renderFavorites();
+      if (name === 'compare') renderCompareTable();
+    }
 
-let sortDir = 'desc';
-let quickPostFilter = 'all';
-let quickRareteFilter = '';
-let quickLigueFilter = '';
+    function showDetail(id) {
+      prevPage = currentPage;
+      currentDetailId = id;
+      const p = allPlayers.find(x => x.id === id);
+      if (!p) return;
+      document.getElementById('detail-header-nom').textContent = p.nom;
+      document.getElementById('detail-content').innerHTML = buildDetailHTML(p);
+      updateFavBtn(p.id);
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-detail').classList.add('active');
+      window.scrollTo(0, 0);
+    }
 
-const SORT_LABELS = {note:'Note',vitesse:'Vitesse',tir:'Tir',passes:'Passes',dribble:'Dribble',defense:'Défense',physique:'Physique',age:'Âge'};
-// Direction par défaut : 'asc' pour l'âge, 'desc' pour tout le reste
-const SORT_DEFAULT_DIR = {age:'asc'};
+    function goBack() {
+      showPage(prevPage);
+    }
 
-function setSort(key, el) {
-  if (currentSort === key) {
-    // Même colonne → toggle direction
-    sortDir = sortDir === 'desc' ? 'asc' : 'desc';
-  } else {
-    // Nouvelle colonne → direction par défaut
-    currentSort = key;
-    sortDir = SORT_DEFAULT_DIR[key] || 'desc';
-  }
-  // Réinitialiser tous les chips
-  document.querySelectorAll('.sort-chip').forEach(c => {
-    c.classList.remove('active');
-    const k = c.dataset.key;
-    const defaultDir = SORT_DEFAULT_DIR[k] || 'desc';
-    c.textContent = SORT_LABELS[k] + (defaultDir === 'asc' ? ' ↑' : '');
-  });
-  // Activer le chip courant avec flèche
-  const arrow = sortDir === 'asc' ? ' ↑' : ' ↓';
-  el.classList.add('active');
-  el.dataset.dir = sortDir;
-  el.textContent = (SORT_LABELS[key] || key) + arrow;
-  applyFilters();
-}
+    // ════════════════════════════════════════════════════════
+    // FILTRES & RECHERCHE
+    // ════════════════════════════════════════════════════════
+    function populateFilters() {
+      const ligues = [...new Set(allPlayers.map(p => p.ligue).filter(Boolean))].sort();
+      const nations = [...new Set(allPlayers.map(p => p.nationalite).filter(Boolean))].sort();
+      const sel1 = document.getElementById('f-ligue');
+      const sel2 = document.getElementById('f-nation');
+      ligues.forEach(l => { const o = document.createElement('option'); o.value = l; o.textContent = l; sel1.appendChild(o); });
+      nations.forEach(n => { const o = document.createElement('option'); o.value = n; o.textContent = n; sel2.appendChild(o); });
+    }
 
-function setQuickFilter(val, el) {
-  quickPostFilter = val;
-  quickRareteFilter = '';
-  quickLigueFilter = '';
-  document.querySelectorAll('.qf-pill').forEach(p=>p.classList.remove('on'));
-  el.classList.add('on');
-  applyFilters();
-}
+    function toggleFilters() {
+      const panel = document.getElementById('filters-panel');
+      const btn = document.getElementById('filter-toggle-btn');
+      panel.classList.toggle('open');
+      btn.classList.toggle('active');
+    }
 
-function setRarete(val, el) {
-  quickRareteFilter = quickRareteFilter === val ? '' : val;
-  quickPostFilter = 'all';
-  quickLigueFilter = '';
-  document.querySelectorAll('.qf-pill').forEach(p=>p.classList.remove('on'));
-  if (quickRareteFilter) el.classList.add('on');
-  else document.querySelector('#quick-filters .qf-pill').classList.add('on');
-  applyFilters();
-}
+    let searchTimer;
+    function onSearch() {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(applyFilters, 150);
+    }
 
-function setTopLigue(val, el) {
-  quickLigueFilter = quickLigueFilter === val ? '' : val;
-  quickPostFilter = 'all';
-  quickRareteFilter = '';
-  // Désactiver postes/raretés
-  document.querySelectorAll('#quick-filters .qf-pill').forEach(p=>p.classList.remove('on'));
-  document.querySelector('#quick-filters .qf-pill').classList.add('on');
-  // Activer/désactiver le chip ligue
-  document.querySelectorAll('#quick-filters-leagues .qf-pill').forEach(p=>p.classList.remove('on'));
-  if (quickLigueFilter) el.classList.add('on');
-  applyFilters();
-}
+    function applyFilters() {
+      const q = document.getElementById('search-input').value.toLowerCase().trim();
+      const poste = document.getElementById('f-poste').value;
+      const rarete = document.getElementById('f-rarete').value;
+      const ligue = document.getElementById('f-ligue').value;
+      const nation = document.getElementById('f-nation').value;
+      const pied = document.getElementById('f-pied').value;
+      const noteMin = parseInt(document.getElementById('f-note-min').value);
 
-function sortPlayers() {
-  filteredPlayers.sort((a,b) => {
-    let va, vb;
-    if (currentSort === 'age') { va = a.meta?.age||99; vb = b.meta?.age||99; }
-    else if (currentSort === 'note') { va = a.note; vb = b.note; }
-    else { va = a.stats?.[currentSort]||0; vb = b.stats?.[currentSort]||0; }
-    return sortDir === 'asc' ? va - vb : vb - va;
-  });
-}
+      filteredPlayers = allPlayers.filter(p => {
+        if (q && !p.search_index?.includes(q) && !p.nom?.toLowerCase().includes(q)) return false;
+        if (poste && p.poste !== poste) return false;
+        if (rarete && p.rarete !== rarete) return false;
+        if (ligue && p.ligue !== ligue) return false;
+        if (nation && p.nationalite !== nation) return false;
+        if (pied && p.meta?.pied_fort !== pied) return false;
+        if (p.note < noteMin) return false;
+        // Quick filters
+        if (quickPostFilter && quickPostFilter !== 'all') {
+          if (p.poste !== quickPostFilter && !(p.postes_alt || []).includes(quickPostFilter)) return false;
+        }
+        if (quickRareteFilter && p.rarete !== quickRareteFilter) return false;
+        if (quickLigueFilter && p.ligue !== quickLigueFilter) return false;
+        return true;
+      });
 
-// ════════════════════════════════════════════════════════
-// RENDU LISTE (virtuel, batches)
-// ════════════════════════════════════════════════════════
-function renderNextBatch() {
-  if (isLoadingMore) return;
-  isLoadingMore = true;
-  const list = document.getElementById('players-list');
-  const batch = filteredPlayers.slice(renderOffset, renderOffset + PAGE_SIZE);
-  const frag = document.createDocumentFragment();
-  batch.forEach(p => {
-    const el = document.createElement('div');
-    el.className = 'player-row';
-    el.onclick = () => showDetail(p.id);
-    el.innerHTML = buildPlayerRowHTML(p);
-    frag.appendChild(el);
-  });
-  list.appendChild(frag);
-  renderOffset += batch.length;
-  document.getElementById('load-more-spinner').classList.toggle('visible', renderOffset < filteredPlayers.length);
-  isLoadingMore = false;
-}
+      sortPlayers();
+      renderOffset = 0;
+      document.getElementById('players-list').innerHTML = '';
+      document.getElementById('result-count').textContent = filteredPlayers.length.toLocaleString('fr-FR') + ' joueurs';
+      renderNextBatch();
+    }
 
-function buildPlayerRowHTML(p) {
-  const rareteBg = p.rarete_couleur?.bg || '#666';
-  const statsKeys = ['vitesse','tir','passes','dribble','defense','physique'];
-  const statsLabels = ['VIT','TIR','PAS','DRI','DEF','PHY'];
-  const statsHtml = statsKeys.map((k,i) => {
-    const v = p.stats?.[k] || '—';
-    const col = (typeof v === 'number')
-      ? (v>=85?'#22c55e':v>=75?'#86efac':v>=65?'#f0cc70':v>=55?'#f97316':'#ef4444')
-      : 'var(--text3)';
-    return `<div class="stat-mini"><span class="stat-mini-val" style="color:${col}">${v}</span><span class="stat-mini-lbl">${statsLabels[i]}</span></div>`;
-  }).join('');
+    let sortDir = 'desc';
+    let quickPostFilter = 'all';
+    let quickRareteFilter = '';
+    let quickLigueFilter = '';
 
-  // Carte image ou fallback avec couleur rareté
-  const cardBg = p.rarete === 'Or Rare' ? 'linear-gradient(160deg,#3d2e0a,#c8a84b,#3d2e0a)' :
-                 p.rarete === 'Argent Rare' ? 'linear-gradient(160deg,#1a1a22,#8a8aa0,#1a1a22)' :
-                 'linear-gradient(160deg,#2a1a0a,#a06030,#2a1a0a)';
+    const SORT_LABELS = { note: 'Note', vitesse: 'Vitesse', tir: 'Tir', passes: 'Passes', dribble: 'Dribble', defense: 'Défense', physique: 'Physique', age: 'Âge' };
+    // Direction par défaut : 'asc' pour l'âge, 'desc' pour tout le reste
+    const SORT_DEFAULT_DIR = { age: 'asc' };
 
-  const noteColor = p.rarete === 'Or Rare' ? 'var(--gold2)' : p.rarete === 'Argent Rare' ? '#b8b8c8' : '#c87840';
+    function setSort(key, el) {
+      if (currentSort === key) {
+        // Même colonne → toggle direction
+        sortDir = sortDir === 'desc' ? 'asc' : 'desc';
+      } else {
+        // Nouvelle colonne → direction par défaut
+        currentSort = key;
+        sortDir = SORT_DEFAULT_DIR[key] || 'desc';
+      }
+      // Réinitialiser tous les chips
+      document.querySelectorAll('.sort-chip').forEach(c => {
+        c.classList.remove('active');
+        const k = c.dataset.key;
+        const defaultDir = SORT_DEFAULT_DIR[k] || 'desc';
+        c.textContent = SORT_LABELS[k] + (defaultDir === 'asc' ? ' ↑' : '');
+      });
+      // Activer le chip courant avec flèche
+      const arrow = sortDir === 'asc' ? ' ↑' : ' ↓';
+      el.classList.add('active');
+      el.dataset.dir = sortDir;
+      el.textContent = (SORT_LABELS[key] || key) + arrow;
+      applyFilters();
+    }
 
-  return `
+    function setQuickFilter(val, el) {
+      quickPostFilter = val;
+      quickRareteFilter = '';
+      quickLigueFilter = '';
+      document.querySelectorAll('.qf-pill').forEach(p => p.classList.remove('on'));
+      el.classList.add('on');
+      applyFilters();
+    }
+
+    function setRarete(val, el) {
+      quickRareteFilter = quickRareteFilter === val ? '' : val;
+      quickPostFilter = 'all';
+      quickLigueFilter = '';
+      document.querySelectorAll('.qf-pill').forEach(p => p.classList.remove('on'));
+      if (quickRareteFilter) el.classList.add('on');
+      else document.querySelector('#quick-filters .qf-pill').classList.add('on');
+      applyFilters();
+    }
+
+    function setTopLigue(val, el) {
+      quickLigueFilter = quickLigueFilter === val ? '' : val;
+      quickPostFilter = 'all';
+      quickRareteFilter = '';
+      // Désactiver postes/raretés
+      document.querySelectorAll('#quick-filters .qf-pill').forEach(p => p.classList.remove('on'));
+      document.querySelector('#quick-filters .qf-pill').classList.add('on');
+      // Activer/désactiver le chip ligue
+      document.querySelectorAll('#quick-filters-leagues .qf-pill').forEach(p => p.classList.remove('on'));
+      if (quickLigueFilter) el.classList.add('on');
+      applyFilters();
+    }
+
+    function sortPlayers() {
+      filteredPlayers.sort((a, b) => {
+        let va, vb;
+        if (currentSort === 'age') { va = a.meta?.age || 99; vb = b.meta?.age || 99; }
+        else if (currentSort === 'note') { va = a.note; vb = b.note; }
+        else { va = a.stats?.[currentSort] || 0; vb = b.stats?.[currentSort] || 0; }
+        return sortDir === 'asc' ? va - vb : vb - va;
+      });
+    }
+
+    // ════════════════════════════════════════════════════════
+    // RENDU LISTE (virtuel, batches)
+    // ════════════════════════════════════════════════════════
+    function renderNextBatch() {
+      if (isLoadingMore) return;
+      isLoadingMore = true;
+      const list = document.getElementById('players-list');
+      const batch = filteredPlayers.slice(renderOffset, renderOffset + PAGE_SIZE);
+      const frag = document.createDocumentFragment();
+      batch.forEach(p => {
+        const el = document.createElement('div');
+        el.className = 'player-row';
+        el.onclick = () => showDetail(p.id);
+        el.innerHTML = buildPlayerRowHTML(p);
+        frag.appendChild(el);
+      });
+      list.appendChild(frag);
+      renderOffset += batch.length;
+      document.getElementById('load-more-spinner').classList.toggle('visible', renderOffset < filteredPlayers.length);
+      isLoadingMore = false;
+    }
+
+    function buildPlayerRowHTML(p) {
+      const rareteBg = p.rarete_couleur?.bg || '#666';
+      const statsKeys = ['vitesse', 'tir', 'passes', 'dribble', 'defense', 'physique'];
+      const statsLabels = ['VIT', 'TIR', 'PAS', 'DRI', 'DEF', 'PHY'];
+      const statsHtml = statsKeys.map((k, i) => {
+        const v = p.stats?.[k] || '—';
+        const col = (typeof v === 'number')
+          ? (v >= 85 ? '#22c55e' : v >= 75 ? '#86efac' : v >= 65 ? '#f0cc70' : v >= 55 ? '#f97316' : '#ef4444')
+          : 'var(--text3)';
+        return `<div class="stat-mini"><span class="stat-mini-val" style="color:${col}">${v}</span><span class="stat-mini-lbl">${statsLabels[i]}</span></div>`;
+      }).join('');
+
+      // Carte image ou fallback avec couleur rareté
+      const cardBg = p.rarete === 'Or Rare' ? 'linear-gradient(160deg,#3d2e0a,#c8a84b,#3d2e0a)' :
+        p.rarete === 'Argent Rare' ? 'linear-gradient(160deg,#1a1a22,#8a8aa0,#1a1a22)' :
+          'linear-gradient(160deg,#2a1a0a,#a06030,#2a1a0a)';
+
+      const noteColor = p.rarete === 'Or Rare' ? 'var(--gold2)' : p.rarete === 'Argent Rare' ? '#b8b8c8' : '#c87840';
+
+      return `
     <div class="player-card-mini" style="background:${cardBg}">
       <img src="${p.image_carte}" alt="${p.nom}" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'"
            style="width:100%;height:100%;object-fit:cover;object-position:top center;">
@@ -1929,96 +2553,98 @@ function buildPlayerRowHTML(p) {
       <span class="player-ovr" style="color:${noteColor}">${p.note}</span>
       <div class="player-rarete-dot" style="background:${rareteBg};box-shadow:0 0 6px ${rareteBg}" title="${p.rarete}"></div>
     </div>`;
-}
-
-function setupIntersectionObserver() {
-  const sentinel = document.getElementById('scroll-sentinel');
-  const obs = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && renderOffset < filteredPlayers.length) {
-      renderNextBatch();
     }
-  }, { rootMargin: '200px' });
-  obs.observe(sentinel);
-}
 
-// ════════════════════════════════════════════════════════
-// PAGE DETAIL
-// ════════════════════════════════════════════════════════
-function buildDetailHTML(p) {
-  const rareteBg = p.rarete === 'Or Rare' ? 'linear-gradient(135deg,#3d2e0a,#7c5a1a,#c8a84b,#7c5a1a,#3d2e0a)' :
-                   p.rarete === 'Argent Rare' ? 'linear-gradient(135deg,#1a1a22,#4a4a5a,#8a8aa0,#4a4a5a,#1a1a22)' :
-                   'linear-gradient(135deg,#2a1a0a,#5a3010,#a06030,#5a3010,#2a1a0a)';
-  const rClass = p.rarete === 'Or Rare' ? 'rarete-badge-gold' : p.rarete === 'Argent Rare' ? 'rarete-badge-silver' : 'rarete-badge-bronze';
+    function setupIntersectionObserver() {
+      const sentinel = document.getElementById('scroll-sentinel');
+      const obs = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && renderOffset < filteredPlayers.length) {
+          renderNextBatch();
+        }
+      }, { rootMargin: '200px' });
+      obs.observe(sentinel);
+    }
 
-  // Stats principales
-  // Stats principales : grille de cartes colorées
-  const statColor = v => v>=85?'#22c55e':v>=75?'#86efac':v>=65?'#f0cc70':v>=55?'#f97316':'#ef4444';
-  const statsMainHtml = [
-    ['VIT','vitesse'],['TIR','tir'],['PAS','passes'],
-    ['DRI','dribble'],['DEF','defense'],['PHY','physique']
-  ].map(([lbl,k]) => {
-    const v = p.stats?.[k] || 0;
-    const col = statColor(v);
-    return `<div class="stat-main-card" style="--stat-color:${col}">
+    // ════════════════════════════════════════════════════════
+    // PAGE DETAIL
+    // ════════════════════════════════════════════════════════
+    function buildDetailHTML(p) {
+      const rareteBg = p.rarete === 'Or Rare' ? 'linear-gradient(135deg,#3d2e0a,#7c5a1a,#c8a84b,#7c5a1a,#3d2e0a)' :
+        p.rarete === 'Argent Rare' ? 'linear-gradient(135deg,#1a1a22,#4a4a5a,#8a8aa0,#4a4a5a,#1a1a22)' :
+          'linear-gradient(135deg,#2a1a0a,#5a3010,#a06030,#5a3010,#2a1a0a)';
+      const rClass = p.rarete === 'Or Rare' ? 'rarete-badge-gold' : p.rarete === 'Argent Rare' ? 'rarete-badge-silver' : 'rarete-badge-bronze';
+
+      // Stats principales
+      // Stats principales : grille de cartes colorées
+      const statColor = v => v >= 85 ? '#22c55e' : v >= 75 ? '#86efac' : v >= 65 ? '#f0cc70' : v >= 55 ? '#f97316' : '#ef4444';
+      const statsMainHtml = [
+        ['VIT', 'vitesse'], ['TIR', 'tir'], ['PAS', 'passes'],
+        ['DRI', 'dribble'], ['DEF', 'defense'], ['PHY', 'physique']
+      ].map(([lbl, k]) => {
+        const v = p.stats?.[k] || 0;
+        const col = statColor(v);
+        return `<div class="stat-main-card" style="--stat-color:${col}">
       <div class="stat-main-val" style="color:${col}">${v}</div>
       <div class="stat-main-lbl">${lbl}</div>
     </div>`;
-  }).join('');
+      }).join('');
 
-  // Stats détaillées selon poste
-  let statsDetailHtml = '';
-  const isGK = p.poste === 'GB';
-  const detailGroups = isGK ? [
-    {title:'Attributs Gardien', stats:[
-      {k:'gk_plongeon',l:'Plongeon'},{k:'gk_prise_balle',l:'Prise de balle'},
-      {k:'gk_degagement',l:'Dégagement'},{k:'gk_placement',l:'Placement'},{k:'gk_reflexes',l:'Réflexes'}
-    ]}
-  ] : [
-    {title:'Vitesse', stats:[{k:'acceleration',l:'Accélération'},{k:'vitesse_pointe',l:'Vitesse de pointe'}]},
-    {title:'Tir', stats:[{k:'finition',l:'Finition'},{k:'puissance_tir',l:'Puissance de tir'},{k:'tirs_loin',l:'Tirs de loin'}]},
-    {title:'Passes', stats:[{k:'vista',l:'Vista'},{k:'passes_courtes',l:'Passes courtes'},{k:'passes_longues',l:'Passes longues'}]},
-    {title:'Dribble', stats:[{k:'dribbles',l:'Dribbles'},{k:'agilite',l:'Agilité'},{k:'equilibre',l:'Équilibre'},{k:'reactivite',l:'Réactivité'},{k:'controle_ballon',l:'Contrôle du ballon'}]},
-    {title:'Défense', stats:[{k:'interceptions',l:'Interceptions'},{k:'conscience_def',l:'Conscience défensive'},{k:'tacle_debout',l:'Tacle debout'}]},
-    {title:'Physique', stats:[{k:'detente',l:'Détente'},{k:'endurance',l:'Endurance'},{k:'force',l:'Force'}]},
-  ];
+      // Stats détaillées selon poste
+      let statsDetailHtml = '';
+      const isGK = p.poste === 'GB';
+      const detailGroups = isGK ? [
+        {
+          title: 'Attributs Gardien', stats: [
+            { k: 'gk_plongeon', l: 'Plongeon' }, { k: 'gk_prise_balle', l: 'Prise de balle' },
+            { k: 'gk_degagement', l: 'Dégagement' }, { k: 'gk_placement', l: 'Placement' }, { k: 'gk_reflexes', l: 'Réflexes' }
+          ]
+        }
+      ] : [
+        { title: 'Vitesse', stats: [{ k: 'acceleration', l: 'Accélération' }, { k: 'vitesse_pointe', l: 'Vitesse de pointe' }] },
+        { title: 'Tir', stats: [{ k: 'finition', l: 'Finition' }, { k: 'puissance_tir', l: 'Puissance de tir' }, { k: 'tirs_loin', l: 'Tirs de loin' }] },
+        { title: 'Passes', stats: [{ k: 'vista', l: 'Vista' }, { k: 'passes_courtes', l: 'Passes courtes' }, { k: 'passes_longues', l: 'Passes longues' }] },
+        { title: 'Dribble', stats: [{ k: 'dribbles', l: 'Dribbles' }, { k: 'agilite', l: 'Agilité' }, { k: 'equilibre', l: 'Équilibre' }, { k: 'reactivite', l: 'Réactivité' }, { k: 'controle_ballon', l: 'Contrôle du ballon' }] },
+        { title: 'Défense', stats: [{ k: 'interceptions', l: 'Interceptions' }, { k: 'conscience_def', l: 'Conscience défensive' }, { k: 'tacle_debout', l: 'Tacle debout' }] },
+        { title: 'Physique', stats: [{ k: 'detente', l: 'Détente' }, { k: 'endurance', l: 'Endurance' }, { k: 'force', l: 'Force' }] },
+      ];
 
-  detailGroups.forEach(g => {
-    const rows = g.stats.map(s => {
-      const v = p.stats_detail?.[s.k];
-      if (v === null || v === undefined) return '';
-      const pct = Math.round((v/100)*100);
-      const color = v>=85?'#22c55e':v>=75?'#86efac':v>=65?'#f0cc70':v>=55?'#f97316':'#ef4444';
-      return `<div class="stat-bar-row">
+      detailGroups.forEach(g => {
+        const rows = g.stats.map(s => {
+          const v = p.stats_detail?.[s.k];
+          if (v === null || v === undefined) return '';
+          const pct = Math.round((v / 100) * 100);
+          const color = v >= 85 ? '#22c55e' : v >= 75 ? '#86efac' : v >= 65 ? '#f0cc70' : v >= 55 ? '#f97316' : '#ef4444';
+          return `<div class="stat-bar-row">
         <span class="stat-bar-label">${s.l}</span>
         <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${pct}%;background:${color}"></div></div>
         <span class="stat-bar-val" style="color:${color}">${v}</span>
       </div>`;
-    }).join('');
-    if (rows) {
-      statsDetailHtml += `<div class="detail-section"><div class="detail-section-title">${g.title}</div>${rows}</div><div style="height:12px"></div>`;
-    }
-  });
+        }).join('');
+        if (rows) {
+          statsDetailHtml += `<div class="detail-section"><div class="detail-section-title">${g.title}</div>${rows}</div><div style="height:12px"></div>`;
+        }
+      });
 
-  // PlayStyles
-  const psHtml = (p.playstyles||[]).map(ps => {
-    const isPlus = ps.endsWith('+');
-    return `<span class="playstyle-chip ${isPlus?'plus':''}">${ps}</span>`;
-  }).join('');
+      // PlayStyles
+      const psHtml = (p.playstyles || []).map(ps => {
+        const isPlus = ps.endsWith('+');
+        return `<span class="playstyle-chip ${isPlus ? 'plus' : ''}">${ps}</span>`;
+      }).join('');
 
-  // Postes alternatifs
-  const altPosHtml = (p.postes_alt||[]).map(pos => `<span class="badge badge-accent">${pos}</span>`).join('');
+      // Postes alternatifs
+      const altPosHtml = (p.postes_alt || []).map(pos => `<span class="badge badge-accent">${pos}</span>`).join('');
 
-  return `
+      return `
     <div class="detail-hero">
       <div class="detail-card-img-wrap">
-        ${(()=>{
+        ${(() => {
           const imgSrc = p.image_carte || p.image_visage;
           if (!imgSrc) return '';
           return `<img src="${imgSrc}" alt="${p.nom}" class="detail-card-img"
             onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'"
             style="display:block">`;
         })()}
-        <div class="detail-card-fallback" style="display:${(p.image_carte||p.image_visage)?'none':'flex'};background:${rareteBg}">
+        <div class="detail-card-fallback" style="display:${(p.image_carte || p.image_visage) ? 'none' : 'flex'};background:${rareteBg}">
           <div class="ovr-big">${p.note}</div>
           <div class="pos-big">${p.poste}</div>
         </div>
@@ -2051,11 +2677,11 @@ function buildDetailHTML(p) {
       <div class="detail-section-title">Profil joueur</div>
       <div class="meta-grid">
         <div class="meta-item"><div class="meta-item-label">Âge</div><div class="meta-item-value">${p.meta?.age || '—'} ans</div></div>
-        <div class="meta-item"><div class="meta-item-label">Taille</div><div class="meta-item-value">${p.meta?.taille_cm ? p.meta.taille_cm+'cm' : '—'}</div></div>
+        <div class="meta-item"><div class="meta-item-label">Taille</div><div class="meta-item-value">${p.meta?.taille_cm ? p.meta.taille_cm + 'cm' : '—'}</div></div>
         <div class="meta-item"><div class="meta-item-label">Pied fort</div><div class="meta-item-value">${p.meta?.pied_fort || '—'}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Mauvais pied</div><div class="meta-item-value">${'★'.repeat(p.meta?.mauvais_pied||0)+'☆'.repeat(5-(p.meta?.mauvais_pied||0))}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Gestes tech.</div><div class="meta-item-value">${'★'.repeat(p.meta?.gestes_techniques||0)+'☆'.repeat(5-(p.meta?.gestes_techniques||0))}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Poids</div><div class="meta-item-value">${p.meta?.poids_kg ? p.meta.poids_kg+'kg' : '—'}</div></div>
+        <div class="meta-item"><div class="meta-item-label">Mauvais pied</div><div class="meta-item-value">${'★'.repeat(p.meta?.mauvais_pied || 0) + '☆'.repeat(5 - (p.meta?.mauvais_pied || 0))}</div></div>
+        <div class="meta-item"><div class="meta-item-label">Gestes tech.</div><div class="meta-item-value">${'★'.repeat(p.meta?.gestes_techniques || 0) + '☆'.repeat(5 - (p.meta?.gestes_techniques || 0))}</div></div>
+        <div class="meta-item"><div class="meta-item-label">Poids</div><div class="meta-item-value">${p.meta?.poids_kg ? p.meta.poids_kg + 'kg' : '—'}</div></div>
       </div>
     </div>
 
@@ -2070,213 +2696,218 @@ function buildDetailHTML(p) {
       </a>
     </div>
     <div style="height:8px"></div>`;
-}
+    }
 
-// ════════════════════════════════════════════════════════
-// FAVORIS
-// ════════════════════════════════════════════════════════
-function toggleFav(id) {
-  const idx = favorites.indexOf(id);
-  if (idx === -1) favorites.push(id);
-  else favorites.splice(idx, 1);
-  localStorage.setItem('fcpulse_favs', JSON.stringify(favorites));
-}
+    // ════════════════════════════════════════════════════════
+    // FAVORIS
+    // ════════════════════════════════════════════════════════
+    function toggleFav(id) {
+      const idx = favorites.indexOf(id);
+      if (idx === -1) favorites.push(id);
+      else favorites.splice(idx, 1);
+      localStorage.setItem('fcpulse_favs', JSON.stringify(favorites));
+    }
 
-function toggleFavDetail() {
-  if (!currentDetailId) return;
-  toggleFav(currentDetailId);
-  updateFavBtn(currentDetailId);
-}
+    function toggleFavDetail() {
+      if (!currentDetailId) return;
+      toggleFav(currentDetailId);
+      updateFavBtn(currentDetailId);
+    }
 
-function updateFavBtn(id) {
-  const isFav = favorites.includes(id);
-  const btn = document.getElementById('detail-fav-btn');
-  const lbl = document.getElementById('fav-btn-label');
-  if (btn) { btn.classList.toggle('fav-active', isFav); }
-  if (lbl) { lbl.textContent = isFav ? 'Retiré' : 'Favoris'; }
-}
+    function updateFavBtn(id) {
+      const isFav = favorites.includes(id);
+      const btn = document.getElementById('detail-fav-btn');
+      const lbl = document.getElementById('fav-btn-label');
+      if (btn) { btn.classList.toggle('fav-active', isFav); }
+      if (lbl) { lbl.textContent = isFav ? 'Retiré' : 'Favoris'; }
+    }
 
-function renderFavorites() {
-  const list = document.getElementById('favorites-list');
-  if (favorites.length === 0) {
-    list.innerHTML = `<div class="empty-state">
+    function renderFavorites() {
+      const list = document.getElementById('favorites-list');
+      if (favorites.length === 0) {
+        list.innerHTML = `<div class="empty-state">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A5.5 5.5 0 017.5 3c1.74 0 3.41.81 4.5 2.09A5.99 5.99 0 0116.5 3 5.5 5.5 0 0122 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z"/></svg>
       <h3>Aucun favori</h3>
       <p>Ajoute des joueurs depuis leur fiche en appuyant sur Favoris</p>
     </div>`;
-    return;
-  }
-  const favPlayers = favorites.map(id => allPlayers.find(p=>p.id===id)).filter(Boolean);
-  // Header infos
-  const avgNote = Math.round(favPlayers.reduce((s,p)=>s+p.note,0)/favPlayers.length);
-  list.innerHTML = `<div style="padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)">
-    <span style="font-size:12px;color:var(--text3)">${favPlayers.length} joueur${favPlayers.length>1?'s':''} • Note moy. <strong style="color:var(--gold2)">${avgNote}</strong></span>
+        return;
+      }
+      const favPlayers = favorites.map(id => allPlayers.find(p => p.id === id)).filter(Boolean);
+      // Header infos
+      const avgNote = Math.round(favPlayers.reduce((s, p) => s + p.note, 0) / favPlayers.length);
+      list.innerHTML = `<div style="padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)">
+    <span style="font-size:12px;color:var(--text3)">${favPlayers.length} joueur${favPlayers.length > 1 ? 's' : ''} • Note moy. <strong style="color:var(--gold2)">${avgNote}</strong></span>
     <button onclick="compareFromFavorites()" style="margin-left:auto;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);color:var(--accent);border-radius:6px;padding:5px 10px;font-size:12px;font-weight:600;cursor:pointer">Comparer</button>
   </div>` + favPlayers.map(p => `
     <div class="player-row" onclick="showDetail(${p.id})">
       ${buildPlayerRowHTML(p)}
     </div>`).join('');
-}
+    }
 
-// ════════════════════════════════════════════════════════
-// COMPARATEUR
-// ════════════════════════════════════════════════════════
-function addToCompare(id) {
-  const slot = compareSlots[0] === null ? 0 : (compareSlots[1] === null ? 1 : 0);
-  compareSlots[slot] = allPlayers.find(p=>p.id===id);
-  showPage('compare');
-  renderCompareSlots();
-  renderCompareTable();
-}
+    // ════════════════════════════════════════════════════════
+    // COMPARATEUR
+    // ════════════════════════════════════════════════════════
+    function addToCompare(id) {
+      const slot = compareSlots[0] === null ? 0 : (compareSlots[1] === null ? 1 : 0);
+      compareSlots[slot] = allPlayers.find(p => p.id === id);
+      showPage('compare');
+      renderCompareSlots();
+      renderCompareTable();
+    }
 
-function openPlayerPicker(slot) {
-  currentPickerSlot = slot;
-  document.getElementById('modal-search-input').value = '';
-  renderModalResults('');
-  document.getElementById('player-picker-modal').classList.add('open');
-}
-function closePlayerPicker() {
-  document.getElementById('player-picker-modal').classList.remove('open');
-}
+    function openPlayerPicker(slot) {
+      currentPickerSlot = slot;
+      document.getElementById('modal-search-input').value = '';
+      renderModalResults('');
+      document.getElementById('player-picker-modal').classList.add('open');
+    }
+    function closePlayerPicker() {
+      document.getElementById('player-picker-modal').classList.remove('open');
+    }
 
-function renderModalResults(q) {
-  const term = q.toLowerCase().trim();
-  const results = term
-    ? allPlayers.filter(p => p.nom.toLowerCase().includes(term) || p.club?.toLowerCase().includes(term)).slice(0,30)
-    : allPlayers.slice(0,30);
-  document.getElementById('modal-results').innerHTML = results.map(p => `
+    function renderModalResults(q) {
+      const term = q.toLowerCase().trim();
+      const results = term
+        ? allPlayers.filter(p => p.nom.toLowerCase().includes(term) || p.club?.toLowerCase().includes(term)).slice(0, 30)
+        : allPlayers.slice(0, 30);
+      document.getElementById('modal-results').innerHTML = results.map(p => `
     <div class="modal-player-row" onclick="selectPlayerForCompare(${p.id})">
       <span class="modal-player-ovr">${p.note}</span>
       <div>
         <div class="modal-player-name">${p.nom}</div>
-        <div class="modal-player-info">${p.poste} · ${p.club||''} · ${p.nationalite||''}</div>
+        <div class="modal-player-info">${p.poste} · ${p.club || ''} · ${p.nationalite || ''}</div>
       </div>
     </div>`).join('');
-}
+    }
 
-function selectPlayerForCompare(id) {
-  compareSlots[currentPickerSlot] = allPlayers.find(p=>p.id===id);
-  closePlayerPicker();
-  renderCompareSlots();
-  renderCompareTable();
-}
+    function selectPlayerForCompare(id) {
+      compareSlots[currentPickerSlot] = allPlayers.find(p => p.id === id);
+      closePlayerPicker();
+      renderCompareSlots();
+      renderCompareTable();
+    }
 
-function removeFromCompare(slot) {
-  compareSlots[slot] = null;
-  renderCompareSlots();
-  renderCompareTable();
-}
+    function removeFromCompare(slot) {
+      compareSlots[slot] = null;
+      renderCompareSlots();
+      renderCompareTable();
+    }
 
-function renderCompareSlots() {
-  [0,1].forEach(i => {
-    const p = compareSlots[i];
-    const el = document.getElementById(`slot-${i}`);
-    if (!p) {
-      el.innerHTML = `<div class="compare-slot-add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div><span style="font-size:12px;color:var(--text3)">Joueur ${i+1}</span>`;
-      el.classList.remove('filled');
-      el.onclick = () => openPlayerPicker(i);
-    } else {
-      el.innerHTML = `
+    function renderCompareSlots() {
+      [0, 1].forEach(i => {
+        const p = compareSlots[i];
+        const el = document.getElementById(`slot-${i}`);
+        if (!p) {
+          el.innerHTML = `<div class="compare-slot-add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div><span style="font-size:12px;color:var(--text3)">Joueur ${i + 1}</span>`;
+          el.classList.remove('filled');
+          el.onclick = () => openPlayerPicker(i);
+        } else {
+          el.innerHTML = `
         <div class="compare-slot-note">${p.note}</div>
         <div class="compare-slot-poste">${p.poste}</div>
         <div class="compare-slot-name">${p.nom}</div>
-        <div style="font-size:11px;color:var(--text3)">${p.club||''}</div>
+        <div style="font-size:11px;color:var(--text3)">${p.club || ''}</div>
         <button class="compare-remove" onclick="event.stopPropagation();removeFromCompare(${i})">Retirer</button>`;
-      el.classList.add('filled');
-      el.onclick = null;
+          el.classList.add('filled');
+          el.onclick = null;
+        }
+      });
     }
-  });
-}
 
-function generateCompareSummary(a, b) {
-  const keys = [['vitesse','vitesse'],['tir','en tir'],['passes','en passes'],['dribble','au dribble'],['defense','défensivement'],['physique','physiquement']];
-  let aWins = [], bWins = [];
-  keys.forEach(([k,lbl]) => {
-    const diff = (a.stats?.[k]||0) - (b.stats?.[k]||0);
-    if (diff >= 5) aWins.push(lbl);
-    else if (diff <= -5) bWins.push(lbl);
-  });
-  let txt = '';
-  if (aWins.length) txt += `<strong>${a.nom}</strong> domine ${aWins.slice(0,2).join(' et ')}. `;
-  if (bWins.length) txt += `<strong>${b.nom}</strong> prend l'avantage ${bWins.slice(0,2).join(' et ')}. `;
-  if (!txt) txt = 'Les deux joueurs sont très proches sur l'ensemble des stats principales. ';
-  if (a.profil && b.profil && a.profil !== b.profil) {
-    txt += `Profils différents : ${a.nom} joue plutôt comme ${a.profil.toLowerCase()}, ${b.nom} comme ${b.profil.toLowerCase()}.`;
-  }
-  return txt;
-}
+    function generateCompareSummary(a, b) {
+      const keys = [['vitesse', 'vitesse'], ['tir', 'en tir'], ['passes', 'en passes'], ['dribble', 'au dribble'], ['defense', 'défensivement'], ['physique', 'physiquement']];
+      let aWins = [], bWins = [];
+      keys.forEach(([k, lbl]) => {
+        const diff = (a.stats?.[k] || 0) - (b.stats?.[k] || 0);
+        if (diff >= 5) aWins.push(lbl);
+        else if (diff <= -5) bWins.push(lbl);
+      });
+      let txt = '';
+      if (aWins.length) txt += `<strong>${a.nom}</strong> domine ${aWins.slice(0, 2).join(' et ')}. `;
+      if (bWins.length) txt += `<strong>${b.nom}</strong> prend l'avantage ${bWins.slice(0, 2).join(' et ')}. `;
+      if (!txt) txt = "Les deux joueurs sont très proches sur l'ensemble des stats principales. ";
+      if (a.profil && b.profil && a.profil !== b.profil) {
+        txt += `Profils différents : ${a.nom} joue plutôt comme ${a.profil.toLowerCase()}, ${b.nom} comme ${b.profil.toLowerCase()}.`;
+      }
+      return txt;
+    }
 
-function renderCompareTable() {
-  const [a,b] = compareSlots;
-  const table = document.getElementById('compare-table');
-  if (!a && !b) { table.innerHTML = '<div class="loading-msg" style="padding:30px">Sélectionne deux joueurs à comparer</div>'; return; }
-  if (!a || !b) { table.innerHTML = '<div class="loading-msg" style="padding:30px">Sélectionne un deuxième joueur</div>'; return; }
-  
-  // Synthèse
-  const summaryBox = document.getElementById('compare-summary-box');
-  if (summaryBox) summaryBox.innerHTML = '<div class="compare-summary"><div class="compare-summary-title">⚡ Synthèse FC Pulse</div><div class="compare-summary-txt">' + generateCompareSummary(a,b) + '</div></div>';
+    function renderCompareTable() {
+      const [a, b] = compareSlots;
+      const table = document.getElementById('compare-table');
+      if (!a && !b) { table.innerHTML = '<div class="loading-msg" style="padding:30px">Sélectionne deux joueurs à comparer</div>'; return; }
+      if (!a || !b) { table.innerHTML = '<div class="loading-msg" style="padding:30px">Sélectionne un deuxième joueur</div>'; return; }
 
-  const groups = [
-    {title:'Stats principales', rows:[
-      {l:'Note',va:a.note,vb:b.note},
-      {l:'Vitesse',va:a.stats?.vitesse,vb:b.stats?.vitesse},
-      {l:'Tir',va:a.stats?.tir,vb:b.stats?.tir},
-      {l:'Passes',va:a.stats?.passes,vb:b.stats?.passes},
-      {l:'Dribble',va:a.stats?.dribble,vb:b.stats?.dribble},
-      {l:'Défense',va:a.stats?.defense,vb:b.stats?.defense},
-      {l:'Physique',va:a.stats?.physique,vb:b.stats?.physique},
-    ]},
-    {title:'Profil', rows:[
-      {l:'Âge',va:a.meta?.age,vb:b.meta?.age,lower:true},
-      {l:'Taille',va:a.meta?.taille_cm,vb:b.meta?.taille_cm},
-      {l:'Gestes',va:a.meta?.gestes_techniques,vb:b.meta?.gestes_techniques},
-      {l:'M. pied',va:a.meta?.mauvais_pied,vb:b.meta?.mauvais_pied},
-    ]},
-  ];
+      // Synthèse
+      const summaryBox = document.getElementById('compare-summary-box');
+      if (summaryBox) summaryBox.innerHTML = '<div class="compare-summary"><div class="compare-summary-title">⚡ Synthèse FC Pulse</div><div class="compare-summary-txt">' + generateCompareSummary(a, b) + '</div></div>';
 
-  let html = '';
-  groups.forEach(g => {
-    html += `<div class="compare-table-section"><div class="compare-table-title">${g.title}</div>`;
-    g.rows.forEach(r => {
-      const va = r.va||0, vb = r.vb||0;
-      const aWin = r.lower ? va < vb : va > vb;
-      const bWin = r.lower ? vb < va : vb > va;
-      const diffVal = Math.abs(va - vb);
-      const diffBadge = diffVal >= 5 ? `<span style="font-size:10px;color:var(--text3);margin-left:2px">+${diffVal}</span>` : '';
-      html += `<div class="compare-row">
-        <div class="compare-cell ${aWin?'best':vb>va?'worst':''}">${r.va||'—'}${aWin?diffBadge:''}</div>
+      const groups = [
+        {
+          title: 'Stats principales', rows: [
+            { l: 'Note', va: a.note, vb: b.note },
+            { l: 'Vitesse', va: a.stats?.vitesse, vb: b.stats?.vitesse },
+            { l: 'Tir', va: a.stats?.tir, vb: b.stats?.tir },
+            { l: 'Passes', va: a.stats?.passes, vb: b.stats?.passes },
+            { l: 'Dribble', va: a.stats?.dribble, vb: b.stats?.dribble },
+            { l: 'Défense', va: a.stats?.defense, vb: b.stats?.defense },
+            { l: 'Physique', va: a.stats?.physique, vb: b.stats?.physique },
+          ]
+        },
+        {
+          title: 'Profil', rows: [
+            { l: 'Âge', va: a.meta?.age, vb: b.meta?.age, lower: true },
+            { l: 'Taille', va: a.meta?.taille_cm, vb: b.meta?.taille_cm },
+            { l: 'Gestes', va: a.meta?.gestes_techniques, vb: b.meta?.gestes_techniques },
+            { l: 'M. pied', va: a.meta?.mauvais_pied, vb: b.meta?.mauvais_pied },
+          ]
+        },
+      ];
+
+      let html = '';
+      groups.forEach(g => {
+        html += `<div class="compare-table-section"><div class="compare-table-title">${g.title}</div>`;
+        g.rows.forEach(r => {
+          const va = r.va || 0, vb = r.vb || 0;
+          const aWin = r.lower ? va < vb : va > vb;
+          const bWin = r.lower ? vb < va : vb > va;
+          const diffVal = Math.abs(va - vb);
+          const diffBadge = diffVal >= 5 ? `<span style="font-size:10px;color:var(--text3);margin-left:2px">+${diffVal}</span>` : '';
+          html += `<div class="compare-row">
+        <div class="compare-cell ${aWin ? 'best' : vb > va ? 'worst' : ''}">${r.va || '—'}${aWin ? diffBadge : ''}</div>
         <div class="compare-stat-name">${r.l}</div>
-        <div class="compare-cell ${bWin?'best':va>vb?'worst':''}">${r.vb||'—'}${bWin?diffBadge:''}</div>
+        <div class="compare-cell ${bWin ? 'best' : va > vb ? 'worst' : ''}">${r.vb || '—'}${bWin ? diffBadge : ''}</div>
       </div>`;
-    });
-    html += '</div>';
-  });
+        });
+        html += '</div>';
+      });
 
-  // Playstyles
-  html += `<div class="compare-table-section"><div class="compare-table-title">Play Styles</div>
+      // Playstyles
+      html += `<div class="compare-table-section"><div class="compare-table-title">Play Styles</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 0">
-      <div style="display:flex;flex-wrap:wrap;gap:4px">${(a.playstyles||[]).map(ps=>`<span class="playstyle-chip ${ps.endsWith('+')?'plus':''}" style="font-size:10px;padding:3px 7px">${ps}</span>`).join('')}</div>
-      <div style="display:flex;flex-wrap:wrap;gap:4px">${(b.playstyles||[]).map(ps=>`<span class="playstyle-chip ${ps.endsWith('+')?'plus':''}" style="font-size:10px;padding:3px 7px">${ps}</span>`).join('')}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:4px">${(a.playstyles || []).map(ps => `<span class="playstyle-chip ${ps.endsWith('+') ? 'plus' : ''}" style="font-size:10px;padding:3px 7px">${ps}</span>`).join('')}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:4px">${(b.playstyles || []).map(ps => `<span class="playstyle-chip ${ps.endsWith('+') ? 'plus' : ''}" style="font-size:10px;padding:3px 7px">${ps}</span>`).join('')}</div>
     </div>
   </div>`;
 
-  table.innerHTML = html;
-}
+      table.innerHTML = html;
+    }
 
-function compareFromFavorites() {
-  const favPlayers = favorites.slice(0,2).map(id => allPlayers.find(p=>p.id===id)).filter(Boolean);
-  compareSlots[0] = favPlayers[0] || null;
-  compareSlots[1] = favPlayers[1] || null;
-  showPage('compare');
-  renderCompareSlots();
-  renderCompareTable();
-}
+    function compareFromFavorites() {
+      const favPlayers = favorites.slice(0, 2).map(id => allPlayers.find(p => p.id === id)).filter(Boolean);
+      compareSlots[0] = favPlayers[0] || null;
+      compareSlots[1] = favPlayers[1] || null;
+      showPage('compare');
+      renderCompareSlots();
+      renderCompareTable();
+    }
 
-// ════════════════════════════════════════════════════════
-// INIT
-// ════════════════════════════════════════════════════════
-renderCompareSlots();
-loadData();
-</script>
+    // ════════════════════════════════════════════════════════
+    // INIT
+    // ════════════════════════════════════════════════════════
+    renderCompareSlots();
+    loadData();
+  </script>
 </body>
+
 </html>
