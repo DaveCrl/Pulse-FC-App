@@ -15,7 +15,7 @@
   --bg3:       #131b24;
   --bg4:       #1a2535;
   --border:    rgba(255,255,255,0.07);
-  --border2:   rgba(255,255,255,0.12);
+  --border2:   rgba(255,255,255,0.14);
   --text:      #e8edf2;
   --text2:     #8a9bb0;
   --text3:     #4a5a6e;
@@ -30,12 +30,14 @@
   --radius:    10px;
   --radius-lg: 16px;
   --nav-h:     56px;
+  --glow:      rgba(0,212,255,0.12);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background: var(--bg);
+  background-image: radial-gradient(ellipse 80% 50% at 50% -5%, rgba(0,180,255,.06), transparent);
   color: var(--text);
   font-family: 'Barlow', sans-serif;
   font-size: 15px;
@@ -71,13 +73,23 @@ nav {
   background: none;
   border: none;
   font-family: 'Barlow', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
 }
 .nav-btn.active { color: var(--accent); }
+.nav-btn.active::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 28%; right: 28%;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 0 8px var(--accent);
+}
 .nav-btn svg { width: 22px; height: 22px; }
 .nav-dot {
   width: 4px; height: 4px;
@@ -86,7 +98,7 @@ nav {
   opacity: 0;
   margin-top: -2px;
 }
-.nav-btn.active .nav-dot { opacity: 1; }
+.nav-btn.active .nav-dot { opacity: 0; }
 
 /* ════════════════════════════════════════════════════════
    PAGES
@@ -102,16 +114,18 @@ nav {
    HEADER GLOBAL
 ════════════════════════════════════════════════════════ */
 .page-header {
-  padding: 20px 16px 12px;
+  padding: 18px 16px 12px;
   display: flex;
   align-items: center;
   gap: 12px;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  background: rgba(8,12,16,0.95);
-  backdrop-filter: blur(12px);
+  background: rgba(8,12,16,0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   z-index: 100;
+  box-shadow: 0 1px 0 var(--border), 0 4px 20px rgba(0,0,0,.2);
 }
 
 .logo {
@@ -119,10 +133,18 @@ nav {
   font-size: 22px;
   font-weight: 800;
   letter-spacing: 2px;
-  color: var(--accent);
   text-transform: uppercase;
+  background: linear-gradient(135deg, var(--accent) 0%, #7dd3fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-.logo span { color: var(--gold); }
+.logo span {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .header-count {
   margin-left: auto;
@@ -155,10 +177,13 @@ nav {
   font-family: 'Barlow', sans-serif;
   font-size: 15px;
   outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 .search-input::placeholder { color: var(--text3); }
-.search-input:focus { border-color: var(--accent2); }
+.search-input:focus {
+  border-color: rgba(0,212,255,.4);
+  box-shadow: 0 0 0 3px rgba(0,212,255,.06);
+}
 
 .filter-btn {
   background: var(--bg3);
@@ -252,49 +277,63 @@ nav {
   background: var(--bg3);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 5px 12px;
+  padding: 5px 13px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text2);
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.15s;
   flex-shrink: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: .5px;
 }
 .sort-chip.active {
-  background: rgba(0,212,255,0.12);
-  border-color: var(--accent2);
+  background: rgba(0,212,255,.1);
+  border-color: rgba(0,212,255,.4);
   color: var(--accent);
+  box-shadow: 0 0 10px -3px rgba(0,212,255,.3);
 }
 
 /* ════════════════════════════════════════════════════════
    LISTE JOUEURS
 ════════════════════════════════════════════════════════ */
 .players-list {
-  padding: 8px 0;
+  padding: 4px 0;
 }
 
 .player-row {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px;
+  padding: 10px 14px;
   border-bottom: 1px solid var(--border);
   cursor: pointer;
-  transition: background 0.15s;
+  transition: background 0.15s, transform .1s;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
 }
-.player-row:hover, .player-row:active { background: var(--bg3); }
+.player-row::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0; width: 2px;
+  background: transparent;
+  transition: background .15s;
+}
+.player-row:hover { background: rgba(0,212,255,.03); }
+.player-row:hover::before { background: var(--accent); }
+.player-row:active { background: var(--bg3); transform: scale(.992); }
 
 /* Carte miniature */
 .player-card-mini {
-  width: 52px;
-  height: 70px;
+  width: 58px;
+  height: 78px;
   border-radius: 8px;
   position: relative;
   flex-shrink: 0;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 14px rgba(0,0,0,.5);
 }
 .player-card-mini img {
   width: 100%;
@@ -332,13 +371,14 @@ nav {
 
 .player-name {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 800;
+  font-size: 19px;
   letter-spacing: 0.3px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--text);
+  line-height: 1.1;
 }
 
 .player-meta {
@@ -373,36 +413,55 @@ nav {
 /* 6 stats mini */
 .player-stats-mini {
   display: flex;
-  gap: 8px;
-  margin-top: 6px;
+  gap: 3px;
+  margin-top: 5px;
 }
 .stat-mini {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0;
+  background: rgba(255,255,255,.04);
+  border-radius: 4px;
+  padding: 2px 3px;
+  min-width: 22px;
 }
 .stat-mini-val {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 800;
+  font-size: 12px;
   line-height: 1;
-  color: var(--text);
 }
 .stat-mini-lbl {
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   color: var(--text3);
   text-transform: uppercase;
 }
 
 /* Rareté sur la droite */
 .player-rarete-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
+}
+
+/* Colonne droite : OVR + dot rareté */
+.player-right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  margin-left: 2px;
+}
+.player-ovr {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1;
 }
 
 /* Chargement */
@@ -443,11 +502,22 @@ nav {
 
 /* Header joueur */
 .detail-hero {
-  padding: 20px 16px;
+  padding: 22px 16px 20px;
   display: flex;
   gap: 16px;
   border-bottom: 1px solid var(--border);
   background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.detail-hero::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,212,255,.07), transparent 70%);
+  pointer-events: none;
 }
 
 .detail-card-img {
@@ -493,14 +563,16 @@ nav {
 
 /* ── Wrapper image détail ── */
 .detail-card-img-wrap {
-  width: 100px; min-width: 100px; height: 134px; flex-shrink: 0; position: relative;
+  width: 110px; min-width: 110px; height: 148px; flex-shrink: 0; position: relative;
 }
 .detail-card-img-wrap .detail-card-img {
   width: 100%; height: 100%; border-radius: 10px; object-fit: contain;
   object-position: top center; border: 1px solid var(--border2); background: var(--bg3);
+  box-shadow: 0 6px 24px rgba(0,0,0,.5);
 }
 .detail-card-img-wrap .detail-card-fallback {
   position: absolute; inset: 0; border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.5);
 }
 
 /* ── Quick filters ── */
@@ -512,13 +584,13 @@ nav {
 .quick-filters::-webkit-scrollbar { display: none; }
 .qf-pill {
   background: var(--bg3); border: 1px solid var(--border);
-  border-radius: 16px; padding: 4px 12px; font-size: 12px; font-weight: 700;
+  border-radius: 16px; padding: 5px 13px; font-size: 12px; font-weight: 700;
   color: var(--text3); cursor: pointer; white-space: nowrap; flex-shrink: 0;
-  transition: all 0.18s; font-family: 'Barlow Condensed', sans-serif; letter-spacing: .5px;
+  transition: all 0.18s; font-family: 'Barlow Condensed', sans-serif; letter-spacing: .6px;
   -webkit-tap-highlight-color: transparent;
 }
-.qf-pill:hover { border-color: var(--border2); color: var(--text); }
-.qf-pill.on { background: rgba(0,212,255,.12); border-color: rgba(0,212,255,.35); color: var(--accent); }
+.qf-pill:hover { border-color: var(--border2); color: var(--text); background: var(--bg4); }
+.qf-pill.on { background: rgba(0,212,255,.1); border-color: rgba(0,212,255,.4); color: var(--accent); box-shadow: 0 0 10px -3px rgba(0,212,255,.3); }
 .qf-pill.qf-sep { margin-left: 8px; border-left: 1px solid var(--border2); }
 
 /* ── Profil bloc enrichi ── */
@@ -606,9 +678,9 @@ nav {
 .stat-bar-fill { animation: barGrow .5s cubic-bezier(.23,1,.32,1) both; }
 
 /* Hover sur player-row */
-.player-row { transition: background .15s, transform .12s; cursor: pointer; }
-.player-row:hover { background: rgba(255,255,255,.03); }
-.player-row:active { transform: scale(.99); }
+.player-row { transition: background .15s, transform .1s; cursor: pointer; }
+.player-row:hover { background: rgba(0,212,255,.03); }
+.player-row:active { transform: scale(.992); background: var(--bg3); }
 
 /* Sort chips hover */
 .sort-chip { transition: all .18s; }
@@ -635,6 +707,53 @@ nav {
 .pulse-block, .profil-block { transition: box-shadow .2s; }
 .pulse-block:hover, .profil-block:hover { box-shadow: 0 4px 20px rgba(0,0,0,.3); }
 
+/* ── Micro-animations premium ───────────────────────────── */
+/* Filtres rapides — feedback au clic */
+.qf-pill { transition: all .18s cubic-bezier(.23,1,.32,1); }
+.qf-pill:active { transform: scale(.92); }
+
+/* Chips de tri */
+.sort-chip { transition: all .18s cubic-bezier(.23,1,.32,1); }
+.sort-chip:active { transform: scale(.93); }
+
+/* Stat cards détail — pop au hover */
+.stat-main-card { transition: border-color .15s, transform .12s; }
+.stat-main-card:hover { transform: scale(1.03); }
+
+/* Barres de stats — animation à l'entrée (reset par re-render) */
+@keyframes barGrowFrom0 { from { width: 0 !important; } to { } }
+.stat-bar-fill { animation: barGrowFrom0 .5s cubic-bezier(.23,1,.32,1) both; }
+
+/* Meta items */
+.meta-item { transition: border-color .15s, background .15s; }
+.meta-item:hover { background: var(--bg4); border-color: var(--border2); }
+
+/* Playstyle chips */
+.playstyle-chip { transition: background .15s, border-color .15s, transform .1s; }
+.playstyle-chip:hover { background: var(--bg4); }
+.playstyle-chip.plus:hover { background: rgba(200,168,75,.14); }
+
+/* Fiche détail — apparition des sections */
+.detail-section { animation: slideInUp .25s cubic-bezier(.23,1,.32,1) both; }
+.detail-section:nth-child(2) { animation-delay: .05s; }
+.detail-section:nth-child(3) { animation-delay: .08s; }
+.detail-section:nth-child(4) { animation-delay: .11s; }
+.detail-section:nth-child(n+5) { animation-delay: .14s; }
+
+/* Boutons action — feedback */
+.btn-primary:hover { opacity: .92; }
+.btn-secondary:active { transform: scale(.97); }
+
+/* Favoris rows */
+#favorites-list .player-row { transition: background .15s, transform .12s; }
+
+/* Compare slots */
+.compare-slot { transition: border-color .18s, background .18s, box-shadow .18s; }
+.compare-slot:hover:not(.filled) { box-shadow: 0 4px 16px rgba(0,212,255,.08); }
+
+/* Scroll sentinel smooth */
+.load-more-spinner { transition: opacity .2s; }
+
 /* ── Comparateur résumé synthèse ── */
 .compare-summary {
   margin: 12px 16px;
@@ -657,10 +776,11 @@ nav {
 .detail-nom {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
-  font-size: 26px;
+  font-size: 28px;
   letter-spacing: 0.5px;
   line-height: 1.1;
   color: var(--text);
+  text-shadow: 0 2px 12px rgba(0,0,0,.4);
 }
 .detail-club-line {
   font-size: 13px;
@@ -759,17 +879,26 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
+  padding: 4px 0;
+}
+.stat-bar-row:nth-child(odd) {
+  background: rgba(255,255,255,.015);
+  border-radius: 5px;
+  padding: 4px 6px;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 .stat-bar-label {
   font-size: 12px;
   color: var(--text2);
-  width: 110px;
+  width: 130px;
   flex-shrink: 0;
+  font-weight: 500;
 }
 .stat-bar-track {
   flex: 1;
-  height: 6px;
+  height: 5px;
   background: var(--bg4);
   border-radius: 3px;
   overflow: hidden;
@@ -781,11 +910,10 @@ nav {
 }
 .stat-bar-val {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 16px;
-  width: 28px;
+  width: 30px;
   text-align: right;
-  color: var(--text);
 }
 
 /* 6 stats principales en grille */
@@ -799,15 +927,30 @@ nav {
   background: var(--bg3);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 10px;
+  padding: 12px 8px 10px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: border-color .2s, box-shadow .2s;
+}
+.stat-main-card:hover {
+  border-color: var(--stat-color, var(--border2));
+  box-shadow: 0 0 18px -4px var(--stat-color, transparent);
+}
+/* Barre de couleur basse selon niveau */
+.stat-main-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--stat-color, var(--border));
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 .stat-main-val {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1;
-  color: var(--text);
 }
 .stat-main-lbl {
   font-size: 10px;
@@ -815,7 +958,7 @@ nav {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--text3);
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 /* Infos meta */
@@ -1264,40 +1407,49 @@ nav {
     </div>
   </div>
 
-  <!-- Filtres rapides visuels (postes) -->
+  <!-- Filtres rapides visuels -->
+  <!-- Ligne 1 : Postes -->
   <div class="quick-filters" id="quick-filters">
     <div class="qf-pill on" onclick="setQuickFilter('all',this)">Tous</div>
     <div class="qf-pill" onclick="setQuickFilter('ATT',this)">ATT</div>
     <div class="qf-pill" onclick="setQuickFilter('AG',this)">AG</div>
     <div class="qf-pill" onclick="setQuickFilter('AD',this)">AD</div>
     <div class="qf-pill" onclick="setQuickFilter('MOC',this)">MOC</div>
+    <div class="qf-pill" onclick="setQuickFilter('SA',this)">SA</div>
     <div class="qf-pill" onclick="setQuickFilter('MC',this)">MC</div>
     <div class="qf-pill" onclick="setQuickFilter('MDC',this)">MDC</div>
     <div class="qf-pill" onclick="setQuickFilter('DC',this)">DC</div>
     <div class="qf-pill" onclick="setQuickFilter('DG',this)">DG</div>
     <div class="qf-pill" onclick="setQuickFilter('DD',this)">DD</div>
+    <div class="qf-pill" onclick="setQuickFilter('PDG',this)">PDG</div>
     <div class="qf-pill" onclick="setQuickFilter('GB',this)">GB</div>
-    <div class="qf-pill qf-sep" onclick="setRarete('Or Rare',this)">🥇 Or</div>
-    <div class="qf-pill" onclick="setRarete('Argent Rare',this)">🥈 Argent</div>
-    <div class="qf-pill" onclick="setRarete('Bronze Rare',this)">🥉 Bronze</div>
+    <!-- Rareté -->
+    <div class="qf-pill qf-sep" onclick="setRarete('Or Rare',this)" title="Or Rare">🥇 Or</div>
+    <div class="qf-pill" onclick="setRarete('Argent Rare',this)" title="Argent Rare">🥈 Argent</div>
+    <div class="qf-pill" onclick="setRarete('Bronze Rare',this)" title="Bronze Rare">🥉 Bronze</div>
   </div>
-     <div class="sort-row">
-     <!-- AGE -->
-     <div class="sort-chip" onclick="setSort('age', 'asc', this)" data-key="age" data-dir="asc">Âge ↑</div>
-     <div class="sort-chip" onclick="setSort('age', 'desc', this)" data-key="age" data-dir="desc">Âge ↓</div>
-     
-     <!-- NOTE -->
-     <div class="sort-chip active" onclick="setSort('note', 'asc', this)" data-key="note" data-dir="asc">Note ↑</div>
-     <div class="sort-chip active" onclick="setSort('note', 'desc', this)" data-key="note" data-dir="desc">Note ↓</div>
-     
-     <!-- STATS SEULES (descroissant uniquement) -->
-     <div class="sort-chip" onclick="setSort('vitesse', 'desc', this)" data-key="vitesse" data-dir="desc">Vitesse</div>
-     <div class="sort-chip" onclick="setSort('tir', 'desc', this)" data-key="tir" data-dir="desc">Tir</div>
-     <div class="sort-chip" onclick="setSort('passes', 'desc', this)" data-key="passes" data-dir="desc">Passe</div>
-     <div class="sort-chip" onclick="setSort('dribble', 'desc', this)" data-key="dribble" data-dir="desc">Dribble</div>
-     <div class="sort-chip" onclick="setSort('defense', 'desc', this)" data-key="defense" data-dir="desc">Défense</div>
-     <div class="sort-chip" onclick="setSort('physique', 'desc', this)" data-key="physique" data-dir="desc">Physique</div>
-   </div>
+  <!-- Ligne 2 : Top ligues -->
+  <div class="quick-filters" id="quick-filters-leagues" style="top:auto;border-top:none;padding-top:0">
+    <span style="font-size:10px;font-weight:700;letter-spacing:1px;color:var(--text3);text-transform:uppercase;flex-shrink:0;padding-right:4px">Ligues</span>
+    <div class="qf-pill" onclick="setTopLigue('Premier League',this)" title="Premier League" style="background:rgba(98,0,238,.1);border-color:rgba(98,0,238,.25);color:#a78bfa">PL</div>
+    <div class="qf-pill" onclick="setTopLigue('La Liga',this)" title="La Liga" style="background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.25);color:#f87171">LaLiga</div>
+    <div class="qf-pill" onclick="setTopLigue('Bundesliga',this)" title="Bundesliga" style="background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.25);color:#fb923c">BL</div>
+    <div class="qf-pill" onclick="setTopLigue('Serie A',this)" title="Serie A" style="background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.25);color:#93c5fd">SerieA</div>
+    <div class="qf-pill" onclick="setTopLigue('Ligue 1',this)" title="Ligue 1" style="background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.25);color:#4ade80">L1</div>
+    <div class="qf-pill" onclick="setTopLigue('Eredivisie',this)" title="Eredivisie">ERE</div>
+    <div class="qf-pill" onclick="setTopLigue('Liga Portugal',this)" title="Liga Portugal">LPT</div>
+    <div class="qf-pill" onclick="setTopLigue('Saudi Pro League',this)" title="Saudi Pro League">SAU</div>
+  </div>
+  <div class="sort-row">
+    <div class="sort-chip active" onclick="setSort('note', this)" data-key="note" data-dir="desc">Note ↓</div>
+    <div class="sort-chip" onclick="setSort('vitesse', this)" data-key="vitesse" data-dir="desc">Vitesse</div>
+    <div class="sort-chip" onclick="setSort('tir', this)" data-key="tir" data-dir="desc">Tir</div>
+    <div class="sort-chip" onclick="setSort('passes', this)" data-key="passes" data-dir="desc">Passes</div>
+    <div class="sort-chip" onclick="setSort('dribble', this)" data-key="dribble" data-dir="desc">Dribble</div>
+    <div class="sort-chip" onclick="setSort('defense', this)" data-key="defense" data-dir="desc">Défense</div>
+    <div class="sort-chip" onclick="setSort('physique', this)" data-key="physique" data-dir="desc">Physique</div>
+    <div class="sort-chip" onclick="setSort('age', this)" data-key="age" data-dir="asc">Âge ↑</div>
+  </div>
 
   <div id="players-list" class="players-list">
     <div class="loading-msg">
@@ -1574,6 +1726,7 @@ function showDetail(id) {
   updateFavBtn(p.id);
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-detail').classList.add('active');
+  window.scrollTo(0, 0);
 }
 
 function goBack() {
@@ -1627,6 +1780,7 @@ function applyFilters() {
       if (p.poste !== quickPostFilter && !(p.postes_alt||[]).includes(quickPostFilter)) return false;
     }
     if (quickRareteFilter && p.rarete !== quickRareteFilter) return false;
+    if (quickLigueFilter && p.ligue !== quickLigueFilter) return false;
     return true;
   });
 
@@ -1640,45 +1794,40 @@ function applyFilters() {
 let sortDir = 'desc';
 let quickPostFilter = 'all';
 let quickRareteFilter = '';
+let quickLigueFilter = '';
 
-function setSort(key, direction, el) {
-  // Si on clique deux fois sur le même chip Note/Âge, toggle la direction
-  if (currentSort === key && ['note', 'age'].includes(key)) {
-    const newDir = direction === 'asc' ? 'desc' : 'asc';
-    setSort(key, newDir, el);
-    return;
+const SORT_LABELS = {note:'Note',vitesse:'Vitesse',tir:'Tir',passes:'Passes',dribble:'Dribble',defense:'Défense',physique:'Physique',age:'Âge'};
+// Direction par défaut : 'asc' pour l'âge, 'desc' pour tout le reste
+const SORT_DEFAULT_DIR = {age:'asc'};
+
+function setSort(key, el) {
+  if (currentSort === key) {
+    // Même colonne → toggle direction
+    sortDir = sortDir === 'desc' ? 'asc' : 'desc';
+  } else {
+    // Nouvelle colonne → direction par défaut
+    currentSort = key;
+    sortDir = SORT_DEFAULT_DIR[key] || 'desc';
   }
-  
-  currentSort = key;
-  sortDir = direction || 'desc';
-  
-  // Réinitialise tous les chips (sauf Note/Âge)
+  // Réinitialiser tous les chips
   document.querySelectorAll('.sort-chip').forEach(c => {
     c.classList.remove('active');
+    const k = c.dataset.key;
+    const defaultDir = SORT_DEFAULT_DIR[k] || 'desc';
+    c.textContent = SORT_LABELS[k] + (defaultDir === 'asc' ? ' ↑' : '');
   });
-  
-  // Active le chip cliqué (ou ses deux variantes pour Note/Âge)
-  if (['note', 'age'].includes(key)) {
-    document.querySelectorAll(`.sort-chip[data-key="${key}"]`).forEach(c => {
-      if (c.dataset.dir === sortDir) c.classList.add('active');
-    });
-  } else {
-    el.classList.add('active');
-  }
-  
+  // Activer le chip courant avec flèche
+  const arrow = sortDir === 'asc' ? ' ↑' : ' ↓';
+  el.classList.add('active');
+  el.dataset.dir = sortDir;
+  el.textContent = (SORT_LABELS[key] || key) + arrow;
   applyFilters();
 }
-
-function setSortDir(el) { 
-  // Compatibilité legacy si encore utilisé
-  setSort(el.dataset.key, el.dataset.dir || 'asc', el);
-}
-
-function setSortDir(el) { setSort(el.dataset.key, el); }
 
 function setQuickFilter(val, el) {
   quickPostFilter = val;
   quickRareteFilter = '';
+  quickLigueFilter = '';
   document.querySelectorAll('.qf-pill').forEach(p=>p.classList.remove('on'));
   el.classList.add('on');
   applyFilters();
@@ -1687,34 +1836,32 @@ function setQuickFilter(val, el) {
 function setRarete(val, el) {
   quickRareteFilter = quickRareteFilter === val ? '' : val;
   quickPostFilter = 'all';
+  quickLigueFilter = '';
   document.querySelectorAll('.qf-pill').forEach(p=>p.classList.remove('on'));
   if (quickRareteFilter) el.classList.add('on');
-  else document.querySelector('.qf-pill').classList.add('on');
+  else document.querySelector('#quick-filters .qf-pill').classList.add('on');
+  applyFilters();
+}
+
+function setTopLigue(val, el) {
+  quickLigueFilter = quickLigueFilter === val ? '' : val;
+  quickPostFilter = 'all';
+  quickRareteFilter = '';
+  // Désactiver postes/raretés
+  document.querySelectorAll('#quick-filters .qf-pill').forEach(p=>p.classList.remove('on'));
+  document.querySelector('#quick-filters .qf-pill').classList.add('on');
+  // Activer/désactiver le chip ligue
+  document.querySelectorAll('#quick-filters-leagues .qf-pill').forEach(p=>p.classList.remove('on'));
+  if (quickLigueFilter) el.classList.add('on');
   applyFilters();
 }
 
 function sortPlayers() {
-  // Pour tris de stats : exclure les gardiens en haut de liste
-  const isStatSort = ['vitesse', 'tir', 'passes', 'dribble', 'defense', 'physique'].includes(currentSort);
-  
-  filteredPlayers.sort((a, b) => {
+  filteredPlayers.sort((a,b) => {
     let va, vb;
-    
-    if (currentSort === 'age') { 
-      va = a.meta?.age || 99; 
-      vb = b.meta?.age || 99; 
-    } else if (currentSort === 'note') { 
-      va = a.note; 
-      vb = b.note; 
-    } else {
-      // Pour les stats, les gardiens (GB) remontent mal — les pénaliser
-      const aIsGK = a.poste === 'GB';
-      const bIsGK = b.poste === 'GB';
-      
-      va = aIsGK ? -999 : (a.stats?.[currentSort] || 0);
-      vb = bIsGK ? -999 : (b.stats?.[currentSort] || 0);
-    }
-    
+    if (currentSort === 'age') { va = a.meta?.age||99; vb = b.meta?.age||99; }
+    else if (currentSort === 'note') { va = a.note; vb = b.note; }
+    else { va = a.stats?.[currentSort]||0; vb = b.stats?.[currentSort]||0; }
     return sortDir === 'asc' ? va - vb : vb - va;
   });
 }
@@ -1747,7 +1894,10 @@ function buildPlayerRowHTML(p) {
   const statsLabels = ['VIT','TIR','PAS','DRI','DEF','PHY'];
   const statsHtml = statsKeys.map((k,i) => {
     const v = p.stats?.[k] || '—';
-    return `<div class="stat-mini"><span class="stat-mini-val">${v}</span><span class="stat-mini-lbl">${statsLabels[i]}</span></div>`;
+    const col = (typeof v === 'number')
+      ? (v>=85?'#22c55e':v>=75?'#86efac':v>=65?'#f0cc70':v>=55?'#f97316':'#ef4444')
+      : 'var(--text3)';
+    return `<div class="stat-mini"><span class="stat-mini-val" style="color:${col}">${v}</span><span class="stat-mini-lbl">${statsLabels[i]}</span></div>`;
   }).join('');
 
   // Carte image ou fallback avec couleur rareté
@@ -1755,28 +1905,30 @@ function buildPlayerRowHTML(p) {
                  p.rarete === 'Argent Rare' ? 'linear-gradient(160deg,#1a1a22,#8a8aa0,#1a1a22)' :
                  'linear-gradient(160deg,#2a1a0a,#a06030,#2a1a0a)';
 
+  const noteColor = p.rarete === 'Or Rare' ? 'var(--gold2)' : p.rarete === 'Argent Rare' ? '#b8b8c8' : '#c87840';
+
   return `
     <div class="player-card-mini" style="background:${cardBg}">
-      <img src="${p.image_carte}" alt="${p.nom}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+      <img src="${p.image_carte}" alt="${p.nom}" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'"
            style="width:100%;height:100%;object-fit:cover;object-position:top center;">
-      <div class="card-mini-fallback" style="display:none;background:${cardBg}">
+      <div class="card-mini-fallback" style="display:none;background:${cardBg};position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;">
         <span style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.7)">${p.note}</span>
         <span style="font-size:10px;color:rgba(255,255,255,0.7);font-weight:700">${p.poste}</span>
       </div>
     </div>
     <div class="player-info">
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:1px">
-        <div class="player-name">${p.nom}</div>
-        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;color:var(--gold2)">${p.note}</span>
-      </div>
+      <div class="player-name">${p.nom}</div>
       <div class="player-meta">
         <span class="player-poste">${p.poste}</span>
         <span class="player-club">${p.club || '—'}</span>
-        <span class="player-nat">· ${p.nationalite || ''}</span>
+        <span class="player-nat">${p.nationalite || ''}</span>
       </div>
       <div class="player-stats-mini">${statsHtml}</div>
     </div>
-    <div class="player-rarete-dot" style="background:${rareteBg}" title="${p.rarete}"></div>`;
+    <div class="player-right-col">
+      <span class="player-ovr" style="color:${noteColor}">${p.note}</span>
+      <div class="player-rarete-dot" style="background:${rareteBg};box-shadow:0 0 6px ${rareteBg}" title="${p.rarete}"></div>
+    </div>`;
 }
 
 function setupIntersectionObserver() {
@@ -1799,18 +1951,17 @@ function buildDetailHTML(p) {
   const rClass = p.rarete === 'Or Rare' ? 'rarete-badge-gold' : p.rarete === 'Argent Rare' ? 'rarete-badge-silver' : 'rarete-badge-bronze';
 
   // Stats principales
-  // Stats principales : barres colorées
+  // Stats principales : grille de cartes colorées
+  const statColor = v => v>=85?'#22c55e':v>=75?'#86efac':v>=65?'#f0cc70':v>=55?'#f97316':'#ef4444';
   const statsMainHtml = [
-    ['Vitesse','vitesse'],['Tir','tir'],['Passes','passes'],
-    ['Dribble','dribble'],['Défense','defense'],['Physique','physique']
+    ['VIT','vitesse'],['TIR','tir'],['PAS','passes'],
+    ['DRI','dribble'],['DEF','defense'],['PHY','physique']
   ].map(([lbl,k]) => {
     const v = p.stats?.[k] || 0;
-    const pct = Math.min(100, Math.round((v/99)*100));
-    const col = v>=85?'#22c55e':v>=75?'#86efac':v>=65?'#f0cc70':v>=55?'#f97316':'#ef4444';
-    return `<div class="stat-bar-wrap">
-      <span class="stat-bar-label" style="width:36px;font-size:10px">${lbl}</span>
-      <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${pct}%;background:${col}"></div></div>
-      <span class="stat-bar-val" style="color:${col}">${v}</span>
+    const col = statColor(v);
+    return `<div class="stat-main-card" style="--stat-color:${col}">
+      <div class="stat-main-val" style="color:${col}">${v}</div>
+      <div class="stat-main-lbl">${lbl}</div>
     </div>`;
   }).join('');
 
@@ -1840,7 +1991,7 @@ function buildDetailHTML(p) {
       return `<div class="stat-bar-row">
         <span class="stat-bar-label">${s.l}</span>
         <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${pct}%;background:${color}"></div></div>
-        <span class="stat-bar-val">${v}</span>
+        <span class="stat-bar-val" style="color:${color}">${v}</span>
       </div>`;
     }).join('');
     if (rows) {
@@ -1860,8 +2011,17 @@ function buildDetailHTML(p) {
   return `
     <div class="detail-hero">
       <div class="detail-card-img-wrap">
-        <img src="${p.image_carte}" alt="${p.nom}" class="detail-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" style="display:block">
-        <div class="detail-card-fallback" style="display:none;background:${rareteBg}"><div class="ovr-big">${p.note}</div><div class="pos-big">${p.poste}</div></div>
+        ${(()=>{
+          const imgSrc = p.image_carte || p.image_visage;
+          if (!imgSrc) return '';
+          return `<img src="${imgSrc}" alt="${p.nom}" class="detail-card-img"
+            onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'"
+            style="display:block">`;
+        })()}
+        <div class="detail-card-fallback" style="display:${(p.image_carte||p.image_visage)?'none':'flex'};background:${rareteBg}">
+          <div class="ovr-big">${p.note}</div>
+          <div class="pos-big">${p.poste}</div>
+        </div>
       </div>
       <div class="detail-hero-info">
         <div class="detail-nom">${p.nom}</div>
@@ -1880,7 +2040,7 @@ function buildDetailHTML(p) {
 
     <div class="detail-section" style="padding-top:16px">
       <div class="detail-section-title">Stats principales</div>
-      <div style="padding:4px 0 2px">${statsMainHtml}</div>
+      <div class="stats-main-grid">${statsMainHtml}</div>
     </div>
 
     ${statsDetailHtml}

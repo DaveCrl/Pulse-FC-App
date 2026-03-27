@@ -1,0 +1,510 @@
+{
+  "playstyles": [
+    {
+      "slug": "passage-en-force",
+      "label_fr": "Passage en force",
+      "category": "Physique",
+      "is_plus": false,
+      "icon": "/assets/playstyles/passage-en-force.png"
+    },
+    {
+      "slug": "agressif",
+      "label_fr": "Agressif",
+      "category": "Physique",
+      "is_plus": false,
+      "icon": "/assets/playstyles/agressif.png"
+    },
+    {
+      "slug": "foulee-rapide",
+      "label_fr": "Foulée rapide",
+      "category": "Physique",
+      "is_plus": false,
+      "icon": "/assets/playstyles/foulee-rapide.png"
+    },
+    {
+      "slug": "infatigable",
+      "label_fr": "Infatigable",
+      "category": "Physique",
+      "is_plus": false,
+      "icon": "/assets/playstyles/infatigable.png"
+    },
+    {
+      "slug": "longue-touche",
+      "label_fr": "Longue touche",
+      "category": "Physique",
+      "is_plus": false,
+      "icon": "/assets/playstyles/longue-touche.png"
+    },
+    {
+      "slug": "tir-rasant-appuye",
+      "label_fr": "Tir rasant appuyé",
+      "category": "Buts",
+      "is_plus": false,
+      "icon": "/assets/playstyles/tir-rasant-appuye.png"
+    },
+    {
+      "slug": "tete-precise",
+      "label_fr": "Tête précise",
+      "category": "Buts",
+      "is_plus": false,
+      "icon": "/assets/playstyles/tete-precise.png"
+    },
+    {
+      "slug": "acrobatique",
+      "label_fr": "Acrobatique",
+      "category": "Buts",
+      "is_plus": false,
+      "icon": "/assets/playstyles/acrobatique.png"
+    },
+    {
+      "slug": "tir-en-finesse",
+      "label_fr": "Tir en finesse",
+      "category": "Buts",
+      "is_plus": false,
+      "icon": "/assets/playstyles/tir-en-finesse.png"
+    },
+    {
+      "slug": "ballon-pique",
+      "label_fr": "Ballon piqué",
+      "category": "Buts",
+      "is_plus": false,
+      "icon": "/assets/playstyles/ballon-pique.png"
+    },
+    {
+      "slug": "tir-puissant",
+      "label_fr": "Tir puissant",
+      "category": "Buts",
+      "is_plus": false,
+      "icon": "/assets/playstyles/tir-puissant.png"
+    },
+    {
+      "slug": "coup-de-pied-arrete",
+      "label_fr": "Coup de pied arrêté",
+      "category": "Buts",
+      "is_plus": false,
+      "icon": "/assets/playstyles/coup-de-pied-arrete.png"
+    },
+    {
+      "slug": "technique",
+      "label_fr": "Technique",
+      "category": "Contrôle du ballon",
+      "is_plus": false,
+      "icon": "/assets/playstyles/technique.png"
+    },
+    {
+      "slug": "rapide",
+      "label_fr": "Rapide",
+      "category": "Contrôle du ballon",
+      "is_plus": false,
+      "icon": "/assets/playstyles/rapide.png"
+    },
+    {
+      "slug": "controle",
+      "label_fr": "Contrôle",
+      "category": "Contrôle du ballon",
+      "is_plus": false,
+      "icon": "/assets/playstyles/controle.png"
+    },
+    {
+      "slug": "technicien",
+      "label_fr": "Technicien",
+      "category": "Contrôle du ballon",
+      "is_plus": false,
+      "icon": "/assets/playstyles/technicien.png"
+    },
+    {
+      "slug": "resiste-au-pressing",
+      "label_fr": "Résiste au pressing",
+      "category": "Contrôle du ballon",
+      "is_plus": false,
+      "icon": "/assets/playstyles/resiste-au-pressing.png"
+    },
+    {
+      "slug": "forteresse-aerienne",
+      "label_fr": "Forteresse aérienne",
+      "category": "Défensifs",
+      "is_plus": false,
+      "icon": "/assets/playstyles/forteresse-aerienne.png"
+    },
+    {
+      "slug": "lutte",
+      "label_fr": "Lutte",
+      "category": "Défensifs",
+      "is_plus": false,
+      "icon": "/assets/playstyles/lutte.png"
+    },
+    {
+      "slug": "contre",
+      "label_fr": "Contre",
+      "category": "Défensifs",
+      "is_plus": false,
+      "icon": "/assets/playstyles/contre.png"
+    },
+    {
+      "slug": "interception",
+      "label_fr": "Interception",
+      "category": "Défensifs",
+      "is_plus": false,
+      "icon": "/assets/playstyles/interception.png"
+    },
+    {
+      "slug": "anticipation",
+      "label_fr": "Anticipation",
+      "category": "Défensifs",
+      "is_plus": false,
+      "icon": "/assets/playstyles/anticipation.png"
+    },
+    {
+      "slug": "tacle-glisse",
+      "label_fr": "Tacle glissé",
+      "category": "Défensifs",
+      "is_plus": false,
+      "icon": "/assets/playstyles/tacle-glisse.png"
+    },
+    {
+      "slug": "renversement",
+      "label_fr": "Renversement",
+      "category": "Finition",
+      "is_plus": false,
+      "icon": "/assets/playstyles/renversement.png"
+    },
+    {
+      "slug": "sort-du-but",
+      "label_fr": "Sort du but",
+      "category": "Gardien",
+      "is_plus": false,
+      "icon": "/assets/playstyles/sort-du-but.png"
+    },
+    {
+      "slug": "longue-relance",
+      "label_fr": "Longue relance",
+      "category": "Gardien",
+      "is_plus": false,
+      "icon": "/assets/playstyles/longue-relance.png"
+    },
+    {
+      "slug": "arret-du-pied",
+      "label_fr": "Arrêt du pied",
+      "category": "Gardien",
+      "is_plus": false,
+      "icon": "/assets/playstyles/arret-du-pied.png"
+    },
+    {
+      "slug": "sortie-sur-les-centres",
+      "label_fr": "Sortie sur les centres",
+      "category": "Gardien",
+      "is_plus": false,
+      "icon": "/assets/playstyles/sortie-sur-les-centres.png"
+    },
+    {
+      "slug": "classe-de-loin",
+      "label_fr": "Classe de loin",
+      "category": "Gardien",
+      "is_plus": false,
+      "icon": "/assets/playstyles/classe-de-loin.png"
+    },
+    {
+      "slug": "deflector",
+      "label_fr": "Deflector",
+      "category": "Gardien",
+      "is_plus": false,
+      "icon": "/assets/playstyles/deflector.png"
+    },
+    {
+      "slug": "fantaisiste",
+      "label_fr": "Fantaisiste",
+      "category": "Passe",
+      "is_plus": false,
+      "icon": "/assets/playstyles/fantaisiste.png"
+    },
+    {
+      "slug": "passe-incisive",
+      "label_fr": "Passe incisive",
+      "category": "Passe",
+      "is_plus": false,
+      "icon": "/assets/playstyles/passe-incisive.png"
+    },
+    {
+      "slug": "passe-en-profondeur",
+      "label_fr": "Passe en profondeur",
+      "category": "Passe",
+      "is_plus": false,
+      "icon": "/assets/playstyles/passe-en-profondeur.png"
+    },
+    {
+      "slug": "passe-longue",
+      "label_fr": "Passe longue",
+      "category": "Passe",
+      "is_plus": false,
+      "icon": "/assets/playstyles/passe-longue.png"
+    },
+    {
+      "slug": "tiki-taka",
+      "label_fr": "Tiki-taka",
+      "category": "Passe",
+      "is_plus": false,
+      "icon": "/assets/playstyles/tiki-taka.png"
+    },
+    {
+      "slug": "passe-travaillee",
+      "label_fr": "Passe travaillée",
+      "category": "Passe",
+      "is_plus": false,
+      "icon": "/assets/playstyles/passe-travaillee.png"
+    }
+  ],
+  "playstyles_plus": [
+    {
+      "slug": "tir-rasant-appuye",
+      "label_fr": "Tir rasant appuyé+",
+      "category": "Buts",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/tir-rasant-appuye.png"
+    },
+    {
+      "slug": "tete-precise",
+      "label_fr": "Tête précise+",
+      "category": "Buts",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/tete-precise.png"
+    },
+    {
+      "slug": "acrobatique",
+      "label_fr": "Acrobatique+",
+      "category": "Buts",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/acrobatique.png"
+    },
+    {
+      "slug": "tir-en-finesse",
+      "label_fr": "Tir en finesse+",
+      "category": "Buts",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/tir-en-finesse.png"
+    },
+    {
+      "slug": "ballon-pique",
+      "label_fr": "Ballon piqué+",
+      "category": "Buts",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/ballon-pique.png"
+    },
+    {
+      "slug": "tir-puissant",
+      "label_fr": "Tir puissant+",
+      "category": "Buts",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/tir-puissant.png"
+    },
+    {
+      "slug": "coup-de-pied-arrete",
+      "label_fr": "Coup de pied arrêté+",
+      "category": "Buts",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/coup-de-pied-arrete.png"
+    },
+    {
+      "slug": "technique",
+      "label_fr": "Technique+",
+      "category": "Contrôle du ballon",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/technique.png"
+    },
+    {
+      "slug": "rapide",
+      "label_fr": "Rapide+",
+      "category": "Contrôle du ballon",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/rapide.png"
+    },
+    {
+      "slug": "controle",
+      "label_fr": "Contrôle+",
+      "category": "Contrôle du ballon",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/controle.png"
+    },
+    {
+      "slug": "technicien",
+      "label_fr": "Technicien+",
+      "category": "Contrôle du ballon",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/technicien.png"
+    },
+    {
+      "slug": "resiste-au-pressing",
+      "label_fr": "Résiste au pressing+",
+      "category": "Contrôle du ballon",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/resiste-au-pressing.png"
+    },
+    {
+      "slug": "forteresse-aerienne",
+      "label_fr": "Forteresse aérienne",
+      "category": "Défensifs",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/forteresse-aerienne.png"
+    },
+    {
+      "slug": "lutte",
+      "label_fr": "Lutte+",
+      "category": "Défensifs",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/lutte.png"
+    },
+    {
+      "slug": "contre",
+      "label_fr": "Contre+",
+      "category": "Défensifs",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/contre.png"
+    },
+    {
+      "slug": "interception",
+      "label_fr": "Interception+",
+      "category": "Défensifs",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/interception.png"
+    },
+    {
+      "slug": "anticipation",
+      "label_fr": "Anticipation+",
+      "category": "Défensifs",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/anticipation.png"
+    },
+    {
+      "slug": "tacle-glisse",
+      "label_fr": "Tacle glissé+",
+      "category": "Défensifs",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/tacle-glisse.png"
+    },
+    {
+      "slug": "revolutionnaire",
+      "label_fr": "Révolutionnaire+",
+      "category": "Finition",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/revolutionnaire.png"
+    },
+    {
+      "slug": "sort-du-but",
+      "label_fr": "Sort du but+",
+      "category": "Gardien",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/sort-du-but.png"
+    },
+    {
+      "slug": "longue-relance",
+      "label_fr": "Longue relance+",
+      "category": "Gardien",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/longue-relance.png"
+    },
+    {
+      "slug": "arret-du-pied",
+      "label_fr": "Arrêt du pied+",
+      "category": "Gardien",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/arret-du-pied.png"
+    },
+    {
+      "slug": "sortie-sur-les-centres",
+      "label_fr": "Sortie sur les centres+",
+      "category": "Gardien",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/sortie-sur-les-centres.png"
+    },
+    {
+      "slug": "classe-de-loin",
+      "label_fr": "Classe de loin+",
+      "category": "Gardien",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/classe-de-loin.png"
+    },
+    {
+      "slug": "deflector",
+      "label_fr": "Deflector+",
+      "category": "Gardien",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/deflector.png"
+    },
+    {
+      "slug": "fantaisiste",
+      "label_fr": "Fantaisiste+",
+      "category": "Passe",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/fantaisiste.png"
+    },
+    {
+      "slug": "passe-incisive",
+      "label_fr": "Passe incisive+",
+      "category": "Passe",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/passe-incisive.png"
+    },
+    {
+      "slug": "passe-en-profondeur",
+      "label_fr": "Passe en profondeur+",
+      "category": "Passe",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/passe-en-profondeur.png"
+    },
+    {
+      "slug": "passe-longue",
+      "label_fr": "Passe longue+",
+      "category": "Passe",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/passe-longue.png"
+    },
+    {
+      "slug": "tiki-taka",
+      "label_fr": "Tiki-taka+",
+      "category": "Passe",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/tiki-taka.png"
+    },
+    {
+      "slug": "passe-travaillee",
+      "label_fr": "Passe travaillée+",
+      "category": "Passe",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/passe-travaillee.png"
+    },
+    {
+      "slug": "passage-en-force",
+      "label_fr": "Passage en force+",
+      "category": "Physique",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/passage-en-force.png"
+    },
+    {
+      "slug": "agressif",
+      "label_fr": "Agressif+",
+      "category": "Physique",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/agressif.png"
+    },
+    {
+      "slug": "foulee-rapide",
+      "label_fr": "Foulée rapide+",
+      "category": "Physique",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/foulee-rapide.png"
+    },
+    {
+      "slug": "infatigable",
+      "label_fr": "Infatigable+",
+      "category": "Physique",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/infatigable.png"
+    },
+    {
+      "slug": "longue-touche",
+      "label_fr": "Longue touche+",
+      "category": "Physique",
+      "is_plus": true,
+      "icon": "/assets/playstyles_plus/longue-touche.png"
+    }
+  ]
+}

@@ -96,6 +96,115 @@ def now_iso():
     return datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 # ──────────────────────────────────────────────────────────
+# NORMALISATION DES DONNÉES
+# ──────────────────────────────────────────────────────────
+
+DIFFICULTE_MAP = {
+    "EasyNumber": "Facile",
+    "Easy Number": "Facile",
+    "MediumNumber": "Moyen",
+    "Medium Number": "Moyen",
+    "HardNumber": "Difficile",
+    "Hard Number": "Difficile",
+    "VeryHardNumber": "Très difficile",
+    "Very Hard Number": "Très difficile",
+    "ExpertNumber": "Expert",
+    "Expert Number": "Expert",
+    "Easy": "Facile",
+    "Medium": "Moyen",
+    "Hard": "Difficile",
+    "Very Hard": "Très difficile",
+}
+
+RECOMPENSES_CLEAN = {
+    "Small Gold Players Pack": "Pack joueurs or petit",
+    "Gold Players Pack": "Pack joueurs or",
+    "Rare Gold Players Pack": "Pack joueurs or rare",
+    "Premium Gold Players Pack": "Pack joueurs or premium",
+    "Electrum Players Pack": "Pack joueurs Electrum",
+    "Prime Electrum Players Pack": "Pack joueurs Electrum Prime",
+    "Gold Pack": "Pack or",
+    "Rare Gold Pack": "Pack or rare",
+    "Premium Gold Pack": "Pack or premium",
+    "Players Pack": "Pack joueurs",
+    "Player Pick": "Choix joueur",
+    "Season Points": "Points de saison",
+    "Evo Unlock": "Déverrouillage Évolution",
+}
+
+def normaliser_difficulte(raw):
+    """Normalise la difficulté communautaire vers une valeur FR lisible."""
+    if not raw:
+        return ""
+    for key, val in DIFFICULTE_MAP.items():
+        if key.lower() in raw.lower():
+            return val
+    return raw.strip()
+
+def normaliser_recompense(raw):
+    """Normalise un nom de récompense."""
+    if not raw:
+        return raw
+    for key, val in RECOMPENSES_CLEAN.items():
+        if key in raw:
+            return val
+    return raw.strip()
+
+def normaliser_conditions(conditions_brutes):
+    """
+    Nettoie et sépare les conditions d'éligibilité concaténées.
+    Exemple : "Max. OVR: 80Max OVR: 88Max PS: 10" → liste propre
+    """
+    if not conditions_brutes:
+        return []
+    propres = []
+    separateurs = re.compile(
+        r'(?=Max\.|Min\.|Excluded|Required|Only|Position|Rarity|Nationality|League|Club)'
+    )
+    for cond in conditions_brutes:
+        parties = [p.strip() for p in separateurs.split(cond) if p.strip()]
+        for partie in parties:
+            # Supprimer les redondances
+            partie = re.sub(r'\s+', ' ', partie).strip()
+            # Supprimer les entrées trop longues ou trop courtes
+            if 3 < len(partie) < 80 and partie not in propres:
+                propres.append(partie)
+    return propres[:8]
+
+def normaliser_expiry(texte):
+    """Normalise le texte d'expiration en format FR lisible."""
+    if not texte:
+        return None
+    # "Expiry in 5 days" → "Expire dans 5 jours"
+    m = re.search(r'expir\w*[^\d]*(\d+)\s+day', texte, re.IGNORECASE)
+    if m:
+        d = int(m.group(1))
+        return f"Expire dans {d} jour{'s' if d > 1 else ''}"
+    # "Submit by in 3 days" → "Soumettre dans 3 jours"
+    m = re.search(r'submit[^\d]*(\d+)\s+day', texte, re.IGNORECASE)
+    if m:
+        d = int(m.group(1))
+        return f"Soumettre dans {d} jour{'s' if d > 1 else ''}"
+    # "X hours"
+    m = re.search(r'(\d+)\s+hour', texte, re.IGNORECASE)
+    if m:
+        h = int(m.group(1))
+        return f"Expire dans {h}h"
+    return texte
+
+def deduplicar_recompenses(recompenses):
+    """Déduplique et nettoie une liste de récompenses."""
+    vues = set()
+    propres = []
+    for r in recompenses:
+        r_clean = normaliser_recompense(r)
+        key = r_clean.lower()
+        if key not in vues and r_clean:
+            vues.add(key)
+            propres.append(r_clean)
+    return propres
+
+# ──────────────────────────────────────────────────────────
 # SCRAPER SBC
 # ──────────────────────────────────────────────────────────
 
@@ -186,6 +295,7 @@ def scrape_sbc_detail(url):
 
     slug = url.rstrip("/").split("/")[-1]
 
+    recompenses_clean = deduplicar_recompenses(recompenses)
     return {
         "id": f"sbc_{slug}",
         "slug": slug,
@@ -193,13 +303,13 @@ def scrape_sbc_detail(url):
         "description_courte": desc[:200] if desc else titre,
         "url_futgg": url,
         "image_carte": image_carte,
-        "recompense_principale": recompense,
-        "recompenses": recompenses[:3],
+        "recompense_principale": recompenses_clean[0] if recompenses_clean else "",
+        "recompenses": recompenses_clean[:3],
         "nb_segments": nb_challenges or len(segments),
         "segments": segments,
         "repeatable": repeatable,
         "refreshes": refreshes,
-        "expiration_texte": expiry,
+        "expiration_texte": normaliser_expiry(expiry),
         "statut": "actif",
         "date_scrape": now_iso(),
         # Champs FC Pulse à remplir manuellement
@@ -328,6 +438,7 @@ def scrape_objectif_detail(url):
     elif "/foundations/" in url: categorie = "Fondations"
     elif "/challengers/" in url: categorie = "Challengers"
 
+    recompenses_clean = deduplicar_recompenses(recompenses)
     return {
         "id": f"obj_{slug}",
         "slug": slug,
@@ -340,9 +451,9 @@ def scrape_objectif_detail(url):
         "online_required": online and not solo,
         "nb_taches": len(taches),
         "taches": taches[:8],
-        "recompenses": recompenses[:5],
+        "recompenses": recompenses_clean[:5],
         "xp_total": xp_total,
-        "expiration_texte": expiry,
+        "expiration_texte": normaliser_expiry(expiry),
         "statut": "actif",
         "date_scrape": now_iso(),
         # Champs FC Pulse
@@ -518,12 +629,12 @@ def scrape_evo_detail(url):
         "cout_credits": cout_credits,
         "cout_points": cout_points,
         "gratuit": gratuit and cout_credits == 0 and cout_points == 0,
-        "difficulte_communaute": difficulte,
-        "conditions_eligibilite": conditions,
+        "difficulte_communaute": normaliser_difficulte(difficulte),
+        "conditions_eligibilite": normaliser_conditions(conditions),
         "boosts": boosts[:8],
         "taches": taches,
-        "date_soumission": expiry_submit,
-        "date_expiration": expiry_expiry,
+        "date_soumission": normaliser_expiry(expiry_submit) or expiry_submit,
+        "date_expiration": normaliser_expiry(expiry_expiry) or expiry_expiry,
         "statut": "actif",
         "date_scrape": now_iso(),
         # Champs FC Pulse

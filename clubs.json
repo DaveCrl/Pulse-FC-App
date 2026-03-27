@@ -1,0 +1,482 @@
+[
+  {
+    "slug": "man-utd",
+    "name": "Man Utd",
+    "icon": "/assets/clubs/man-utd.png",
+    "icon_filename": "man-utd.png",
+    "source_url": "https://www.fut.gg/clubs/11-man-utd/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/11.ee0eb00b5aa0e747f1a492a00d34f390c00bab4e63ef22fda2fdb07514a5b79d.png"
+  },
+  {
+    "slug": "liverpool",
+    "name": "Liverpool",
+    "icon": "/assets/clubs/liverpool.png",
+    "icon_filename": "liverpool.png",
+    "source_url": "https://www.fut.gg/clubs/9-liverpool/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/9.955494d96c8ef8164db50d2ac1a2f2cadd7e59b8dd55e131ddd2a3cea3d8870a.png"
+  },
+  {
+    "slug": "chelsea",
+    "name": "Chelsea",
+    "icon": "/assets/clubs/chelsea.png",
+    "icon_filename": "chelsea.png",
+    "source_url": "https://www.fut.gg/clubs/5-chelsea/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/5.938692ccfd8187bcea63b59ac29bec5950033f35dba352d1d3c69215a8b0987e.png"
+  },
+  {
+    "slug": "fc-barcelona",
+    "name": "FC Barcelona",
+    "icon": "/assets/clubs/fc-barcelona.png",
+    "icon_filename": "fc-barcelona.png",
+    "source_url": "https://www.fut.gg/clubs/241-fc-barcelona/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/241.7884c3386636cb32eaaa8cb83d0995083f1c03dc15e25bd1c31f790ea0d70588.png"
+  },
+  {
+    "slug": "arsenal",
+    "name": "Arsenal",
+    "icon": "/assets/clubs/arsenal.png",
+    "icon_filename": "arsenal.png",
+    "source_url": "https://www.fut.gg/clubs/1-arsenal/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1.d650c6c3f70725ab7196d30fd24d6ee4911d95372fe6bf7a68bb9b7abf0650ce.png"
+  },
+  {
+    "slug": "spurs",
+    "name": "Spurs",
+    "icon": "/assets/clubs/spurs.png",
+    "icon_filename": "spurs.png",
+    "source_url": "https://www.fut.gg/clubs/18-spurs/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/18.1a3b8bf7d91fd5b194ada1fea0ee504fcdde0a07d271dda1e6490d1f4015c59b.png"
+  },
+  {
+    "slug": "real-madrid",
+    "name": "Real Madrid",
+    "icon": "/assets/clubs/real-madrid.png",
+    "icon_filename": "real-madrid.png",
+    "source_url": "https://www.fut.gg/clubs/243-real-madrid/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/243.91bcdcb7c4fc4d252fa90d2309eb6fcd1d9527b8d20728fd5f4d473117bef243.png"
+  },
+  {
+    "slug": "manchester-city",
+    "name": "Manchester City",
+    "icon": "/assets/clubs/manchester-city.png",
+    "icon_filename": "manchester-city.png",
+    "source_url": "https://www.fut.gg/clubs/10-manchester-city/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/10.cc6123c8e321e6bfad5d5bbbcd0579269055f59e34cbe660c1b60eb5562377b1.png"
+  },
+  {
+    "slug": "paris-sg",
+    "name": "Paris SG",
+    "icon": "/assets/clubs/paris-sg.png",
+    "icon_filename": "paris-sg.png",
+    "source_url": "https://www.fut.gg/clubs/73-paris-sg/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/73.848604e662811fcb98b923c1cef5d3149e95d815ca1bd56b912d801fbeb33f7b.png"
+  },
+  {
+    "slug": "newcastle-utd",
+    "name": "Newcastle Utd",
+    "icon": "/assets/clubs/newcastle-utd.png",
+    "icon_filename": "newcastle-utd.png",
+    "source_url": "https://www.fut.gg/clubs/13-newcastle-utd/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/13.058aa8269f0d8b1f4739d7bcf0c217fe7eb06daec66b3843757ccaad9de16913.png"
+  },
+  {
+    "slug": "fc-bayern-munchen",
+    "name": "FC Bayern München",
+    "icon": "/assets/clubs/fc-bayern-munchen.png",
+    "icon_filename": "fc-bayern-munchen.png",
+    "source_url": "https://www.fut.gg/clubs/21-fc-bayern-munchen/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/21.01fbe64716257eb78bc4ff4bbc1969afa82e32bd73a43d7c30abe1ab4fd8d223.png"
+  },
+  {
+    "slug": "everton",
+    "name": "Everton",
+    "icon": "/assets/clubs/everton.png",
+    "icon_filename": "everton.png",
+    "source_url": "https://www.fut.gg/clubs/7-everton/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/7.7d92a954c822c834e873ba6d36cb9097f924e9dc1d55e356ef4b893031b9d1db.png"
+  },
+  {
+    "slug": "milano-fc",
+    "name": "Milano FC",
+    "icon": "/assets/clubs/milano-fc.png",
+    "icon_filename": "milano-fc.png",
+    "source_url": "https://www.fut.gg/clubs/131681-milano-fc/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/131681.3a102e77f97b98ad134526d70829ad10070a3d046ab2d2478b0c91f10dcbf52a.png"
+  },
+  {
+    "slug": "aston-villa",
+    "name": "Aston Villa",
+    "icon": "/assets/clubs/aston-villa.png",
+    "icon_filename": "aston-villa.png",
+    "source_url": "https://www.fut.gg/clubs/2-aston-villa/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/2.0bf2cc2dd4effd284372989a5c226c74773c10050fcee391a5244c53dd7bc123.png"
+  },
+  {
+    "slug": "ajax",
+    "name": "Ajax",
+    "icon": "/assets/clubs/ajax.png",
+    "icon_filename": "ajax.png",
+    "source_url": "https://www.fut.gg/clubs/245-ajax/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/245.cd8bd80e00b92fb013ff6f4d46a82f2b57bb68a43b9e4dc21d8a64b039773736.png"
+  },
+  {
+    "slug": "leeds-united",
+    "name": "Leeds United",
+    "icon": "/assets/clubs/leeds-united.png",
+    "icon_filename": "leeds-united.png",
+    "source_url": "https://www.fut.gg/clubs/8-leeds-united/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/8.dd81045971b62b8a8ddc5806f24011bade4bad0d5af4cd545c8fb11360f45a6d.png"
+  },
+  {
+    "slug": "west-ham",
+    "name": "West Ham",
+    "icon": "/assets/clubs/west-ham.png",
+    "icon_filename": "west-ham.png",
+    "source_url": "https://www.fut.gg/clubs/19-west-ham/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/19.1c88961b3ea9339832fe8e112b5961d3c9a6d7fad8298a47654a2abeddde6033.png"
+  },
+  {
+    "slug": "juventus",
+    "name": "Juventus",
+    "icon": "/assets/clubs/juventus.png",
+    "icon_filename": "juventus.png",
+    "source_url": "https://www.fut.gg/clubs/45-juventus/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/45.a4dbb0ea26a9f9cfbf7e314d06cc024097310b964e1f02e71604ccaf0efd8301.png"
+  },
+  {
+    "slug": "borussia-dortmund",
+    "name": "Borussia Dortmund",
+    "icon": "/assets/clubs/borussia-dortmund.png",
+    "icon_filename": "borussia-dortmund.png",
+    "source_url": "https://www.fut.gg/clubs/22-borussia-dortmund/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/22.9a875fac03329287a89bd2eebb9f5f746ae410e8e27da2e2bbb29dc962a1b5d6.png"
+  },
+  {
+    "slug": "celtic",
+    "name": "Celtic",
+    "icon": "/assets/clubs/celtic.png",
+    "icon_filename": "celtic.png",
+    "source_url": "https://www.fut.gg/clubs/78-celtic/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/78.b680c0a333eeb7bea46b18ed0c970b8bbc33a0c18f743f64ce9327e957365a1e.png"
+  },
+  {
+    "slug": "leicester-city",
+    "name": "Leicester City",
+    "icon": "/assets/clubs/leicester-city.png",
+    "icon_filename": "leicester-city.png",
+    "source_url": "https://www.fut.gg/clubs/95-leicester-city/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/95.3b16fa0251f56173746b55bea9d6d064963780a40e700ff64a28c0e2c31068ee.png"
+  },
+  {
+    "slug": "lombardia-fc",
+    "name": "Lombardia FC",
+    "icon": "/assets/clubs/lombardia-fc.png",
+    "icon_filename": "lombardia-fc.png",
+    "source_url": "https://www.fut.gg/clubs/131682-lombardia-fc/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/131682.b244bf60c2c36eec85d137c55e6c0968d6e46a2b5680a9ad363c225f028e3985.png"
+  },
+  {
+    "slug": "wolves",
+    "name": "Wolves",
+    "icon": "/assets/clubs/wolves.png",
+    "icon_filename": "wolves.png",
+    "source_url": "https://www.fut.gg/clubs/110-wolves/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/110.9d7b51d01c56f8c811ed307f42a9a9d9a602d9cc8b1186700b1bd66beb2f4553.png"
+  },
+  {
+    "slug": "crystal-palace",
+    "name": "Crystal Palace",
+    "icon": "/assets/clubs/crystal-palace.png",
+    "icon_filename": "crystal-palace.png",
+    "source_url": "https://www.fut.gg/clubs/1799-crystal-palace/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1799.751dd68c756556806e1df443667c5ad9c1ee5d41582bc86c4bd9ef383cfd248a.png"
+  },
+  {
+    "slug": "nottm-forest",
+    "name": "Nott'm Forest",
+    "icon": "/assets/clubs/nottm-forest.png",
+    "icon_filename": "nottm-forest.png",
+    "source_url": "https://www.fut.gg/clubs/14-nottm-forest/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/14.94e6a73511ce1342db835205874c4d67f3bdc643661e0f8b6858d7dfd2984a4a.png"
+  },
+  {
+    "slug": "ssc-napoli",
+    "name": "SSC Napoli",
+    "icon": "/assets/clubs/ssc-napoli.png",
+    "icon_filename": "ssc-napoli.png",
+    "source_url": "https://www.fut.gg/clubs/48-ssc-napoli/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/48.cc776250250fb67002a9f601f83885ec8dc3d50a782eb25af2743b6234a0dd5c.png"
+  },
+  {
+    "slug": "as-roma",
+    "name": "AS Roma",
+    "icon": "/assets/clubs/as-roma.png",
+    "icon_filename": "as-roma.png",
+    "source_url": "https://www.fut.gg/clubs/52-as-roma/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/52.7370fe7e3ecd40a6e2a9fe3bdcf665686d07d582cc234ce87ebf1cb706a4897b.png"
+  },
+  {
+    "slug": "atletico-de-madrid",
+    "name": "Atlético de Madrid",
+    "icon": "/assets/clubs/atletico-de-madrid.png",
+    "icon_filename": "atletico-de-madrid.png",
+    "source_url": "https://www.fut.gg/clubs/240-atletico-de-madrid/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/240.f9f8b3067de0c748e87e8afd075ccb249ca760fab553f9dc85ce148c888b8b8f.png"
+  },
+  {
+    "slug": "brighton",
+    "name": "Brighton",
+    "icon": "/assets/clubs/brighton.png",
+    "icon_filename": "brighton.png",
+    "source_url": "https://www.fut.gg/clubs/1808-brighton/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1808.3fcff2a5d489cdf45070bbe15839da401d6ee2797e008d5141e9a364b256c43d.png"
+  },
+  {
+    "slug": "sporting-cp",
+    "name": "Sporting CP",
+    "icon": "/assets/clubs/sporting-cp.png",
+    "icon_filename": "sporting-cp.png",
+    "source_url": "https://www.fut.gg/clubs/237-sporting-cp/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/237.e6c3ca563b5ebc2a4ca1e1ec4cb1bd02b2847f43ad6939408f3486901e0ef095.png"
+  },
+  {
+    "slug": "psv",
+    "name": "PSV",
+    "icon": "/assets/clubs/psv.png",
+    "icon_filename": "psv.png",
+    "source_url": "https://www.fut.gg/clubs/247-psv/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/247.48015fec9bec6dc2282e13b2ebfbb9c86af47aa0d862c1d45f2fcb87b65c3f6b.png"
+  },
+  {
+    "slug": "sl-benfica",
+    "name": "SL Benfica",
+    "icon": "/assets/clubs/sl-benfica.png",
+    "icon_filename": "sl-benfica.png",
+    "source_url": "https://www.fut.gg/clubs/234-sl-benfica/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/234.a78db3c6198e798b14a622e344b2153868924c8deff5c284007313100a0324e0.png"
+  },
+  {
+    "slug": "sunderland",
+    "name": "Sunderland",
+    "icon": "/assets/clubs/sunderland.png",
+    "icon_filename": "sunderland.png",
+    "source_url": "https://www.fut.gg/clubs/106-sunderland/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/106.cc9207516865ecb715d53e14ed3219b4dcb842b0d975ab996e21ea96930002ad.png"
+  },
+  {
+    "slug": "feyenoord",
+    "name": "Feyenoord",
+    "icon": "/assets/clubs/feyenoord.png",
+    "icon_filename": "feyenoord.png",
+    "source_url": "https://www.fut.gg/clubs/246-feyenoord/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/246.471f713570b7ebea7303b6d997e29803827369d0b755f827046c4fc39f7e095e.png"
+  },
+  {
+    "slug": "southampton",
+    "name": "Southampton",
+    "icon": "/assets/clubs/southampton.png",
+    "icon_filename": "southampton.png",
+    "source_url": "https://www.fut.gg/clubs/17-southampton/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/17.49167d66045f8d560a55adeda4d3efb8893a9a17d5871957a3b8c95c192fa49c.png"
+  },
+  {
+    "slug": "rangers",
+    "name": "Rangers",
+    "icon": "/assets/clubs/rangers.png",
+    "icon_filename": "rangers.png",
+    "source_url": "https://www.fut.gg/clubs/86-rangers/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/86.f4e680b68f04b087a5309a913f48017d488b962125bbd81e8fdf59b3055b3b44.png"
+  },
+  {
+    "slug": "fc-porto",
+    "name": "FC Porto",
+    "icon": "/assets/clubs/fc-porto.png",
+    "icon_filename": "fc-porto.png",
+    "source_url": "https://www.fut.gg/clubs/236-fc-porto/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/236.14845605cb08a6ccbff6a59a08a519fcea7466e374b6fe7aa557eea827a66f95.png"
+  },
+  {
+    "slug": "flamengo",
+    "name": "Flamengo",
+    "icon": "/assets/clubs/flamengo.png",
+    "icon_filename": "flamengo.png",
+    "source_url": "https://www.fut.gg/clubs/1043-flamengo/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1043.5a21612a813264ec8813be57ecb531e4abb25fc19b567ff53724f896bba11092.png"
+  },
+  {
+    "slug": "middlesbrough",
+    "name": "Middlesbrough",
+    "icon": "/assets/clubs/middlesbrough.png",
+    "icon_filename": "middlesbrough.png",
+    "source_url": "https://www.fut.gg/clubs/12-middlesbrough/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/12.a3209149c9ed1a5b038a2b5600cbd966200fe2012b70d11e4ccb604cb335496d.png"
+  },
+  {
+    "slug": "galatasaray",
+    "name": "Galatasaray",
+    "icon": "/assets/clubs/galatasaray.png",
+    "icon_filename": "galatasaray.png",
+    "source_url": "https://www.fut.gg/clubs/325-galatasaray/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/325.beffe0a26c791f913c499b4f76dad00d870826bf18577e74687921e7641fdb2e.png"
+  },
+  {
+    "slug": "west-brom",
+    "name": "West Brom",
+    "icon": "/assets/clubs/west-brom.png",
+    "icon_filename": "west-brom.png",
+    "source_url": "https://www.fut.gg/clubs/109-west-brom/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/109.bd01d6311ce6fe6d0242e5817e784dfa723dc4d734aa0ec982a6d3ad4defc32a.png"
+  },
+  {
+    "slug": "fulham",
+    "name": "Fulham",
+    "icon": "/assets/clubs/fulham.png",
+    "icon_filename": "fulham.png",
+    "source_url": "https://www.fut.gg/clubs/144-fulham/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/144.5c0efb0767f8e8b3adce1d423375fb56cb6bec464ed060930f65b885f3e136f9.png"
+  },
+  {
+    "slug": "leverkusen",
+    "name": "Leverkusen",
+    "icon": "/assets/clubs/leverkusen.png",
+    "icon_filename": "leverkusen.png",
+    "source_url": "https://www.fut.gg/clubs/32-leverkusen/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/32.3c1e3cfdded9cec0bc52c174a41221e4c6416aa2d840a99b4c22477317341b96.png"
+  },
+  {
+    "slug": "norwich",
+    "name": "Norwich",
+    "icon": "/assets/clubs/norwich.png",
+    "icon_filename": "norwich.png",
+    "source_url": "https://www.fut.gg/clubs/1792-norwich/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1792.254cb6d069db5f8fa0277602311a5b5e7f8d7393c30491d286fdca5c7243f504.png"
+  },
+  {
+    "slug": "coventry-city",
+    "name": "Coventry City",
+    "icon": "/assets/clubs/coventry-city.png",
+    "icon_filename": "coventry-city.png",
+    "source_url": "https://www.fut.gg/clubs/1800-coventry-city/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1800.ce648b2043a7e19dcd9bdc7fc944fa3f4d2f77394eb72998d3802ab6cbaabc0a.png"
+  },
+  {
+    "slug": "hull-city",
+    "name": "Hull City",
+    "icon": "/assets/clubs/hull-city.png",
+    "icon_filename": "hull-city.png",
+    "source_url": "https://www.fut.gg/clubs/1952-hull-city/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1952.752ee3bbd711636f1fc1ec7022554e16273460b381699c555a3f35227b241076.png"
+  },
+  {
+    "slug": "fc-schalke-04",
+    "name": "FC Schalke 04",
+    "icon": "/assets/clubs/fc-schalke-04.png",
+    "icon_filename": "fc-schalke-04.png",
+    "source_url": "https://www.fut.gg/clubs/34-fc-schalke-04/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/34.6d04986322a1cfd8546f29b7710d39bb557280b08d4ba00571e802aca545cfe6.png"
+  },
+  {
+    "slug": "afc-bournemouth",
+    "name": "AFC Bournemouth",
+    "icon": "/assets/clubs/afc-bournemouth.png",
+    "icon_filename": "afc-bournemouth.png",
+    "source_url": "https://www.fut.gg/clubs/1943-afc-bournemouth/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/1943.062458016f65bf7790c24e87919cdf2076d2a645937cf60f058f8c8b02d1e48b.png"
+  },
+  {
+    "slug": "derby-county",
+    "name": "Derby County",
+    "icon": "/assets/clubs/derby-county.png",
+    "icon_filename": "derby-county.png",
+    "source_url": "https://www.fut.gg/clubs/91-derby-county/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/91.7a040a732470308f046469b381c8d731a013a2f9863b5983b0a1c73343ebed5b.png"
+  },
+  {
+    "slug": "1-fc-koln",
+    "name": "1. FC Köln",
+    "icon": "/assets/clubs/1-fc-koln.png",
+    "icon_filename": "1-fc-koln.png",
+    "source_url": "https://www.fut.gg/clubs/31-1-fc-koln/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/31.5aefa87686c4fea9915cc138c77333cdd8b4639f1e15b622ec1bba0d531b85dc.png"
+  },
+  {
+    "slug": "1-fc-magdeburg",
+    "name": "1. FC Magdeburg",
+    "icon": "/assets/clubs/1-fc-magdeburg.png",
+    "icon_filename": "1-fc-magdeburg.png",
+    "source_url": "https://www.fut.gg/clubs/110588-1-fc-magdeburg/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/110588.36a97f64cd44ed48715019f141ec9712d80abd5255a9d4ee5e5644057c3415f7.png"
+  },
+  {
+    "slug": "1-fc-nurnberg",
+    "name": "1. FC Nürnberg",
+    "icon": "/assets/clubs/1-fc-nurnberg.png",
+    "icon_filename": "1-fc-nurnberg.png",
+    "source_url": "https://www.fut.gg/clubs/171-1-fc-nurnberg/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/171.6e6316cfaf47a5c7e583be7e2e1e608e2a19327df4e9b5958254bda86c93ccaa.png"
+  },
+  {
+    "slug": "1-fsv-mainz-05",
+    "name": "1. FSV Mainz 05",
+    "icon": "/assets/clubs/1-fsv-mainz-05.png",
+    "icon_filename": "1-fsv-mainz-05.png",
+    "source_url": "https://www.fut.gg/clubs/169-1-fsv-mainz-05/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/169.a8c0534df63b2c97b76470d703d96da6a612f5e153abca6eb95d2abaa436f116.png"
+  },
+  {
+    "slug": "1860-munchen",
+    "name": "1860 München",
+    "icon": "/assets/clubs/1860-munchen.png",
+    "icon_filename": "1860-munchen.png",
+    "source_url": "https://www.fut.gg/clubs/33-1860-munchen/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/33.271cbbdf055d72bce00eb0b2ab49aff0363e6c2465790c05840e112a3efb5570.png"
+  },
+  {
+    "slug": "aberdeen",
+    "name": "Aberdeen",
+    "icon": "/assets/clubs/aberdeen.png",
+    "icon_filename": "aberdeen.png",
+    "source_url": "https://www.fut.gg/clubs/77-aberdeen/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/77.1bce2875b019e3e07d632d59740ab8a74d0dd790885593a120d2cfbacd885a56.png"
+  },
+  {
+    "slug": "accrington",
+    "name": "Accrington",
+    "icon": "/assets/clubs/accrington.png",
+    "icon_filename": "accrington.png",
+    "source_url": "https://www.fut.gg/clubs/110313-accrington/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/110313.b8d73258e27fea085dbaf7b57e83a2759e51966194b3e3c000389053a3dee860.png"
+  },
+  {
+    "slug": "adelaide-united",
+    "name": "Adelaide United",
+    "icon": "/assets/clubs/adelaide-united.png",
+    "icon_filename": "adelaide-united.png",
+    "source_url": "https://www.fut.gg/clubs/111393-adelaide-united/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/111393.8fed6ed9e05e3c0145f230e97475ad35a4316d8d4db92d32ad96dc5107d237ed.png"
+  },
+  {
+    "slug": "aek-athens",
+    "name": "AEK Athens",
+    "icon": "/assets/clubs/aek-athens.png",
+    "icon_filename": "aek-athens.png",
+    "source_url": "https://www.fut.gg/clubs/278-aek-athens/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/278.41c16fc80b1ff891e1378c4966795a3dc0e5ab4b0757092ad19a9657c5c0bbf0.png"
+  },
+  {
+    "slug": "afc-wimbledon",
+    "name": "AFC Wimbledon",
+    "icon": "/assets/clubs/afc-wimbledon.png",
+    "icon_filename": "afc-wimbledon.png",
+    "source_url": "https://www.fut.gg/clubs/112259-afc-wimbledon/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/112259.72d360a8c5bf75b50da11df570d95315232b307007f53e5e1eec5b1b368c2a14.png"
+  },
+  {
+    "slug": "agf",
+    "name": "AGF",
+    "icon": "/assets/clubs/agf.png",
+    "icon_filename": "agf.png",
+    "source_url": "https://www.fut.gg/clubs/271-agf/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/club/271.04c8ac334159f1df31489f82588f932d74fec6ece96b0d15c0effcfa0eb0e7a7.png"
+  }
+]

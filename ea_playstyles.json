@@ -1,0 +1,65 @@
+[
+  {
+    "label": "Tir rasant appuyé+",
+    "title": "EA SPORTS FC™ 26 Tir rasant appuyé+\t Notes",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/low-driven-shot/play-style-plus/icontrait1_64",
+    "icon_url": "https://drop-assets.ea.com/images/52nX0TzEBIprbhnguBrIy3/2214d9c8580b0bd93e69a52d5bbba0be/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg",
+    "filename": "tir-rasant-appuyé-plus.svg",
+    "local_path": "ea_playstyles_icons/tir-rasant-appuyé-plus.svg",
+    "is_plus": true
+  },
+  {
+    "label": "Tête précise+",
+    "title": "EA SPORTS FC™ 26 Tête précise+\t Notes",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/precision-header/play-style-plus/icontrait1_16",
+    "icon_url": "https://drop-assets.ea.com/images/52nX0TzEBIprbhnguBrIy3/2214d9c8580b0bd93e69a52d5bbba0be/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg",
+    "filename": "tête-précise-plus.svg",
+    "local_path": "ea_playstyles_icons/tête-précise-plus.svg",
+    "is_plus": true
+  },
+  {
+    "label": "Acrobatique+",
+    "title": "EA SPORTS FC™ 26 Acrobatique+ Notes",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/acrobatic/play-style-plus/icontrait1_32",
+    "icon_url": "https://drop-assets.ea.com/images/52nX0TzEBIprbhnguBrIy3/2214d9c8580b0bd93e69a52d5bbba0be/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg",
+    "filename": "acrobatique-plus.svg",
+    "local_path": "ea_playstyles_icons/acrobatique-plus.svg",
+    "is_plus": true
+  },
+  {
+    "label": "Tir en finesse+",
+    "title": "EA SPORTS FC™ 26 Tir en finesse+ Notes",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/finesse-shot/play-style-plus/icontrait1_1",
+    "icon_url": "https://drop-assets.ea.com/images/52nX0TzEBIprbhnguBrIy3/2214d9c8580b0bd93e69a52d5bbba0be/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg",
+    "filename": "tir-en-finesse-plus.svg",
+    "local_path": "ea_playstyles_icons/tir-en-finesse-plus.svg",
+    "is_plus": true
+  },
+  {
+    "label": "Ballon piqué+",
+    "title": "EA SPORTS FC™ 26 Ballon piqué+ Notes",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/chip-shot/play-style-plus/icontrait1_2",
+    "icon_url": "https://drop-assets.ea.com/images/52nX0TzEBIprbhnguBrIy3/2214d9c8580b0bd93e69a52d5bbba0be/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg",
+    "filename": "ballon-piqué-plus.svg",
+    "local_path": "ea_playstyles_icons/ballon-piqué-plus.svg",
+    "is_plus": true
+  },
+  {
+    "label": "Tir puissant+",
+    "title": "EA SPORTS FC™ 26 Tir puissant+ Notes",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/power-shot/play-style-plus/icontrait1_4",
+    "icon_url": "https://drop-assets.ea.com/images/52nX0TzEBIprbhnguBrIy3/2214d9c8580b0bd93e69a52d5bbba0be/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg",
+    "filename": "tir-puissant-plus.svg",
+    "local_path": "ea_playstyles_icons/tir-puissant-plus.svg",
+    "is_plus": true
+  },
+  {
+    "label": "Coup de pied arrêté+",
+    "title": "EA SPORTS FC™ 26 Coup de pied arrêté+ Notes",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/dead-ball/play-style-plus/icontrait1_8",
+    "icon_url": "https://drop-assets.ea.com/images/52nX0TzEBIprbhnguBrIy3/2214d9c8580b0bd93e69a52d5bbba0be/EAFC26_SEASONAL_SOLID_CHALK_WHITE_HORIZONTAL_RGB.svg",
+    "filename": "coup-de-pied-arrêté-plus.svg",
+    "local_path": "ea_playstyles_icons/coup-de-pied-arrêté-plus.svg",
+    "is_plus": true
+  }
+]

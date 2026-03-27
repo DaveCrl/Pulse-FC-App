@@ -1,0 +1,58 @@
+[
+  {
+    "label": "Tir rasant appuyé+",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/low-driven-shot/play-style-plus/icontrait1_64",
+    "icon_url": "https://drop-assets.ea.com/images/7lY8ZhvwacbwMVTeuXYmM6/0e9f0e9411ad83a18712cbc1549a8317/Low_Driven_Shot_.png?im=Resize=(2560)&q=80",
+    "is_plus": true,
+    "filename": "tir-rasant-appuye-plus.png",
+    "local_path": "ea_playstyles_plus_icons/tir-rasant-appuye-plus.png"
+  },
+  {
+    "label": "Tête précise+",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/precision-header/play-style-plus/icontrait1_16",
+    "icon_url": "https://drop-assets.ea.com/images/1JxoSvhU54BcmD9DE5rVqT/34b15f2ac73c9c02db1552d306fbccbe/Precision_Header_.png?im=Resize=(2560)&q=80",
+    "is_plus": true,
+    "filename": "tete-precise-plus.png",
+    "local_path": "ea_playstyles_plus_icons/tete-precise-plus.png"
+  },
+  {
+    "label": "Acrobatique+",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/acrobatic/play-style-plus/icontrait1_32",
+    "icon_url": "https://drop-assets.ea.com/images/5Zb5jkAdaqaJSPFvb7W3zl/cf788143996a34edc03b1d1dc6a45169/Acrobatic_.png?im=Resize=(2560)&q=80",
+    "is_plus": true,
+    "filename": "acrobatique-plus.png",
+    "local_path": "ea_playstyles_plus_icons/acrobatique-plus.png"
+  },
+  {
+    "label": "Tir en finesse+",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/finesse-shot/play-style-plus/icontrait1_1",
+    "icon_url": "https://drop-assets.ea.com/images/4KwpQLGCfHPMd9oq5Xl42z/2101ac72c690fd36205fb9c6dbac6bd1/Finesse_Shot_.png?im=Resize=(2560)&q=80",
+    "is_plus": true,
+    "filename": "tir-en-finesse-plus.png",
+    "local_path": "ea_playstyles_plus_icons/tir-en-finesse-plus.png"
+  },
+  {
+    "label": "Ballon piqué+",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/chip-shot/play-style-plus/icontrait1_2",
+    "icon_url": "https://drop-assets.ea.com/images/4dubNf6b2DxdV1MvuUmd14/d4bbc70640a199b15745946057572ff1/Chip_Shot_.png?im=Resize=(2560)&q=80",
+    "is_plus": true,
+    "filename": "ballon-pique-plus.png",
+    "local_path": "ea_playstyles_plus_icons/ballon-pique-plus.png"
+  },
+  {
+    "label": "Tir puissant+",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/power-shot/play-style-plus/icontrait1_4",
+    "icon_url": "https://drop-assets.ea.com/images/3SLCWnaVMQFNLdRmNpUyyP/545111e2c601b507f79588f950b2848f/Power_Shot_.png?im=Resize=(2560)&q=80",
+    "is_plus": true,
+    "filename": "tir-puissant-plus.png",
+    "local_path": "ea_playstyles_plus_icons/tir-puissant-plus.png"
+  },
+  {
+    "label": "Coup de pied arrêté+",
+    "page_url": "https://www.ea.com/fr/games/ea-sports-fc/ratings/abilities-ratings/dead-ball/play-style-plus/icontrait1_8",
+    "icon_url": "https://drop-assets.ea.com/images/3gnWRIayfhmIFIhhYCwsR6/bb49458fbb7f0d06890bde757190e1bc/Dead_Ball_.png?im=Resize=(2560)&q=80",
+    "is_plus": true,
+    "filename": "coup-de-pied-arrete-plus.png",
+    "local_path": "ea_playstyles_plus_icons/coup-de-pied-arrete-plus.png"
+  }
+]

@@ -1,0 +1,490 @@
+[
+  {
+    "slug": "premier-league",
+    "name": "Premier League",
+    "icon": "/assets/leagues/premier-league.png",
+    "icon_filename": "premier-league.png",
+    "source_url": "https://www.fut.gg/leagues/premier-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/13.c4f460c893b66c36c0bcd7b29919107d36f618772343eaedb21f946f16d80c96.png"
+  },
+  {
+    "slug": "laliga-ea-sports",
+    "name": "LALIGA EA SPORTS",
+    "icon": "/assets/leagues/laliga-ea-sports.png",
+    "icon_filename": "laliga-ea-sports.png",
+    "source_url": "https://www.fut.gg/leagues/laliga-ea-sports/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/53.adf7c6700978e91b81c4fd4b4a82187dfea2d3074a907efa14caebfaffa461eb.png"
+  },
+  {
+    "slug": "serie-a-enilive",
+    "name": "Serie A Enilive",
+    "icon": "/assets/leagues/serie-a-enilive.png",
+    "icon_filename": "serie-a-enilive.png",
+    "source_url": "https://www.fut.gg/leagues/serie-a-enilive/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/31.b1950cc3e90e9a2e75be5bbbf06967a217db45e22180c84bac2e5588ede83541.png"
+  },
+  {
+    "slug": "bundesliga",
+    "name": "Bundesliga",
+    "icon": "/assets/leagues/bundesliga.png",
+    "icon_filename": "bundesliga.png",
+    "source_url": "https://www.fut.gg/leagues/bundesliga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/19.2052e58944544251cec9a9c60ef432ace07775c8a00e407b147046d54c930776.png"
+  },
+  {
+    "slug": "ligue-1-mcdonalds",
+    "name": "Ligue 1 McDonald's",
+    "icon": "/assets/leagues/ligue-1-mcdonalds.png",
+    "icon_filename": "ligue-1-mcdonalds.png",
+    "source_url": "https://www.fut.gg/leagues/ligue-1-mcdonalds/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/16.16d2e597497f719153fb123b2f425ea2446b7eb52e4cb8d902e341fca08d2e88.png"
+  },
+  {
+    "slug": "barclays-womens-super-league",
+    "name": "Barclays Women’s Super League",
+    "icon": "/assets/leagues/barclays-womens-super-league.png",
+    "icon_filename": "barclays-womens-super-league.png",
+    "source_url": "https://www.fut.gg/leagues/barclays-womens-super-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2216.b756643e34a259c50022c045de42e799f7558239c50ff075e26c926cf44caf67.png"
+  },
+  {
+    "slug": "national-womens-soccer-league",
+    "name": "National Women's Soccer League",
+    "icon": "/assets/leagues/national-womens-soccer-league.png",
+    "icon_filename": "national-womens-soccer-league.png",
+    "source_url": "https://www.fut.gg/leagues/national-womens-soccer-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2221.bac7fd54ce1aa4678b10656052c865da59bfe872e745e96ee2777ec2d3a73537.png"
+  },
+  {
+    "slug": "liga-f",
+    "name": "Liga F",
+    "icon": "/assets/leagues/liga-f.png",
+    "icon_filename": "liga-f.png",
+    "source_url": "https://www.fut.gg/leagues/liga-f/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2222.fc11bb6ddeeef9c0ce026fb0ab0b84ea4aa5abee4874b05576899c33fe61d6b1.png"
+  },
+  {
+    "slug": "3f-superliga",
+    "name": "3F Superliga",
+    "icon": "/assets/leagues/3f-superliga.png",
+    "icon_filename": "3f-superliga.png",
+    "source_url": "https://www.fut.gg/leagues/3f-superliga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/1.fa28883143ec8f0fec28a3d84f5af8f25fd3573ea7e33ed4e5aa7d10fb8f547d.png"
+  },
+  {
+    "slug": "1a-pro-league",
+    "name": "1A Pro League",
+    "icon": "/assets/leagues/1a-pro-league.png",
+    "icon_filename": "1a-pro-league.png",
+    "source_url": "https://www.fut.gg/leagues/1a-pro-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/4.92eb57bbf802a9cba8633144e760dee82e7039f96bac4853610d0247b8492af5.png"
+  },
+  {
+    "slug": "eredivisie",
+    "name": "Eredivisie",
+    "icon": "/assets/leagues/eredivisie.png",
+    "icon_filename": "eredivisie.png",
+    "source_url": "https://www.fut.gg/leagues/eredivisie/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/10.add43aaf6f073e00fd681768611a71b31129a8b2a30cb26e555594e35f14ab6e.png"
+  },
+  {
+    "slug": "efl-championship",
+    "name": "EFL Championship",
+    "icon": "/assets/leagues/efl-championship.png",
+    "icon_filename": "efl-championship.png",
+    "source_url": "https://www.fut.gg/leagues/efl-championship/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/14.b7e5b9489c5e59e767ed42d684f00ee24d0a16c70b38cf0dca8c37aca2229f90.png"
+  },
+  {
+    "slug": "ligue-2-bkt",
+    "name": "Ligue 2 BKT",
+    "icon": "/assets/leagues/ligue-2-bkt.png",
+    "icon_filename": "ligue-2-bkt.png",
+    "source_url": "https://www.fut.gg/leagues/ligue-2-bkt/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/17.11cc57d1b5e86334409459517ac0b362b25476853f992f2a249e5718778dd0a3.png"
+  },
+  {
+    "slug": "bundesliga-2",
+    "name": "Bundesliga 2",
+    "icon": "/assets/leagues/bundesliga-2.png",
+    "icon_filename": "bundesliga-2.png",
+    "source_url": "https://www.fut.gg/leagues/bundesliga-2/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/20.46738f8becf04ed7b3701e41d5f44544d56dba72001e124461f4be58c8192d46.png"
+  },
+  {
+    "slug": "serie-bkt",
+    "name": "Serie BKT",
+    "icon": "/assets/leagues/serie-bkt.png",
+    "icon_filename": "serie-bkt.png",
+    "source_url": "https://www.fut.gg/leagues/serie-bkt/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/32.1fd85b7dc602079a84827dd290053e6757910f7444a0310c76afc6fef012045e.png"
+  },
+  {
+    "slug": "major-league-soccer",
+    "name": "Major League Soccer",
+    "icon": "/assets/leagues/major-league-soccer.png",
+    "icon_filename": "major-league-soccer.png",
+    "source_url": "https://www.fut.gg/leagues/major-league-soccer/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/39.ea32ac1d4c5aeb379cec48a5132b135cd9c8767b603cd69fe3083092b4ef9eb3.png"
+  },
+  {
+    "slug": "eliteserien",
+    "name": "Eliteserien",
+    "icon": "/assets/leagues/eliteserien.png",
+    "icon_filename": "eliteserien.png",
+    "source_url": "https://www.fut.gg/leagues/eliteserien/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/41.888532d684f62f4dca284b9abf889332f2c298a25d1cf3bc404c052bf6890e23.png"
+  },
+  {
+    "slug": "scottish-premiership",
+    "name": "Scottish Premiership",
+    "icon": "/assets/leagues/scottish-premiership.png",
+    "icon_filename": "scottish-premiership.png",
+    "source_url": "https://www.fut.gg/leagues/scottish-premiership/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/50.d1052392d2d9435d78e42b39780e822dd37b041b20804d4ebd26ce975245630f.png"
+  },
+  {
+    "slug": "laliga-hypermotion",
+    "name": "LALIGA HYPERMOTION",
+    "icon": "/assets/leagues/laliga-hypermotion.png",
+    "icon_filename": "laliga-hypermotion.png",
+    "source_url": "https://www.fut.gg/leagues/laliga-hypermotion/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/54.867a19306bc9fb0d12956fd754d8fe864796af461eba8f522d40c34720b9273f.png"
+  },
+  {
+    "slug": "allsvenskan",
+    "name": "Allsvenskan",
+    "icon": "/assets/leagues/allsvenskan.png",
+    "icon_filename": "allsvenskan.png",
+    "source_url": "https://www.fut.gg/leagues/allsvenskan/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/56.9974aa24dc9ac4be6c58cb00342505a26a3fb6cc23655d572f13a8a95fcc9bf9.png"
+  },
+  {
+    "slug": "efl-league-one",
+    "name": "EFL League One",
+    "icon": "/assets/leagues/efl-league-one.png",
+    "icon_filename": "efl-league-one.png",
+    "source_url": "https://www.fut.gg/leagues/efl-league-one/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/60.c465a0dffedc82ce54d4c5b6fe93ce90b641dc1eac7cd552fa1d13f9bc472859.png"
+  },
+  {
+    "slug": "efl-league-two",
+    "name": "EFL League Two",
+    "icon": "/assets/leagues/efl-league-two.png",
+    "icon_filename": "efl-league-two.png",
+    "source_url": "https://www.fut.gg/leagues/efl-league-two/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/61.23f7334d47c2734c979cd985d8ace993faf05c170cb69a3e7ebe6b0ebb546cff.png"
+  },
+  {
+    "slug": "hellas-liga",
+    "name": "Hellas Liga",
+    "icon": "/assets/leagues/hellas-liga.png",
+    "icon_filename": "hellas-liga.png",
+    "source_url": "https://www.fut.gg/leagues/hellas-liga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/63.547e6c2c7ccb12718f3269f853e6a42d3dfcce11a3b65d292b2f9c1e36b7ac98.png"
+  },
+  {
+    "slug": "sse-airtricity-mens-premier-division",
+    "name": "SSE Airtricity Men's Premier Division",
+    "icon": "/assets/leagues/sse-airtricity-mens-premier-division.png",
+    "icon_filename": "sse-airtricity-mens-premier-division.png",
+    "source_url": "https://www.fut.gg/leagues/sse-airtricity-mens-premier-division/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/65.0bde05d44ab591b5259cdd50c32bdc1e55276616b47b088ff70f6044b955c16a.png"
+  },
+  {
+    "slug": "pko-bank-polski-ekstraklasa",
+    "name": "PKO Bank Polski Ekstraklasa",
+    "icon": "/assets/leagues/pko-bank-polski-ekstraklasa.png",
+    "icon_filename": "pko-bank-polski-ekstraklasa.png",
+    "source_url": "https://www.fut.gg/leagues/pko-bank-polski-ekstraklasa/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/66.5e040c6cb58f30c1aed00f0a5d693df9c6f214e80096d77dffb17d73e8553e01.png"
+  },
+  {
+    "slug": "trendyol-super-lig",
+    "name": "Trendyol Süper Lig",
+    "icon": "/assets/leagues/trendyol-super-lig.png",
+    "icon_filename": "trendyol-super-lig.png",
+    "source_url": "https://www.fut.gg/leagues/trendyol-super-lig/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/68.b72bab7165bd125b59c876e6609c8dbf2433de20fe14cca756511946d0bd05a5.png"
+  },
+  {
+    "slug": "mens-national",
+    "name": "Men's National",
+    "icon": "/assets/leagues/mens-national.png",
+    "icon_filename": "mens-national.png",
+    "source_url": "https://www.fut.gg/leagues/mens-national/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/78.e76c60d6d7aaa379762fbb010b5ce2ef651fc58dce4f83e7e407ed975ffa49f5.png"
+  },
+  {
+    "slug": "osterreichische-fußball-bundesliga",
+    "name": "Österreichische Fußball-Bundesliga",
+    "icon": "/assets/leagues/osterreichische-fußball-bundesliga.png",
+    "icon_filename": "osterreichische-fußball-bundesliga.png",
+    "source_url": "https://www.fut.gg/leagues/osterreichische-fussball-bundesliga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/80.332c8a20bc711c177f8a82682962518ccc17a86810a807cb193bb27f4fd0815c.png"
+  },
+  {
+    "slug": "k-league-1",
+    "name": "K League 1",
+    "icon": "/assets/leagues/k-league-1.png",
+    "icon_filename": "k-league-1.png",
+    "source_url": "https://www.fut.gg/leagues/k-league-1/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/83.a4b3fc6a72e76d68f2af8b48d6d27ae37fd67b3d198c48c71421c4a541adbd9a.png"
+  },
+  {
+    "slug": "credit-suisse-super-league",
+    "name": "Credit Suisse Super League",
+    "icon": "/assets/leagues/credit-suisse-super-league.png",
+    "icon_filename": "credit-suisse-super-league.png",
+    "source_url": "https://www.fut.gg/leagues/credit-suisse-super-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/189.86b7b28c0c97c8239cab27822b907e7855e8b9a648243431f9f0ad2f4e5969fd.png"
+  },
+  {
+    "slug": "liga-portugal",
+    "name": "Liga Portugal",
+    "icon": "/assets/leagues/liga-portugal.png",
+    "icon_filename": "liga-portugal.png",
+    "source_url": "https://www.fut.gg/leagues/liga-portugal/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/308.2c52538af777f7ad09422afdd8107f63a9057b1b0bfbc5498e659e43f72fa83d.png"
+  },
+  {
+    "slug": "liga-hrvatska",
+    "name": "Liga Hrvatska",
+    "icon": "/assets/leagues/liga-hrvatska.png",
+    "icon_filename": "liga-hrvatska.png",
+    "source_url": "https://www.fut.gg/leagues/liga-hrvatska/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/317.2358a72ae3fec9653b706ccbd402c73da00fdfd9ebcb24ae0f12736d6e1a5eb5.png"
+  },
+  {
+    "slug": "česká-liga",
+    "name": "Česká Liga",
+    "icon": "/assets/leagues/česká-liga.png",
+    "icon_filename": "česká-liga.png",
+    "source_url": "https://www.fut.gg/leagues/ceska-liga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/319.5a1b5b29b4f1b398cabc0511d4bda2a47f17ca42f7f5a6a1c1d37db958121362.png"
+  },
+  {
+    "slug": "finnliiga",
+    "name": "Finnliiga",
+    "icon": "/assets/leagues/finnliiga.png",
+    "icon_filename": "finnliiga.png",
+    "source_url": "https://www.fut.gg/leagues/finnliiga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/322.6c094ecd9a250b8115f9756c493cb1a114fedb66d560a66eacb15885333d1a12.png"
+  },
+  {
+    "slug": "superliga",
+    "name": "SUPERLIGA",
+    "icon": "/assets/leagues/superliga.png",
+    "icon_filename": "superliga.png",
+    "source_url": "https://www.fut.gg/leagues/superliga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/330.323099a95e04ee87b1a7d68a9a8e319c7c89ee7c824cb6dfd9c71e6a405e3184.png"
+  },
+  {
+    "slug": "ukrayina-liha",
+    "name": "Ukrayina Liha",
+    "icon": "/assets/leagues/ukrayina-liha.png",
+    "icon_filename": "ukrayina-liha.png",
+    "source_url": "https://www.fut.gg/leagues/ukrayina-liha/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/332.c70c41aa9dafdad1575b4a7b902b69b975e82b5c77beb6ab038327552153eb83.png"
+  },
+  {
+    "slug": "roshn-saudi-league",
+    "name": "ROSHN Saudi League",
+    "icon": "/assets/leagues/roshn-saudi-league.png",
+    "icon_filename": "roshn-saudi-league.png",
+    "source_url": "https://www.fut.gg/leagues/roshn-saudi-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/350.244e0a9e137630f60ab8b8873969fabf8b9098ee99101678e72d92c26c9e3ad9.png"
+  },
+  {
+    "slug": "isuzu-ute-a-league",
+    "name": "Isuzu UTE A League",
+    "icon": "/assets/leagues/isuzu-ute-a-league.png",
+    "icon_filename": "isuzu-ute-a-league.png",
+    "source_url": "https://www.fut.gg/leagues/isuzu-ute-a-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/351.1c8c35f1307cdcc8c4c34d9f4eb20fb1408d87b28655d702d35ba7388792918e.png"
+  },
+  {
+    "slug": "liga-profesional-de-fútbol",
+    "name": "Liga Profesional de Fútbol",
+    "icon": "/assets/leagues/liga-profesional-de-fútbol.png",
+    "icon_filename": "liga-profesional-de-fútbol.png",
+    "source_url": "https://www.fut.gg/leagues/liga-profesional-de-futbol/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/353.8749088a362fab1133b9ebb5f1a510e0e5dcbb93d097adf4e208dd8597bdb0bf.png"
+  },
+  {
+    "slug": "conmebol-libertadores",
+    "name": "CONMEBOL Libertadores",
+    "icon": "/assets/leagues/conmebol-libertadores.png",
+    "icon_filename": "conmebol-libertadores.png",
+    "source_url": "https://www.fut.gg/leagues/conmebol-libertadores/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/1003.8f1a8b8b02c393572c36d1d9ee6e02d167417db61ea20d6875f836c4c595b74c.png"
+  },
+  {
+    "slug": "conmebol-sudamericana",
+    "name": "CONMEBOL Sudamericana",
+    "icon": "/assets/leagues/conmebol-sudamericana.png",
+    "icon_filename": "conmebol-sudamericana.png",
+    "source_url": "https://www.fut.gg/leagues/conmebol-sudamericana/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/1014.a31d0ebc5805fecb333186b1631b2b84c9e51b98e31bd333e044ed34330b3863.png"
+  },
+  {
+    "slug": "chinese-football-association-super-league",
+    "name": "Chinese Football Association Super League",
+    "icon": "/assets/leagues/chinese-football-association-super-league.png",
+    "icon_filename": "chinese-football-association-super-league.png",
+    "source_url": "https://www.fut.gg/leagues/chinese-football-association-super-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2012.2551a068f28eb2e12523e972963a7daf0268435716d9d0df7d0eb189dc81abc3.png"
+  },
+  {
+    "slug": "3-liga",
+    "name": "3. Liga",
+    "icon": "/assets/leagues/3-liga.png",
+    "icon_filename": "3-liga.png",
+    "source_url": "https://www.fut.gg/leagues/3-liga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2076.bfb1cc1e9035840236158c1b7d327d4366f87518f5d57cb9f7254ab5d8bbd252.png"
+  },
+  {
+    "slug": "icons",
+    "name": "Icons",
+    "icon": "/assets/leagues/icons.png",
+    "icon_filename": "icons.png",
+    "source_url": "https://www.fut.gg/leagues/icons/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2118.de69fcef39219bea2fa01e46f86e99e9613917e33233f28cf246617458c47f72.png"
+  },
+  {
+    "slug": "womens-national",
+    "name": "Women’s National",
+    "icon": "/assets/leagues/womens-national.png",
+    "icon_filename": "womens-national.png",
+    "source_url": "https://www.fut.gg/leagues/womens-national/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2136.5bcafc9f6c841d340bf29f636e38ca52d7780dd48a2306f02824acf978d42060.png"
+  },
+  {
+    "slug": "indian-super-league",
+    "name": "Indian Super League",
+    "icon": "/assets/leagues/indian-super-league.png",
+    "icon_filename": "indian-super-league.png",
+    "source_url": "https://www.fut.gg/leagues/indian-super-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2149.6461148450426e4db9b9bc96041b42d2c5466def576e4390ea673c4625c132b0.png"
+  },
+  {
+    "slug": "united-emirates-league",
+    "name": "United Emirates League",
+    "icon": "/assets/leagues/united-emirates-league.png",
+    "icon_filename": "united-emirates-league.png",
+    "source_url": "https://www.fut.gg/leagues/united-emirates-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2172.6ad65763ef4cbaa0816246abb64c1421d78e489782aeb33e93c3fb31f2eeb0f2.png"
+  },
+  {
+    "slug": "liga-colombia",
+    "name": "Liga Colombia",
+    "icon": "/assets/leagues/liga-colombia.png",
+    "icon_filename": "liga-colombia.png",
+    "source_url": "https://www.fut.gg/leagues/liga-colombia/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2209.ff24b987bd9cdea6ba747469bd2863695854ce7480ff4cc25b3ac0981305d968.png"
+  },
+  {
+    "slug": "liga-cyprus",
+    "name": "Liga Cyprus",
+    "icon": "/assets/leagues/liga-cyprus.png",
+    "icon_filename": "liga-cyprus.png",
+    "source_url": "https://www.fut.gg/leagues/liga-cyprus/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2210.fc8da4d4d96d277d4ef5e2ade0faca3873fce94bdb12e9247ab3b51b6d33be13.png"
+  },
+  {
+    "slug": "magyar-liga",
+    "name": "Magyar Liga",
+    "icon": "/assets/leagues/magyar-liga.png",
+    "icon_filename": "magyar-liga.png",
+    "source_url": "https://www.fut.gg/leagues/magyar-liga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2211.3be6e907457481c454bffebc75021414869854522d8bbc00d3919669f160af4e.png"
+  },
+  {
+    "slug": "google-pixel-frauen-bundesliga",
+    "name": "Google Pixel Frauen-Bundesliga",
+    "icon": "/assets/leagues/google-pixel-frauen-bundesliga.png",
+    "icon_filename": "google-pixel-frauen-bundesliga.png",
+    "source_url": "https://www.fut.gg/leagues/google-pixel-frauen-bundesliga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2215.a8e7c4f76d6be4fa6858792035e7a2e4301d31d1afd0176004b0be27572638e8.png"
+  },
+  {
+    "slug": "arkema-premiere-ligue",
+    "name": "Arkema Première Ligue",
+    "icon": "/assets/leagues/arkema-premiere-ligue.png",
+    "icon_filename": "arkema-premiere-ligue.png",
+    "source_url": "https://www.fut.gg/leagues/arkema-premiere-ligue/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2218.082665452d64fed880df19557e128d69c6e70c1198b6ac49b5fc694ad92c1ea8.png"
+  },
+  {
+    "slug": "liga-portugal-feminino",
+    "name": "Liga Portugal Feminino",
+    "icon": "/assets/leagues/liga-portugal-feminino.png",
+    "icon_filename": "liga-portugal-feminino.png",
+    "source_url": "https://www.fut.gg/leagues/liga-portugal-feminino/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2228.46af428d81d51ab5705ff9d3f0a648591cb5eb98aa2f0e85db856de4beec358c.png"
+  },
+  {
+    "slug": "nederland-vrouwen-liga",
+    "name": "Nederland Vrouwen Liga",
+    "icon": "/assets/leagues/nederland-vrouwen-liga.png",
+    "icon_filename": "nederland-vrouwen-liga.png",
+    "source_url": "https://www.fut.gg/leagues/nederland-vrouwen-liga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2229.dcfa16b075accbd370299b7fec3773ef10d4b5e9ae06023ce0cd2756a0ee5a58.png"
+  },
+  {
+    "slug": "ceska-liga-žen",
+    "name": "Ceska Liga Žen",
+    "icon": "/assets/leagues/ceska-liga-žen.png",
+    "icon_filename": "ceska-liga-žen.png",
+    "source_url": "https://www.fut.gg/leagues/ceska-liga-zen/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2230.73334e796f47b4230d35366d1b14ffe3c64cb555a42685b0f1d55408fdd75995.png"
+  },
+  {
+    "slug": "schweizer-damen-liga",
+    "name": "Schweizer Damen Liga",
+    "icon": "/assets/leagues/schweizer-damen-liga.png",
+    "icon_filename": "schweizer-damen-liga.png",
+    "source_url": "https://www.fut.gg/leagues/schweizer-damen-liga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2231.0c016835ae9aaed83d58495c59896a2d8b87697330f2b9002ccf0794ddf85e8b.png"
+  },
+  {
+    "slug": "sverige-liga",
+    "name": "Sverige Liga",
+    "icon": "/assets/leagues/sverige-liga.png",
+    "icon_filename": "sverige-liga.png",
+    "source_url": "https://www.fut.gg/leagues/sverige-liga/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2232.ad26e34786188155653982efdbd1a0d98e8355d3b040c287a2bf7ad3879fac22.png"
+  },
+  {
+    "slug": "scottish-womens-league",
+    "name": "Scottish Women's League",
+    "icon": "/assets/leagues/scottish-womens-league.png",
+    "icon_filename": "scottish-womens-league.png",
+    "source_url": "https://www.fut.gg/leagues/scottish-womens-league/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2233.15b04f0fe31df6820ffd5de392cf3ffb3e426b75f4cc40b4c3bccbf17229cb53.png"
+  },
+  {
+    "slug": "calcio-a-femminile",
+    "name": "Calcio A Femminile",
+    "icon": "/assets/leagues/calcio-a-femminile.png",
+    "icon_filename": "calcio-a-femminile.png",
+    "source_url": "https://www.fut.gg/leagues/calcio-a-femminile/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2236.cdcf73d4a105833093dc441271d56973f3fe377b55622358a151c9ac8d9fcec4.png"
+  },
+  {
+    "slug": "liga-azerbaijan",
+    "name": "Liga Azerbaijan",
+    "icon": "/assets/leagues/liga-azerbaijan.png",
+    "icon_filename": "liga-azerbaijan.png",
+    "source_url": "https://www.fut.gg/leagues/liga-azerbaijan/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2244.a3372874e0f9c282c77c0049ad75e91b2a9ee194e802a7731fd1e7dac84fbfaf.png"
+  },
+  {
+    "slug": "liga-chile",
+    "name": "Liga Chile",
+    "icon": "/assets/leagues/liga-chile.png",
+    "icon_filename": "liga-chile.png",
+    "source_url": "https://www.fut.gg/leagues/liga-chile/",
+    "source_icon_url": "https://game-assets.fut.gg/cdn-cgi/image/quality=85,format=auto,width=80/2026/league/2249.a91a7711d0db8bfdf0dd1dd01e49a341b88ffee01a5f9a2d5f83521f4c10984b.png"
+  }
+]
