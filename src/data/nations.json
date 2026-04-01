@@ -1,0 +1,944 @@
+[
+  {
+    "slug": "afghanistan",
+    "nom": "Afghanistan",
+    "name": "Afghanistan",
+    "url": "https://www.futbin.com/26/nations/149/afghanistan"
+  },
+  {
+    "slug": "afrique-du-sud",
+    "nom": "Afrique du Sud",
+    "name": "Afrique du Sud",
+    "url": ""
+  },
+  {
+    "slug": "albanie",
+    "nom": "Albanie",
+    "name": "Albanie",
+    "url": ""
+  },
+  {
+    "slug": "algérie",
+    "nom": "Algérie",
+    "name": "Algérie",
+    "url": ""
+  },
+  {
+    "slug": "allemagne",
+    "nom": "Allemagne",
+    "name": "Allemagne",
+    "url": ""
+  },
+  {
+    "slug": "andorre",
+    "nom": "Andorre",
+    "name": "Andorre",
+    "url": ""
+  },
+  {
+    "slug": "angleterre",
+    "nom": "Angleterre",
+    "name": "Angleterre",
+    "url": ""
+  },
+  {
+    "slug": "angola",
+    "nom": "Angola",
+    "name": "Angola",
+    "url": "https://www.futbin.com/26/nations/98/angola"
+  },
+  {
+    "slug": "antigua-et-barbuda",
+    "nom": "Antigua-et-Barbuda",
+    "name": "Antigua-et-Barbuda",
+    "url": ""
+  },
+  {
+    "slug": "arabie-saoudite",
+    "nom": "Arabie Saoudite",
+    "name": "Arabie Saoudite",
+    "url": ""
+  },
+  {
+    "slug": "argentine",
+    "nom": "Argentine",
+    "name": "Argentine",
+    "url": ""
+  },
+  {
+    "slug": "arménie",
+    "nom": "Arménie",
+    "name": "Arménie",
+    "url": ""
+  },
+  {
+    "slug": "australie",
+    "nom": "Australie",
+    "name": "Australie",
+    "url": ""
+  },
+  {
+    "slug": "autriche",
+    "nom": "Autriche",
+    "name": "Autriche",
+    "url": ""
+  },
+  {
+    "slug": "azerbaïdjan",
+    "nom": "Azerbaïdjan",
+    "name": "Azerbaïdjan",
+    "url": ""
+  },
+  {
+    "slug": "bangladesh",
+    "nom": "Bangladesh",
+    "name": "Bangladesh",
+    "url": "https://www.futbin.com/26/nations/151/bangladesh"
+  },
+  {
+    "slug": "barbade",
+    "nom": "Barbade",
+    "name": "Barbade",
+    "url": ""
+  },
+  {
+    "slug": "belgique",
+    "nom": "Belgique",
+    "name": "Belgique",
+    "url": ""
+  },
+  {
+    "slug": "bermuda",
+    "nom": "Bermuda",
+    "name": "Bermuda",
+    "url": "https://www.futbin.com/26/nations/68/bermuda"
+  },
+  {
+    "slug": "biélorussie",
+    "nom": "Biélorussie",
+    "name": "Biélorussie",
+    "url": ""
+  },
+  {
+    "slug": "bolivie",
+    "nom": "Bolivie",
+    "name": "Bolivie",
+    "url": ""
+  },
+  {
+    "slug": "bosnie-herzégovine",
+    "nom": "Bosnie-Herzégovine",
+    "name": "Bosnie-Herzégovine",
+    "url": ""
+  },
+  {
+    "slug": "brésil",
+    "nom": "Brésil",
+    "name": "Brésil",
+    "url": ""
+  },
+  {
+    "slug": "bulgarie",
+    "nom": "Bulgarie",
+    "name": "Bulgarie",
+    "url": ""
+  },
+  {
+    "slug": "burkina-faso",
+    "nom": "Burkina Faso",
+    "name": "Burkina Faso",
+    "url": "https://www.futbin.com/26/nations/101/burkina%20faso"
+  },
+  {
+    "slug": "burundi",
+    "nom": "Burundi",
+    "name": "Burundi",
+    "url": "https://www.futbin.com/26/nations/102/burundi"
+  },
+  {
+    "slug": "bénin",
+    "nom": "Bénin",
+    "name": "Bénin",
+    "url": ""
+  },
+  {
+    "slug": "cameroun",
+    "nom": "Cameroun",
+    "name": "Cameroun",
+    "url": ""
+  },
+  {
+    "slug": "canada",
+    "nom": "Canada",
+    "name": "Canada",
+    "url": "https://www.futbin.com/26/nations/70/canada"
+  },
+  {
+    "slug": "cape-verde-islands",
+    "nom": "Cape Verde Islands",
+    "name": "Cape Verde Islands",
+    "url": "https://www.futbin.com/26/nations/104/cape%20verde%20islands"
+  },
+  {
+    "slug": "centrafrique",
+    "nom": "Centrafrique",
+    "name": "Centrafrique",
+    "url": ""
+  },
+  {
+    "slug": "chili",
+    "nom": "Chili",
+    "name": "Chili",
+    "url": ""
+  },
+  {
+    "slug": "china-pr",
+    "nom": "China PR",
+    "name": "China PR",
+    "url": "https://www.futbin.com/26/nations/155/china%20pr"
+  },
+  {
+    "slug": "chinese-taipei",
+    "nom": "Chinese Taipei",
+    "name": "Chinese Taipei",
+    "url": "https://www.futbin.com/26/nations/213/chinese%20taipei"
+  },
+  {
+    "slug": "chypre",
+    "nom": "Chypre",
+    "name": "Chypre",
+    "url": ""
+  },
+  {
+    "slug": "colombie",
+    "nom": "Colombie",
+    "name": "Colombie",
+    "url": ""
+  },
+  {
+    "slug": "comores",
+    "nom": "Comores",
+    "name": "Comores",
+    "url": ""
+  },
+  {
+    "slug": "congo",
+    "nom": "Congo",
+    "name": "Congo",
+    "url": "https://www.futbin.com/26/nations/107/congo"
+  },
+  {
+    "slug": "congo-dr",
+    "nom": "Congo DR",
+    "name": "Congo DR",
+    "url": "https://www.futbin.com/26/nations/110/congo%20dr"
+  },
+  {
+    "slug": "costa-rica",
+    "nom": "Costa Rica",
+    "name": "Costa Rica",
+    "url": "https://www.futbin.com/26/nations/72/costa%20rica"
+  },
+  {
+    "slug": "croatie",
+    "nom": "Croatie",
+    "name": "Croatie",
+    "url": ""
+  },
+  {
+    "slug": "cuba",
+    "nom": "Cuba",
+    "name": "Cuba",
+    "url": "https://www.futbin.com/26/nations/73/cuba"
+  },
+  {
+    "slug": "curaçao",
+    "nom": "Curaçao",
+    "name": "Curaçao",
+    "url": "https://www.futbin.com/26/nations/85/cura%C3%A7ao"
+  },
+  {
+    "slug": "côte-divoire",
+    "nom": "Côte d'Ivoire",
+    "name": "Côte d'Ivoire",
+    "url": "https://www.futbin.com/26/nations/108/c%C3%B4te%20d'ivoire"
+  },
+  {
+    "slug": "danemark",
+    "nom": "Danemark",
+    "name": "Danemark",
+    "url": ""
+  },
+  {
+    "slug": "el-salvador",
+    "nom": "El Salvador",
+    "name": "El Salvador",
+    "url": "https://www.futbin.com/26/nations/76/el%20salvador"
+  },
+  {
+    "slug": "espagne",
+    "nom": "Espagne",
+    "name": "Espagne",
+    "url": ""
+  },
+  {
+    "slug": "estonie",
+    "nom": "Estonie",
+    "name": "Estonie",
+    "url": ""
+  },
+  {
+    "slug": "finlande",
+    "nom": "Finlande",
+    "name": "Finlande",
+    "url": ""
+  },
+  {
+    "slug": "france",
+    "nom": "France",
+    "name": "France",
+    "url": "https://www.futbin.com/26/nations/18/france"
+  },
+  {
+    "slug": "gabon",
+    "nom": "Gabon",
+    "name": "Gabon",
+    "url": "https://www.futbin.com/26/nations/115/gabon"
+  },
+  {
+    "slug": "gambie",
+    "nom": "Gambie",
+    "name": "Gambie",
+    "url": ""
+  },
+  {
+    "slug": "ghana",
+    "nom": "Ghana",
+    "name": "Ghana",
+    "url": "https://www.futbin.com/26/nations/117/ghana"
+  },
+  {
+    "slug": "gibraltar",
+    "nom": "Gibraltar",
+    "name": "Gibraltar",
+    "url": "https://www.futbin.com/26/nations/205/gibraltar"
+  },
+  {
+    "slug": "grenade",
+    "nom": "Grenade",
+    "name": "Grenade",
+    "url": ""
+  },
+  {
+    "slug": "grèce",
+    "nom": "Grèce",
+    "name": "Grèce",
+    "url": ""
+  },
+  {
+    "slug": "guatemala",
+    "nom": "Guatemala",
+    "name": "Guatemala",
+    "url": "https://www.futbin.com/26/nations/78/guatemala"
+  },
+  {
+    "slug": "guinée",
+    "nom": "Guinée",
+    "name": "Guinée",
+    "url": ""
+  },
+  {
+    "slug": "guinée-équatoriale",
+    "nom": "Guinée Équatoriale",
+    "name": "Guinée Équatoriale",
+    "url": ""
+  },
+  {
+    "slug": "guinée-bissau",
+    "nom": "Guinée-Bissau",
+    "name": "Guinée-Bissau",
+    "url": ""
+  },
+  {
+    "slug": "guyane",
+    "nom": "Guyane",
+    "name": "Guyane",
+    "url": ""
+  },
+  {
+    "slug": "géorgie",
+    "nom": "Géorgie",
+    "name": "Géorgie",
+    "url": ""
+  },
+  {
+    "slug": "haïti",
+    "nom": "Haïti",
+    "name": "Haïti",
+    "url": ""
+  },
+  {
+    "slug": "honduras",
+    "nom": "Honduras",
+    "name": "Honduras",
+    "url": "https://www.futbin.com/26/nations/81/honduras"
+  },
+  {
+    "slug": "hong-kong",
+    "nom": "Hong Kong",
+    "name": "Hong Kong",
+    "url": "https://www.futbin.com/26/nations/158/hong%20kong"
+  },
+  {
+    "slug": "hongrie",
+    "nom": "Hongrie",
+    "name": "Hongrie",
+    "url": ""
+  },
+  {
+    "slug": "inde",
+    "nom": "Inde",
+    "name": "Inde",
+    "url": ""
+  },
+  {
+    "slug": "indonésie",
+    "nom": "Indonésie",
+    "name": "Indonésie",
+    "url": ""
+  },
+  {
+    "slug": "irak",
+    "nom": "Irak",
+    "name": "Irak",
+    "url": ""
+  },
+  {
+    "slug": "iran",
+    "nom": "Iran",
+    "name": "Iran",
+    "url": "https://www.futbin.com/26/nations/161/iran"
+  },
+  {
+    "slug": "irlande",
+    "nom": "Irlande",
+    "name": "Irlande",
+    "url": ""
+  },
+  {
+    "slug": "irlande-du-nord",
+    "nom": "Irlande du Nord",
+    "name": "Irlande du Nord",
+    "url": ""
+  },
+  {
+    "slug": "islande",
+    "nom": "Islande",
+    "name": "Islande",
+    "url": ""
+  },
+  {
+    "slug": "israël",
+    "nom": "Israël",
+    "name": "Israël",
+    "url": ""
+  },
+  {
+    "slug": "italie",
+    "nom": "Italie",
+    "name": "Italie",
+    "url": ""
+  },
+  {
+    "slug": "jamaïque",
+    "nom": "Jamaïque",
+    "name": "Jamaïque",
+    "url": ""
+  },
+  {
+    "slug": "japon",
+    "nom": "Japon",
+    "name": "Japon",
+    "url": ""
+  },
+  {
+    "slug": "jordanie",
+    "nom": "Jordanie",
+    "name": "Jordanie",
+    "url": ""
+  },
+  {
+    "slug": "kenya",
+    "nom": "Kenya",
+    "name": "Kenya",
+    "url": "https://www.futbin.com/26/nations/120/kenya"
+  },
+  {
+    "slug": "korea-republic",
+    "nom": "Korea Republic",
+    "name": "Korea Republic",
+    "url": "https://www.futbin.com/26/nations/167/korea%20republic"
+  },
+  {
+    "slug": "kosovo",
+    "nom": "Kosovo",
+    "name": "Kosovo",
+    "url": "https://www.futbin.com/26/nations/219/kosovo"
+  },
+  {
+    "slug": "lettonie",
+    "nom": "Lettonie",
+    "name": "Lettonie",
+    "url": ""
+  },
+  {
+    "slug": "liban",
+    "nom": "Liban",
+    "name": "Liban",
+    "url": ""
+  },
+  {
+    "slug": "liberia",
+    "nom": "Liberia",
+    "name": "Liberia",
+    "url": "https://www.futbin.com/26/nations/122/liberia"
+  },
+  {
+    "slug": "libye",
+    "nom": "Libye",
+    "name": "Libye",
+    "url": ""
+  },
+  {
+    "slug": "liechtenstein",
+    "nom": "Liechtenstein",
+    "name": "Liechtenstein",
+    "url": "https://www.futbin.com/26/nations/29/liechtenstein"
+  },
+  {
+    "slug": "lituanie",
+    "nom": "Lituanie",
+    "name": "Lituanie",
+    "url": ""
+  },
+  {
+    "slug": "luxembourg",
+    "nom": "Luxembourg",
+    "name": "Luxembourg",
+    "url": "https://www.futbin.com/26/nations/31/luxembourg"
+  },
+  {
+    "slug": "macédoine-du-nord",
+    "nom": "Macédoine du Nord",
+    "name": "Macédoine du Nord",
+    "url": ""
+  },
+  {
+    "slug": "madagascar",
+    "nom": "Madagascar",
+    "name": "Madagascar",
+    "url": "https://www.futbin.com/26/nations/124/madagascar"
+  },
+  {
+    "slug": "malaisie",
+    "nom": "Malaisie",
+    "name": "Malaisie",
+    "url": ""
+  },
+  {
+    "slug": "malawi",
+    "nom": "Malawi",
+    "name": "Malawi",
+    "url": "https://www.futbin.com/26/nations/125/malawi"
+  },
+  {
+    "slug": "mali",
+    "nom": "Mali",
+    "name": "Mali",
+    "url": "https://www.futbin.com/26/nations/126/mali"
+  },
+  {
+    "slug": "malte",
+    "nom": "Malte",
+    "name": "Malte",
+    "url": ""
+  },
+  {
+    "slug": "maroc",
+    "nom": "Maroc",
+    "name": "Maroc",
+    "url": ""
+  },
+  {
+    "slug": "mauritanie",
+    "nom": "Mauritanie",
+    "name": "Mauritanie",
+    "url": ""
+  },
+  {
+    "slug": "mexique",
+    "nom": "Mexique",
+    "name": "Mexique",
+    "url": ""
+  },
+  {
+    "slug": "moldova",
+    "nom": "Moldova",
+    "name": "Moldova",
+    "url": "https://www.futbin.com/26/nations/33/moldova"
+  },
+  {
+    "slug": "montserrat",
+    "nom": "Montserrat",
+    "name": "Montserrat",
+    "url": "https://www.futbin.com/26/nations/84/montserrat"
+  },
+  {
+    "slug": "monténégro",
+    "nom": "Monténégro",
+    "name": "Monténégro",
+    "url": ""
+  },
+  {
+    "slug": "mozambique",
+    "nom": "Mozambique",
+    "name": "Mozambique",
+    "url": "https://www.futbin.com/26/nations/130/mozambique"
+  },
+  {
+    "slug": "namibie",
+    "nom": "Namibie",
+    "name": "Namibie",
+    "url": ""
+  },
+  {
+    "slug": "niger",
+    "nom": "Niger",
+    "name": "Niger",
+    "url": "https://www.futbin.com/26/nations/132/niger"
+  },
+  {
+    "slug": "nigeria",
+    "nom": "Nigeria",
+    "name": "Nigeria",
+    "url": "https://www.futbin.com/26/nations/133/nigeria"
+  },
+  {
+    "slug": "norvège",
+    "nom": "Norvège",
+    "name": "Norvège",
+    "url": ""
+  },
+  {
+    "slug": "nouvelle-zélande",
+    "nom": "Nouvelle-Zélande",
+    "name": "Nouvelle-Zélande",
+    "url": ""
+  },
+  {
+    "slug": "ouganda",
+    "nom": "Ouganda",
+    "name": "Ouganda",
+    "url": ""
+  },
+  {
+    "slug": "ouzbékistan",
+    "nom": "Ouzbékistan",
+    "name": "Ouzbékistan",
+    "url": ""
+  },
+  {
+    "slug": "pakistan",
+    "nom": "Pakistan",
+    "name": "Pakistan",
+    "url": "https://www.futbin.com/26/nations/179/pakistan"
+  },
+  {
+    "slug": "palestine",
+    "nom": "Palestine",
+    "name": "Palestine",
+    "url": "https://www.futbin.com/26/nations/180/palestine"
+  },
+  {
+    "slug": "panama",
+    "nom": "Panama",
+    "name": "Panama",
+    "url": "https://www.futbin.com/26/nations/87/panama"
+  },
+  {
+    "slug": "paraguay",
+    "nom": "Paraguay",
+    "name": "Paraguay",
+    "url": "https://www.futbin.com/26/nations/58/paraguay"
+  },
+  {
+    "slug": "pays-de-galles",
+    "nom": "Pays de Galles",
+    "name": "Pays de Galles",
+    "url": ""
+  },
+  {
+    "slug": "pays-bas",
+    "nom": "Pays-Bas",
+    "name": "Pays-Bas",
+    "url": ""
+  },
+  {
+    "slug": "philippines",
+    "nom": "Philippines",
+    "name": "Philippines",
+    "url": "https://www.futbin.com/26/nations/181/philippines"
+  },
+  {
+    "slug": "pologne",
+    "nom": "Pologne",
+    "name": "Pologne",
+    "url": ""
+  },
+  {
+    "slug": "portugal",
+    "nom": "Portugal",
+    "name": "Portugal",
+    "url": "https://www.futbin.com/26/nations/38/portugal"
+  },
+  {
+    "slug": "puerto-rico",
+    "nom": "Puerto Rico",
+    "name": "Puerto Rico",
+    "url": "https://www.futbin.com/26/nations/88/puerto%20rico"
+  },
+  {
+    "slug": "pérou",
+    "nom": "Pérou",
+    "name": "Pérou",
+    "url": ""
+  },
+  {
+    "slug": "roumanie",
+    "nom": "Roumanie",
+    "name": "Roumanie",
+    "url": ""
+  },
+  {
+    "slug": "russie",
+    "nom": "Russie",
+    "name": "Russie",
+    "url": ""
+  },
+  {
+    "slug": "rwanda",
+    "nom": "Rwanda",
+    "name": "Rwanda",
+    "url": "https://www.futbin.com/26/nations/134/rwanda"
+  },
+  {
+    "slug": "rép.-dominicaine",
+    "nom": "Rép. Dominicaine",
+    "name": "Rép. Dominicaine",
+    "url": ""
+  },
+  {
+    "slug": "serbie",
+    "nom": "Serbie",
+    "name": "Serbie",
+    "url": ""
+  },
+  {
+    "slug": "sierra-leone",
+    "nom": "Sierra Leone",
+    "name": "Sierra Leone",
+    "url": "https://www.futbin.com/26/nations/138/sierra%20leone"
+  },
+  {
+    "slug": "slovaquie",
+    "nom": "Slovaquie",
+    "name": "Slovaquie",
+    "url": ""
+  },
+  {
+    "slug": "slovénie",
+    "nom": "Slovénie",
+    "name": "Slovénie",
+    "url": ""
+  },
+  {
+    "slug": "somalie",
+    "nom": "Somalie",
+    "name": "Somalie",
+    "url": ""
+  },
+  {
+    "slug": "sri-lanka",
+    "nom": "Sri Lanka",
+    "name": "Sri Lanka",
+    "url": "https://www.futbin.com/26/nations/185/sri%20lanka"
+  },
+  {
+    "slug": "st-kitts-and-nevis",
+    "nom": "St. Kitts and Nevis",
+    "name": "St. Kitts and Nevis",
+    "url": "https://www.futbin.com/26/nations/89/st.%20kitts%20and%20nevis"
+  },
+  {
+    "slug": "st-lucia",
+    "nom": "St. Lucia",
+    "name": "St. Lucia",
+    "url": "https://www.futbin.com/26/nations/90/st.%20lucia"
+  },
+  {
+    "slug": "suisse",
+    "nom": "Suisse",
+    "name": "Suisse",
+    "url": ""
+  },
+  {
+    "slug": "suriname",
+    "nom": "Suriname",
+    "name": "Suriname",
+    "url": "https://www.futbin.com/26/nations/92/suriname"
+  },
+  {
+    "slug": "suède",
+    "nom": "Suède",
+    "name": "Suède",
+    "url": ""
+  },
+  {
+    "slug": "syrie",
+    "nom": "Syrie",
+    "name": "Syrie",
+    "url": ""
+  },
+  {
+    "slug": "sénégal",
+    "nom": "Sénégal",
+    "name": "Sénégal",
+    "url": ""
+  },
+  {
+    "slug": "tajikistan",
+    "nom": "Tajikistan",
+    "name": "Tajikistan",
+    "url": "https://www.futbin.com/26/nations/187/tajikistan"
+  },
+  {
+    "slug": "tanzanie",
+    "nom": "Tanzanie",
+    "name": "Tanzanie",
+    "url": ""
+  },
+  {
+    "slug": "tchad",
+    "nom": "Tchad",
+    "name": "Tchad",
+    "url": ""
+  },
+  {
+    "slug": "tchéquie",
+    "nom": "Tchéquie",
+    "name": "Tchéquie",
+    "url": ""
+  },
+  {
+    "slug": "thailand",
+    "nom": "Thailand",
+    "name": "Thailand",
+    "url": "https://www.futbin.com/26/nations/188/thailand"
+  },
+  {
+    "slug": "togo",
+    "nom": "Togo",
+    "name": "Togo",
+    "url": "https://www.futbin.com/26/nations/144/togo"
+  },
+  {
+    "slug": "trinité-et-tobago",
+    "nom": "Trinité-et-Tobago",
+    "name": "Trinité-et-Tobago",
+    "url": ""
+  },
+  {
+    "slug": "tunisie",
+    "nom": "Tunisie",
+    "name": "Tunisie",
+    "url": ""
+  },
+  {
+    "slug": "turquie",
+    "nom": "Turquie",
+    "name": "Turquie",
+    "url": ""
+  },
+  {
+    "slug": "ukraine",
+    "nom": "Ukraine",
+    "name": "Ukraine",
+    "url": "https://www.futbin.com/26/nations/49/ukraine"
+  },
+  {
+    "slug": "uruguay",
+    "nom": "Uruguay",
+    "name": "Uruguay",
+    "url": "https://www.futbin.com/26/nations/60/uruguay"
+  },
+  {
+    "slug": "vanuatu",
+    "nom": "Vanuatu",
+    "name": "Vanuatu",
+    "url": "https://www.futbin.com/26/nations/204/vanuatu"
+  },
+  {
+    "slug": "venezuela",
+    "nom": "Venezuela",
+    "name": "Venezuela",
+    "url": "https://www.futbin.com/26/nations/61/venezuela"
+  },
+  {
+    "slug": "zambie",
+    "nom": "Zambie",
+    "name": "Zambie",
+    "url": ""
+  },
+  {
+    "slug": "zimbabwe",
+    "nom": "Zimbabwe",
+    "name": "Zimbabwe",
+    "url": "https://www.futbin.com/26/nations/148/zimbabwe"
+  },
+  {
+    "slug": "écosse",
+    "nom": "Écosse",
+    "name": "Écosse",
+    "url": ""
+  },
+  {
+    "slug": "égypte",
+    "nom": "Égypte",
+    "name": "Égypte",
+    "url": ""
+  },
+  {
+    "slug": "émirats-arabes-unis",
+    "nom": "Émirats Arabes Unis",
+    "name": "Émirats Arabes Unis",
+    "url": ""
+  },
+  {
+    "slug": "équateur",
+    "nom": "Équateur",
+    "name": "Équateur",
+    "url": ""
+  },
+  {
+    "slug": "états-unis",
+    "nom": "États-Unis",
+    "name": "États-Unis",
+    "url": ""
+  },
+  {
+    "slug": "îles-féroé",
+    "nom": "Îles Féroé",
+    "name": "Îles Féroé",
+    "url": ""
+  }
+]

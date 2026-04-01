@@ -1,0 +1,44 @@
+Type,Playstyle Name,Image Filename,Path,Status
+playstyles+,Acrobatique+,acrobatique-plus.png,/assets/playstyles_plus/acrobatique-plus.png,✓ EXISTS
+playstyles+,Ballon piqué+,ballon-pique-plus.png,/assets/playstyles_plus/ballon-pique-plus.png,✓ EXISTS
+playstyles+,Coups de pied arrêtés+,coup-de-pied-arrete-plus.png,/assets/playstyles_plus/coup-de-pied-arrete-plus.png,✓ EXISTS
+playstyles+,Tir en finesse+,tir-en-finesse-plus.png,/assets/playstyles_plus/tir-en-finesse-plus.png,✓ EXISTS
+playstyles+,Tir puissant+,tir-puissant-plus.png,/assets/playstyles_plus/tir-puissant-plus.png,✓ EXISTS
+playstyles+,Tir rasant appuyé+,tir-rasant-appuye-plus.png,/assets/playstyles_plus/tir-rasant-appuye-plus.png,✓ EXISTS
+playstyles+,Tête précise+,tete-precise-plus.png,/assets/playstyles_plus/tete-precise-plus.png,✓ EXISTS
+playstyles,Acrobatique,acrobatique.png,/assets/playstyles/acrobatique.png,✓ EXISTS
+playstyles,Agressif,agressif.png,/assets/playstyles/agressif.png,✓ EXISTS
+playstyles,Allonge,MISSING,,✗ NO IMAGE
+playstyles,Anticipation,anticipation.png,/assets/playstyles/anticipation.png,✓ EXISTS
+playstyles,Arrêt du pied,arret-du-pied.png,/assets/playstyles/arret-du-pied.png,✓ EXISTS
+playstyles,Ballon piqué,ballon-pique.png,/assets/playstyles/ballon-pique.png,✓ EXISTS
+playstyles,Contre,contre.png,/assets/playstyles/contre.png,✓ EXISTS
+playstyles,Contrôle,controle.png,/assets/playstyles/controle.png,✓ EXISTS
+playstyles,Coups de pied arrêtés,coup-de-pied-arrete.png,/assets/playstyles/coup-de-pied-arrete.png,✓ EXISTS
+playstyles,Déviation,deflector.png,/assets/playstyles/deflector.png,✓ EXISTS
+playstyles,Fantaisiste,fantaisiste.png,/assets/playstyles/fantaisiste.png,✓ EXISTS
+playstyles,Forteresse aérienne,forteresse-aerienne.png,/assets/playstyles/forteresse-aerienne.png,✓ EXISTS
+playstyles,Foulée rapide,foulee-rapide.png,/assets/playstyles/foulee-rapide.png,✓ EXISTS
+playstyles,Infatigable,infatigable.png,/assets/playstyles/infatigable.png,✓ EXISTS
+playstyles,Interception,interception.png,/assets/playstyles/interception.png,✓ EXISTS
+playstyles,Longue relance,longue-relance.png,/assets/playstyles/longue-relance.png,✓ EXISTS
+playstyles,Longue touche,longue-touche.png,/assets/playstyles/longue-touche.png,✓ EXISTS
+playstyles,Lutte,lutte.png,/assets/playstyles/lutte.png,✓ EXISTS
+playstyles,Passage en force,passage-en-force.png,/assets/playstyles/passage-en-force.png,✓ EXISTS
+playstyles,Passe incisive,passe-incisive.png,/assets/playstyles/passe-incisive.png,✓ EXISTS
+playstyles,Passe longue,passe-longue.png,/assets/playstyles/passe-longue.png,✓ EXISTS
+playstyles,Passe tendue,passe-tendue.png,/assets/playstyles/passe-tendue.png,✗ MISSING
+playstyles,Passe travaillée,passe-travaillee.png,/assets/playstyles/passe-travaillee.png,✓ EXISTS
+playstyles,Rapide,rapide.png,/assets/playstyles/rapide.png,✓ EXISTS
+playstyles,Résiste au pressing,resiste-au-pressing.png,/assets/playstyles/resiste-au-pressing.png,✓ EXISTS
+playstyles,Révolutionnaire,revolutionnaire.png,/assets/playstyles/revolutionnaire.png,✗ MISSING
+playstyles,Slide Tackle,tacle-glisse.png,/assets/playstyles/tacle-glisse.png,✓ EXISTS
+playstyles,Sort du but,sort-du-but.png,/assets/playstyles/sort-du-but.png,✓ EXISTS
+playstyles,Tacle glissé,tacle-glisse.png,/assets/playstyles/tacle-glisse.png,✓ EXISTS
+playstyles,Technicien,technicien.png,/assets/playstyles/technicien.png,✓ EXISTS
+playstyles,Technique,technique.png,/assets/playstyles/technique.png,✓ EXISTS
+playstyles,Tiki-Taka,tiki-taka.png,/assets/playstyles/tiki-taka.png,✓ EXISTS
+playstyles,Tir en finesse,tir-en-finesse.png,/assets/playstyles/tir-en-finesse.png,✓ EXISTS
+playstyles,Tir puissant,tir-puissant.png,/assets/playstyles/tir-puissant.png,✓ EXISTS
+playstyles,Tir rasant appuyé,tir-rasant-appuye.png,/assets/playstyles/tir-rasant-appuye.png,✓ EXISTS
+playstyles,Tête précise,tete-precise.png,/assets/playstyles/tete-precise.png,✓ EXISTS

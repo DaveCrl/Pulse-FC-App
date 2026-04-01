@@ -1,0 +1,515 @@
+[
+  {
+    "slug": "1a-pro-league",
+    "nom": "1A Pro League",
+    "name": "1A Pro League",
+    "icon_filename": "1a-pro-league.png",
+    "icon": "/assets/leagues/1a-pro-league.png",
+    "local_path": "local_files/league_icons/1a-pro-league.png",
+    "has_image": true
+  },
+  {
+    "slug": "2.-bundesliga",
+    "nom": "2. Bundesliga",
+    "name": "2. Bundesliga",
+    "icon_filename": "bundesliga.png",
+    "icon": "/assets/leagues/bundesliga.png",
+    "local_path": "local_files/league_icons/bundesliga.png",
+    "has_image": true
+  },
+  {
+    "slug": "3.-liga",
+    "nom": "3. Liga",
+    "name": "3. Liga",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "3f-superliga",
+    "nom": "3F Superliga",
+    "name": "3F Superliga",
+    "icon_filename": "3f-superliga.png",
+    "icon": "/assets/leagues/3f-superliga.png",
+    "local_path": "local_files/league_icons/3f-superliga.png",
+    "has_image": true
+  },
+  {
+    "slug": "a-league",
+    "nom": "A-League",
+    "name": "A-League",
+    "icon_filename": "isuzu-ute-a-league.png",
+    "icon": "/assets/leagues/isuzu-ute-a-league.png",
+    "local_path": "local_files/league_icons/isuzu-ute-a-league.png",
+    "has_image": true
+  },
+  {
+    "slug": "allsvenskan",
+    "nom": "Allsvenskan",
+    "name": "Allsvenskan",
+    "icon_filename": "allsvenskan.png",
+    "icon": "/assets/leagues/allsvenskan.png",
+    "local_path": "local_files/league_icons/allsvenskan.png",
+    "has_image": true
+  },
+  {
+    "slug": "arkema-pl",
+    "nom": "Arkema PL",
+    "name": "Arkema PL",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "barclays-wsl",
+    "nom": "Barclays WSL",
+    "name": "Barclays WSL",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "bundesliga",
+    "nom": "Bundesliga",
+    "name": "Bundesliga",
+    "icon_filename": "bundesliga.png",
+    "icon": "/assets/leagues/bundesliga.png",
+    "local_path": "local_files/league_icons/bundesliga.png",
+    "has_image": true
+  },
+  {
+    "slug": "csl",
+    "nom": "CSL",
+    "name": "CSL",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "championship",
+    "nom": "Championship",
+    "name": "Championship",
+    "icon_filename": "efl-championship.png",
+    "icon": "/assets/leagues/efl-championship.png",
+    "local_path": "local_files/league_icons/efl-championship.png",
+    "has_image": true
+  },
+  {
+    "slug": "eliteserien",
+    "nom": "Eliteserien",
+    "name": "Eliteserien",
+    "icon_filename": "eliteserien.png",
+    "icon": "/assets/leagues/eliteserien.png",
+    "local_path": "local_files/league_icons/eliteserien.png",
+    "has_image": true
+  },
+  {
+    "slug": "eredivisie",
+    "nom": "Eredivisie",
+    "name": "Eredivisie",
+    "icon_filename": "eredivisie.png",
+    "icon": "/assets/leagues/eredivisie.png",
+    "local_path": "local_files/league_icons/eredivisie.png",
+    "has_image": true
+  },
+  {
+    "slug": "gpfbl",
+    "nom": "GPFBL",
+    "name": "GPFBL",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "hellas-liga",
+    "nom": "Hellas Liga",
+    "name": "Hellas Liga",
+    "icon_filename": "hellas-liga.png",
+    "icon": "/assets/leagues/hellas-liga.png",
+    "local_path": "local_files/league_icons/hellas-liga.png",
+    "has_image": true
+  },
+  {
+    "slug": "isl",
+    "nom": "ISL",
+    "name": "ISL",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "k-league-1",
+    "nom": "K League 1",
+    "name": "K League 1",
+    "icon_filename": "k-league-1.png",
+    "icon": "/assets/leagues/k-league-1.png",
+    "local_path": "local_files/league_icons/k-league-1.png",
+    "has_image": true
+  },
+  {
+    "slug": "laliga-ea-sports",
+    "nom": "LALIGA EA SPORTS",
+    "name": "LALIGA EA SPORTS",
+    "icon_filename": "laliga-ea-sports.png",
+    "icon": "/assets/leagues/laliga-ea-sports.png",
+    "local_path": "local_files/league_icons/laliga-ea-sports.png",
+    "has_image": true
+  },
+  {
+    "slug": "laliga-hypermotion",
+    "nom": "LALIGA HYPERMOTION",
+    "name": "LALIGA HYPERMOTION",
+    "icon_filename": "laliga-hypermotion.png",
+    "icon": "/assets/leagues/laliga-hypermotion.png",
+    "local_path": "local_files/league_icons/laliga-hypermotion.png",
+    "has_image": true
+  },
+  {
+    "slug": "lpf",
+    "nom": "LPF",
+    "name": "LPF",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "league-one",
+    "nom": "League One",
+    "name": "League One",
+    "icon_filename": "efl-league-one.png",
+    "icon": "/assets/leagues/efl-league-one.png",
+    "local_path": "local_files/league_icons/efl-league-one.png",
+    "has_image": true
+  },
+  {
+    "slug": "league-two",
+    "nom": "League Two",
+    "name": "League Two",
+    "icon_filename": "efl-league-two.png",
+    "icon": "/assets/leagues/efl-league-two.png",
+    "local_path": "local_files/league_icons/efl-league-two.png",
+    "has_image": true
+  },
+  {
+    "slug": "libertadores",
+    "nom": "Libertadores",
+    "name": "Libertadores",
+    "icon_filename": "conmebol-libertadores.png",
+    "icon": "/assets/leagues/conmebol-libertadores.png",
+    "local_path": "local_files/league_icons/conmebol-libertadores.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-azerbaijan",
+    "nom": "Liga Azerbaijan",
+    "name": "Liga Azerbaijan",
+    "icon_filename": "liga-azerbaijan.png",
+    "icon": "/assets/leagues/liga-azerbaijan.png",
+    "local_path": "local_files/league_icons/liga-azerbaijan.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-chile",
+    "nom": "Liga Chile",
+    "name": "Liga Chile",
+    "icon_filename": "liga-chile.png",
+    "icon": "/assets/leagues/liga-chile.png",
+    "local_path": "local_files/league_icons/liga-chile.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-cyprus",
+    "nom": "Liga Cyprus",
+    "name": "Liga Cyprus",
+    "icon_filename": "liga-cyprus.png",
+    "icon": "/assets/leagues/liga-cyprus.png",
+    "local_path": "local_files/league_icons/liga-cyprus.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-f",
+    "nom": "Liga F",
+    "name": "Liga F",
+    "icon_filename": "liga-f.png",
+    "icon": "/assets/leagues/liga-f.png",
+    "local_path": "local_files/league_icons/liga-f.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-hrvatska",
+    "nom": "Liga Hrvatska",
+    "name": "Liga Hrvatska",
+    "icon_filename": "liga-hrvatska.png",
+    "icon": "/assets/leagues/liga-hrvatska.png",
+    "local_path": "local_files/league_icons/liga-hrvatska.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-portugal",
+    "nom": "Liga Portugal",
+    "name": "Liga Portugal",
+    "icon_filename": "liga-portugal.png",
+    "icon": "/assets/leagues/liga-portugal.png",
+    "local_path": "local_files/league_icons/liga-portugal.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-portugal-feminino",
+    "nom": "Liga Portugal Feminino",
+    "name": "Liga Portugal Feminino",
+    "icon_filename": "liga-portugal-feminino.png",
+    "icon": "/assets/leagues/liga-portugal-feminino.png",
+    "local_path": "local_files/league_icons/liga-portugal-feminino.png",
+    "has_image": true
+  },
+  {
+    "slug": "liga-žen",
+    "nom": "Liga Žen",
+    "name": "Liga Žen",
+    "icon_filename": "ceska-liga-žen.png",
+    "icon": "/assets/leagues/ceska-liga-žen.png",
+    "local_path": "local_files/league_icons/ceska-liga-žen.png",
+    "has_image": true
+  },
+  {
+    "slug": "ligue-1-mcdonald's",
+    "nom": "Ligue 1 McDonald's",
+    "name": "Ligue 1 McDonald's",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "ligue-2-bkt",
+    "nom": "Ligue 2 BKT",
+    "name": "Ligue 2 BKT",
+    "icon_filename": "ligue-2-bkt.png",
+    "icon": "/assets/leagues/ligue-2-bkt.png",
+    "local_path": "local_files/league_icons/ligue-2-bkt.png",
+    "has_image": true
+  },
+  {
+    "slug": "mls",
+    "nom": "MLS",
+    "name": "MLS",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "magyar-liga",
+    "nom": "Magyar Liga",
+    "name": "Magyar Liga",
+    "icon_filename": "magyar-liga.png",
+    "icon": "/assets/leagues/magyar-liga.png",
+    "local_path": "local_files/league_icons/magyar-liga.png",
+    "has_image": true
+  },
+  {
+    "slug": "nwsl",
+    "nom": "NWSL",
+    "name": "NWSL",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "nederland-vrouwen-liga",
+    "nom": "Nederland Vrouwen Liga",
+    "name": "Nederland Vrouwen Liga",
+    "icon_filename": "nederland-vrouwen-liga.png",
+    "icon": "/assets/leagues/nederland-vrouwen-liga.png",
+    "local_path": "local_files/league_icons/nederland-vrouwen-liga.png",
+    "has_image": true
+  },
+  {
+    "slug": "pko-bp-ekstraklasa",
+    "nom": "PKO BP Ekstraklasa",
+    "name": "PKO BP Ekstraklasa",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "premier-league",
+    "nom": "Premier League",
+    "name": "Premier League",
+    "icon_filename": "premier-league.png",
+    "icon": "/assets/leagues/premier-league.png",
+    "local_path": "local_files/league_icons/premier-league.png",
+    "has_image": true
+  },
+  {
+    "slug": "roshn-saudi-league",
+    "nom": "ROSHN Saudi League",
+    "name": "ROSHN Saudi League",
+    "icon_filename": "roshn-saudi-league.png",
+    "icon": "/assets/leagues/roshn-saudi-league.png",
+    "local_path": "local_files/league_icons/roshn-saudi-league.png",
+    "has_image": true
+  },
+  {
+    "slug": "sse-airtricity-pd",
+    "nom": "SSE Airtricity PD",
+    "name": "SSE Airtricity PD",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "superliga",
+    "nom": "SUPERLIGA",
+    "name": "SUPERLIGA",
+    "icon_filename": "superliga.png",
+    "icon": "/assets/leagues/superliga.png",
+    "local_path": "local_files/league_icons/superliga.png",
+    "has_image": true
+  },
+  {
+    "slug": "schweizer-damen-liga",
+    "nom": "Schweizer Damen Liga",
+    "name": "Schweizer Damen Liga",
+    "icon_filename": "schweizer-damen-liga.png",
+    "icon": "/assets/leagues/schweizer-damen-liga.png",
+    "local_path": "local_files/league_icons/schweizer-damen-liga.png",
+    "has_image": true
+  },
+  {
+    "slug": "scottish-prem",
+    "nom": "Scottish Prem",
+    "name": "Scottish Prem",
+    "icon_filename": "scottish-premiership.png",
+    "icon": "/assets/leagues/scottish-premiership.png",
+    "local_path": "local_files/league_icons/scottish-premiership.png",
+    "has_image": true
+  },
+  {
+    "slug": "scottish-women's-league",
+    "nom": "Scottish Women's League",
+    "name": "Scottish Women's League",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "serie-a-enilive",
+    "nom": "Serie A Enilive",
+    "name": "Serie A Enilive",
+    "icon_filename": "serie-a-enilive.png",
+    "icon": "/assets/leagues/serie-a-enilive.png",
+    "local_path": "local_files/league_icons/serie-a-enilive.png",
+    "has_image": true
+  },
+  {
+    "slug": "serie-a-femminile",
+    "nom": "Serie A Femminile",
+    "name": "Serie A Femminile",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "serie-bkt",
+    "nom": "Serie BKT",
+    "name": "Serie BKT",
+    "icon_filename": "serie-bkt.png",
+    "icon": "/assets/leagues/serie-bkt.png",
+    "local_path": "local_files/league_icons/serie-bkt.png",
+    "has_image": true
+  },
+  {
+    "slug": "sudamericana",
+    "nom": "Sudamericana",
+    "name": "Sudamericana",
+    "icon_filename": "conmebol-sudamericana.png",
+    "icon": "/assets/leagues/conmebol-sudamericana.png",
+    "local_path": "local_files/league_icons/conmebol-sudamericana.png",
+    "has_image": true
+  },
+  {
+    "slug": "super-league-suisse",
+    "nom": "Super League Suisse",
+    "name": "Super League Suisse",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "sverige-liga",
+    "nom": "Sverige Liga",
+    "name": "Sverige Liga",
+    "icon_filename": "sverige-liga.png",
+    "icon": "/assets/leagues/sverige-liga.png",
+    "local_path": "local_files/league_icons/sverige-liga.png",
+    "has_image": true
+  },
+  {
+    "slug": "trendyol-süper-lig",
+    "nom": "Trendyol Süper Lig",
+    "name": "Trendyol Süper Lig",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "ukrayina-liha",
+    "nom": "Ukrayina Liha",
+    "name": "Ukrayina Liha",
+    "icon_filename": "ukrayina-liha.png",
+    "icon": "/assets/leagues/ukrayina-liha.png",
+    "local_path": "local_files/league_icons/ukrayina-liha.png",
+    "has_image": true
+  },
+  {
+    "slug": "united-emirates-league",
+    "nom": "United Emirates League",
+    "name": "United Emirates League",
+    "icon_filename": "united-emirates-league.png",
+    "icon": "/assets/leagues/united-emirates-league.png",
+    "local_path": "local_files/league_icons/united-emirates-league.png",
+    "has_image": true
+  },
+  {
+    "slug": "veikkausliiga",
+    "nom": "Veikkausliiga",
+    "name": "Veikkausliiga",
+    "icon_filename": "default-league.png",
+    "icon": "/assets/leagues/default-league.png",
+    "local_path": "local_files/league_icons/default-league.png",
+    "has_image": false
+  },
+  {
+    "slug": "ö.-bundesliga",
+    "nom": "Ö. Bundesliga",
+    "name": "Ö. Bundesliga",
+    "icon_filename": "bundesliga.png",
+    "icon": "/assets/leagues/bundesliga.png",
+    "local_path": "local_files/league_icons/bundesliga.png",
+    "has_image": true
+  },
+  {
+    "slug": "česká-liga",
+    "nom": "Česká Liga",
+    "name": "Česká Liga",
+    "icon_filename": "česká-liga.png",
+    "icon": "/assets/leagues/česká-liga.png",
+    "local_path": "local_files/league_icons/česká-liga.png",
+    "has_image": true
+  }
+]

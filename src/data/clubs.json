@@ -1,0 +1,6059 @@
+[
+  {
+    "slug": "1.-fc-köln",
+    "nom": "1. FC Köln",
+    "name": "1. FC Köln",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "1.-fc-magdeburg",
+    "nom": "1. FC Magdeburg",
+    "name": "1. FC Magdeburg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "1.-fc-nürnberg",
+    "nom": "1. FC Nürnberg",
+    "name": "1. FC Nürnberg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "1.-fsv-mainz-05",
+    "nom": "1. FSV Mainz 05",
+    "name": "1. FSV Mainz 05",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "1860-münchen",
+    "nom": "1860 München",
+    "name": "1860 München",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ad-ceuta-fc",
+    "nom": "AD Ceuta FC",
+    "name": "AD Ceuta FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "aek-athens",
+    "nom": "AEK Athens",
+    "name": "AEK Athens",
+    "icon_filename": "aek-athens.png",
+    "icon": "/assets/clubs/aek-athens.png",
+    "local_path": "local_files/club_icons/aek-athens.png",
+    "has_image": true
+  },
+  {
+    "slug": "afc-bournemouth",
+    "nom": "AFC Bournemouth",
+    "name": "AFC Bournemouth",
+    "icon_filename": "afc-bournemouth.png",
+    "icon": "/assets/clubs/afc-bournemouth.png",
+    "local_path": "local_files/club_icons/afc-bournemouth.png",
+    "has_image": true
+  },
+  {
+    "slug": "afc-wimbledon",
+    "nom": "AFC Wimbledon",
+    "name": "AFC Wimbledon",
+    "icon_filename": "afc-wimbledon.png",
+    "icon": "/assets/clubs/afc-wimbledon.png",
+    "local_path": "local_files/club_icons/afc-wimbledon.png",
+    "has_image": true
+  },
+  {
+    "slug": "agf",
+    "nom": "AGF",
+    "name": "AGF",
+    "icon_filename": "agf.png",
+    "icon": "/assets/clubs/agf.png",
+    "local_path": "local_files/club_icons/agf.png",
+    "has_image": true
+  },
+  {
+    "slug": "aik",
+    "nom": "AIK",
+    "name": "AIK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "aj-auxerre",
+    "nom": "AJ Auxerre",
+    "name": "AJ Auxerre",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "apoel-fc",
+    "nom": "APOEL FC",
+    "name": "APOEL FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "as-monaco",
+    "nom": "AS Monaco",
+    "name": "AS Monaco",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "as-nancy-lorraine",
+    "nom": "AS Nancy Lorraine",
+    "name": "AS Nancy Lorraine",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "as-roma",
+    "nom": "AS Roma",
+    "name": "AS Roma",
+    "icon_filename": "as-roma.png",
+    "icon": "/assets/clubs/as-roma.png",
+    "local_path": "local_files/club_icons/as-roma.png",
+    "has_image": true
+  },
+  {
+    "slug": "as-saint-étienne",
+    "nom": "AS Saint Étienne",
+    "name": "AS Saint Étienne",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "as-saint-étienne",
+    "nom": "AS Saint-Étienne",
+    "name": "AS Saint-Étienne",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "avs-futebol-sad",
+    "nom": "AVS Futebol SAD",
+    "name": "AVS Futebol SAD",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "az",
+    "nom": "AZ",
+    "name": "AZ",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "aberdeen",
+    "nom": "Aberdeen",
+    "name": "Aberdeen",
+    "icon_filename": "aberdeen.png",
+    "icon": "/assets/clubs/aberdeen.png",
+    "local_path": "local_files/club_icons/aberdeen.png",
+    "has_image": true
+  },
+  {
+    "slug": "accrington",
+    "nom": "Accrington",
+    "name": "Accrington",
+    "icon_filename": "accrington.png",
+    "icon": "/assets/clubs/accrington.png",
+    "local_path": "local_files/club_icons/accrington.png",
+    "has_image": true
+  },
+  {
+    "slug": "adelaide-united",
+    "nom": "Adelaide United",
+    "name": "Adelaide United",
+    "icon_filename": "adelaide-united.png",
+    "icon": "/assets/clubs/adelaide-united.png",
+    "local_path": "local_files/club_icons/adelaide-united.png",
+    "has_image": true
+  },
+  {
+    "slug": "ajax",
+    "nom": "Ajax",
+    "name": "Ajax",
+    "icon_filename": "ajax.png",
+    "icon": "/assets/clubs/ajax.png",
+    "local_path": "local_files/club_icons/ajax.png",
+    "has_image": true
+  },
+  {
+    "slug": "al-ahli",
+    "nom": "Al Ahli",
+    "name": "Al Ahli",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-ain-fc",
+    "nom": "Al Ain FC",
+    "name": "Al Ain FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-ettifaq",
+    "nom": "Al Ettifaq",
+    "name": "Al Ettifaq",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-fateh",
+    "nom": "Al Fateh",
+    "name": "Al Fateh",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-fayha",
+    "nom": "Al Fayha",
+    "name": "Al Fayha",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-hazem",
+    "nom": "Al Hazem",
+    "name": "Al Hazem",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-hilal",
+    "nom": "Al Hilal",
+    "name": "Al Hilal",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-ittihad",
+    "nom": "Al Ittihad",
+    "name": "Al Ittihad",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-khaleej",
+    "nom": "Al Khaleej",
+    "name": "Al Khaleej",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-kholood",
+    "nom": "Al Kholood",
+    "name": "Al Kholood",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-najmah",
+    "nom": "Al Najmah",
+    "name": "Al Najmah",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-nassr",
+    "nom": "Al Nassr",
+    "name": "Al Nassr",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-okhdood",
+    "nom": "Al Okhdood",
+    "name": "Al Okhdood",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-qadsiah",
+    "nom": "Al Qadsiah",
+    "name": "Al Qadsiah",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-riyadh",
+    "nom": "Al Riyadh",
+    "name": "Al Riyadh",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-shabab",
+    "nom": "Al Shabab",
+    "name": "Al Shabab",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "al-taawoun",
+    "nom": "Al Taawoun",
+    "name": "Al Taawoun",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "alanyaspor",
+    "nom": "Alanyaspor",
+    "name": "Alanyaspor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "albacete-bp",
+    "nom": "Albacete BP",
+    "name": "Albacete BP",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "aldosivi",
+    "nom": "Aldosivi",
+    "name": "Aldosivi",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "aleman.-aachen",
+    "nom": "Aleman. Aachen",
+    "name": "Aleman. Aachen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "alhama-cf",
+    "nom": "Alhama CF",
+    "name": "Alhama CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "alianza-lima",
+    "nom": "Alianza Lima",
+    "name": "Alianza Lima",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "amiens-sc",
+    "nom": "Amiens SC",
+    "name": "Amiens SC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "américa-de-cali",
+    "nom": "América de Cali",
+    "name": "América de Cali",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "angel-city-fc",
+    "nom": "Angel City FC",
+    "name": "Angel City FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "angers-sco",
+    "nom": "Angers SCO",
+    "name": "Angers SCO",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "antalyaspor",
+    "nom": "Antalyaspor",
+    "name": "Antalyaspor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "argentinos-jrs.",
+    "nom": "Argentinos Jrs.",
+    "name": "Argentinos Jrs.",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "arka-gdynia",
+    "nom": "Arka Gdynia",
+    "name": "Arka Gdynia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "arminia-bielefeld",
+    "nom": "Arminia Bielefeld",
+    "name": "Arminia Bielefeld",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "arouca",
+    "nom": "Arouca",
+    "name": "Arouca",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "arsenal",
+    "nom": "Arsenal",
+    "name": "Arsenal",
+    "icon_filename": "arsenal.png",
+    "icon": "/assets/clubs/arsenal.png",
+    "local_path": "local_files/club_icons/arsenal.png",
+    "has_image": true
+  },
+  {
+    "slug": "aston-villa",
+    "nom": "Aston Villa",
+    "name": "Aston Villa",
+    "icon_filename": "aston-villa.png",
+    "icon": "/assets/clubs/aston-villa.png",
+    "local_path": "local_files/club_icons/aston-villa.png",
+    "has_image": true
+  },
+  {
+    "slug": "athletic-club",
+    "nom": "Athletic Club",
+    "name": "Athletic Club",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "atl.-nacional",
+    "nom": "Atl. Nacional",
+    "name": "Atl. Nacional",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "atlanta-united",
+    "nom": "Atlanta United",
+    "name": "Atlanta United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "atlético-grau",
+    "nom": "Atlético Grau",
+    "name": "Atlético Grau",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "atlético-tucumán",
+    "nom": "Atlético Tucumán",
+    "name": "Atlético Tucumán",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "atlético-de-madrid",
+    "nom": "Atlético de Madrid",
+    "name": "Atlético de Madrid",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "auckland-fc",
+    "nom": "Auckland FC",
+    "name": "Auckland FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "austin-fc",
+    "nom": "Austin FC",
+    "name": "Austin FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "avellino",
+    "nom": "Avellino",
+    "name": "Avellino",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bk-häcken",
+    "nom": "BK Häcken",
+    "name": "BK Häcken",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bsc-young-boys",
+    "nom": "BSC Young Boys",
+    "name": "BSC Young Boys",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "badalona-women",
+    "nom": "Badalona Women",
+    "name": "Badalona Women",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "banfield",
+    "nom": "Banfield",
+    "name": "Banfield",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "barcelona-sc",
+    "nom": "Barcelona SC",
+    "name": "Barcelona SC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bari",
+    "nom": "Bari",
+    "name": "Bari",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "barnet",
+    "nom": "Barnet",
+    "name": "Barnet",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "barnsley",
+    "nom": "Barnsley",
+    "name": "Barnsley",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "barracas-central",
+    "nom": "Barracas Central",
+    "name": "Barracas Central",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "barrow",
+    "nom": "Barrow",
+    "name": "Barrow",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bay-fc",
+    "nom": "Bay FC",
+    "name": "Bay FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "başakşehir",
+    "nom": "Başakşehir",
+    "name": "Başakşehir",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "beijing-fc",
+    "nom": "Beijing FC",
+    "name": "Beijing FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "belgrano",
+    "nom": "Belgrano",
+    "name": "Belgrano",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bengaluru-fc",
+    "nom": "Bengaluru FC",
+    "name": "Bengaluru FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bergamo-calcio",
+    "nom": "Bergamo Calcio",
+    "name": "Bergamo Calcio",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "beşiktaş",
+    "nom": "Beşiktaş",
+    "name": "Beşiktaş",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "birmingham-city",
+    "nom": "Birmingham City",
+    "name": "Birmingham City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "blackburn-rovers",
+    "nom": "Blackburn Rovers",
+    "name": "Blackburn Rovers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "blackpool",
+    "nom": "Blackpool",
+    "name": "Blackpool",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "blau-weiss-linz",
+    "nom": "Blau-Weiss Linz",
+    "name": "Blau-Weiss Linz",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "boca-juniors",
+    "nom": "Boca Juniors",
+    "name": "Boca Juniors",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bohemians",
+    "nom": "Bohemians",
+    "name": "Bohemians",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bologna",
+    "nom": "Bologna",
+    "name": "Bologna",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bolton",
+    "nom": "Bolton",
+    "name": "Bolton",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bolívar",
+    "nom": "Bolívar",
+    "name": "Bolívar",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "borussia-dortmund",
+    "nom": "Borussia Dortmund",
+    "name": "Borussia Dortmund",
+    "icon_filename": "borussia-dortmund.png",
+    "icon": "/assets/clubs/borussia-dortmund.png",
+    "local_path": "local_files/club_icons/borussia-dortmund.png",
+    "has_image": true
+  },
+  {
+    "slug": "boston-river",
+    "nom": "Boston River",
+    "name": "Boston River",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bradford-city",
+    "nom": "Bradford City",
+    "name": "Bradford City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "braunschweig",
+    "nom": "Braunschweig",
+    "name": "Braunschweig",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "brentford",
+    "nom": "Brentford",
+    "name": "Brentford",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "brighton",
+    "nom": "Brighton",
+    "name": "Brighton",
+    "icon_filename": "brighton.png",
+    "icon": "/assets/clubs/brighton.png",
+    "local_path": "local_files/club_icons/brighton.png",
+    "has_image": true
+  },
+  {
+    "slug": "brisbane-roar",
+    "nom": "Brisbane Roar",
+    "name": "Brisbane Roar",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bristol-city",
+    "nom": "Bristol City",
+    "name": "Bristol City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bristol-rovers",
+    "nom": "Bristol Rovers",
+    "name": "Bristol Rovers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bromley-fc",
+    "nom": "Bromley FC",
+    "name": "Bromley FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "brommapojkarna",
+    "nom": "Brommapojkarna",
+    "name": "Brommapojkarna",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bruk-bet",
+    "nom": "Bruk-Bet",
+    "name": "Bruk-Bet",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bryne-fk",
+    "nom": "Bryne FK",
+    "name": "Bryne FK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "brøndby-if",
+    "nom": "Brøndby IF",
+    "name": "Brøndby IF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "bucaramanga",
+    "nom": "Bucaramanga",
+    "name": "Bucaramanga",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "burgos-cf",
+    "nom": "Burgos CF",
+    "name": "Burgos CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "burnley",
+    "nom": "Burnley",
+    "name": "Burnley",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "burton-albion",
+    "nom": "Burton Albion",
+    "name": "Burton Albion",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "c.-adeje-tenerife",
+    "nom": "C. Adeje Tenerife",
+    "name": "C. Adeje Tenerife",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ca-osasuna",
+    "nom": "CA Osasuna",
+    "name": "CA Osasuna",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cd-castellón",
+    "nom": "CD Castellón",
+    "name": "CD Castellón",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cd-leganés",
+    "nom": "CD Leganés",
+    "name": "CD Leganés",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cd-mirandés",
+    "nom": "CD Mirandés",
+    "name": "CD Mirandés",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cd-tondela",
+    "nom": "CD Tondela",
+    "name": "CD Tondela",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cf-montréal",
+    "nom": "CF Montréal",
+    "name": "CF Montréal",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cfr-1907-cluj",
+    "nom": "CFR 1907 Cluj",
+    "name": "CFR 1907 Cluj",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cagliari",
+    "nom": "Cagliari",
+    "name": "Cagliari",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cambridge-utd",
+    "nom": "Cambridge Utd",
+    "name": "Cambridge Utd",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "carabobo-fc",
+    "nom": "Carabobo FC",
+    "name": "Carabobo FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "caracas-fc",
+    "nom": "Caracas FC",
+    "name": "Caracas FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cardiff-city",
+    "nom": "Cardiff City",
+    "name": "Cardiff City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "carl-zeiss-jena",
+    "nom": "Carl Zeiss Jena",
+    "name": "Carl Zeiss Jena",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "carrarese-calcio",
+    "nom": "Carrarese Calcio",
+    "name": "Carrarese Calcio",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "casa-pia-ac",
+    "nom": "Casa Pia AC",
+    "name": "Casa Pia AC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "catanzaro",
+    "nom": "Catanzaro",
+    "name": "Catanzaro",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "celta",
+    "nom": "Celta",
+    "name": "Celta",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "celtic",
+    "nom": "Celtic",
+    "name": "Celtic",
+    "icon_filename": "celtic.png",
+    "icon": "/assets/clubs/celtic.png",
+    "local_path": "local_files/club_icons/celtic.png",
+    "has_image": true
+  },
+  {
+    "slug": "central-coast",
+    "nom": "Central Coast",
+    "name": "Central Coast",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "central-córdoba",
+    "nom": "Central Córdoba",
+    "name": "Central Córdoba",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cercle-brugge",
+    "nom": "Cercle Brugge",
+    "name": "Cercle Brugge",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cerro-largo",
+    "nom": "Cerro Largo",
+    "name": "Cerro Largo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cerro-porteño",
+    "nom": "Cerro Porteño",
+    "name": "Cerro Porteño",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cesena",
+    "nom": "Cesena",
+    "name": "Cesena",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "changchun-yatai",
+    "nom": "Changchun Yatai",
+    "name": "Changchun Yatai",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "charlotte-fc",
+    "nom": "Charlotte FC",
+    "name": "Charlotte FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "charlton-ath",
+    "nom": "Charlton Ath",
+    "name": "Charlton Ath",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "chelsea",
+    "nom": "Chelsea",
+    "name": "Chelsea",
+    "icon_filename": "chelsea.png",
+    "icon": "/assets/clubs/chelsea.png",
+    "local_path": "local_files/club_icons/chelsea.png",
+    "has_image": true
+  },
+  {
+    "slug": "cheltenham-town",
+    "nom": "Cheltenham Town",
+    "name": "Cheltenham Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "chengdu-fc",
+    "nom": "Chengdu FC",
+    "name": "Chengdu FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "chennaiyin-fc",
+    "nom": "Chennaiyin FC",
+    "name": "Chennaiyin FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "chesterfield",
+    "nom": "Chesterfield",
+    "name": "Chesterfield",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "chicago-fire-fc",
+    "nom": "Chicago Fire FC",
+    "name": "Chicago Fire FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "chicago-stars-fc",
+    "nom": "Chicago Stars FC",
+    "name": "Chicago Stars FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cienciano",
+    "nom": "Cienciano",
+    "name": "Cienciano",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "clermont-foot-63",
+    "nom": "Clermont Foot 63",
+    "name": "Clermont Foot 63",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "club-brugge",
+    "nom": "Club Brugge",
+    "name": "Club Brugge",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "colchester",
+    "nom": "Colchester",
+    "name": "Colchester",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "colo-colo",
+    "nom": "Colo-Colo",
+    "name": "Colo-Colo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "colorado-rapids",
+    "nom": "Colorado Rapids",
+    "name": "Colorado Rapids",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "columbus-crew",
+    "nom": "Columbus Crew",
+    "name": "Columbus Crew",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "como",
+    "nom": "Como",
+    "name": "Como",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cork-city",
+    "nom": "Cork City",
+    "name": "Cork City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "coventry-city",
+    "nom": "Coventry City",
+    "name": "Coventry City",
+    "icon_filename": "coventry-city.png",
+    "icon": "/assets/clubs/coventry-city.png",
+    "local_path": "local_files/club_icons/coventry-city.png",
+    "has_image": true
+  },
+  {
+    "slug": "cracovia",
+    "nom": "Cracovia",
+    "name": "Cracovia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "crawley-town",
+    "nom": "Crawley Town",
+    "name": "Crawley Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cremonese",
+    "nom": "Cremonese",
+    "name": "Cremonese",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "crewe-alexandra",
+    "nom": "Crewe Alexandra",
+    "name": "Crewe Alexandra",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "crystal-palace",
+    "nom": "Crystal Palace",
+    "name": "Crystal Palace",
+    "icon_filename": "crystal-palace.png",
+    "icon": "/assets/clubs/crystal-palace.png",
+    "local_path": "local_files/club_icons/crystal-palace.png",
+    "has_image": true
+  },
+  {
+    "slug": "cultural-leonesa",
+    "nom": "Cultural Leonesa",
+    "name": "Cultural Leonesa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "cádiz-cf",
+    "nom": "Cádiz CF",
+    "name": "Cádiz CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "córdoba-cf",
+    "nom": "Córdoba CF",
+    "name": "Córdoba CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "d.-alavés",
+    "nom": "D. Alavés",
+    "name": "D. Alavés",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "d.c.-united",
+    "nom": "D.C. United",
+    "name": "D.C. United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dux-logroño",
+    "nom": "DUX Logroño",
+    "name": "DUX Logroño",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "daegu-fc",
+    "nom": "Daegu FC",
+    "name": "Daegu FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "daejeon-hana",
+    "nom": "Daejeon Hana",
+    "name": "Daejeon Hana",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dalian-yingbo",
+    "nom": "Dalian Yingbo",
+    "name": "Dalian Yingbo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "damac",
+    "nom": "Damac",
+    "name": "Damac",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "defensa",
+    "nom": "Defensa",
+    "name": "Defensa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "degerfors-if",
+    "nom": "Degerfors IF",
+    "name": "Degerfors IF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dep.-riestra",
+    "nom": "Dep. Riestra",
+    "name": "Dep. Riestra",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dep.-táchira",
+    "nom": "Dep. Táchira",
+    "name": "Dep. Táchira",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "deportes-iquique",
+    "nom": "Deportes Iquique",
+    "name": "Deportes Iquique",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "derby-county",
+    "nom": "Derby County",
+    "name": "Derby County",
+    "icon_filename": "derby-county.png",
+    "icon": "/assets/clubs/derby-county.png",
+    "local_path": "local_files/club_icons/derby-county.png",
+    "has_image": true
+  },
+  {
+    "slug": "derry-city",
+    "nom": "Derry City",
+    "name": "Derry City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dijon-fco",
+    "nom": "Dijon FCO",
+    "name": "Dijon FCO",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dinamo-zagreb",
+    "nom": "Dinamo Zagreb",
+    "name": "Dinamo Zagreb",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "djurgårdens-if",
+    "nom": "Djurgårdens IF",
+    "name": "Djurgårdens IF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "doncaster",
+    "nom": "Doncaster",
+    "name": "Doncaster",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "drogheda-united",
+    "nom": "Drogheda United",
+    "name": "Drogheda United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dundee-fc",
+    "nom": "Dundee FC",
+    "name": "Dundee FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dundee-united",
+    "nom": "Dundee United",
+    "name": "Dundee United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dynamo-dresden",
+    "nom": "Dynamo Dresden",
+    "name": "Dynamo Dresden",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "dynamo-kyiv",
+    "nom": "Dynamo Kyiv",
+    "name": "Dynamo Kyiv",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "düsseldorf",
+    "nom": "Düsseldorf",
+    "name": "Düsseldorf",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "estac-troyes",
+    "nom": "ESTAC Troyes",
+    "name": "ESTAC Troyes",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "east-bengal",
+    "nom": "East Bengal",
+    "name": "East Bengal",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "elche-cf",
+    "nom": "Elche CF",
+    "name": "Elche CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "empoli",
+    "nom": "Empoli",
+    "name": "Empoli",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "en-avant-guingamp",
+    "nom": "En Avant Guingamp",
+    "name": "En Avant Guingamp",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "energie-cottbus",
+    "nom": "Energie Cottbus",
+    "name": "Energie Cottbus",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "entella",
+    "nom": "Entella",
+    "name": "Entella",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "estoril-praia",
+    "nom": "Estoril Praia",
+    "name": "Estoril Praia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "estrela-amadora",
+    "nom": "Estrela Amadora",
+    "name": "Estrela Amadora",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "estudiantes",
+    "nom": "Estudiantes",
+    "name": "Estudiantes",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "everton",
+    "nom": "Everton",
+    "name": "Everton",
+    "icon_filename": "everton.png",
+    "icon": "/assets/clubs/everton.png",
+    "local_path": "local_files/club_icons/everton.png",
+    "has_image": true
+  },
+  {
+    "slug": "excelsior",
+    "nom": "Excelsior",
+    "name": "Excelsior",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "exeter-city",
+    "nom": "Exeter City",
+    "name": "Exeter City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "eyüpspor",
+    "nom": "Eyüpspor",
+    "name": "Eyüpspor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "f.c.-københavn",
+    "nom": "F.C. København",
+    "name": "F.C. København",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fbc-melgar",
+    "nom": "FBC Melgar",
+    "name": "FBC Melgar",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-alverca",
+    "nom": "FC Alverca",
+    "name": "FC Alverca",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-andorra",
+    "nom": "FC Andorra",
+    "name": "FC Andorra",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-annecy",
+    "nom": "FC Annecy",
+    "name": "FC Annecy",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-anyang",
+    "nom": "FC Anyang",
+    "name": "FC Anyang",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-argeș",
+    "nom": "FC Argeș",
+    "name": "FC Argeș",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-augsburg",
+    "nom": "FC Augsburg",
+    "name": "FC Augsburg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-barcelona",
+    "nom": "FC Barcelona",
+    "name": "FC Barcelona",
+    "icon_filename": "fc-barcelona.png",
+    "icon": "/assets/clubs/fc-barcelona.png",
+    "local_path": "local_files/club_icons/fc-barcelona.png",
+    "has_image": true
+  },
+  {
+    "slug": "fc-basel-1893",
+    "nom": "FC Basel 1893",
+    "name": "FC Basel 1893",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-bayern-münchen",
+    "nom": "FC Bayern München",
+    "name": "FC Bayern München",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-botoșani",
+    "nom": "FC Botoșani",
+    "name": "FC Botoșani",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-cincinnati",
+    "nom": "FC Cincinnati",
+    "name": "FC Cincinnati",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-dallas",
+    "nom": "FC Dallas",
+    "name": "FC Dallas",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-dinamo-1948",
+    "nom": "FC Dinamo 1948",
+    "name": "FC Dinamo 1948",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-erzgebirge-aue",
+    "nom": "FC Erzgebirge Aue",
+    "name": "FC Erzgebirge Aue",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-famalicão",
+    "nom": "FC Famalicão",
+    "name": "FC Famalicão",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-fleury-91",
+    "nom": "FC Fleury 91",
+    "name": "FC Fleury 91",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-fredericia",
+    "nom": "FC Fredericia",
+    "name": "FC Fredericia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-goa",
+    "nom": "FC Goa",
+    "name": "FC Goa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-groningen",
+    "nom": "FC Groningen",
+    "name": "FC Groningen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-hansa-rostock",
+    "nom": "FC Hansa Rostock",
+    "name": "FC Hansa Rostock",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-hermannstadt",
+    "nom": "FC Hermannstadt",
+    "name": "FC Hermannstadt",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-ingolstadt-04",
+    "nom": "FC Ingolstadt 04",
+    "name": "FC Ingolstadt 04",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-lorient",
+    "nom": "FC Lorient",
+    "name": "FC Lorient",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-lugano",
+    "nom": "FC Lugano",
+    "name": "FC Lugano",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-luzern",
+    "nom": "FC Luzern",
+    "name": "FC Luzern",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-metaloglobus",
+    "nom": "FC Metaloglobus",
+    "name": "FC Metaloglobus",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-metz",
+    "nom": "FC Metz",
+    "name": "FC Metz",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-midtjylland",
+    "nom": "FC Midtjylland",
+    "name": "FC Midtjylland",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-nantes",
+    "nom": "FC Nantes",
+    "name": "FC Nantes",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-nordsjælland",
+    "nom": "FC Nordsjælland",
+    "name": "FC Nordsjælland",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-petrolul",
+    "nom": "FC Petrolul",
+    "name": "FC Petrolul",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-porto",
+    "nom": "FC Porto",
+    "name": "FC Porto",
+    "icon_filename": "fc-porto.png",
+    "icon": "/assets/clubs/fc-porto.png",
+    "local_path": "local_files/club_icons/fc-porto.png",
+    "has_image": true
+  },
+  {
+    "slug": "fc-rapid-1923",
+    "nom": "FC Rapid 1923",
+    "name": "FC Rapid 1923",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-rosengård",
+    "nom": "FC Rosengård",
+    "name": "FC Rosengård",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-schalke-04",
+    "nom": "FC Schalke 04",
+    "name": "FC Schalke 04",
+    "icon_filename": "fc-schalke-04.png",
+    "icon": "/assets/clubs/fc-schalke-04.png",
+    "local_path": "local_files/club_icons/fc-schalke-04.png",
+    "has_image": true
+  },
+  {
+    "slug": "fc-schweinfurt-05",
+    "nom": "FC Schweinfurt 05",
+    "name": "FC Schweinfurt 05",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-seoul",
+    "nom": "FC Seoul",
+    "name": "FC Seoul",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-sion",
+    "nom": "FC Sion",
+    "name": "FC Sion",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-st.-gallen",
+    "nom": "FC St. Gallen",
+    "name": "FC St. Gallen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-st.-pauli",
+    "nom": "FC St. Pauli",
+    "name": "FC St. Pauli",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-thun",
+    "nom": "FC Thun",
+    "name": "FC Thun",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-twente",
+    "nom": "FC Twente",
+    "name": "FC Twente",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-univ.-cluj",
+    "nom": "FC Univ. Cluj",
+    "name": "FC Univ. Cluj",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-utrecht",
+    "nom": "FC Utrecht",
+    "name": "FC Utrecht",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-volendam",
+    "nom": "FC Volendam",
+    "name": "FC Volendam",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-winterthur",
+    "nom": "FC Winterthur",
+    "name": "FC Winterthur",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fc-zürich",
+    "nom": "FC Zürich",
+    "name": "FC Zürich",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fcsb",
+    "nom": "FCSB",
+    "name": "FCSB",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fcv-dender-eh",
+    "nom": "FCV Dender EH",
+    "name": "FCV Dender EH",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fk-austria-wien",
+    "nom": "FK Austria Wien",
+    "name": "FK Austria Wien",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fk-bodø/glimt",
+    "nom": "FK Bodø/Glimt",
+    "name": "FK Bodø/Glimt",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fk-csíkszereda",
+    "nom": "FK Csíkszereda",
+    "name": "FK Csíkszereda",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fk-haugesund",
+    "nom": "FK Haugesund",
+    "name": "FK Haugesund",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "falkirk",
+    "nom": "Falkirk",
+    "name": "Falkirk",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "farul-constanța",
+    "nom": "Farul Constanța",
+    "name": "Farul Constanța",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fenerbahçe",
+    "nom": "Fenerbahçe",
+    "name": "Fenerbahçe",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ferencvárosi-tc",
+    "nom": "Ferencvárosi TC",
+    "name": "Ferencvárosi TC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "feyenoord",
+    "nom": "Feyenoord",
+    "name": "Feyenoord",
+    "icon_filename": "feyenoord.png",
+    "icon": "/assets/clubs/feyenoord.png",
+    "local_path": "local_files/club_icons/feyenoord.png",
+    "has_image": true
+  },
+  {
+    "slug": "fiorentina",
+    "nom": "Fiorentina",
+    "name": "Fiorentina",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fleetwood-town",
+    "nom": "Fleetwood Town",
+    "name": "Fleetwood Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fortuna-sittard",
+    "nom": "Fortuna Sittard",
+    "name": "Fortuna Sittard",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "frankfurt",
+    "nom": "Frankfurt",
+    "name": "Frankfurt",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fredrikstad-fk",
+    "nom": "Fredrikstad FK",
+    "name": "Fredrikstad FK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "frosinone",
+    "nom": "Frosinone",
+    "name": "Frosinone",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "fulham",
+    "nom": "Fulham",
+    "name": "Fulham",
+    "icon_filename": "fulham.png",
+    "icon": "/assets/clubs/fulham.png",
+    "local_path": "local_files/club_icons/fulham.png",
+    "has_image": true
+  },
+  {
+    "slug": "fürth",
+    "nom": "Fürth",
+    "name": "Fürth",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gais",
+    "nom": "GAIS",
+    "name": "GAIS",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gc-zürich",
+    "nom": "GC Zürich",
+    "name": "GC Zürich",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gks-katowice",
+    "nom": "GKS Katowice",
+    "name": "GKS Katowice",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gv-san-josé",
+    "nom": "GV San José",
+    "name": "GV San José",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "galatasaray",
+    "nom": "Galatasaray",
+    "name": "Galatasaray",
+    "icon_filename": "galatasaray.png",
+    "icon": "/assets/clubs/galatasaray.png",
+    "local_path": "local_files/club_icons/galatasaray.png",
+    "has_image": true
+  },
+  {
+    "slug": "galway-united",
+    "nom": "Galway United",
+    "name": "Galway United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gangwon-fc",
+    "nom": "Gangwon FC",
+    "name": "Gangwon FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gaziantep",
+    "nom": "Gaziantep",
+    "name": "Gaziantep",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "genoa",
+    "nom": "Genoa",
+    "name": "Genoa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gençlerbirliği",
+    "nom": "Gençlerbirliği",
+    "name": "Gençlerbirliği",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "getafe-cf",
+    "nom": "Getafe CF",
+    "name": "Getafe CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gil-vicente",
+    "nom": "Gil Vicente",
+    "name": "Gil Vicente",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gillingham",
+    "nom": "Gillingham",
+    "name": "Gillingham",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gimcheon-sangmu",
+    "nom": "Gimcheon Sangmu",
+    "name": "Gimcheon Sangmu",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gimnasia",
+    "nom": "Gimnasia",
+    "name": "Gimnasia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "girona-fc",
+    "nom": "Girona FC",
+    "name": "Girona FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "glasgow-city-fc",
+    "nom": "Glasgow City FC",
+    "name": "Glasgow City FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "go-ahead-eagles",
+    "nom": "Go Ahead Eagles",
+    "name": "Go Ahead Eagles",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "godoy-cruz",
+    "nom": "Godoy Cruz",
+    "name": "Godoy Cruz",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gotham-fc",
+    "nom": "Gotham FC",
+    "name": "Gotham FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "granada-cf",
+    "nom": "Granada CF",
+    "name": "Granada CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "grazer-ak",
+    "nom": "Grazer AK",
+    "name": "Grazer AK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "grenoble-foot-38",
+    "nom": "Grenoble Foot 38",
+    "name": "Grenoble Foot 38",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "grimsby-town",
+    "nom": "Grimsby Town",
+    "name": "Grimsby Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "guaraní",
+    "nom": "Guaraní",
+    "name": "Guaraní",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "gwangju-fc",
+    "nom": "Gwangju FC",
+    "name": "Gwangju FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "górnik-zabrze",
+    "nom": "Górnik Zabrze",
+    "name": "Górnik Zabrze",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "göztepe",
+    "nom": "Göztepe",
+    "name": "Göztepe",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hjk-helsinki",
+    "nom": "HJK Helsinki",
+    "name": "HJK Helsinki",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hajduk-split",
+    "nom": "Hajduk Split",
+    "name": "Hajduk Split",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "halmstads-bk",
+    "nom": "Halmstads BK",
+    "name": "Halmstads BK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hamkam-fotball",
+    "nom": "HamKam Fotball",
+    "name": "HamKam Fotball",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hamburger-sv",
+    "nom": "Hamburger SV",
+    "name": "Hamburger SV",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hammarby-if",
+    "nom": "Hammarby IF",
+    "name": "Hammarby IF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hannover-96",
+    "nom": "Hannover 96",
+    "name": "Hannover 96",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "harrogate-town",
+    "nom": "Harrogate Town",
+    "name": "Harrogate Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "havre-ac",
+    "nom": "Havre AC",
+    "name": "Havre AC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hearts",
+    "nom": "Hearts",
+    "name": "Hearts",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "heidenheim",
+    "nom": "Heidenheim",
+    "name": "Heidenheim",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hellas-verona",
+    "nom": "Hellas Verona",
+    "name": "Hellas Verona",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "henan-fc",
+    "nom": "Henan FC",
+    "name": "Henan FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "heracles-almelo",
+    "nom": "Heracles Almelo",
+    "name": "Heracles Almelo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hertha-bsc",
+    "nom": "Hertha BSC",
+    "name": "Hertha BSC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hibernian",
+    "nom": "Hibernian",
+    "name": "Hibernian",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "holstein-kiel",
+    "nom": "Holstein Kiel",
+    "name": "Holstein Kiel",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "houston-dash",
+    "nom": "Houston Dash",
+    "name": "Houston Dash",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "houston-dynamo",
+    "nom": "Houston Dynamo",
+    "name": "Houston Dynamo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "huddersfield",
+    "nom": "Huddersfield",
+    "name": "Huddersfield",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hull-city",
+    "nom": "Hull City",
+    "name": "Hull City",
+    "icon_filename": "hull-city.png",
+    "icon": "/assets/clubs/hull-city.png",
+    "local_path": "local_files/club_icons/hull-city.png",
+    "has_image": true
+  },
+  {
+    "slug": "huracán",
+    "nom": "Huracán",
+    "name": "Huracán",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "hyderabad-fc",
+    "nom": "Hyderabad FC",
+    "name": "Hyderabad FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "idv",
+    "nom": "IDV",
+    "name": "IDV",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "if-elfsborg",
+    "nom": "IF Elfsborg",
+    "name": "IF Elfsborg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ifk-göteborg",
+    "nom": "IFK Göteborg",
+    "name": "IFK Göteborg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ifk-norrköping",
+    "nom": "IFK Norrköping",
+    "name": "IFK Norrköping",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ifk-värnamo",
+    "nom": "IFK Värnamo",
+    "name": "IFK Värnamo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ik-sirius",
+    "nom": "IK Sirius",
+    "name": "IK Sirius",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ind.-rivadavia",
+    "nom": "Ind. Rivadavia",
+    "name": "Ind. Rivadavia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "independiente",
+    "nom": "Independiente",
+    "name": "Independiente",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "instituto",
+    "nom": "Instituto",
+    "name": "Instituto",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "inter-miami-cf",
+    "nom": "Inter Miami CF",
+    "name": "Inter Miami CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ipswich",
+    "nom": "Ipswich",
+    "name": "Ipswich",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "jagiellonia",
+    "nom": "Jagiellonia",
+    "name": "Jagiellonia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "jahn-regensburg",
+    "nom": "Jahn Regensburg",
+    "name": "Jahn Regensburg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "jamshedpur-fc",
+    "nom": "Jamshedpur FC",
+    "name": "Jamshedpur FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "jeju-united",
+    "nom": "Jeju United",
+    "name": "Jeju United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "jeonbuk-hyundai",
+    "nom": "Jeonbuk Hyundai",
+    "name": "Jeonbuk Hyundai",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "juventus",
+    "nom": "Juventus",
+    "name": "Juventus",
+    "icon_filename": "juventus.png",
+    "icon": "/assets/clubs/juventus.png",
+    "local_path": "local_files/club_icons/juventus.png",
+    "has_image": true
+  },
+  {
+    "slug": "kaa-gent",
+    "nom": "KAA Gent",
+    "name": "KAA Gent",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kc-current",
+    "nom": "KC Current",
+    "name": "KC Current",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kfum-kameratene",
+    "nom": "KFUM-Kameratene",
+    "name": "KFUM-Kameratene",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "krc-genk",
+    "nom": "KRC Genk",
+    "name": "KRC Genk",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kv-mechelen",
+    "nom": "KV Mechelen",
+    "name": "KV Mechelen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kvc-westerlo",
+    "nom": "KVC Westerlo",
+    "name": "KVC Westerlo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kaiserslautern",
+    "nom": "Kaiserslautern",
+    "name": "Kaiserslautern",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "karagümrük-sk",
+    "nom": "Karagümrük SK",
+    "name": "Karagümrük SK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "karlsruher-sc",
+    "nom": "Karlsruher SC",
+    "name": "Karlsruher SC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kasımpaşa",
+    "nom": "Kasımpaşa",
+    "name": "Kasımpaşa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kayserispor",
+    "nom": "Kayserispor",
+    "name": "Kayserispor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kerala-blasters",
+    "nom": "Kerala Blasters",
+    "name": "Kerala Blasters",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kilmarnock",
+    "nom": "Kilmarnock",
+    "name": "Kilmarnock",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kocaelispor",
+    "nom": "Kocaelispor",
+    "name": "Kocaelispor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "konyaspor",
+    "nom": "Konyaspor",
+    "name": "Konyaspor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "korona-kielce",
+    "nom": "Korona Kielce",
+    "name": "Korona Kielce",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "kristiansund-bk",
+    "nom": "Kristiansund BK",
+    "name": "Kristiansund BK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "la-galaxy",
+    "nom": "LA Galaxy",
+    "name": "LA Galaxy",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lafc",
+    "nom": "LAFC",
+    "name": "LAFC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lask",
+    "nom": "LASK",
+    "name": "LASK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ldu-quito",
+    "nom": "LDU Quito",
+    "name": "LDU Quito",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "losc-lille",
+    "nom": "LOSC Lille",
+    "name": "LOSC Lille",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lanús",
+    "nom": "Lanús",
+    "name": "Lanús",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "latium",
+    "nom": "Latium",
+    "name": "Latium",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lausanne-sport",
+    "nom": "Lausanne-Sport",
+    "name": "Lausanne-Sport",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "laval-mfc",
+    "nom": "Laval MFC",
+    "name": "Laval MFC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "le-mans-fc",
+    "nom": "Le Mans FC",
+    "name": "Le Mans FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lecce",
+    "nom": "Lecce",
+    "name": "Lecce",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lech-poznań",
+    "nom": "Lech Poznań",
+    "name": "Lech Poznań",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lechia-gdańsk",
+    "nom": "Lechia Gdańsk",
+    "name": "Lechia Gdańsk",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "leeds-united",
+    "nom": "Leeds United",
+    "name": "Leeds United",
+    "icon_filename": "leeds-united.png",
+    "icon": "/assets/clubs/leeds-united.png",
+    "local_path": "local_files/club_icons/leeds-united.png",
+    "has_image": true
+  },
+  {
+    "slug": "legia-warszawa",
+    "nom": "Legia Warszawa",
+    "name": "Legia Warszawa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "leicester-city",
+    "nom": "Leicester City",
+    "name": "Leicester City",
+    "icon_filename": "leicester-city.png",
+    "icon": "/assets/clubs/leicester-city.png",
+    "local_path": "local_files/club_icons/leicester-city.png",
+    "has_image": true
+  },
+  {
+    "slug": "levante-ud",
+    "nom": "Levante UD",
+    "name": "Levante UD",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "leverkusen",
+    "nom": "Leverkusen",
+    "name": "Leverkusen",
+    "icon_filename": "leverkusen.png",
+    "icon": "/assets/clubs/leverkusen.png",
+    "local_path": "local_files/club_icons/leverkusen.png",
+    "has_image": true
+  },
+  {
+    "slug": "leyton-orient",
+    "nom": "Leyton Orient",
+    "name": "Leyton Orient",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "libertad",
+    "nom": "Libertad",
+    "name": "Libertad",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lincoln-city",
+    "nom": "Lincoln City",
+    "name": "Lincoln City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "liverpool",
+    "nom": "Liverpool",
+    "name": "Liverpool",
+    "icon_filename": "liverpool.png",
+    "icon": "/assets/clubs/liverpool.png",
+    "local_path": "local_files/club_icons/liverpool.png",
+    "has_image": true
+  },
+  {
+    "slug": "livingston",
+    "nom": "Livingston",
+    "name": "Livingston",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "lombardia-fc",
+    "nom": "Lombardia FC",
+    "name": "Lombardia FC",
+    "icon_filename": "lombardia-fc.png",
+    "icon": "/assets/clubs/lombardia-fc.png",
+    "local_path": "local_files/club_icons/lombardia-fc.png",
+    "has_image": true
+  },
+  {
+    "slug": "london-city",
+    "nom": "London City",
+    "name": "London City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "luton-town",
+    "nom": "Luton Town",
+    "name": "Luton Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "m'gladbach",
+    "nom": "M'gladbach",
+    "name": "M'gladbach",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "mk-dons",
+    "nom": "MK Dons",
+    "name": "MK Dons",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "msv-duisburg",
+    "nom": "MSV Duisburg",
+    "name": "MSV Duisburg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "macarthur-fc",
+    "nom": "Macarthur FC",
+    "name": "Macarthur FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "madrid-cff",
+    "nom": "Madrid CFF",
+    "name": "Madrid CFF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "malmö-ff",
+    "nom": "Malmö FF",
+    "name": "Malmö FF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "manchester-city",
+    "nom": "Manchester City",
+    "name": "Manchester City",
+    "icon_filename": "manchester-city.png",
+    "icon": "/assets/clubs/manchester-city.png",
+    "local_path": "local_files/club_icons/manchester-city.png",
+    "has_image": true
+  },
+  {
+    "slug": "manchester-united",
+    "nom": "Manchester United",
+    "name": "Manchester United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "manchester-utd",
+    "nom": "Manchester Utd",
+    "name": "Manchester Utd",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "mansfield-town",
+    "nom": "Mansfield Town",
+    "name": "Mansfield Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "mantova",
+    "nom": "Mantova",
+    "name": "Mantova",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "marseille",
+    "nom": "Marseille",
+    "name": "Marseille",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "meizhou-hakka-fc",
+    "nom": "Meizhou Hakka FC",
+    "name": "Meizhou Hakka FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "melb.-victory",
+    "nom": "Melb. Victory",
+    "name": "Melb. Victory",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "melbourne-city",
+    "nom": "Melbourne City",
+    "name": "Melbourne City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "middlesbrough",
+    "nom": "Middlesbrough",
+    "name": "Middlesbrough",
+    "icon_filename": "middlesbrough.png",
+    "icon": "/assets/clubs/middlesbrough.png",
+    "local_path": "local_files/club_icons/middlesbrough.png",
+    "has_image": true
+  },
+  {
+    "slug": "milano-fc",
+    "nom": "Milano FC",
+    "name": "Milano FC",
+    "icon_filename": "milano-fc.png",
+    "icon": "/assets/clubs/milano-fc.png",
+    "local_path": "local_files/club_icons/milano-fc.png",
+    "has_image": true
+  },
+  {
+    "slug": "millwall",
+    "nom": "Millwall",
+    "name": "Millwall",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "minnesota-united",
+    "nom": "Minnesota United",
+    "name": "Minnesota United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "mjällby-aif",
+    "nom": "Mjällby AIF",
+    "name": "Mjällby AIF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "modena",
+    "nom": "Modena",
+    "name": "Modena",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "mohun-bagan-sg",
+    "nom": "Mohun Bagan SG",
+    "name": "Mohun Bagan SG",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "molde-fk",
+    "nom": "Molde FK",
+    "name": "Molde FK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "montpellier",
+    "nom": "Montpellier",
+    "name": "Montpellier",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "monza",
+    "nom": "Monza",
+    "name": "Monza",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "moreirense-fc",
+    "nom": "Moreirense FC",
+    "name": "Moreirense FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "motherwell",
+    "nom": "Motherwell",
+    "name": "Motherwell",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "motor-lublin",
+    "nom": "Motor Lublin",
+    "name": "Motor Lublin",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "mumbai-city-fc",
+    "nom": "Mumbai City FC",
+    "name": "Mumbai City FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "mushuc-runa",
+    "nom": "Mushuc Runa",
+    "name": "Mushuc Runa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "málaga-cf",
+    "nom": "Málaga CF",
+    "name": "Málaga CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "n.e.c.-nijmegen",
+    "nom": "N.E.C. Nijmegen",
+    "name": "N.E.C. Nijmegen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "nac-breda",
+    "nom": "NAC Breda",
+    "name": "NAC Breda",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "nc-courage",
+    "nom": "NC Courage",
+    "name": "NC Courage",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "nacional",
+    "nom": "Nacional",
+    "name": "Nacional",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "nacional-potosí",
+    "nom": "Nacional Potosí",
+    "name": "Nacional Potosí",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "nashville-sc",
+    "nom": "Nashville SC",
+    "name": "Nashville SC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "neom",
+    "nom": "Neom",
+    "name": "Neom",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "new-england",
+    "nom": "New England",
+    "name": "New England",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "new-york-city-fc",
+    "nom": "New York City FC",
+    "name": "New York City FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "newcastle-jets",
+    "nom": "Newcastle Jets",
+    "name": "Newcastle Jets",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "newcastle-united",
+    "nom": "Newcastle United",
+    "name": "Newcastle United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "newell's",
+    "nom": "Newell's",
+    "name": "Newell's",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "newport-county",
+    "nom": "Newport County",
+    "name": "Newport County",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "northeast-united",
+    "nom": "NorthEast United",
+    "name": "NorthEast United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "northampton",
+    "nom": "Northampton",
+    "name": "Northampton",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "norwich",
+    "nom": "Norwich",
+    "name": "Norwich",
+    "icon_filename": "norwich.png",
+    "icon": "/assets/clubs/norwich.png",
+    "local_path": "local_files/club_icons/norwich.png",
+    "has_image": true
+  },
+  {
+    "slug": "nott'm-forest",
+    "nom": "Nott'm Forest",
+    "name": "Nott'm Forest",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "notts-county",
+    "nom": "Notts County",
+    "name": "Notts County",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ogc-nice",
+    "nom": "OGC Nice",
+    "name": "OGC Nice",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "oh-leuven",
+    "nom": "OH Leuven",
+    "name": "OH Leuven",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ol",
+    "nom": "OL",
+    "name": "OL",
+    "icon_filename": "liverpool.png",
+    "icon": "/assets/clubs/liverpool.png",
+    "local_path": "local_files/club_icons/liverpool.png",
+    "has_image": true
+  },
+  {
+    "slug": "ol-lyonnes",
+    "nom": "OL Lyonnes",
+    "name": "OL Lyonnes",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "om",
+    "nom": "OM",
+    "name": "OM",
+    "icon_filename": "as-roma.png",
+    "icon": "/assets/clubs/as-roma.png",
+    "local_path": "local_files/club_icons/as-roma.png",
+    "has_image": true
+  },
+  {
+    "slug": "odense-bk",
+    "nom": "Odense BK",
+    "name": "Odense BK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "oldham-athletic",
+    "nom": "Oldham Athletic",
+    "name": "Oldham Athletic",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "olimpia",
+    "nom": "Olimpia",
+    "name": "Olimpia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "olympiacos-fc",
+    "nom": "Olympiacos FC",
+    "name": "Olympiacos FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "once-caldas",
+    "nom": "Once Caldas",
+    "name": "Once Caldas",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "orlando-city",
+    "nom": "Orlando City",
+    "name": "Orlando City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "orlando-pride",
+    "nom": "Orlando Pride",
+    "name": "Orlando Pride",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "oxford-united",
+    "nom": "Oxford United",
+    "name": "Oxford United",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "paok-fc",
+    "nom": "PAOK FC",
+    "name": "PAOK FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "pec-zwolle",
+    "nom": "PEC Zwolle",
+    "name": "PEC Zwolle",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "psv",
+    "nom": "PSV",
+    "name": "PSV",
+    "icon_filename": "psv.png",
+    "icon": "/assets/clubs/psv.png",
+    "local_path": "local_files/club_icons/psv.png",
+    "has_image": true
+  },
+  {
+    "slug": "padova",
+    "nom": "Padova",
+    "name": "Padova",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "palermo",
+    "nom": "Palermo",
+    "name": "Palermo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "palestino",
+    "nom": "Palestino",
+    "name": "Palestino",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "panathinaikos",
+    "nom": "Panathinaikos",
+    "name": "Panathinaikos",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "paris-fc",
+    "nom": "Paris FC",
+    "name": "Paris FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "paris-saint-germain",
+    "nom": "Paris Saint-Germain",
+    "name": "Paris Saint-Germain",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "parma",
+    "nom": "Parma",
+    "name": "Parma",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "pau-fc",
+    "nom": "Pau FC",
+    "name": "Pau FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "perth-glory",
+    "nom": "Perth Glory",
+    "name": "Perth Glory",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "pescara",
+    "nom": "Pescara",
+    "name": "Pescara",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "peterborough",
+    "nom": "Peterborough",
+    "name": "Peterborough",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "peñarol",
+    "nom": "Peñarol",
+    "name": "Peñarol",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "philadelphia",
+    "nom": "Philadelphia",
+    "name": "Philadelphia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "piast-gliwice",
+    "nom": "Piast Gliwice",
+    "name": "Piast Gliwice",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "pisa",
+    "nom": "Pisa",
+    "name": "Pisa",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "platense",
+    "nom": "Platense",
+    "name": "Platense",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "plymouth-argyle",
+    "nom": "Plymouth Argyle",
+    "name": "Plymouth Argyle",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "pogoń-szczecin",
+    "nom": "Pogoń Szczecin",
+    "name": "Pogoń Szczecin",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "pohang-steelers",
+    "nom": "Pohang Steelers",
+    "name": "Pohang Steelers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "port-vale",
+    "nom": "Port Vale",
+    "name": "Port Vale",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "portland-thorns",
+    "nom": "Portland Thorns",
+    "name": "Portland Thorns",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "portland-timbers",
+    "nom": "Portland Timbers",
+    "name": "Portland Timbers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "portsmouth",
+    "nom": "Portsmouth",
+    "name": "Portsmouth",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "preston",
+    "nom": "Preston",
+    "name": "Preston",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "preußen-münster",
+    "nom": "Preußen Münster",
+    "name": "Preußen Münster",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "puerto-cabello",
+    "nom": "Puerto Cabello",
+    "name": "Puerto Cabello",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "punjab-fc",
+    "nom": "Punjab FC",
+    "name": "Punjab FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "qpr",
+    "nom": "QPR",
+    "name": "QPR",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "qarabağ-fk",
+    "nom": "Qarabağ FK",
+    "name": "Qarabağ FK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "qingdao-hainiu",
+    "nom": "Qingdao Hainiu",
+    "name": "Qingdao Hainiu",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "qingdao-w.-coast",
+    "nom": "Qingdao W. Coast",
+    "name": "Qingdao W. Coast",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "r.-oviedo",
+    "nom": "R. Oviedo",
+    "name": "R. Oviedo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "r.-racing-club",
+    "nom": "R. Racing Club",
+    "name": "R. Racing Club",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "r.-sporting",
+    "nom": "R. Sporting",
+    "name": "R. Sporting",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "r.-union-st.-g.",
+    "nom": "R. Union St.-G.",
+    "name": "R. Union St.-G.",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "r.-valladolid-cf",
+    "nom": "R. Valladolid CF",
+    "name": "R. Valladolid CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "raal-la-louvière",
+    "nom": "RAAL La Louvière",
+    "name": "RAAL La Louvière",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rb-leipzig",
+    "nom": "RB Leipzig",
+    "name": "RB Leipzig",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rb-salzburg",
+    "nom": "RB Salzburg",
+    "name": "RB Salzburg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rc-deportivo",
+    "nom": "RC Deportivo",
+    "name": "RC Deportivo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rc-lens",
+    "nom": "RC Lens",
+    "name": "RC Lens",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rcd-espanyol",
+    "nom": "RCD Espanyol",
+    "name": "RCD Espanyol",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rcd-mallorca",
+    "nom": "RCD Mallorca",
+    "name": "RCD Mallorca",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rsc-anderlecht",
+    "nom": "RSC Anderlecht",
+    "name": "RSC Anderlecht",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rac.-louisville",
+    "nom": "Rac. Louisville",
+    "name": "Rac. Louisville",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "racing-club",
+    "nom": "Racing Club",
+    "name": "Racing Club",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "radomiak-radom",
+    "nom": "Radomiak Radom",
+    "name": "Radomiak Radom",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "raków",
+    "nom": "Raków",
+    "name": "Raków",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "randers-fc",
+    "nom": "Randers FC",
+    "name": "Randers FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rangers",
+    "nom": "Rangers",
+    "name": "Rangers",
+    "icon_filename": "rangers.png",
+    "icon": "/assets/clubs/rangers.png",
+    "local_path": "local_files/club_icons/rangers.png",
+    "has_image": true
+  },
+  {
+    "slug": "rayo-vallecano",
+    "nom": "Rayo Vallecano",
+    "name": "Rayo Vallecano",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "reading",
+    "nom": "Reading",
+    "name": "Reading",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "real-betis",
+    "nom": "Real Betis",
+    "name": "Real Betis",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "real-madrid",
+    "nom": "Real Madrid",
+    "name": "Real Madrid",
+    "icon_filename": "real-madrid.png",
+    "icon": "/assets/clubs/real-madrid.png",
+    "local_path": "local_files/club_icons/real-madrid.png",
+    "has_image": true
+  },
+  {
+    "slug": "real-salt-lake",
+    "nom": "Real Salt Lake",
+    "name": "Real Salt Lake",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "real-sociedad",
+    "nom": "Real Sociedad",
+    "name": "Real Sociedad",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "real-sociedad-b",
+    "nom": "Real Sociedad B",
+    "name": "Real Sociedad B",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "real-zaragoza",
+    "nom": "Real Zaragoza",
+    "name": "Real Zaragoza",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "red-bulls",
+    "nom": "Red Bulls",
+    "name": "Red Bulls",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "red-star-fc",
+    "nom": "Red Star FC",
+    "name": "Red Star FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "reggiana",
+    "nom": "Reggiana",
+    "name": "Reggiana",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rio-ave-fc",
+    "nom": "Rio Ave FC",
+    "name": "Rio Ave FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "river-plate",
+    "nom": "River Plate",
+    "name": "River Plate",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rodez-af",
+    "nom": "Rodez AF",
+    "name": "Rodez AF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "roma",
+    "nom": "Roma",
+    "name": "Roma",
+    "icon_filename": "as-roma.png",
+    "icon": "/assets/clubs/as-roma.png",
+    "local_path": "local_files/club_icons/as-roma.png",
+    "has_image": true
+  },
+  {
+    "slug": "rosario-central",
+    "nom": "Rosario Central",
+    "name": "Rosario Central",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rosenborg-bk",
+    "nom": "Rosenborg BK",
+    "name": "Rosenborg BK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rot-weiss-essen",
+    "nom": "Rot-Weiss Essen",
+    "name": "Rot-Weiss Essen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "rotherham-utd",
+    "nom": "Rotherham Utd",
+    "name": "Rotherham Utd",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "royal-antwerp-fc",
+    "nom": "Royal Antwerp FC",
+    "name": "Royal Antwerp FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-bastia",
+    "nom": "SC Bastia",
+    "name": "SC Bastia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-braga",
+    "nom": "SC Braga",
+    "name": "SC Braga",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-freiburg",
+    "nom": "SC Freiburg",
+    "name": "SC Freiburg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-oțelul-galați",
+    "nom": "SC Oțelul Galați",
+    "name": "SC Oțelul Galați",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-paderborn-07",
+    "nom": "SC Paderborn 07",
+    "name": "SC Paderborn 07",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-telstar",
+    "nom": "SC Telstar",
+    "name": "SC Telstar",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-verl",
+    "nom": "SC Verl",
+    "name": "SC Verl",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "scr-altach",
+    "nom": "SCR Altach",
+    "name": "SCR Altach",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sd-eibar",
+    "nom": "SD Eibar",
+    "name": "SD Eibar",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sd-huesca",
+    "nom": "SD Huesca",
+    "name": "SD Huesca",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sgs-essen",
+    "nom": "SGS Essen",
+    "name": "SGS Essen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sj-earthquakes",
+    "nom": "SJ Earthquakes",
+    "name": "SJ Earthquakes",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sk-brann",
+    "nom": "SK Brann",
+    "name": "SK Brann",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sk-rapid",
+    "nom": "SK Rapid",
+    "name": "SK Rapid",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sk-sturm-graz",
+    "nom": "SK Sturm Graz",
+    "name": "SK Sturm Graz",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sl-benfica",
+    "nom": "SL Benfica",
+    "name": "SL Benfica",
+    "icon_filename": "sl-benfica.png",
+    "icon": "/assets/clubs/sl-benfica.png",
+    "local_path": "local_files/club_icons/sl-benfica.png",
+    "has_image": true
+  },
+  {
+    "slug": "ss-juve-stabia",
+    "nom": "SS Juve Stabia",
+    "name": "SS Juve Stabia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ssc-napoli",
+    "nom": "SSC Napoli",
+    "name": "SSC Napoli",
+    "icon_filename": "ssc-napoli.png",
+    "icon": "/assets/clubs/ssc-napoli.png",
+    "local_path": "local_files/club_icons/ssc-napoli.png",
+    "has_image": true
+  },
+  {
+    "slug": "ssv-ulm-1846",
+    "nom": "SSV Ulm 1846",
+    "name": "SSV Ulm 1846",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "stvv",
+    "nom": "STVV",
+    "name": "STVV",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sv-darmstadt-98",
+    "nom": "SV Darmstadt 98",
+    "name": "SV Darmstadt 98",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sv-elversberg",
+    "nom": "SV Elversberg",
+    "name": "SV Elversberg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sv-oberbank-ried",
+    "nom": "SV Oberbank Ried",
+    "name": "SV Oberbank Ried",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sv-waldhof",
+    "nom": "SV Waldhof",
+    "name": "SV Waldhof",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sv-werder-bremen",
+    "nom": "SV Werder Bremen",
+    "name": "SV Werder Bremen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sz-peng-city",
+    "nom": "SZ Peng City",
+    "name": "SZ Peng City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "saarbrücken",
+    "nom": "Saarbrücken",
+    "name": "Saarbrücken",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "salford-city",
+    "nom": "Salford City",
+    "name": "Salford City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sampdoria",
+    "nom": "Sampdoria",
+    "name": "Sampdoria",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "samsunspor",
+    "nom": "Samsunspor",
+    "name": "Samsunspor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "san-antonio",
+    "nom": "San Antonio",
+    "name": "San Antonio",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "san-diego-fc",
+    "nom": "San Diego FC",
+    "name": "San Diego FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "san-diego-wave",
+    "nom": "San Diego Wave",
+    "name": "San Diego Wave",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "san-lorenzo",
+    "nom": "San Lorenzo",
+    "name": "San Lorenzo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "san-martín",
+    "nom": "San Martín",
+    "name": "San Martín",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sandefjord",
+    "nom": "Sandefjord",
+    "name": "Sandefjord",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "santa-clara",
+    "nom": "Santa Clara",
+    "name": "Santa Clara",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sarmiento",
+    "nom": "Sarmiento",
+    "name": "Sarmiento",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sarpsborg-08",
+    "nom": "Sarpsborg 08",
+    "name": "Sarpsborg 08",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sassuolo",
+    "nom": "Sassuolo",
+    "name": "Sassuolo",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "seattle-reign",
+    "nom": "Seattle Reign",
+    "name": "Seattle Reign",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "servette-fc",
+    "nom": "Servette FC",
+    "name": "Servette FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sevilla-fc",
+    "nom": "Sevilla FC",
+    "name": "Sevilla FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "shakhtar-donetsk",
+    "nom": "Shakhtar Donetsk",
+    "name": "Shakhtar Donetsk",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "shamrock-rovers",
+    "nom": "Shamrock Rovers",
+    "name": "Shamrock Rovers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "shandong-taishan",
+    "nom": "Shandong Taishan",
+    "name": "Shandong Taishan",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "shanghai-port-fc",
+    "nom": "Shanghai Port FC",
+    "name": "Shanghai Port FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "shanghai-shenhua",
+    "nom": "Shanghai Shenhua",
+    "name": "Shanghai Shenhua",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sheffield-utd",
+    "nom": "Sheffield Utd",
+    "name": "Sheffield Utd",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sheffield-wed",
+    "nom": "Sheffield Wed",
+    "name": "Sheffield Wed",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "shelbourne",
+    "nom": "Shelbourne",
+    "name": "Shelbourne",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "shrewsbury",
+    "nom": "Shrewsbury",
+    "name": "Shrewsbury",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "silkeborg-if",
+    "nom": "Silkeborg IF",
+    "name": "Silkeborg IF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "slavia-praha",
+    "nom": "Slavia Praha",
+    "name": "Slavia Praha",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sligo-rovers",
+    "nom": "Sligo Rovers",
+    "name": "Sligo Rovers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sounders-fc",
+    "nom": "Sounders FC",
+    "name": "Sounders FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "southampton",
+    "nom": "Southampton",
+    "name": "Southampton",
+    "icon_filename": "southampton.png",
+    "icon": "/assets/clubs/southampton.png",
+    "local_path": "local_files/club_icons/southampton.png",
+    "has_image": true
+  },
+  {
+    "slug": "sp.-charleroi",
+    "nom": "Sp. Charleroi",
+    "name": "Sp. Charleroi",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sparta-praha",
+    "nom": "Sparta Praha",
+    "name": "Sparta Praha",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sparta-rotterdam",
+    "nom": "Sparta Rotterdam",
+    "name": "Sparta Rotterdam",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "spezia",
+    "nom": "Spezia",
+    "name": "Spezia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sporting-cp",
+    "nom": "Sporting CP",
+    "name": "Sporting CP",
+    "icon_filename": "sporting-cp.png",
+    "icon": "/assets/clubs/sporting-cp.png",
+    "local_path": "local_files/club_icons/sporting-cp.png",
+    "has_image": true
+  },
+  {
+    "slug": "sporting-cristal",
+    "nom": "Sporting Cristal",
+    "name": "Sporting Cristal",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sporting-kc",
+    "nom": "Sporting KC",
+    "name": "Sporting KC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sportivo-luqueño",
+    "nom": "Sportivo Luqueño",
+    "name": "Sportivo Luqueño",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "spurs",
+    "nom": "Spurs",
+    "name": "Spurs",
+    "icon_filename": "spurs.png",
+    "icon": "/assets/clubs/spurs.png",
+    "local_path": "local_files/club_icons/spurs.png",
+    "has_image": true
+  },
+  {
+    "slug": "st.-louis-city-sc",
+    "nom": "St. Louis CITY SC",
+    "name": "St. Louis CITY SC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "st.-mirren",
+    "nom": "St. Mirren",
+    "name": "St. Mirren",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "st.-pats",
+    "nom": "St. Pats",
+    "name": "St. Pats",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "stade-brestois-29",
+    "nom": "Stade Brestois 29",
+    "name": "Stade Brestois 29",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "stade-rennais-fc",
+    "nom": "Stade Rennais FC",
+    "name": "Stade Rennais FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "stade-de-reims",
+    "nom": "Stade de Reims",
+    "name": "Stade de Reims",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "standard-liège",
+    "nom": "Standard Liège",
+    "name": "Standard Liège",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "stevenage",
+    "nom": "Stevenage",
+    "name": "Stevenage",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "stockport",
+    "nom": "Stockport",
+    "name": "Stockport",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "stoke-city",
+    "nom": "Stoke City",
+    "name": "Stoke City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "strasbourg",
+    "nom": "Strasbourg",
+    "name": "Strasbourg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "strømsgodset-if",
+    "nom": "Strømsgodset IF",
+    "name": "Strømsgodset IF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sunderland",
+    "nom": "Sunderland",
+    "name": "Sunderland",
+    "icon_filename": "sunderland.png",
+    "icon": "/assets/clubs/sunderland.png",
+    "local_path": "local_files/club_icons/sunderland.png",
+    "has_image": true
+  },
+  {
+    "slug": "suwon-fc",
+    "nom": "Suwon FC",
+    "name": "Suwon FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "swansea-city",
+    "nom": "Swansea City",
+    "name": "Swansea City",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "swindon-town",
+    "nom": "Swindon Town",
+    "name": "Swindon Town",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sydney-fc",
+    "nom": "Sydney FC",
+    "name": "Sydney FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sønderjyske",
+    "nom": "Sønderjyske",
+    "name": "Sønderjyske",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "südtirol",
+    "nom": "Südtirol",
+    "name": "Südtirol",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tsg-hoffenheim",
+    "nom": "TSG Hoffenheim",
+    "name": "TSG Hoffenheim",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tsg-hoffenheim-ii",
+    "nom": "TSG Hoffenheim II",
+    "name": "TSG Hoffenheim II",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tsv-hartberg",
+    "nom": "TSV Hartberg",
+    "name": "TSV Hartberg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tsv-havelse",
+    "nom": "TSV Havelse",
+    "name": "TSV Havelse",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "talleres",
+    "nom": "Talleres",
+    "name": "Talleres",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tianjin-jmt-fc",
+    "nom": "Tianjin JMT FC",
+    "name": "Tianjin JMT FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tigre",
+    "nom": "Tigre",
+    "name": "Tigre",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "torino",
+    "nom": "Torino",
+    "name": "Torino",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "toronto-fc",
+    "nom": "Toronto FC",
+    "name": "Toronto FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "toulouse-fc",
+    "nom": "Toulouse FC",
+    "name": "Toulouse FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "trabzonspor",
+    "nom": "Trabzonspor",
+    "name": "Trabzonspor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tranmere-rovers",
+    "nom": "Tranmere Rovers",
+    "name": "Tranmere Rovers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "tromsø-il",
+    "nom": "Tromsø IL",
+    "name": "Tromsø IL",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "u.-católica",
+    "nom": "U. Católica",
+    "name": "U. Católica",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "u.-de-chile",
+    "nom": "U. de Chile",
+    "name": "U. de Chile",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ud-almería",
+    "nom": "UD Almería",
+    "name": "UD Almería",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ud-las-palmas",
+    "nom": "UD Las Palmas",
+    "name": "UD Las Palmas",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "us-boulogne",
+    "nom": "US Boulogne",
+    "name": "US Boulogne",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "usl-dunkerque",
+    "nom": "USL Dunkerque",
+    "name": "USL Dunkerque",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "uta-arad",
+    "nom": "UTA Arad",
+    "name": "UTA Arad",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "udinese",
+    "nom": "Udinese",
+    "name": "Udinese",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ulsan-hd-fc",
+    "nom": "Ulsan HD FC",
+    "name": "Ulsan HD FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "uni.-católica",
+    "nom": "Uni. Católica",
+    "name": "Uni. Católica",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "union-berlin",
+    "nom": "Union Berlin",
+    "name": "Union Berlin",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "unirea-slobozia",
+    "nom": "Unirea Slobozia",
+    "name": "Unirea Slobozia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "univ.-craiova",
+    "nom": "Univ. Craiova",
+    "name": "Univ. Craiova",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "universitario",
+    "nom": "Universitario",
+    "name": "Universitario",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "unión",
+    "nom": "Unión",
+    "name": "Unión",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "unión-española",
+    "nom": "Unión Española",
+    "name": "Unión Española",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "utah-royals-fc",
+    "nom": "Utah Royals FC",
+    "name": "Utah Royals FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "valencia-cf",
+    "nom": "Valencia CF",
+    "name": "Valencia CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vejle-boldklub",
+    "nom": "Vejle Boldklub",
+    "name": "Vejle Boldklub",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "venezia",
+    "nom": "Venezia",
+    "name": "Venezia",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vfb-stuttgart",
+    "nom": "VfB Stuttgart",
+    "name": "VfB Stuttgart",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vfb-stuttgart-ii",
+    "nom": "VfB Stuttgart II",
+    "name": "VfB Stuttgart II",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vfl-bochum-1848",
+    "nom": "VfL Bochum 1848",
+    "name": "VfL Bochum 1848",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vfl-osnabrück",
+    "nom": "VfL Osnabrück",
+    "name": "VfL Osnabrück",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vfl-wolfsburg",
+    "nom": "VfL Wolfsburg",
+    "name": "VfL Wolfsburg",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "viborg-ff",
+    "nom": "Viborg FF",
+    "name": "Viborg FF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "viking-fk",
+    "nom": "Viking FK",
+    "name": "Viking FK",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "viktoria-köln",
+    "nom": "Viktoria Köln",
+    "name": "Viktoria Köln",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "viktoria-plzeň",
+    "nom": "Viktoria Plzeň",
+    "name": "Viktoria Plzeň",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "villarreal-cf",
+    "nom": "Villarreal CF",
+    "name": "Villarreal CF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vitória-sc",
+    "nom": "Vitória SC",
+    "name": "Vitória SC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vålerenga-fotball",
+    "nom": "Vålerenga Fotball",
+    "name": "Vålerenga Fotball",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "vélez-sarsfield",
+    "nom": "Vélez Sarsfield",
+    "name": "Vélez Sarsfield",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "ws-wanderers",
+    "nom": "WS Wanderers",
+    "name": "WS Wanderers",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wsg-tirol",
+    "nom": "WSG Tirol",
+    "name": "WSG Tirol",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "walsall",
+    "nom": "Walsall",
+    "name": "Walsall",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "washington-spirit",
+    "nom": "Washington Spirit",
+    "name": "Washington Spirit",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "waterford",
+    "nom": "Waterford",
+    "name": "Waterford",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "watford",
+    "nom": "Watford",
+    "name": "Watford",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wehen-wiesbaden",
+    "nom": "Wehen Wiesbaden",
+    "name": "Wehen Wiesbaden",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "well.-phoenix",
+    "nom": "Well. Phoenix",
+    "name": "Well. Phoenix",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "west-brom",
+    "nom": "West Brom",
+    "name": "West Brom",
+    "icon_filename": "west-brom.png",
+    "icon": "/assets/clubs/west-brom.png",
+    "local_path": "local_files/club_icons/west-brom.png",
+    "has_image": true
+  },
+  {
+    "slug": "west-ham",
+    "nom": "West Ham",
+    "name": "West Ham",
+    "icon_filename": "west-ham.png",
+    "icon": "/assets/clubs/west-ham.png",
+    "local_path": "local_files/club_icons/west-ham.png",
+    "has_image": true
+  },
+  {
+    "slug": "whitecaps-fc",
+    "nom": "Whitecaps FC",
+    "name": "Whitecaps FC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "widzew-łódź",
+    "nom": "Widzew Łódź",
+    "name": "Widzew Łódź",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wigan-athletic",
+    "nom": "Wigan Athletic",
+    "name": "Wigan Athletic",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wisła-płock",
+    "nom": "Wisła Płock",
+    "name": "Wisła Płock",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wolfsberger-ac",
+    "nom": "Wolfsberger AC",
+    "name": "Wolfsberger AC",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wolves",
+    "nom": "Wolves",
+    "name": "Wolves",
+    "icon_filename": "wolves.png",
+    "icon": "/assets/clubs/wolves.png",
+    "local_path": "local_files/club_icons/wolves.png",
+    "has_image": true
+  },
+  {
+    "slug": "wrexham",
+    "nom": "Wrexham",
+    "name": "Wrexham",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wuhan-three-towns",
+    "nom": "Wuhan Three Towns",
+    "name": "Wuhan Three Towns",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "wycombe",
+    "nom": "Wycombe",
+    "name": "Wycombe",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "yunnan-yukun",
+    "nom": "Yunnan Yukun",
+    "name": "Yunnan Yukun",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "zagłębie-lubin",
+    "nom": "Zagłębie Lubin",
+    "name": "Zagłębie Lubin",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "zhejiang-pro",
+    "nom": "Zhejiang Pro",
+    "name": "Zhejiang Pro",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "zulte-waregem",
+    "nom": "Zulte Waregem",
+    "name": "Zulte Waregem",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "sc-heerenveen",
+    "nom": "sc Heerenveen",
+    "name": "sc Heerenveen",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "çaykur-rizespor",
+    "nom": "Çaykur Rizespor",
+    "name": "Çaykur Rizespor",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  },
+  {
+    "slug": "östers-if",
+    "nom": "Östers IF",
+    "name": "Östers IF",
+    "icon_filename": "default-club.png",
+    "icon": "/assets/clubs/default-club.png",
+    "local_path": "local_files/club_icons/default-club.png",
+    "has_image": false
+  }
+]

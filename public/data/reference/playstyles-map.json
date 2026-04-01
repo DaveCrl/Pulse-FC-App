@@ -1,0 +1,254 @@
+[
+  {
+    "key": "Acrobatic",
+    "label_fr": "Acrobatique",
+    "slug": "acrobatique",
+    "asset": "/assets/playstyles/acrobatique.png",
+    "asset_plus": "/assets/playstyles_plus/acrobatique.png"
+  },
+  {
+    "key": "Aerial Fortress",
+    "label_fr": "Forteresse aérienne",
+    "slug": "forteresse-aerienne",
+    "asset": "/assets/playstyles/forteresse-aerienne.png",
+    "asset_plus": "/assets/playstyles_plus/forteresse-aerienne.png"
+  },
+  {
+    "key": "Anticipate",
+    "label_fr": "Anticipation",
+    "slug": "anticipation",
+    "asset": "/assets/playstyles/anticipation.png",
+    "asset_plus": "/assets/playstyles_plus/anticipation.png"
+  },
+  {
+    "key": "Block",
+    "label_fr": "Contre",
+    "slug": "contre",
+    "asset": "/assets/playstyles/contre.png",
+    "asset_plus": "/assets/playstyles_plus/contre.png"
+  },
+  {
+    "key": "Bruiser",
+    "label_fr": "Agressif",
+    "slug": "agressif",
+    "asset": "/assets/playstyles/agressif.png",
+    "asset_plus": "/assets/playstyles_plus/agressif.png"
+  },
+  {
+    "key": "Chip Shot",
+    "label_fr": "Ballon piqué",
+    "slug": "ballon-pique",
+    "asset": "/assets/playstyles/ballon-pique.png",
+    "asset_plus": "/assets/playstyles_plus/ballon-pique.png"
+  },
+  {
+    "key": "Cross Claimer",
+    "label_fr": "Sorties aériennes",
+    "slug": "sorties-aeriennes",
+    "asset": "/assets/playstyles/sorties-aeriennes.png",
+    "asset_plus": "/assets/playstyles_plus/sorties-aeriennes.png"
+  },
+  {
+    "key": "Dead Ball",
+    "label_fr": "Coups de pied arrêtés",
+    "slug": "coups-de-pied-arretes",
+    "asset": "/assets/playstyles/coups-de-pied-arretes.png",
+    "asset_plus": "/assets/playstyles_plus/coups-de-pied-arretes.png"
+  },
+  {
+    "key": "Deflector",
+    "label_fr": "Déviation",
+    "slug": "deviation",
+    "asset": "/assets/playstyles/deviation.png",
+    "asset_plus": "/assets/playstyles_plus/deviation.png"
+  },
+  {
+    "key": "Enforcer",
+    "label_fr": "Passage en force",
+    "slug": "passage-en-force",
+    "asset": "/assets/playstyles/passage-en-force.png",
+    "asset_plus": "/assets/playstyles_plus/passage-en-force.png"
+  },
+  {
+    "key": "Far Reach",
+    "label_fr": "Allonge",
+    "slug": "allonge",
+    "asset": "/assets/playstyles/allonge.png",
+    "asset_plus": "/assets/playstyles_plus/allonge.png"
+  },
+  {
+    "key": "Far Throw",
+    "label_fr": "Longue relance",
+    "slug": "longue-relance",
+    "asset": "/assets/playstyles/longue-relance.png",
+    "asset_plus": "/assets/playstyles_plus/longue-relance.png"
+  },
+  {
+    "key": "Finesse Shot",
+    "label_fr": "Tir en finesse",
+    "slug": "tir-en-finesse",
+    "asset": "/assets/playstyles/tir-en-finesse.png",
+    "asset_plus": "/assets/playstyles_plus/tir-en-finesse.png"
+  },
+  {
+    "key": "First Touch",
+    "label_fr": "Contrôle",
+    "slug": "controle",
+    "asset": "/assets/playstyles/controle.png",
+    "asset_plus": "/assets/playstyles_plus/controle.png"
+  },
+  {
+    "key": "Footwork",
+    "label_fr": "Arrêt du pied",
+    "slug": "arret-du-pied",
+    "asset": "/assets/playstyles/arret-du-pied.png",
+    "asset_plus": "/assets/playstyles_plus/arret-du-pied.png"
+  },
+  {
+    "key": "Gamechanger",
+    "label_fr": "Révolutionnaire",
+    "slug": "revolutionnaire",
+    "asset": "/assets/playstyles/revolutionnaire.png",
+    "asset_plus": "/assets/playstyles_plus/revolutionnaire.png"
+  },
+  {
+    "key": "Incisive Pass",
+    "label_fr": "Passe incisive",
+    "slug": "passe-incisive",
+    "asset": "/assets/playstyles/passe-incisive.png",
+    "asset_plus": "/assets/playstyles_plus/passe-incisive.png"
+  },
+  {
+    "key": "Intercept",
+    "label_fr": "Interception",
+    "slug": "interception",
+    "asset": "/assets/playstyles/interception.png",
+    "asset_plus": "/assets/playstyles_plus/interception.png"
+  },
+  {
+    "key": "Inventive",
+    "label_fr": "Fantaisiste",
+    "slug": "fantaisiste",
+    "asset": "/assets/playstyles/fantaisiste.png",
+    "asset_plus": "/assets/playstyles_plus/fantaisiste.png"
+  },
+  {
+    "key": "Jockey",
+    "label_fr": "Lutte",
+    "slug": "lutte",
+    "asset": "/assets/playstyles/lutte.png",
+    "asset_plus": "/assets/playstyles_plus/lutte.png"
+  },
+  {
+    "key": "Long Ball Pass",
+    "label_fr": "Passe longue",
+    "slug": "passe-longue",
+    "asset": "/assets/playstyles/passe-longue.png",
+    "asset_plus": "/assets/playstyles_plus/passe-longue.png"
+  },
+  {
+    "key": "Long Throw",
+    "label_fr": "Longue touche",
+    "slug": "longue-touche",
+    "asset": "/assets/playstyles/longue-touche.png",
+    "asset_plus": "/assets/playstyles_plus/longue-touche.png"
+  },
+  {
+    "key": "Low Driven Shot",
+    "label_fr": "Tir rasant appuyé",
+    "slug": "tir-rasant-appuye",
+    "asset": "/assets/playstyles/tir-rasant-appuye.png",
+    "asset_plus": "/assets/playstyles_plus/tir-rasant-appuye.png"
+  },
+  {
+    "key": "Pinged Pass",
+    "label_fr": "Passe tendue",
+    "slug": "passe-tendue",
+    "asset": "/assets/playstyles/passe-tendue.png",
+    "asset_plus": "/assets/playstyles_plus/passe-tendue.png"
+  },
+  {
+    "key": "Power Shot",
+    "label_fr": "Tir puissant",
+    "slug": "tir-puissant",
+    "asset": "/assets/playstyles/tir-puissant.png",
+    "asset_plus": "/assets/playstyles_plus/tir-puissant.png"
+  },
+  {
+    "key": "Precision Header",
+    "label_fr": "Tête précise",
+    "slug": "tete-precise",
+    "asset": "/assets/playstyles/tete-precise.png",
+    "asset_plus": "/assets/playstyles_plus/tete-precise.png"
+  },
+  {
+    "key": "Press Proven",
+    "label_fr": "Résiste au pressing",
+    "slug": "resiste-au-pressing",
+    "asset": "/assets/playstyles/resiste-au-pressing.png",
+    "asset_plus": "/assets/playstyles_plus/resiste-au-pressing.png"
+  },
+  {
+    "key": "Quick Step",
+    "label_fr": "Foulée rapide",
+    "slug": "foulee-rapide",
+    "asset": "/assets/playstyles/foulee-rapide.png",
+    "asset_plus": "/assets/playstyles_plus/foulee-rapide.png"
+  },
+  {
+    "key": "Rapid",
+    "label_fr": "Rapide",
+    "slug": "rapide",
+    "asset": "/assets/playstyles/rapide.png",
+    "asset_plus": "/assets/playstyles_plus/rapide.png"
+  },
+  {
+    "key": "Relentless",
+    "label_fr": "Infatigable",
+    "slug": "infatigable",
+    "asset": "/assets/playstyles/infatigable.png",
+    "asset_plus": "/assets/playstyles_plus/infatigable.png"
+  },
+  {
+    "key": "Rush Out",
+    "label_fr": "Sort du but",
+    "slug": "sort-du-but",
+    "asset": "/assets/playstyles/sort-du-but.png",
+    "asset_plus": "/assets/playstyles_plus/sort-du-but.png"
+  },
+  {
+    "key": "Slide Tackle",
+    "label_fr": "Tacle glissé",
+    "slug": "tacle-glisse",
+    "asset": "/assets/playstyles/tacle-glisse.png",
+    "asset_plus": "/assets/playstyles_plus/tacle-glisse.png"
+  },
+  {
+    "key": "Technical",
+    "label_fr": "Technique",
+    "slug": "technique",
+    "asset": "/assets/playstyles/technique.png",
+    "asset_plus": "/assets/playstyles_plus/technique.png"
+  },
+  {
+    "key": "Tiki Taka",
+    "label_fr": "Tiki-Taka",
+    "slug": "tiki-taka",
+    "asset": "/assets/playstyles/tiki-taka.png",
+    "asset_plus": "/assets/playstyles_plus/tiki-taka.png"
+  },
+  {
+    "key": "Trickster",
+    "label_fr": "Technicien",
+    "slug": "technicien",
+    "asset": "/assets/playstyles/technicien.png",
+    "asset_plus": "/assets/playstyles_plus/technicien.png"
+  },
+  {
+    "key": "Whipped Pass",
+    "label_fr": "Passe travaillée",
+    "slug": "passe-travaillee",
+    "asset": "/assets/playstyles/passe-travaillee.png",
+    "asset_plus": "/assets/playstyles_plus/passe-travaillee.png"
+  }
+]

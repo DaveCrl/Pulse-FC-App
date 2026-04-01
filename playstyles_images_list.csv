@@ -1,0 +1,73 @@
+Type,Playstyle Name,Image Filename,Path
+playstyles+,Acrobatique,acrobatique.png,/assets/playstyles_plus/acrobatique.png
+playstyles+,Agressif,agressif.png,/assets/playstyles_plus/agressif.png
+playstyles+,Anticipation,anticipation.png,/assets/playstyles_plus/anticipation.png
+playstyles+,Arrêt du pied,arret-du-pied.png,/assets/playstyles_plus/arret-du-pied.png
+playstyles+,Ballon piqué,ballon-pique.png,/assets/playstyles_plus/ballon-pique.png
+playstyles+,Classe de loin,classe-de-loin.png,/assets/playstyles_plus/classe-de-loin.png
+playstyles+,Contre,contre.png,/assets/playstyles_plus/contre.png
+playstyles+,Contrôle,controle.png,/assets/playstyles_plus/controle.png
+playstyles+,Coups de pied arrêtés,coup-de-pied-arrete.png,/assets/playstyles_plus/coup-de-pied-arrete.png
+playstyles+,Déviation,deflector.png,/assets/playstyles_plus/deflector.png
+playstyles+,Fantaisiste,fantaisiste.png,/assets/playstyles_plus/fantaisiste.png
+playstyles+,Forteresse aérienne,forteresse-aerienne.png,/assets/playstyles_plus/forteresse-aerienne.png
+playstyles+,Foulée rapide,foulee-rapide.png,/assets/playstyles_plus/foulee-rapide.png
+playstyles+,Infatigable,infatigable.png,/assets/playstyles_plus/infatigable.png
+playstyles+,Interception,interception.png,/assets/playstyles_plus/interception.png
+playstyles+,Longue relance,longue-relance.png,/assets/playstyles_plus/longue-relance.png
+playstyles+,Longue touche,longue-touche.png,/assets/playstyles_plus/longue-touche.png
+playstyles+,Lutte,lutte.png,/assets/playstyles_plus/lutte.png
+playstyles+,Passage en force,passage-en-force.png,/assets/playstyles_plus/passage-en-force.png
+playstyles+,Passe en profondeur,passe-en-profondeur.png,/assets/playstyles_plus/passe-en-profondeur.png
+playstyles+,Passe incisive,passe-incisive.png,/assets/playstyles_plus/passe-incisive.png
+playstyles+,Passe longue,passe-longue.png,/assets/playstyles_plus/passe-longue.png
+playstyles+,Passe travaillée,passe-travaillee.png,/assets/playstyles_plus/passe-travaillee.png
+playstyles+,Rapide,rapide.png,/assets/playstyles_plus/rapide.png
+playstyles+,Résiste au pressing,resiste-au-pressing.png,/assets/playstyles_plus/resiste-au-pressing.png
+playstyles+,Révolutionnaire,revolutionnaire.png,/assets/playstyles_plus/revolutionnaire.png
+playstyles+,Sort du but,sort-du-but.png,/assets/playstyles_plus/sort-du-but.png
+playstyles+,Sortie sur les centres,sortie-sur-les-centres.png,/assets/playstyles_plus/sortie-sur-les-centres.png
+playstyles+,Tacle glissé,tacle-glisse.png,/assets/playstyles_plus/tacle-glisse.png
+playstyles+,Technicien,technicien.png,/assets/playstyles_plus/technicien.png
+playstyles+,Technique,technique.png,/assets/playstyles_plus/technique.png
+playstyles+,Tête précise,tete-precise.png,/assets/playstyles_plus/tete-precise.png
+playstyles+,Tiki-Taka,tiki-taka.png,/assets/playstyles_plus/tiki-taka.png
+playstyles+,Tir en finesse,tir-en-finesse.png,/assets/playstyles_plus/tir-en-finesse.png
+playstyles+,Tir puissant,tir-puissant.png,/assets/playstyles_plus/tir-puissant.png
+playstyles+,Tir rasant appuyé,tir-rasant-appuye.png,/assets/playstyles_plus/tir-rasant-appuye.png
+playstyles,Acrobatique,acrobatique.png,/assets/playstyles/acrobatique.png
+playstyles,Agressif,agressif.png,/assets/playstyles/agressif.png
+playstyles,Anticipation,anticipation.png,/assets/playstyles/anticipation.png
+playstyles,Arrêt du pied,arret-du-pied.png,/assets/playstyles/arret-du-pied.png
+playstyles,Ballon piqué,ballon-pique.png,/assets/playstyles/ballon-pique.png
+playstyles,Classe de loin,classe-de-loin.png,/assets/playstyles/classe-de-loin.png
+playstyles,Contre,contre.png,/assets/playstyles/contre.png
+playstyles,Contrôle,controle.png,/assets/playstyles/controle.png
+playstyles,Coups de pied arrêtés,coup-de-pied-arrete.png,/assets/playstyles/coup-de-pied-arrete.png
+playstyles,Déviation,deflector.png,/assets/playstyles/deflector.png
+playstyles,Fantaisiste,fantaisiste.png,/assets/playstyles/fantaisiste.png
+playstyles,Forteresse aérienne,forteresse-aerienne.png,/assets/playstyles/forteresse-aerienne.png
+playstyles,Foulée rapide,foulee-rapide.png,/assets/playstyles/foulee-rapide.png
+playstyles,Infatigable,infatigable.png,/assets/playstyles/infatigable.png
+playstyles,Interception,interception.png,/assets/playstyles/interception.png
+playstyles,Longue relance,longue-relance.png,/assets/playstyles/longue-relance.png
+playstyles,Longue touche,longue-touche.png,/assets/playstyles/longue-touche.png
+playstyles,Lutte,lutte.png,/assets/playstyles/lutte.png
+playstyles,Passage en force,passage-en-force.png,/assets/playstyles/passage-en-force.png
+playstyles,Passe en profondeur,passe-en-profondeur.png,/assets/playstyles/passe-en-profondeur.png
+playstyles,Passe incisive,passe-incisive.png,/assets/playstyles/passe-incisive.png
+playstyles,Passe longue,passe-longue.png,/assets/playstyles/passe-longue.png
+playstyles,Passe travaillée,passe-travaillee.png,/assets/playstyles/passe-travaillee.png
+playstyles,Rapide,rapide.png,/assets/playstyles/rapide.png
+playstyles,Renversement,renversement.png,/assets/playstyles/renversement.png
+playstyles,Résiste au pressing,resiste-au-pressing.png,/assets/playstyles/resiste-au-pressing.png
+playstyles,Sort du but,sort-du-but.png,/assets/playstyles/sort-du-but.png
+playstyles,Sortie sur les centres,sortie-sur-les-centres.png,/assets/playstyles/sortie-sur-les-centres.png
+playstyles,Tacle glissé,tacle-glisse.png,/assets/playstyles/tacle-glisse.png
+playstyles,Technicien,technicien.png,/assets/playstyles/technicien.png
+playstyles,Technique,technique.png,/assets/playstyles/technique.png
+playstyles,Tête précise,tete-precise.png,/assets/playstyles/tete-precise.png
+playstyles,Tiki-Taka,tiki-taka.png,/assets/playstyles/tiki-taka.png
+playstyles,Tir en finesse,tir-en-finesse.png,/assets/playstyles/tir-en-finesse.png
+playstyles,Tir puissant,tir-puissant.png,/assets/playstyles/tir-puissant.png
+playstyles,Tir rasant appuyé,tir-rasant-appuye.png,/assets/playstyles/tir-rasant-appuye.png

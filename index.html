@@ -2167,6 +2167,7 @@
   </div>
 
 
+  <script src="public/assets/nations-manager.js"></script>
   <script>
     // ════════════════════════════════════════════════════════
     // ÉTAT GLOBAL
@@ -2185,11 +2186,312 @@
     let favorites = JSON.parse(localStorage.getItem('fcpulse_favs') || '[]');
 
     // ════════════════════════════════════════════════════════
+    // ICÔNES & DATA
+    // ════════════════════════════════════════════════════════
+    let clubsData = {};
+    let liguesData = {};
+    let playstyleData = {};
+    let playstylePlusData = {};
+    let nationsData = {};
+
+    async function loadIconsData() {
+      try {
+        const [c, l, p, pp, n] = await Promise.all([
+          fetch('src/data/clubs.json').then(r => r.json()),
+          fetch('src/data/leagues.json').then(r => r.json()),
+          fetch('src/data/ea_playstyles.json').then(r => r.json()),
+          fetch('src/data/ea_playstyles_plus.json').then(r => r.json()),
+          fetch('nations_with_translations.json').then(r => r.json())
+        ]);
+        clubsData = c.reduce((acc, x) => { acc[x.nom] = x; return acc; }, {});
+        liguesData = l.reduce((acc, x) => { acc[x.nom] = x; return acc; }, {});
+        playstyleData = p.reduce((acc, x) => { acc[x.nom] = x; return acc; }, {});
+        playstylePlusData = pp.reduce((acc, x) => { acc[x.nom] = x; return acc; }, {});
+        // Build nations data indexed by both English and French names
+        nationsData = {};
+        n.forEach(nation => {
+          nationsData[nation.name_en] = nation;
+          nationsData[nation.name_fr] = nation;  // Also index by French name
+        });
+        console.log('✅ Icônes chargées:', Object.keys(clubsData).length, 'clubs,', Object.keys(liguesData).length, 'ligues,', Object.keys(nationsData).length, 'nations');
+      } catch(e) {
+        console.warn('⚠️ Impossible de charger les icônes:', e);
+      }
+    }
+
+    function getClubIcon(clubName) {
+      if (!clubName) return null;
+      const club = clubsData[clubName];
+      if (!club) return null;
+      // Return the precomputed icon path from src/data/clubs.json
+      if (club.icon) return club.icon;
+      // Fallback: construct from filename
+      if (club.icon_filename) return '/assets/clubs/' + club.icon_filename;
+      return null;
+    }
+
+    function getLeagueIcon(leagueName) {
+      if (!leagueName) return null;
+      const ligue = liguesData[leagueName];
+      if (!ligue) return null;
+      // Return the precomputed icon path from src/data/leagues.json
+      if (ligue.icon) return ligue.icon;
+      // Fallback: construct from filename
+      if (ligue.icon_filename) return '/assets/leagues/' + ligue.icon_filename;
+      return null;
+    }
+
+    function getNationFlagHTML(nationName) {
+      if (!nationName) return '';
+      const nation = nationsData[nationName];
+      if (!nation) return `<span title="${nationName}">🏳️</span>`;
+      return `<img src="${nation.flag_url}" alt="${nation.name_fr}" title="${nation.name_fr}" style="width:20px;height:auto;border-radius:2px;">`;
+    }
+
+    function getNationFullHTML(nationName) {
+      if (!nationName) return '';
+      const nation = nationsData[nationName];
+      if (!nation) return `<span>${nationName}</span>`;
+      return `<span>${nation.name_fr}</span>`;
+    }
+
+    function getNationFrench(nationName) {
+      if (!nationName) return '';
+      const nation = nationsData[nationName];
+      if (!nation) return nationName;
+      return nation.name_fr;
+    }
+
+    function playstyleNameToFilename(name) {
+      if (!name) return '';
+      return name
+        .toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9-]/g, '')
+        .replace(/-+$/, '');  // Remove trailing dashes
+    }
+
+    function getPlaystyleIcon(psName) {
+      if (!psName) return null;
+      const isPlus = psName.endsWith('+');
+      let cleanName = isPlus ? psName.slice(0, -1) : psName;
+      
+      // Special mappings for + variants that use different base images
+      const plusImageMappings = {
+        'Foulée rapide+': 'rapide',
+        'Rapide+': 'rapide',
+        'Contrôle+': 'controle',
+        'Acrobatique+': 'acrobatique',
+        'Agressif+': 'agressif',
+        'Anticipation+': 'anticipation',
+        'Arrêt de loin+': 'classe-de-loin',
+        'Arrêts du pied+': 'arret-du-pied',
+        'Ballon piqué+': 'ballon-pique',
+        'Contre+': 'contre',
+        'Coup de pied arrêté+': 'coup-de-pied-arrete',
+        'Décisif+': 'decisif',
+        'Déviation+': 'deflector',
+        'Forteresse aérienne+': 'forteresse-aerienne',
+        'Infatigable+': 'infatigable',
+        'Interception+': 'interception',
+        'Longue relance+': 'longue-relance',
+        'Lutte+': 'lutte',
+        'Passage en force+': 'passage-en-force',
+        'Passe fusante+': 'passe-en-profondeur',
+        'Passe incisive+': 'passe-incisive',
+        'Passe longue+': 'passe-longue',
+        'Passe travaillée +': 'passe-travaillee',
+        'Résiste au pressing+': 'resiste-au-pressing',
+        'Renversement+': 'renversement',
+        'Sort du but+': 'sort-du-but',
+        'Sortie sur les centres+': 'sortie-sur-les-centres',
+        'Tacle glissé+': 'tacle-glisse',
+        'Technicien+': 'technicien',
+        'Technique+': 'technique',
+        'Tête précise+': 'tete-precise',
+        'Tir en finesse +': 'tir-en-finesse',
+        'Tir puissant+': 'tir-puissant',
+        'Tir rasant appuyé+': 'tir-rasant-appuye',
+        'Tiki-taka+': 'tiki-taka'
+      };
+      
+      // Check if we have a special mapping for this + variant
+      if (plusImageMappings[psName]) {
+        const imageName = plusImageMappings[psName];
+        return `/public/assets/playstyles_plus/${imageName}.png`;
+      }
+      
+      // Mappages personnalisés
+      const customMappings = {
+        'Tir Rasant': 'tir-rasant-appuye',
+        'Tir Rasant+': 'tir-rasant-appuye',
+        'Tir rasant appuyé': 'tir-rasant-appuye',
+        'Tir rasant appuyé+': 'tir-rasant-appuye',
+        'Révolutionnaire': 'renversement',
+        'Révolutionnaire+': 'renversement',
+        'Renversement': 'renversement',
+        'Renversement+': 'renversement',
+        'Pressing Éprouvé': 'resiste-au-pressing',
+        'Pressing Éprouvé+': 'resiste-au-pressing',
+        'Résiste au pressing': 'resiste-au-pressing',
+        'Résiste au pressing+': 'resiste-au-pressing',
+        'Pressing': 'resiste-au-pressing',
+        'Pressing+': 'resiste-au-pressing',
+        'Implacable': 'infatigable',
+        'Implacable+': 'infatigable',
+        'Infatigable': 'infatigable',
+        'Infatigable+': 'infatigable',
+        'costaud': 'agressif',
+        'Costaud': 'agressif',
+        'Costaud+': 'agressif',
+        'Agressif': 'agressif',
+        'Agressif+': 'agressif',
+        'Marquage': 'lutte',
+        'Marquage+': 'lutte',
+        'Lutte': 'lutte',
+        'Lutte+': 'lutte',
+        'Tête de précision': 'tete-precise',
+        'Tête de précision+': 'tete-precise',
+        'Tête précise': 'tete-precise',
+        'Tête précise+': 'tete-precise',
+        'Tête de Précision': 'tete-precise',
+        'Tête de Précision+': 'tete-precise',
+        'Imposant': 'passage-en-force',
+        'Imposant+': 'passage-en-force',
+        'Passage en force': 'passage-en-force',
+        'Passage en force+': 'passage-en-force',
+        'Sortie rapide': 'sort-du-but',
+        'Sortie rapide+': 'sort-du-but',
+        'Sortie Rapide': 'sort-du-but',
+        'Sortie Rapide+': 'sort-du-but',
+        'Sort du but': 'sort-du-but',
+        'Sort du but+': 'sort-du-but',
+        'Long Pass': 'passe-longue',
+        'Long Pass+': 'passe-longue',
+        'Passe longue': 'passe-longue',
+        'Passe longue+': 'passe-longue',
+        'Longue Passe': 'passe-longue',
+        'Longue Passe+': 'passe-longue',
+        'Infanter': 'trickster',
+        'Infanter+': 'trickster',
+        'Trickster': 'trickster',
+        'Trickster+': 'trickster',
+        'Foulée rapide': 'foulee-rapide',
+        'Foulée rapide+': 'foulee-rapide',
+        'Pas Rapide': 'foulee-rapide',
+        'Pas Rapide+': 'foulee-rapide',
+        'Rapide': 'foulee-rapide',
+        'Rapide+': 'foulee-rapide',
+        'Passe précise': 'passe-en-profondeur',
+        'Passe précise+': 'passe-en-profondeur',
+        'Passe Fusante': 'passe-en-profondeur',
+        'Passe Fusante+': 'passe-en-profondeur',
+        'Passe fusante': 'passe-en-profondeur',
+        'Passe fusante+': 'passe-en-profondeur',
+        'Passe Précise': 'passe-en-profondeur',
+        'Passe Précise+': 'passe-en-profondeur',
+        'Freineur': 'technicien',
+        'Freineur+': 'technicien',
+        'Feinteur': 'technicien',
+        'Feinteur+': 'technicien',
+        'Technicien': 'technicien',
+        'Technicien+': 'technicien',
+        'Fantaisiste': 'fantaisiste',
+        'Fantaisiste+': 'fantaisiste',
+        'Tir lobé': 'ballon-pique',
+        'Tir lobe': 'ballon-pique',
+        'Tir Lobé': 'ballon-pique',
+        'Tir lobe+': 'ballon-pique',
+        'Tir lobé+': 'ballon-pique',
+        'Tir Lobé+': 'ballon-pique',
+        'Ballon piqué': 'ballon-pique',
+        'Ballon piqué+': 'ballon-pique',
+        'Deflecteur': 'deflector',
+        'Deflecteur+': 'deflector',
+        'Déflecteur': 'deflector',
+        'Déflecteur+': 'deflector',
+        'Déviation': 'deflector',
+        'Déviation+': 'deflector',
+        'Jeu de pieds': 'arret-du-pied',
+        'Jeu de pieds+': 'arret-du-pied',
+        'Jeu de Pieds': 'arret-du-pied',
+        'Jeu de Pieds+': 'arret-du-pied',
+        'Arrêt du pied': 'arret-du-pied',
+        'Arrêts du pied': 'arret-du-pied',
+        'Arrêts du pied+': 'arret-du-pied',
+        'Blocage': 'contre',
+        'Blocage+': 'contre',
+        'Contre': 'contre',
+        'Contre+': 'contre',
+        'Grande relance': 'longue-relance',
+        'Grande relance+': 'longue-relance',
+        'Grande Relance': 'longue-relance',
+        'Grande Relance+': 'longue-relance',
+        'Longue relance': 'longue-relance',
+        'Longue relance+': 'longue-relance',
+        'Longue Relance': 'longue-relance',
+        'Longue Relance+': 'longue-relance',
+        'Maitre des centre': 'sortie-sur-les-centres',
+        'Maitre des centre+': 'sortie-sur-les-centres',
+        'Maître des centres': 'sortie-sur-les-centres',
+        'Maître des centres+': 'sortie-sur-les-centres',
+        'Maître des Centres': 'sortie-sur-les-centres',
+        'Maître des Centres+': 'sortie-sur-les-centres',
+        'Sortie sur les centres': 'sortie-sur-les-centres',
+        'Sortie sur les centres+': 'sortie-sur-les-centres',
+        'Grande envergure': 'classe-de-loin',
+        'Grande envergure+': 'classe-de-loin',
+        'Grande Envergure': 'classe-de-loin',
+        'Grande Envergure+': 'classe-de-loin',
+        'Arrêt de loin': 'classe-de-loin',
+        'Arrêt de loin+': 'classe-de-loin',
+        'Classe de loin': 'classe-de-loin',
+        'Classe de loin+': 'classe-de-loin',
+        'Controle': 'controle',
+        'Controle+': 'controle',
+        'Forteresse aérienne': 'forteresse-aerienne',
+        'Forteresse aérienne+': 'forteresse-aerienne',
+        'Forteresse Aérienne': 'forteresse-aerienne',
+        'Forteresse Aérienne+': 'forteresse-aerienne',
+        'Tacle glissé': 'tacle-glisse',
+        'Tacle glissé+': 'tacle-glisse',
+        'Tacle Glissé': 'tacle-glisse',
+        'Tacle Glissé+': 'tacle-glisse',
+        'Passe incisive': 'passe-incisive',
+        'Passe incisive+': 'passe-incisive',
+        'Passe Incisive': 'passe-incisive',
+        'Passe Incisive+': 'passe-incisive',
+        'Coup de pied arrêté': 'coup-de-pied-arrete',
+        'Coup de pied arrêté+': 'coup-de-pied-arrete',
+        'Coup de Pied Arrêté': 'coup-de-pied-arrete',
+        'Coup de Pied Arrêté+': 'coup-de-pied-arrete',
+        'Tir puissant': 'tir-puissant',
+        'Tir puissant+': 'tir-puissant',
+        'Tir Puissant': 'tir-puissant',
+        'Tir Puissant+': 'tir-puissant',
+        'Tiki-taka': 'tiki-taka',
+        'Tiki-taka+': 'tiki-taka',
+        'Tiki Taka': 'tiki-taka',
+        'Tiki Taka+': 'tiki-taka'
+      };
+      
+      if (customMappings[psName]) {
+        return isPlus ? `/public/assets/playstyles_plus/${customMappings[psName]}.png` 
+                       : `/public/assets/playstyles/${customMappings[psName]}.png`;
+      }
+      
+      const filename = playstyleNameToFilename(cleanName) + '.png';
+      return isPlus ? `/public/assets/playstyles_plus/${filename}` : `/public/assets/playstyles/${filename}`;
+    }
+
+    // ════════════════════════════════════════════════════════
     // CHARGEMENT DONNÉES
     // ════════════════════════════════════════════════════════
     async function loadData() {
+      await loadIconsData();
       try {
-        const res = await fetch('players_clean.json');
+        const res = await fetch('players_merged.json');
         if (!res.ok) throw new Error('Fichier non trouvé');
         allPlayers = await res.json();
         filteredPlayers = [...allPlayers];
@@ -2209,11 +2511,11 @@
 
     function getDemoPlayers() {
       return [
-        { id: 209331, slug: 'mohamed-salah', nom: 'Mohamed Salah', genre: 'Masculin', note: 91, tier: 'Élite', poste: 'MD', poste_fr: 'Milieu Droit', postes_alt: ['AD'], club: 'Liverpool', ligue: 'Premier League', nationalite: 'Égypte', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/209331_en.webp', image_visage: '', stats: { vitesse: 89, tir: 88, passes: 86, dribble: 90, defense: 45, physique: 76 }, stats_detail: { acceleration: 88, vitesse_pointe: 89, finition: 94, puissance_tir: 83, tirs_loin: 78, vista: 86, passes_courtes: 88, passes_longues: 81, dribbles: 90, agilite: 86, equilibre: 91, reactivite: 94, controle_ballon: 90, interceptions: 55, conscience_def: 38, tacle_debout: 43, detente: 79, endurance: 88, force: 75, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 33, taille_cm: 175, poids_kg: 72, pied_fort: 'Gauche', mauvais_pied: 3, gestes_techniques: 4 }, playstyles: ['Tir Enroulé+', 'Premier Contact', 'Décisif', 'Inventif', 'Tir Rasant', 'Technique', 'Passe Fouettée'], profil: 'Ailier explosif', points_forts: ['Vitesse', 'Dribble', 'Tir'], points_faibles: [], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/mohamed-salah/209331', search_index: 'mohamed salah liverpool premier league milieu droit égypte' },
-        { id: 231747, slug: 'kylian-mbappe', nom: 'Kylian Mbappé', genre: 'Masculin', note: 91, tier: 'Élite', poste: 'ATT', poste_fr: 'Attaquant', postes_alt: ['AG', 'MG'], club: 'Real Madrid', ligue: 'La Liga', nationalite: 'France', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231747_en.webp', image_visage: '', stats: { vitesse: 97, tir: 90, passes: 81, dribble: 92, defense: 37, physique: 76 }, stats_detail: { acceleration: 97, vitesse_pointe: 97, finition: 92, puissance_tir: 91, tirs_loin: 86, vista: 78, passes_courtes: 87, passes_longues: 74, dribbles: 92, agilite: 93, equilibre: 82, reactivite: 91, controle_ballon: 93, interceptions: 38, conscience_def: 26, tacle_debout: 34, detente: 90, endurance: 83, force: 77, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 26, taille_cm: 182, poids_kg: 75, pied_fort: 'Droit', mauvais_pied: 4, gestes_techniques: 5 }, playstyles: ['Pas Rapide+', 'Acrobatique', 'Tir Enroulé', 'Premier Contact', 'Décisif', 'Tir Rasant', 'Rapide'], profil: 'Attaquant de pointe', points_forts: ['Finition', 'Vitesse', 'Jeu en équipe'], points_faibles: ['Défense'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/kylian-mbappe/231747', search_index: 'kylian mbappé real madrid la liga attaquant france' },
-        { id: 239085, slug: 'erling-haaland', nom: 'Erling Haaland', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'ATT', poste_fr: 'Attaquant', postes_alt: [], club: 'Manchester City', ligue: 'Premier League', nationalite: 'Norvège', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/239085_en.webp', image_visage: '', stats: { vitesse: 86, tir: 91, passes: 70, dribble: 80, defense: 45, physique: 88 }, stats_detail: { acceleration: 85, vitesse_pointe: 86, finition: 94, puissance_tir: 94, tirs_loin: 72, vista: 62, passes_courtes: 63, passes_longues: 55, dribbles: 80, agilite: 75, equilibre: 70, reactivite: 91, controle_ballon: 79, interceptions: 39, conscience_def: 28, tacle_debout: 36, detente: 93, endurance: 80, force: 90, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 24, taille_cm: 194, poids_kg: 88, pied_fort: 'Gauche', mauvais_pied: 3, gestes_techniques: 3 }, playstyles: ['Forteresse Aérienne', 'Premier Contact', 'Décisif', 'Tir Enroulé', 'Tir Puissant'], profil: 'Attaquant de pointe', points_forts: ['Finition', 'Physique', 'Vitesse'], points_faibles: ['Passes'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/erling-haaland/239085', search_index: 'erling haaland manchester city premier league attaquant norvège' },
-        { id: 203376, slug: 'virgil-van-dijk', nom: 'Virgil van Dijk', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'DC', poste_fr: 'Défenseur Central', postes_alt: [], club: 'Liverpool', ligue: 'Premier League', nationalite: 'Pays-Bas', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/203376_en.webp', image_visage: '', stats: { vitesse: 73, tir: 60, passes: 72, dribble: 72, defense: 90, physique: 87 }, stats_detail: { acceleration: 70, vitesse_pointe: 76, finition: 55, puissance_tir: 63, tirs_loin: 49, vista: 62, passes_courtes: 74, passes_longues: 70, dribbles: 72, agilite: 61, equilibre: 70, reactivite: 84, controle_ballon: 71, interceptions: 87, conscience_def: 89, tacle_debout: 86, detente: 90, endurance: 85, force: 91, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 33, taille_cm: 193, poids_kg: 92, pied_fort: 'Droit', mauvais_pied: 3, gestes_techniques: 2 }, playstyles: ['Forteresse Aérienne', 'Blocage', 'Anticipation', 'Imposant'], profil: 'Défenseur physique', points_forts: ['Défense', 'Physique'], points_faibles: ['Technique balle au pied'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/virgil-van-dijk/203376', search_index: 'virgil van dijk liverpool premier league défenseur central pays-bas' },
-        { id: 231866, slug: 'rodri', nom: 'Rodri', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'MDC', poste_fr: 'Milieu Défensif Central', postes_alt: ['MC'], club: 'Manchester City', ligue: 'Premier League', nationalite: 'Espagne', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231866_en.webp', image_visage: '', stats: { vitesse: 65, tir: 80, passes: 86, dribble: 84, defense: 86, physique: 85 }, stats_detail: { acceleration: 63, vitesse_pointe: 67, finition: 68, puissance_tir: 80, tirs_loin: 72, vista: 80, passes_courtes: 87, passes_longues: 85, dribbles: 80, agilite: 72, equilibre: 78, reactivite: 87, controle_ballon: 86, interceptions: 90, conscience_def: 88, tacle_debout: 88, detente: 80, endurance: 89, force: 85, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 28, taille_cm: 191, poids_kg: 82, pied_fort: 'Droit', mauvais_pied: 3, gestes_techniques: 3 }, playstyles: ['Pressing Éprouvé+', 'Interception', 'Anticipation', 'Blocage', 'Distribution'], profil: 'Sentinelle', points_forts: ['Interceptions', 'Défense', 'Distribution'], points_faibles: [], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/rodri/231866', search_index: 'rodri manchester city premier league milieu défensif espagne' },
+        { id: 209331, slug: 'mohamed-salah', nom: 'Mohamed Salah', genre: 'Masculin', note: 91, tier: 'Élite', poste: 'MD', poste_fr: 'Milieu Droit', postes_alt: ['AD'], club: 'Liverpool', ligue: 'Premier League', nationalite: 'Égypte', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/209331_en.webp', image_visage: '', stats: { vitesse: 89, tir: 88, passes: 86, dribble: 90, defense: 45, physique: 76 }, stats_detail: { acceleration: 88, vitesse_pointe: 89, finition: 94, puissance_tir: 83, tirs_loin: 78, vista: 86, passes_courtes: 88, passes_longues: 81, dribbles: 90, agilite: 86, equilibre: 91, reactivite: 94, controle_ballon: 90, interceptions: 55, conscience_def: 38, tacle_debout: 43, detente: 79, endurance: 88, force: 75, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 33, taille_cm: 175, poids_kg: 72, pied_fort: 'Gauche', mauvais_pied: 3, gestes_techniques: 4 }, playstyles: ['Tir en finesse +', 'Contrôle', 'Renversement', 'Technicien', 'Tir rasant appuyé', 'Technique', 'Passe travaillée'], profil: 'Ailier explosif', points_forts: ['Vitesse', 'Dribble', 'Tir'], points_faibles: [], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/mohamed-salah/209331', search_index: 'mohamed salah liverpool premier league milieu droit égypte' },
+        { id: 231747, slug: 'kylian-mbappe', nom: 'Kylian Mbappé', genre: 'Masculin', note: 91, tier: 'Élite', poste: 'ATT', poste_fr: 'Attaquant', postes_alt: ['AG', 'MG'], club: 'Real Madrid', ligue: 'La Liga', nationalite: 'France', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231747_en.webp', image_visage: '', stats: { vitesse: 97, tir: 90, passes: 81, dribble: 92, defense: 37, physique: 76 }, stats_detail: { acceleration: 97, vitesse_pointe: 97, finition: 92, puissance_tir: 91, tirs_loin: 86, vista: 78, passes_courtes: 87, passes_longues: 74, dribbles: 92, agilite: 93, equilibre: 82, reactivite: 91, controle_ballon: 93, interceptions: 38, conscience_def: 26, tacle_debout: 34, detente: 90, endurance: 83, force: 77, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 26, taille_cm: 182, poids_kg: 75, pied_fort: 'Droit', mauvais_pied: 4, gestes_techniques: 5 }, playstyles: ['Foulée rapide+', 'Acrobatique', 'Tir en finesse', 'Contrôle', 'Renversement', 'Tir rasant appuyé', 'Foulée rapide'], profil: 'Attaquant de pointe', points_forts: ['Finition', 'Vitesse', 'Jeu en équipe'], points_faibles: ['Défense'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/kylian-mbappe/231747', search_index: 'kylian mbappé real madrid la liga attaquant france' },
+        { id: 239085, slug: 'erling-haaland', nom: 'Erling Haaland', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'ATT', poste_fr: 'Attaquant', postes_alt: [], club: 'Manchester City', ligue: 'Premier League', nationalite: 'Norvège', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/239085_en.webp', image_visage: '', stats: { vitesse: 86, tir: 91, passes: 70, dribble: 80, defense: 45, physique: 88 }, stats_detail: { acceleration: 85, vitesse_pointe: 86, finition: 94, puissance_tir: 94, tirs_loin: 72, vista: 62, passes_courtes: 63, passes_longues: 55, dribbles: 80, agilite: 75, equilibre: 70, reactivite: 91, controle_ballon: 79, interceptions: 39, conscience_def: 28, tacle_debout: 36, detente: 93, endurance: 80, force: 90, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 24, taille_cm: 194, poids_kg: 88, pied_fort: 'Gauche', mauvais_pied: 3, gestes_techniques: 3 }, playstyles: ['Tir rasant appuyé+', 'Acrobatique', 'Ballon piqué', 'Passage en force', 'Renversement', 'Tir puissant', 'Tête précise'], profil: 'Attaquant de pointe', points_forts: ['Finition', 'Physique', 'Vitesse'], points_faibles: ['Passes'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/erling-haaland/239085', search_index: 'erling haaland manchester city premier league attaquant norvège' },
+        { id: 203376, slug: 'virgil-van-dijk', nom: 'Virgil van Dijk', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'DC', poste_fr: 'Défenseur Central', postes_alt: [], club: 'Liverpool', ligue: 'Premier League', nationalite: 'Pays-Bas', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/203376_en.webp', image_visage: '', stats: { vitesse: 73, tir: 60, passes: 72, dribble: 72, defense: 90, physique: 87 }, stats_detail: { acceleration: 70, vitesse_pointe: 76, finition: 55, puissance_tir: 63, tirs_loin: 49, vista: 62, passes_courtes: 74, passes_longues: 70, dribbles: 72, agilite: 61, equilibre: 70, reactivite: 84, controle_ballon: 71, interceptions: 87, conscience_def: 89, tacle_debout: 86, detente: 90, endurance: 85, force: 91, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 33, taille_cm: 193, poids_kg: 92, pied_fort: 'Droit', mauvais_pied: 3, gestes_techniques: 2 }, playstyles: ['Interception+', 'Forteresse aérienne', 'Anticipation', 'Agressif', 'Lutte', 'Passe fusante', 'Tête précise'], profil: 'Défenseur physique', points_forts: ['Défense', 'Physique'], points_faibles: ['Technique balle au pied'], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/virgil-van-dijk/203376', search_index: 'virgil van dijk liverpool premier league défenseur central pays-bas' },
+        { id: 231866, slug: 'rodri', nom: 'Rodri', genre: 'Masculin', note: 90, tier: 'Élite', poste: 'MDC', poste_fr: 'Milieu Défensif Central', postes_alt: ['MC'], club: 'Manchester City', ligue: 'Premier League', nationalite: 'Espagne', rarete: 'Or Rare', rarete_couleur: { bg: '#c8a84b', text: '#1a1000' }, image_carte: 'https://ratings-images-prod.pulse.ea.com/FC26/components/items/231866_en.webp', image_visage: '', stats: { vitesse: 65, tir: 80, passes: 86, dribble: 84, defense: 86, physique: 85 }, stats_detail: { acceleration: 63, vitesse_pointe: 67, finition: 68, puissance_tir: 80, tirs_loin: 72, vista: 80, passes_courtes: 87, passes_longues: 85, dribbles: 80, agilite: 72, equilibre: 78, reactivite: 87, controle_ballon: 86, interceptions: 90, conscience_def: 88, tacle_debout: 88, detente: 80, endurance: 89, force: 85, gk_plongeon: null, gk_prise_balle: null, gk_degagement: null, gk_placement: null, gk_reflexes: null }, meta: { age: 28, taille_cm: 191, poids_kg: 82, pied_fort: 'Droit', mauvais_pied: 3, gestes_techniques: 3 }, playstyles: ['Tiki-taka+', 'Forteresse aérienne', 'Agressif', 'Passe longue', 'Tir puissant', 'Résiste au pressing'], profil: 'Sentinelle', points_forts: ['Interceptions', 'Défense', 'Distribution'], points_faibles: [], lien_ea: 'https://www.ea.com/games/ea-sports-fc/ratings/player-ratings/rodri/231866', search_index: 'rodri manchester city premier league milieu défensif espagne' },
       ];
     }
 
@@ -2341,9 +2643,12 @@
     }
 
     function showDetail(id) {
+      if (typeof id === 'string' && !isNaN(Number(id))) {
+        id = Number(id);
+      }
       prevPage = currentPage;
       currentDetailId = id;
-      const p = allPlayers.find(x => x.id === id);
+      const p = allPlayers.find(x => x.id === id || x.id == id);
       if (!p) return;
       document.getElementById('detail-header-nom').textContent = p.nom;
       document.getElementById('detail-content').innerHTML = buildDetailHTML(p);
@@ -2366,7 +2671,14 @@
       const sel1 = document.getElementById('f-ligue');
       const sel2 = document.getElementById('f-nation');
       ligues.forEach(l => { const o = document.createElement('option'); o.value = l; o.textContent = l; sel1.appendChild(o); });
-      nations.forEach(n => { const o = document.createElement('option'); o.value = n; o.textContent = n; sel2.appendChild(o); });
+      nations.forEach(n => { 
+        const o = document.createElement('option'); 
+        o.value = n; 
+        const frenchName = getNationFrench(n);
+        o.textContent = frenchName; 
+        o.title = frenchName;
+        sel2.appendChild(o); 
+      });
     }
 
     function toggleFilters() {
@@ -2545,7 +2857,7 @@
       <div class="player-meta">
         <span class="player-poste">${p.poste}</span>
         <span class="player-club">${p.club || '—'}</span>
-        <span class="player-nat">${p.nationalite || ''}</span>
+        <span class="player-nat">${getNationFlagHTML(p.nationalite) || ''}</span>
       </div>
       <div class="player-stats-mini">${statsHtml}</div>
     </div>
@@ -2576,12 +2888,15 @@
 
       // Stats principales
       // Stats principales : grille de cartes colorées
-      const statColor = v => v >= 85 ? '#22c55e' : v >= 75 ? '#86efac' : v >= 65 ? '#f0cc70' : v >= 55 ? '#f97316' : '#ef4444';
+      const statColor = v => {
+        if (v === 'N/A' || isNaN(v)) return 'var(--text3)';
+        return v >= 85 ? '#22c55e' : v >= 75 ? '#86efac' : v >= 65 ? '#f0cc70' : v >= 55 ? '#f97316' : '#ef4444';
+      };
       const statsMainHtml = [
         ['VIT', 'vitesse'], ['TIR', 'tir'], ['PAS', 'passes'],
         ['DRI', 'dribble'], ['DEF', 'defense'], ['PHY', 'physique']
       ].map(([lbl, k]) => {
-        const v = p.stats?.[k] || 0;
+        const v = p.stats?.[k] || '—';
         const col = statColor(v);
         return `<div class="stat-main-card" style="--stat-color:${col}">
       <div class="stat-main-val" style="color:${col}">${v}</div>
@@ -2628,7 +2943,12 @@
       // PlayStyles
       const psHtml = (p.playstyles || []).map(ps => {
         const isPlus = ps.endsWith('+');
-        return `<span class="playstyle-chip ${isPlus ? 'plus' : ''}">${ps}</span>`;
+        let psIconStr = '';
+        if (window.getPlaystyleIcon) {
+          const psIconPath = window.getPlaystyleIcon(ps);
+          if (psIconPath) psIconStr = `<img src="${psIconPath}" alt="${ps}" style="width:16px;height:16px;margin-right:4px;vertical-align:middle" onerror="this.style.display='none'">`;
+        }
+        return `<span class="playstyle-chip ${isPlus ? 'plus' : ''}">${psIconStr}${ps}</span>`;
       }).join('');
 
       // Postes alternatifs
@@ -2651,36 +2971,64 @@
       </div>
       <div class="detail-hero-info">
         <div class="detail-nom">${p.nom}</div>
-        <div class="detail-club-line">${p.club || '—'} · ${p.ligue || '—'}</div>
+        <div class="detail-club-line" style="display:flex;align-items:center;gap:6px">
+          ${(() => {
+            let html = '';
+            if (window.getClubIcon && p.club) {
+              const cIcon = window.getClubIcon(p.club);
+              if (cIcon) html += `<img src="${cIcon}" alt="${p.club}" style="width:20px;height:20px;object-fit:cover" onerror="this.style.display='none'">`;
+            }
+            html += `<span>${p.club || '—'}</span>`;
+            html += `<span>·</span>`;
+            if (window.getLeagueIcon && p.ligue) {
+              const lIcon = window.getLeagueIcon(p.ligue);
+              if (lIcon) html += `<img src="${lIcon}" alt="${p.ligue}" style="width:20px;height:20px;object-fit:cover" onerror="this.style.display='none'">`;
+            }
+            html += `<span>${p.ligue || '—'}</span>`;
+            return html;
+          })()}
+        </div>
         <div class="detail-badges" style="margin-top:8px">
           <span class="badge ${rClass}">${p.rarete}</span>
           <span class="badge badge-accent">${p.poste_fr || p.poste}</span>
           ${altPosHtml}
           <span class="badge badge-green">${p.tier}</span>
         </div>
-        <div style="margin-top:6px;font-size:12px;color:var(--text3)">${p.nationalite || ''}</div>
+        <div style="margin-top:6px;font-size:12px;color:var(--text3)">${getNationFullHTML(p.nationalite) || ''}</div>
+        
+        ${psHtml ? `<div style="margin-top:8px"><div style="display:flex;flex-wrap:wrap;gap:4px">${psHtml}</div></div>` : ''}
+        
+        <div style="margin-top:8px;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font-size:11px">
+          <div><span style="color:var(--text3)">Taille:</span> ${p.meta?.taille_cm ? p.meta.taille_cm + 'cm' : '—'}</div>
+          <div><span style="color:var(--text3)">Pied:</span> ${p.meta?.pied_fort || '—'}</div>
+          <div><span style="color:var(--text3)">Mauvais pied:</span> ${'★'.repeat(p.meta?.mauvais_pied || 0) + '☆'.repeat(5 - (p.meta?.mauvais_pied || 0))}</div>
+          <div><span style="color:var(--text3)">Gestes tech:</span> ${'★'.repeat(p.meta?.gestes_techniques || 0) + '☆'.repeat(5 - (p.meta?.gestes_techniques || 0))}</div>
+        </div>
       </div>
     </div>
 
     ${buildProfilBlock(p)}
-
-    <div class="detail-section" style="padding-top:16px">
-      <div class="detail-section-title">Stats principales</div>
-      <div class="stats-main-grid">${statsMainHtml}</div>
-    </div>
+    ${(() => {
+        const versions = window.allPlayers ? window.allPlayers.filter(x => x.group_id && p.group_id && x.group_id === p.group_id) : [];
+        if (versions.length > 1) {
+          return `
+          <div class="detail-section" style="padding-top:16px">
+            <div class="detail-section-title">Versions de la carte</div>
+            <select class="filter-select" style="width:100%;margin-top:6px;font-size:14px" onchange="showDetail(this.value)">
+              ${versions.map(v => `<option value="${v.id}" ${v.id == p.id ? 'selected' : ''}>${v.note} - ${v.version_name || v.bare_rarete || v.rarete} (${v.poste})</option>`).join('')}
+            </select>
+          </div>
+          <div style="height:12px"></div>`;
+        }
+        return '';
+    })()}
 
     ${statsDetailHtml}
-
-    ${psHtml ? `<div class="detail-section"><div class="detail-section-title">Play Styles</div><div class="playstyles-grid">${psHtml}</div></div><div style="height:16px"></div>` : ''}
 
     <div class="detail-section">
       <div class="detail-section-title">Profil joueur</div>
       <div class="meta-grid">
         <div class="meta-item"><div class="meta-item-label">Âge</div><div class="meta-item-value">${p.meta?.age || '—'} ans</div></div>
-        <div class="meta-item"><div class="meta-item-label">Taille</div><div class="meta-item-value">${p.meta?.taille_cm ? p.meta.taille_cm + 'cm' : '—'}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Pied fort</div><div class="meta-item-value">${p.meta?.pied_fort || '—'}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Mauvais pied</div><div class="meta-item-value">${'★'.repeat(p.meta?.mauvais_pied || 0) + '☆'.repeat(5 - (p.meta?.mauvais_pied || 0))}</div></div>
-        <div class="meta-item"><div class="meta-item-label">Gestes tech.</div><div class="meta-item-value">${'★'.repeat(p.meta?.gestes_techniques || 0) + '☆'.repeat(5 - (p.meta?.gestes_techniques || 0))}</div></div>
         <div class="meta-item"><div class="meta-item-label">Poids</div><div class="meta-item-value">${p.meta?.poids_kg ? p.meta.poids_kg + 'kg' : '—'}</div></div>
       </div>
     </div>
@@ -2775,7 +3123,7 @@
       <span class="modal-player-ovr">${p.note}</span>
       <div>
         <div class="modal-player-name">${p.nom}</div>
-        <div class="modal-player-info">${p.poste} · ${p.club || ''} · ${p.nationalite || ''}</div>
+        <div class="modal-player-info">${p.poste} · ${p.club || ''} · ${getNationFlagHTML(p.nationalite) || ''}</div>
       </div>
     </div>`).join('');
     }
@@ -2807,6 +3155,7 @@
         <div class="compare-slot-poste">${p.poste}</div>
         <div class="compare-slot-name">${p.nom}</div>
         <div style="font-size:11px;color:var(--text3)">${p.club || ''}</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:2px">${getNationFullHTML(p.nationalite) || ''}</div>
         <button class="compare-remove" onclick="event.stopPropagation();removeFromCompare(${i})">Retirer</button>`;
           el.classList.add('filled');
           el.onclick = null;
@@ -2908,6 +3257,14 @@
     renderCompareSlots();
     loadData();
   </script>
+<!-- Charger les icones -->
+<script src="icons-loader.js"></script>
+<script>
+  (async () => {
+    await loadIconsData();
+    console.log("✅ FC Pulse - Icones et enrichissement charges!");
+  })();
+</script>
 </body>
 
 </html>
